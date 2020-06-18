@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<title>文本（Text） - UIkit3中文文档</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/skin/ukv3/css/uikit.min.css" /> -->
+		<link rel="stylesheet" type="text/css" href="/skin/ukv3/css/theme.css?3.4.6"/>
+		<script src="/skin/ukv3/js/clipboard.min.js" defer=""></script>
+		<script src="/skin/ukv3/js/uikit.min.js"></script>
+		<script src="/skin/ukv3/js/uikit-icons.min.js"></script>
+		<script src="/skin/ukv3/js/highlight.min.js"></script>
+	</head>
+
+	<body>
+	        <div><div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed"><div class="uk-container uk-container-expand"><nav class="uk-navbar"><div class="uk-navbar-left"><a href="../" class="uk-navbar-item uk-logo"><img uk-svg="" src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"> UIkit
+                    </a></div> <div class="uk-navbar-right"><ul class="uk-navbar-nav uk-visible@m"><li class="uk-active"><a href="http://www.getuikit.net/doc/v3/getting-started/introduction.html">UIkit3文档</a></li> <li><a href="http://www.getuikit.net/docs/documentation_get-started.html">UIkit2文档</a></li> <li><a href="/showcase/">案例展示</a></li> <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li></ul> <div class="uk-navbar-item uk-visible@m"><a title="版本3.4.6" href="/uikitzip/uikit-3.4.6.zip" class="uk-button uk-button-default tm-button-default uk-icon">下载 <canvas uk-icon="icon: download" width="20" height="20" class="uk-icon" hidden="true"></canvas></a></div> <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></a></div></nav></div></div><div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div> <div class="tm-sidebar-left uk-visible@m"><h3>UIkit3.x文档</h3> <ul class="uk-nav uk-nav-default tm-nav"><li class="uk-nav-header">入门</li> <li class=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li><li class=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li><li class=""><a href="/doc/v3/getting-started/less.html">Less</a></li><li class=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li><li class=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li><li class=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li><li class=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li><li class=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li><li class=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li><li class=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li></ul><ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">组件</li> <li class=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li><li class=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li><li class=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li><li class=""><a href="/doc/v3/components/animation.html">动画（Animation）</a></li><li class=""><a href="/doc/v3/components/article.html">文章（Article）</a></li><li class=""><a href="/doc/v3/components/background.html">背景（Background）</a></li><li class=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li><li class=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li><li class=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li><li class=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li><li class=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li><li class=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li><li class=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li><li class=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li><li class=""><a href="/doc/v3/components/container.html">容器（Container）</a></li><li class=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li><li class=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li><li class=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li><li class=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li><li class=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li><li class=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li><li class=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li><li class=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li><li class=""><a href="/doc/v3/components/flex.html">Flex布局</a></li><li class=""><a href="/doc/v3/components/form.html">表单（Form）</a></li><li class=""><a href="/doc/v3/components/grid.html">网格（Grid）</a></li><li class=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li><li class=""><a href="/doc/v3/components/height.html">高度（Height）</a></li><li class=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li><li class=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li><li class=""><a href="/doc/v3/components/image.html">图片（Image）</a></li><li class=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li><li class=""><a href="/doc/v3/components/label.html">标签（Label）</a></li><li class=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li><li class=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li><li class=""><a href="/doc/v3/components/link.html">链接（Link）</a></li><li class=""><a href="/doc/v3/components/list.html">列表（list）</a></li><li class=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li><li class=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li><li class=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li><li class=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li><li class=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li><li class=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li><li class=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li><li class=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li><li class=""><a href="/doc/v3/components/padding.html">Padding</a></li><li class=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li><li class=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li><li class=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li><li class=""><a href="/doc/v3/components/position.html">定位（Position）</a></li><li class=""><a href="/doc/v3/components/print.html">打印（Print）</a></li><li class=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li><li class=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li><li class=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li><li class=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li><li class=""><a href="/doc/v3/components/section.html">区段（Section）</a></li><li class=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li><li class=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li><li class=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li><li class=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li><li class=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li><li class=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li><li class=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li><li class=""><a href="/doc/v3/components/svg.html">SVG</a></li><li class=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li><li class=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li><li class=""><a href="/doc/v3/components/table.html">表格（Table）</a></li><li class="router-link-exact-active uk-active"><a href="/doc/v3/components/text.html">文本（Text）</a></li><li class=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li><li class=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li><li class=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li><li class=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li><li class=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li><li class=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li><li class=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li><li class=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li><li class=""><a href="/doc/v3/components/video.html">视频（Video）</a></li><li class=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li><li class=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li></ul></div> <div class="tm-main uk-section uk-section-default"><div class="uk-container uk-container-small uk-position-relative"><div>
+<div>
+<h1 class="uk-h1 tm-heading-fragment" id="text"><a href="#text">文本</a></h1>
+<p class="uk-text-lead">用于设置文本样式的实用class集。</p>
+<p>将此组件与<a href="heading.html">Heading 组件</a>结合使用以设置内容的样式。</p>
+<h2 class="uk-h3 tm-heading-fragment" id="style-modifiers"><a href="#style-modifiers">样式修饰</a></h2>
+<p>UIkit提供了各种实用的文本效果来设置文本样式。</p>
+<div class="uk-overflow-auto">
+<table class="uk-table uk-table-divider">
+	<thead>
+		<tr>
+			<th align="left">Class</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left"><code>.uk-text-lead</code></td>
+			<td align="left"><span class="uk-text-lead">突出显示文本，比如文章子标题</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-meta</code></td>
+			<td align="left"><span class="uk-text-meta">添加到包含相关文章或类似内容的元数据中。</span></td>
+		</tr>
+	</tbody>
+</table></div>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="font-size"><a href="#font-size">字体大小</a></h2>
+<p>调整文本的字体大小</p>
+<div class="uk-overflow-auto">
+<table class="uk-table uk-table-divider">
+	<thead>
+		<tr>
+			<th align="left">Class</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left"><code>.uk-text-small</code></td>
+			<td align="left"><span class="uk-text-small">减小字体</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-large</code></td>
+			<td align="left"><span class="uk-text-large">增大字体</span></td>
+		</tr>
+	</tbody>
+</table></div>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="font-weight"><a href="#font-weight">字体粗细</a></h2>
+<p>调整文本的字体粗细。</p>
+<div class="uk-overflow-auto">
+<table class="uk-table uk-table-divider">
+	<thead>
+		<tr>
+			<th align="left">Class</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left"><code>.uk-text-light</code></td>
+			<td align="left"><span class="uk-text-light">字体粗细为<code>300</code>.</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-normal</code></td>
+			<td align="left"><span class="uk-text-normal">字体粗细为<code>400</code>.</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-bold</code></td>
+			<td align="left"><span class="uk-text-bold">字体粗细为<code>700</code>.</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-lighter</code></td>
+			<td align="left"><span class="uk-text-lighter">较淡的字体粗细</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-bolder</code></td>
+			<td align="left"><span class="uk-text-bolder">较粗的字体</span></td>
+		</tr>
+	</tbody>
+</table></div>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="font-style"><a href="#font-style">字体样式</a></h2>
+<p>添加<code>.uk-text-italic</code> class 创建<span class="uk-text-italic">斜体文本</span>.</p>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="text-transform"><a href="#text-transform">大小写转换</a></h2>
+<p>The following classes will transform text into uppercased, capitalized or lowercased characters.</p>
+<div class="uk-overflow-auto">
+<table class="uk-table uk-table-divider">
+	<thead>
+		<tr>
+			<th align="left">Class</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left"><code>.uk-text-capitalize</code></td>
+			<td align="left"><span class="uk-text-capitalize">转换为首字母大写</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-uppercase</code></td>
+			<td align="left"><span class="uk-text-uppercase">转换为字母大写</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-lowercase</code></td>
+			<td align="left"><span class="uk-text-lowercase">转换为字母小写</span></td>
+		</tr>
+	</tbody>
+</table></div>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="text-color"><a href="#text-color">文本颜色</a></h2>
+<p>对文本元素应用不同的颜色。</p>
+<div class="uk-overflow-auto">
+<table class="uk-table uk-table-divider">
+	<thead>
+		<tr>
+			<th align="left">Class</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left"><code>.uk-text-muted</code></td>
+			<td align="left"><span class="uk-text-muted">淡化的文本颜色</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-emphasis</code></td>
+			<td align="left"><span class="uk-text-emphasis">强调的文本信息</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-primary</code></td>
+			<td align="left"><span class="uk-text-primary">强调额外的文本信息</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-secondary</code></td>
+			<td align="left"><span class="uk-text-secondary">添加此类以强调带有辅助颜色的文本。</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-success</code></td>
+			<td align="left"><span class="uk-text-success">通常表示成功一类积极的信息</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-warning</code></td>
+			<td align="left"><span class="uk-text-warning">表示警告信息</span></td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-danger</code></td>
+			<td align="left"><span class="uk-text-danger">表示危险信息</span></td>
+		</tr>
+	</tbody>
+</table></div>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="text-background"><a href="#text-background">文字背景</a></h2>
+<p>要将渐变或背景图像应用于文本，请将<code>.uk-text-background</code> class添加到文本元素中的<code>&lt;span&gt;</code>元素。如果不定义<code>background-image</code>的样式，那么将应用颜色primary。</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-background&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></code></pre></div>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="text-alignment"><a href="#text-alignment">文本对齐</a></h2>
+<p>调整文本对齐方式。</p>
+<div class="uk-overflow-auto">
+<table class="uk-table uk-table-divider">
+	<thead>
+		<tr>
+			<th align="left">Class</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left"><code>.uk-text-left</code></td>
+			<td align="left">左对齐</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-right</code></td>
+			<td align="left">右对齐</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-center</code></td>
+			<td align="left">文字水平居中</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-justify</code></td>
+			<td align="left">文字两端对齐</td>
+		</tr>
+	</tbody>
+</table></div>
+<div class="uk-position-relative uk-margin-medium">
+<ul class="uk-tab" uk-tab="swiping: false">
+	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+	<li><a aria-expanded="false" href="#">Markup</a></li>
+</ul>
+<ul class="uk-switcher uk-margin">
+	<li class="uk-active">
+	<div class="uk-child-width-1-3@s uk-grid-small uk-grid" uk-grid="">
+	<div class="uk-first-column">
+	<div class="uk-card uk-card-default uk-card-small">
+	<div class="uk-text-left uk-card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-left</code></div></div></div>
+	<div>
+	<div class="uk-card uk-card-default uk-card-small">
+	<div class="uk-text-right uk-card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-right</code></div></div></div>
+	<div>
+	<div class="uk-card uk-card-default uk-card-small">
+	<div class="uk-text-center uk-card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-center</code></div></div></div></div></li>
+	<li>
+	<pre>
+<code class="lang-html hljs xml" id="code-k4v3ea4c"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-3@s uk-grid-small&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-small&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-left uk-card-body&quot;</span>&gt;</span>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.uk-text-left<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-small&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-right uk-card-body&quot;</span>&gt;</span>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.uk-text-right<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-small&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-center uk-card-body&quot;</span>&gt;</span>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.uk-text-center<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
+</ul>
+<div class="uk-position-top-right uk-margin-small-top">
+<ul class="uk-iconnav">
+	<li><a aria-expanded="false" class="js-copy" rel="#code-k4v3ea4c" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
+	<li><a aria-expanded="false" class="js-codepen" rel="#code-k4v3ea4c" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
+</ul></div></div>
+<hr class="uk-margin-large" />
+<h3 class="uk-h4 tm-heading-fragment" id="responsive"><a href="#responsive">响应式</a></h3>
+<p>UIki提供了许多响应的对齐类。它们的使用方式与其他大多数的对齐class基本一致，不同之处在于它们的后缀表示它们从中生效的断点。</p>
+<div class="uk-overflow-auto">
+<table class="uk-table uk-table-divider">
+	<thead>
+		<tr>
+			<th align="left">Class</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left"><code>.uk-text-left@s</code><br /><code>.uk-text-center@s</code><br /><code>.uk-text-right@s</code></td>
+			<td align="left">只在<em>640px</em>及以上的宽度生效。</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-left@m</code><br /><code>.uk-text-center@m</code><br /><code>.uk-text-right@m</code></td>
+			<td align="left">只在<em>960px</em> 及以上的宽度生效。</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-left@l</code><br /><code>.uk-text-center@l</code><br /><code>.uk-text-right@l</code></td>
+			<td align="left">只在<em>1200px</em> 及以上的宽度生效。</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-left@xl</code><br /><code>.uk-text-center@xl</code><br /><code>.uk-text-right@xl</code></td>
+			<td align="left">只在<em>1600px</em>及以上的宽度生效。</td>
+		</tr>
+	</tbody>
+</table></div>
+<div class="uk-position-relative uk-margin-medium">
+<ul class="uk-tab" uk-tab="swiping: false">
+	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+	<li><a aria-expanded="false" href="#">Markup</a></li>
+</ul>
+<ul class="uk-switcher uk-margin">
+	<li class="uk-active">
+	<div class="uk-child-width-1-3@s uk-grid-small uk-grid" uk-grid="">
+	<div class="uk-first-column">
+	<div class="uk-card uk-card-default uk-card-small">
+	<div class="uk-text-center@s uk-card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-center@s</code></div></div></div>
+	<div>
+	<div class="uk-card uk-card-default uk-card-small">
+	<div class="uk-text-right@l uk-card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-right@l</code></div></div></div>
+	<div>
+	<div class="uk-card uk-card-default uk-card-small">
+	<div class="uk-text-center@m uk-card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-center@m</code></div></div></div></div></li>
+	<li>
+	<pre>
+<code class="lang-html hljs xml" id="code-k4v3ea4d"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-3@s uk-grid-small&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-small&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-center@s uk-card-body&quot;</span>&gt;</span>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.uk-text-center@s<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-small&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-right@l uk-card-body&quot;</span>&gt;</span>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.uk-text-right@l<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-small&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-center@m uk-card-body&quot;</span>&gt;</span>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.uk-text-center@m<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
+</ul>
+<div class="uk-position-top-right uk-margin-small-top">
+<ul class="uk-iconnav">
+	<li><a aria-expanded="false" class="js-copy" rel="#code-k4v3ea4d" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
+	<li><a aria-expanded="false" class="js-codepen" rel="#code-k4v3ea4d" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
+</ul></div></div>
+<hr class="uk-margin-large" />
+<h3 class="uk-h4 tm-heading-fragment" id="vertical-alignment"><a href="#vertical-alignment">垂直对齐</a></h3>
+<p>使文本与对象垂直对齐。</p>
+<div class="uk-overflow-auto">
+<table class="uk-table uk-table-divider">
+	<thead>
+		<tr>
+			<th align="left">Class</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left"><code>.uk-text-top</code></td>
+			<td align="left">顶部对齐</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-middle</code></td>
+			<td align="left">垂直居中对齐</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-bottom</code></td>
+			<td align="left">底部对齐</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-baseline</code></td>
+			<td align="left">基线对齐</td>
+		</tr>
+	</tbody>
+</table></div>
+<div class="uk-position-relative uk-margin-medium">
+<ul class="uk-tab" uk-tab="swiping: false">
+	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+	<li><a aria-expanded="false" href="#">Markup</a></li>
+</ul>
+<ul class="uk-switcher uk-margin">
+	<li class="uk-active">
+	<div class="uk-child-width-1-3@m uk-child-width-1-2@s uk-grid" uk-grid="">
+	<div class="uk-first-column"><img height="50" src="/skin/ukv3/images/avatar.jpg" width="50" /> <span class="uk-text-top">Lorem ipsum.</span></div>
+	<div><img height="50" src="/skin/ukv3/images/avatar.jpg" width="50" /> <span class="uk-text-middle">Lorem ipsum.</span></div>
+	<div><img height="50" src="/skin/ukv3/images/avatar.jpg" width="50" /> <span class="uk-text-bottom">Lorem ipsum.</span></div></div></li>
+	<li>
+	<pre>
+<code class="lang-html hljs xml" id="code-k4v3ea4e"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-3@m uk-child-width-1-2@s&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/skin/ukv3/images/avatar.jpg&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;50&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-top&quot;</span>&gt;</span>Lorem ipsum.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/skin/ukv3/images/avatar.jpg&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;50&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-middle&quot;</span>&gt;</span>Lorem ipsum.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/skin/ukv3/images/avatar.jpg&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;50&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-bottom&quot;</span>&gt;</span>Lorem ipsum.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
+</ul>
+<div class="uk-position-top-right uk-margin-small-top">
+<ul class="uk-iconnav">
+	<li><a aria-expanded="false" class="js-copy" rel="#code-k4v3ea4e" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
+	<li><a aria-expanded="false" class="js-codepen" rel="#code-k4v3ea4e" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
+</ul></div></div>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="text-wrapping"><a href="#text-wrapping">文本换行</a></h2>
+<p>关于文本换行的一些有用的class。</p>
+<div class="uk-overflow-auto">
+<table class="uk-table uk-table-divider">
+	<thead>
+		<tr>
+			<th align="left">Class</th>
+			<th align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="left"><code>.uk-text-truncate</code></td>
+			<td align="left">截断文本，防止文本多行显示</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-break</code></td>
+			<td align="left">如果文本长度将超过容器宽度时，强制换行。</td>
+		</tr>
+		<tr>
+			<td align="left"><code>.uk-text-nowrap</code></td>
+			<td align="left">防止文本被截断成多行显示。</td>
+		</tr>
+	</tbody>
+</table></div>
+<div class="uk-position-relative uk-margin-medium">
+<ul class="uk-tab" uk-tab="swiping: false">
+	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+	<li><a aria-expanded="false" href="#">Markup</a></li>
+</ul>
+<ul class="uk-switcher uk-margin">
+	<li class="uk-active">
+	<div class="uk-child-width-1-2@s uk-grid" uk-grid="">
+	<div class="uk-first-column">
+	<div class="uk-panel uk-panel-box uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+	<div>
+	<div class="uk-panel uk-panel-box uk-text-break">Loremipsumdolorsitamet,consecteturadipiscingelit,seddoeiusmodtemporincididuntutlaboreetdoloremagnaaliqua.</div></div></div></li>
+	<li>
+	<pre>
+<code class="lang-html hljs xml" id="code-k4v3ea4f"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-2@s&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-panel uk-panel-box uk-text-truncate&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-panel uk-panel-box uk-text-break&quot;</span>&gt;</span>Loremipsumdolorsitamet,consecteturadipiscingelit,seddoeiusmodtemporincididuntutlaboreetdoloremagnaaliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
+</ul>
+<div class="uk-position-top-right uk-margin-small-top">
+<ul class="uk-iconnav">
+	<li><a aria-expanded="false" class="js-copy" rel="#code-k4v3ea4f" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
+	<li><a aria-expanded="false" class="js-codepen" rel="#code-k4v3ea4f" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
+</ul></div></div></div></div> <div class="tm-sidebar-right uk-visible@l"><div uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-fixed" style="position: fixed; top: 160px; width: 200px;"><ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"><li class="uk-active"><a href="#style-modifiers">样式修饰</a></li><li class=""><a href="#font-size">文字大小</a></li><li class=""><a href="#font-weight">字体粗细</a></li><li class=""><a href="#font-style">字体样式</a></li><li class=""><a href="#text-transform">大小写转换</a></li><li class=""><a href="#text-color">文本颜色</a></li><li class=""><a href="#text-background">文字背景</a></li><li class=""><a href="#text-alignment">文本对齐</a></li><li class=""><a href="#text-wrapping">文本换行</a></li> <li class="uk-nav-divider"></li> <li><a href="../tests/text.html" target="_blank"><span uk-icon="icon: push" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Open test</span></a></li> <li><a href="https://github.com/uikit/uikit/issues" target="_blank"><span uk-icon="icon: warning" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Report issue</span></a></li> <li><a href="https://discordapp.com/invite/NEt4Pv7" target="_blank"><span uk-icon="icon: commenting" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Get help</span></a></li> <li><a href="https://github.com/uikit/uikit-site/tree/develop/docs/pages/text.md" target="_blank"><span uk-icon="icon: pencil" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Edit this page</span></a></li></ul></div><div class="uk-sticky-placeholder" style="height: 252px; margin: 0px;"></div></div></div></div> <div id="offcanvas" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas"><div class="uk-offcanvas-bar"><div class="uk-panel"><ul class="uk-nav uk-nav-default tm-nav"><li class="uk-nav-header">总目录</li> <li><a href="../index">首页</a></li> <li><a href="/showcase/">案例</a></li> <li><a href="../changelog">更新日志</a></li> <li><a href="/uikitzip/uikit-3.2.7.zip">下载</a></li></ul> <ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">入门</li> <li exact=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li><li exact=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li><li exact=""><a href="/doc/v3/getting-started/less.html">Less</a></li><li exact=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li><li exact=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li><li exact=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li><li exact=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li><li exact=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li><li exact=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li><li exact=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li></ul><ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">组件1</li> <li exact=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li><li exact=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li><li exact=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li><li exact=""><a href="/doc/v3/components/animation.html">动画（Animation）</a></li><li exact=""><a href="/doc/v3/components/article.html">文章（Article）</a></li><li exact=""><a href="/doc/v3/components/background.html">背景（Background）</a></li><li exact=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li><li exact=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li><li exact=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li><li exact=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li><li exact=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li><li exact=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li><li exact=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li><li exact=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li><li exact=""><a href="/doc/v3/components/container.html">容器（Container）</a></li><li exact=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li><li exact=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li><li exact=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li><li exact=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li><li exact=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li><li exact=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li><li exact=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li><li exact=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li><li exact=""><a href="/doc/v3/components/flex.html">Flex布局</a></li><li exact=""><a href="/doc/v3/components/form.html">表单（Form）</a></li><li exact=""><a href="/doc/v3/components/grid.html">网格（Grid）</a></li><li exact=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li><li exact=""><a href="/doc/v3/components/height.html">高度（Height）</a></li><li exact=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li><li exact=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li><li exact=""><a href="/doc/v3/components/image.html">图片（Image）</a></li><li exact=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li><li exact=""><a href="/doc/v3/components/label.html">标签（Label）</a></li><li exact=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li><li exact=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li><li exact=""><a href="/doc/v3/components/link.html">链接（Link）</a></li><li exact=""><a href="/doc/v3/components/list.html">列表（list）</a></li><li exact=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li><li exact=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li><li exact=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li><li exact=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li><li exact=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li><li exact=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li><li exact=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li><li exact=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li><li exact=""><a href="/doc/v3/components/padding.html">Padding</a></li><li exact=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li><li exact=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li><li exact=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li><li exact=""><a href="/doc/v3/components/position.html">定位（Position）</a></li><li exact=""><a href="/doc/v3/components/print.html">打印（Print）</a></li><li exact=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li><li exact=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li><li exact=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li><li exact=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li><li exact=""><a href="/doc/v3/components/section.html">区段（Section）</a></li><li exact=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li><li exact=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li><li exact=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li><li exact=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li><li exact=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li><li exact=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li><li exact=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li><li exact=""><a href="/doc/v3/components/svg.html">SVG</a></li><li exact=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li><li exact=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li><li exact=""><a href="/doc/v3/components/table.html">表格（Table）</a></li><li exact=""><a href="/doc/v3/components/text.html">文本（Text）</a></li><li exact=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li><li exact=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li><li exact=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li><li exact=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li><li exact=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li><li exact=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li><li exact=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li><li exact=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li><li exact=""><a href="/doc/v3/components/video.html">视频（Video）</a></li><li exact=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li><li exact=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li></ul></div></div></div></div>
+	    
+	
+	
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?812601e3e7446047a37d28240bb3c3c8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>	
+
+</body>
+
+</html>

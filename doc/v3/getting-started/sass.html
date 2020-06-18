@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<title>Sass - UIkit3中文文档</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/skin/ukv3/css/uikit.min.css" /> -->
+		<link rel="stylesheet" type="text/css" href="/skin/ukv3/css/theme.css?3.4.6"/>
+		<script src="/skin/ukv3/js/clipboard.min.js" defer=""></script>
+		<script src="/skin/ukv3/js/uikit.min.js"></script>
+		<script src="/skin/ukv3/js/uikit-icons.min.js"></script>
+		<script src="/skin/ukv3/js/highlight.min.js"></script>
+	</head>
+
+	<body>
+	        <div><div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed"><div class="uk-container uk-container-expand"><nav class="uk-navbar"><div class="uk-navbar-left"><a href="../" class="uk-navbar-item uk-logo"><img uk-svg="" src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"> UIkit
+                    </a></div> <div class="uk-navbar-right"><ul class="uk-navbar-nav uk-visible@m"><li class="uk-active"><a href="http://www.getuikit.net/doc/v3/getting-started/introduction.html">UIkit3文档</a></li> <li><a href="http://www.getuikit.net/docs/documentation_get-started.html">UIkit2文档</a></li> <li><a href="/showcase/">案例展示</a></li> <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li></ul> <div class="uk-navbar-item uk-visible@m"><a title="版本3.4.6" href="/uikitzip/uikit-3.4.6.zip" class="uk-button uk-button-default tm-button-default uk-icon">下载 <canvas uk-icon="icon: download" width="20" height="20" class="uk-icon" hidden="true"></canvas></a></div> <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></a></div></nav></div></div><div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div> <div class="tm-sidebar-left uk-visible@m"><h3>UIkit3.x文档</h3> <ul class="uk-nav uk-nav-default tm-nav"><li class="uk-nav-header">入门</li> <li class=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li><li class=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li><li class=""><a href="/doc/v3/getting-started/less.html">Less</a></li><li class="router-link-exact-active uk-active"><a href="/doc/v3/getting-started/sass.html">Sass</a></li><li class=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li><li class=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li><li class=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li><li class=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li><li class=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li><li class=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li></ul><ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">组件</li> <li class=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li><li class=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li><li class=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li><li class=""><a href="/doc/v3/components/animation.html">动画（Animation）</a></li><li class=""><a href="/doc/v3/components/article.html">文章（Article）</a></li><li class=""><a href="/doc/v3/components/background.html">背景（Background）</a></li><li class=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li><li class=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li><li class=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li><li class=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li><li class=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li><li class=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li><li class=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li><li class=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li><li class=""><a href="/doc/v3/components/container.html">容器（Container）</a></li><li class=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li><li class=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li><li class=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li><li class=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li><li class=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li><li class=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li><li class=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li><li class=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li><li class=""><a href="/doc/v3/components/flex.html">Flex布局</a></li><li class=""><a href="/doc/v3/components/form.html">表单（Form）</a></li><li class=""><a href="/doc/v3/components/grid.html">网格（Grid）</a></li><li class=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li><li class=""><a href="/doc/v3/components/height.html">高度（Height）</a></li><li class=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li><li class=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li><li class=""><a href="/doc/v3/components/image.html">图片（Image）</a></li><li class=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li><li class=""><a href="/doc/v3/components/label.html">标签（Label）</a></li><li class=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li><li class=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li><li class=""><a href="/doc/v3/components/link.html">链接（Link）</a></li><li class=""><a href="/doc/v3/components/list.html">列表（list）</a></li><li class=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li><li class=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li><li class=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li><li class=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li><li class=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li><li class=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li><li class=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li><li class=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li><li class=""><a href="/doc/v3/components/padding.html">Padding</a></li><li class=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li><li class=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li><li class=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li><li class=""><a href="/doc/v3/components/position.html">定位（Position）</a></li><li class=""><a href="/doc/v3/components/print.html">打印（Print）</a></li><li class=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li><li class=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li><li class=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li><li class=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li><li class=""><a href="/doc/v3/components/section.html">区段（Section）</a></li><li class=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li><li class=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li><li class=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li><li class=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li><li class=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li><li class=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li><li class=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li><li class=""><a href="/doc/v3/components/svg.html">SVG</a></li><li class=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li><li class=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li><li class=""><a href="/doc/v3/components/table.html">表格（Table）</a></li><li class=""><a href="/doc/v3/components/text.html">文本（Text）</a></li><li class=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li><li class=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li><li class=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li><li class=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li><li class=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li><li class=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li><li class=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li><li class=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li><li class=""><a href="/doc/v3/components/video.html">视频（Video）</a></li><li class=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li><li class=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li></ul></div> <div class="tm-main uk-section uk-section-default"><div class="uk-container uk-container-small uk-position-relative"><div>
+<div>
+<h1 class="uk-h1 tm-heading-fragment" id="sass"><a href="#sass">Sass</a></h1>
+<p class="uk-text-lead">了解如何使用Sass修改UIkit样式并创建自己的主题。</p>
+<p>当您 <a href="installation.html">安装Uikit</a> 的源代码后，可以在 <em>/src/scss</em> 文件夹中找到UIkit Sass版本。Sass版本允许您在构建过程中包含自定义项，而不是手动覆盖大量CSS规则。</p>
+<p><span class="uk-label">Note</span> Sass允许使用两种不同的语法版本：Sass和SCSS。UIkit使用的是SCSS语法。</p>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="how-to-build"><a href="#how-to-build">如何构建</a></h2>
+<p>要将UIkit包含在项目的构建工作流中，您需要按照正确的顺序将三个SCSS文件从UIkit导入到您自己的SCSS代码中。然后，编译您的文件，例如运行 <code>sass site.scss &gt; site.css</code> 或任何其他 <a target="_blank" href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass">Sass编译器</a>. 请注意保持如以下示例代码那样的正确顺序。</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-scss hljs"><span class="hljs-comment">// 1.  Your custom variables and variable overwrites.</span>
+<span class="hljs-variable">$global-link-color</span>: <span class="hljs-number">#DA7D02</span>;
+
+<span class="hljs-comment">// 2. 导入默认变量和可用混合函数。</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;uikit/src/scss/variables-theme.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;uikit/src/scss/mixins-theme.scss&quot;</span>;
+
+<span class="hljs-comment">// 3. 您的自定义mixin覆盖。</span>
+@<span class="hljs-keyword">mixin</span> hook-card() { <span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>; }
+
+<span class="hljs-comment">// 4. 导入UIkit.</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;uikit/src/scss/uikit-theme.scss&quot;</span>;</code></pre></div>
+<p><span class="uk-label">Note</span> 该示例使用包含的默认主题的样式。或者，您可以导入 <code>variables.scss</code>, <code>mixins.scss</code> 和 <code>uikit.scss</code> 这样的话就只包括核心样式了。</p>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="create-a-uikit-theme"><a href="#create-a-uikit-theme">创建一个UIkit主题</a></h2>
+<p>设置好文件以放入您自己的SCSS代码后，就可以按照您想要的方式设置UIkit主题了。如果您以前从未使用过SCSS，请查看 <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#features">语法特点</a>. 在使用UIkit的SCSS源代码时，我们有一些建议。</p>
+<h3 class="uk-h4 tm-heading-fragment" id="use-variables"><a href="#use-variables">使用变量</a></h3>
+<p>只需简单的覆盖已经声明的变量的值，就可以进行很多自定义。您可以在框架的SCSS文件或<code>variables.scss</code> 文件中找到每个组件的所有变量，并在主题中覆盖它们。</p>
+<p>首先，在UIkit源中找到要更改的SCSS变量。例如，全局链接颜色在 <code>/src/scss/components/variables.scss</code>中定义为:</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-scss hljs"><span class="hljs-comment">// 默认值</span>
+<span class="hljs-variable">$global-link-color</span>: <span class="hljs-number">#4091D2</span>;</code></pre></div>
+<p>然后，像上面说的那样在您自己的文件中设置自定义值来覆盖默认值，例如 <code>site.scss</code>:</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-scss hljs"><span class="hljs-comment">// 新的值</span>
+<span class="hljs-variable">$global-link-color</span>: <span class="hljs-number">#DA7D02</span>;</code></pre></div>
+<p>这样，编译后CSS将变成您的自定义值。但不仅只有全局链接颜色发生了变化，同时还有许多组件都根据 <code>@global-*</code> 变量来推断它们自己的颜色，所以这样的话您只需要略微调整，更改一些全局变量就可以快速创建属于您的主题。</p>
+<h3 class="uk-h4 tm-heading-fragment" id="use-hooks"><a href="#use-hooks">使用钩子</a></h3>
+<p>为了避免开销大的选择器，我们使用 <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#mixins">Sass</a>的Mixins, 它从UIkit源挂钩到预定义的选择器中并注入其他属性。选择器不必在所有文档中都重复，并且可以更轻松地进行全局更改。</p>
+<p>首先，通过浏览组件的SCSS文件找到想要扩展的规则，例如 <code>/src/scss/components/card.scss</code> 的Card（卡片）组件：</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-scss hljs"><span class="hljs-comment">// SCSS 规则</span>
+<span class="hljs-selector-class">.uk-card</span> {
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">box-sizing</span>: border-box;
+
+    <span class="hljs-comment">// 允许添加新声明</span>
+    @<span class="hljs-keyword">include</span> hook-card();
+}</code></pre></div>
+<p>然后，使用您自己的SCSS文件中的钩子注入其他CSS，如上所述，添加到 <code>site.scss</code> :</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-scss hljs"><span class="hljs-comment">// mixin 添加新的声明</span>
+@<span class="hljs-keyword">mixin</span> hook-card() { <span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>; }</code></pre></div>
+<h3 class="uk-h4 tm-heading-fragment" id="inverse-hooks"><a href="#inverse-hooks">反向挂钩</a></h3>
+<p>反向挂钩允许您自定义与 <code>.uk-light</code> 或 <code>.uk-dark</code> 修饰符结合使用时组件的样式 (请查看 <a href="inverse">反向组件</a> 获取详细信息）。与Less版本相比，Sass版本中的这些钩子处理方式略有不同。在Sass版本中，每个组件都有其自己的反向挂钩。浏览文件时，您可以看到所有可用的文件 <code>src/scss/mixins.scss</code>.</p>
+<p>例如，您可以在默认按钮用作反向版本时使其带有自定义背景。</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-scss hljs">@<span class="hljs-keyword">mixin</span> hook-inverse-button-default(){
+    <span class="hljs-attribute">background</span>: lime;
+}</code></pre></div>
+<h3 class="uk-h4 tm-heading-fragment" id="miscellaneous-hooks"><a href="#miscellaneous-hooks">混合钩子</a></h3>
+<p>如果既没有变量也没有钩子，则还可以创建自己的选择器。例如，使用Card组件的 <em>hook-card-misc()</em> mixin并在其中写入选择器。这会将新选择器排序到已编译CSS文件的正确位置。只需将 <code>site.scss</code> 中的以下行添加到您自己的SCSS文件，如上所述即可：</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-scss hljs"><span class="hljs-comment">// misc mixin</span>
+@<span class="hljs-keyword">mixin</span> hook-card-misc() {
+
+    <span class="hljs-comment">// new rule</span>
+    <span class="hljs-selector-class">.uk-card</span> <span class="hljs-selector-tag">a</span> { <span class="hljs-attribute">color</span>: <span class="hljs-number">#f00</span>; }
+}</code></pre></div>
+<h3 class="uk-h4 tm-heading-fragment" id="disable-inverse-component"><a href="#disable-inverse-component">禁用反向组件</a></h3>
+<p>逆组件包括实现灵活逆行为的其他样式。如果您的项目没有使用这些样式，则可以在编译Sass时将其忽略。这样可以使已编译CSS的文件更小。请搜索包含 <code>color-mode</code> (例如 <code>$inverse-global-color-mode</code>)的Sass变量，并将其修改为 <code>none</code>。</p>
+<p>要完全禁用反样式，请修改为：</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-scss hljs"><span class="hljs-variable">$inverse-global-color-mode</span>: none;</code></pre></div>
+<p>您还可以为特定组件禁用反向模式：</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-scss hljs"><span class="hljs-comment">// Card</span>
+<span class="hljs-variable">$card-primary-color-mode</span>: none;
+<span class="hljs-variable">$card-secondary-color-mode</span>: none;
+
+<span class="hljs-comment">// Navbar</span>
+<span class="hljs-variable">$navbar-color-mode</span>: none;
+
+<span class="hljs-comment">// Off-canvas</span>
+<span class="hljs-variable">$offcanvas-bar-color-mode</span>: none;
+
+<span class="hljs-comment">// Overlay</span>
+<span class="hljs-variable">$overlay-primary-color-mode</span>: none;
+
+<span class="hljs-comment">// Section</span>
+<span class="hljs-variable">$section-primary-color-mode</span>: none;
+<span class="hljs-variable">$section-secondary-color-mode</span>: none;
+
+<span class="hljs-comment">// Tile</span>
+<span class="hljs-variable">$tile-primary-color-mode</span>: none;
+<span class="hljs-variable">$tile-secondary-color-mode</span>: none;</code></pre></div>
+<hr class="uk-margin-large" />
+<h2 class="uk-h3 tm-heading-fragment" id="how-to-structure-your-theme"><a href="#how-to-structure-your-theme">如何组织主题</a></h2>
+<p>在上面的示例中，我们将所有自定义规则直接添加到 <code>site.scss</code>中。当您只想修改少量变量但对其他的大部分变量感到满意时，这样做是没问题的。但是，如果需要较大规模的自定义，我们建议仅将此文件用作Sass编译器的入口点。您最好将所有规则归类到子文件夹中每个组件的单个文件中。这与默认主题 <code>/src/scss/theme</code>中的结构相同。</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-html hljs xml"><span class="hljs-comment">&lt;!-- uikit sources, might be in a subfolder when using npm --&gt;</span>
+uikit/src/scss/
+
+    components/
+        _import.scss
+        accordion.scss
+        alert.scss
+        ...
+
+    theme/
+        _import.scss
+        accordion.scss
+        alert.scss
+        ...
+
+    <span class="hljs-comment">&lt;!-- other uikit files, some of which we will import below --&gt;</span>
+    ...
+
+<span class="hljs-comment">&lt;!-- in here, we now put all your customizations, divided by component --&gt;</span>
+theme/
+
+    <span class="hljs-comment">&lt;!-- create 2 files for each component you customize --&gt;</span>
+    accordion.scss <span class="hljs-comment">&lt;!-- overwrite variables in here --&gt;</span>
+    accordion-mixins.scss <span class="hljs-comment">&lt;!-- use hooks in here --&gt;</span>
+
+    alert.scss
+    alert-mixins.scss
+
+    align.scss
+    align-mixins.scss
+
+    <span class="hljs-comment">&lt;!-- etc for all components you customize --&gt;</span>
+    ...
+
+<span class="hljs-comment">&lt;!-- this is your entry point to compile scss --&gt;</span>
+site.scss
+</code></pre></div>
+<p>Sass编译器的入口点是 <code>site.scss</code>。在这里，您可以按照以下顺序编译所有源文件：</p>
+<div class="uk-margin-medium">
+<pre>
+<code class="lang-scss hljs"><span class="hljs-comment">// site.scss</span>
+
+<span class="hljs-comment">// 1. 自定义变量和变量将被覆盖。</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;theme/accordion.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;theme/alert.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;theme/align.scss&quot;</span>;
+<span class="hljs-comment">// ... import all</span>
+
+<span class="hljs-comment">// 2. 导入默认变量和可用混合函数。</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;uikit/src/scss/variables.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;uikit/src/scss/mixins.scss&quot;</span>;
+
+<span class="hljs-comment">// 3. 您的自定义mixin覆盖。</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;theme/accordion-mixins.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;theme/alert-mixins.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;theme/align-mixins.scss&quot;</span>;
+<span class="hljs-comment">// ... import all</span>
+
+<span class="hljs-comment">// 4. 导入 UIkit</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;uikit/src/scss/uikit.scss&quot;</span>;</code></pre></div>
+<p>现在您可以编译 <code>site.scss</code> 生成的CSS将包括所有自定义项。</p>
+<p><span class="uk-label">Note</span> 您可以通过替换第&ldquo;4&rdquo;部分来进一步扩展此设置。使用来自UIkit源的单个import语句。 然后，您可以省略一些不用于生成较小CSS的组件。 只需复制 <a target="_blank" href="https://github.com/uikit/uikit/blob/develop/src/scss/components/_import.scss">src/scss/components/_import.scss</a>，并确保保留正确的导入顺序即可。</p></div></div> <div class="tm-sidebar-right uk-visible@l"><div uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-fixed" style="position: fixed; top: 160px; width: 200px;"><ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"><li class="uk-active"><a href="#how-to-build">如何构建</a></li><li><a href="#create-a-uikit-theme">创建一个UIkit主题</a></li><li><a href="#how-to-structure-your-theme">如何构建你的主题</a></li> <li class="uk-nav-divider"></li> <!----> <li><a href="https://github.com/uikit/uikit/issues" target="_blank"><span uk-icon="icon: warning" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Report issue</span></a></li> <li><a href="https://discordapp.com/invite/NEt4Pv7" target="_blank"><span uk-icon="icon: commenting" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Get help</span></a></li> <li><a href="https://github.com/uikit/uikit-site/tree/develop/docs/pages/sass.md" target="_blank"><span uk-icon="icon: pencil" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Edit this page</span></a></li></ul></div><div class="uk-sticky-placeholder" style="height: 252px; margin: 0px;"></div></div></div></div> <div id="offcanvas" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas"><div class="uk-offcanvas-bar"><div class="uk-panel"><ul class="uk-nav uk-nav-default tm-nav"><li class="uk-nav-header">总目录</li> <li><a href="../index">首页</a></li> <li><a href="/showcase/">案例</a></li> <li><a href="../changelog">更新日志</a></li> <li><a href="/uikitzip/uikit-3.2.7.zip">下载</a></li></ul> <ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">入门</li> <li exact=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li><li exact=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li><li exact=""><a href="/doc/v3/getting-started/less.html">Less</a></li><li exact=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li><li exact=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li><li exact=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li><li exact=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li><li exact=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li><li exact=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li><li exact=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li></ul><ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">组件1</li> <li exact=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li><li exact=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li><li exact=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li><li exact=""><a href="/doc/v3/components/animation.html">动画（Animation）</a></li><li exact=""><a href="/doc/v3/components/article.html">文章（Article）</a></li><li exact=""><a href="/doc/v3/components/background.html">背景（Background）</a></li><li exact=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li><li exact=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li><li exact=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li><li exact=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li><li exact=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li><li exact=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li><li exact=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li><li exact=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li><li exact=""><a href="/doc/v3/components/container.html">容器（Container）</a></li><li exact=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li><li exact=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li><li exact=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li><li exact=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li><li exact=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li><li exact=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li><li exact=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li><li exact=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li><li exact=""><a href="/doc/v3/components/flex.html">Flex布局</a></li><li exact=""><a href="/doc/v3/components/form.html">表单（Form）</a></li><li exact=""><a href="/doc/v3/components/grid.html">网格（Grid）</a></li><li exact=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li><li exact=""><a href="/doc/v3/components/height.html">高度（Height）</a></li><li exact=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li><li exact=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li><li exact=""><a href="/doc/v3/components/image.html">图片（Image）</a></li><li exact=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li><li exact=""><a href="/doc/v3/components/label.html">标签（Label）</a></li><li exact=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li><li exact=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li><li exact=""><a href="/doc/v3/components/link.html">链接（Link）</a></li><li exact=""><a href="/doc/v3/components/list.html">列表（list）</a></li><li exact=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li><li exact=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li><li exact=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li><li exact=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li><li exact=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li><li exact=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li><li exact=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li><li exact=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li><li exact=""><a href="/doc/v3/components/padding.html">Padding</a></li><li exact=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li><li exact=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li><li exact=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li><li exact=""><a href="/doc/v3/components/position.html">定位（Position）</a></li><li exact=""><a href="/doc/v3/components/print.html">打印（Print）</a></li><li exact=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li><li exact=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li><li exact=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li><li exact=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li><li exact=""><a href="/doc/v3/components/section.html">区段（Section）</a></li><li exact=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li><li exact=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li><li exact=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li><li exact=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li><li exact=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li><li exact=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li><li exact=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li><li exact=""><a href="/doc/v3/components/svg.html">SVG</a></li><li exact=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li><li exact=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li><li exact=""><a href="/doc/v3/components/table.html">表格（Table）</a></li><li exact=""><a href="/doc/v3/components/text.html">文本（Text）</a></li><li exact=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li><li exact=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li><li exact=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li><li exact=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li><li exact=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li><li exact=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li><li exact=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li><li exact=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li><li exact=""><a href="/doc/v3/components/video.html">视频（Video）</a></li><li exact=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li><li exact=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li></ul></div></div></div></div>
+	    
+	
+	
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?812601e3e7446047a37d28240bb3c3c8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>	
+
+</body>
+
+</html>

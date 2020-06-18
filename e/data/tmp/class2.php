@@ -1,0 +1,101 @@
+<?php
+if(!defined('InEmpireCMS'))
+{
+	exit();
+}
+?><!DOCTYPE html>
+<html>
+	<head>
+		<title>布局示例</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://www.getuikit.net/skin/ukv3/css/theme.css?3.5.3" />
+		<script src="http://cdn.getuikit.net/uikit3.5.3/js/uikit.min.js"></script>
+		<script src="http://cdn.getuikit.net/uikit3.5.3/js/uikit-icons.min.js"></script>
+		<style type="text/css">
+			.thumbnail{border: 1px solid #dee2e6;}
+		</style>
+	</head>
+	<body>
+		<div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed">
+			<div class="uk-container uk-container-expand">
+				<nav class="uk-navbar">
+					<div class="uk-navbar-left"><a href="../" class="uk-navbar-item uk-logo"><img uk-svg="" src="../images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"> UIkit
+						</a></div>
+					<div class="uk-navbar-right">
+						<ul class="uk-navbar-nav uk-visible@m">
+							<li class="uk-active"><a href="http://www.getuikit.net/doc/v3/getting-started/introduction.html">文档</a></li>
+							<li><a href="/showcase/">案例展示</a></li>
+							<li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li>
+						</ul>
+						<div class="uk-navbar-item uk-visible@m"><a title="版本3.5.3" href="/uikitzip/uikit-3.5.3.zip" class="uk-button uk-button-default tm-button-default uk-icon">下载
+								<canvas uk-icon="icon: download" width="20" height="20" class="uk-icon" hidden="true"></canvas></a></div> <a
+						 uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"></a>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="uk-section uk-section-muted">
+			<div class="uk-container">
+				<h1>布局示例</h1>
+				<p class="uk-text-large">以下是由UIkit中文网基于UIkit3.x制作的不同的布局示例，可以帮助你快速开始使用UIkit。</p>
+				<p><a href="http://www.getuikit.net/doc/v3/getting-started/introduction.html" class="uk-button uk-button-primary">查看文档</a></p>
+			</div>
+		</div>
+		<div class="uk-section">
+			<div class="uk-container">
+				<div class="uk-child-width-1-2 uk-child-width-1-4@s" uk-grid>
+				    <div>
+						<a target="_blank" href="http://www.getuikit.net/doc/v3/examples/example1.html">
+							<img class="thumbnail uk-border-rounded" src="http://www.getuikit.net/doc/v3/examples/images/example1.jpg" uk-img>
+							<h3 class="uk-margin">专辑</h3>
+							</a>
+						<p>简单的一页模板，用于照片画廊，作品集等。</p>
+					</div>
+				    <div>
+				    	<a target="_blank" href="http://www.getuikit.net/doc/v3/examples/example2.html">
+				    		<img class="thumbnail uk-border-rounded" src="http://www.getuikit.net/doc/v3/examples/images/example2.jpg" uk-img>
+				    		<h3 class="uk-margin">价格表</h3>
+				    		</a>
+				    	<p>使用卡片组件构建的具有页眉和页脚的定价页面示例。</p>
+				    </div>
+					<div>
+						<a target="_blank" href="http://www.getuikit.net/doc/v3/examples/example3.html">
+							<img class="thumbnail uk-border-rounded" src="http://www.getuikit.net/doc/v3/examples/images/example3.jpg" uk-img>
+							<h3 class="uk-margin">结账表单</h3>
+							</a>
+						<p>结帐表单，展示了表单组件的不同样式。</p>
+					</div>
+					<div>
+						<a target="_blank" href="http://www.getuikit.net/doc/v3/examples/example4.html">
+							<img class="thumbnail uk-border-rounded" src="http://www.getuikit.net/doc/v3/examples/images/example4.jpg" uk-img>
+							<h3 class="uk-margin">轮播</h3>
+							</a>
+						<p>带有响应式全屏轮播的模板，通常用于企业官网。</p>
+					</div>
+					<div>
+						<a target="_blank" href="http://www.getuikit.net/doc/v3/examples/example5.html">
+							<img class="thumbnail uk-border-rounded" src="http://www.getuikit.net/doc/v3/examples/images/example5.jpg" uk-img>
+							<h3 class="uk-margin">博客</h3>
+							</a>
+						<p>带有导航栏、文章列表、幻灯片和推荐内容区的博客模板。</p>
+					</div>
+					<div>
+						<a target="_blank" href="http://www.getuikit.net/doc/v3/examples/example6.html">
+							<img class="thumbnail uk-border-rounded" src="http://www.getuikit.net/doc/v3/examples/images/example6.jpg" uk-img>
+							<h3 class="uk-margin">登录</h3>
+							</a>
+						<p>一个简洁的后台登录页面。</p>
+					</div>
+					<div>
+						<a target="_blank" href="http://www.getuikit.net/doc/v3/examples/example7.html">
+							<img class="thumbnail uk-border-rounded" src="http://www.getuikit.net/doc/v3/examples/images/example7.jpg" uk-img>
+							<h3 class="uk-margin">网站管理后台</h3>
+							</a>
+						<p>一个非常简单的管理后台，本例中图表使用了百度ECharts</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
