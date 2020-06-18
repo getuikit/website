@@ -10,7 +10,7 @@
                 </ul>
 
                 <div class="uk-panel">
-                    <p>由<a href="http://www.getuikit.net/">UIkit中文网</a>翻译</p>
+                    <p>由<a href="/">UIkit中文网</a>翻译</p>
                     <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
                 </div>
 
@@ -60,7 +60,7 @@
                         </ul>
                     </li>
                     
-                    <li><a href="showcase/index.html">案例展示</a></li>
+                    <li><a href="/showcase/index.html">案例展示</a></li>
                     <li><a href="http://www.getuikit.net" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
                 </ul>
 

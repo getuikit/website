@@ -12,7 +12,7 @@ if(!defined('InEmpireCMS'))
 		<meta name="keywords" content="UIkit,轻量级,前端框架,响应式布局,基于LESS,CSS framework,js框架,getuikit,uikit开发,uikit代码,uikit入门">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://www.getuikit.net/skin/ukv3/css/theme.css?3.5.3" />
+		<link rel="stylesheet" href="/skin/ukv3/css/theme.css?3.5.3" />
 		<script src="http://cdn.getuikit.net/uikit3.5.3/js/uikit.min.js"></script>
 		<script src="http://cdn.getuikit.net/uikit3.5.3/js/uikit-icons.min.js"></script>
 		<style>
@@ -28,11 +28,11 @@ if(!defined('InEmpireCMS'))
 				<div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-navbar-transparent uk-sticky uk-sticky-fixed">
 					<div class="uk-container uk-container-expand">
 						<nav class="uk-navbar">
-							<div class="uk-navbar-left"><a href="/" class="uk-navbar-item uk-logo"><img uk-svg="" src="http://www.getuikit.net/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"> UIkit</a></div>
+							<div class="uk-navbar-left"><a href="/" class="uk-navbar-item uk-logo"><img uk-svg="" src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"> UIkit</a></div>
 							<div class="uk-navbar-right">
 								<ul class="uk-navbar-nav uk-visible@m">
-									<li class="uk-active"><a href="http://www.getuikit.net/doc/v3/getting-started/introduction.html">UIkit3文档</a></li>
-									<li><a href="http://www.getuikit.net/docs/documentation_get-started.html">UIkit2文档</a></li>
+									<li class="uk-active"><a href="/doc/v3/getting-started/introduction.html">UIkit3文档</a></li>
+									<li><a href="/docs/documentation_get-started.html">UIkit2文档</a></li>
 									<li><a href="/showcase/">案例展示</a></li>
 									<li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li>
 								</ul>
@@ -129,7 +129,7 @@ $bqno++;
 							<a rel="external nofollow" target="_blank" class="uk-link-reset" href="http://www.pagekit.com/">
 								<div class="uk-card uk-card-default uk-card-hover">
 									<div class="uk-card-media-top">
-										<img width="100%" src="http://www.getuikit.net/skin/ukv3/images/pagekit-logo.png" alt="">
+										<img width="100%" src="/skin/ukv3/images/pagekit-logo.png" alt="">
 									</div>
 									<div class="uk-card-body">
 										<h3 class="uk-card-title  uk-text-center">Pagekit</h3>
@@ -142,7 +142,7 @@ $bqno++;
 							<a rel="external nofollow" class="uk-link-reset" target="_blank" href="https://vuikit.js.org/">
 								<div class="uk-card uk-card-default uk-card-hover">
 									<div class="uk-card-media-top">
-										<img width="100%" src="http://www.getuikit.net/skin/ukv3/images/vuikit.jpg" alt="">
+										<img width="100%" src="/skin/ukv3/images/vuikit.jpg" alt="">
 									</div>
 									<div class="uk-card-body">
 										<h3 class="uk-card-title  uk-text-center">Vuikit</h3>
@@ -167,7 +167,7 @@ $bqno++;
 							<ul uk-margin="" class="uk-subnav uk-flex-center">
 								<li><a href="/doc/v3/getting-started/introduction.html">UIkit3文档</a></li>
 								<li><a rel="external nofollow" target="_blank" href="http://beian.miit.gov.cn/">蜀ICP备08107246号</a></li>
-								<li><a target="_blank" href="http://www.getuikit.net/uikitzip/uikit-3.5.3.zip">下载</a></li>
+								<li><a target="_blank" href="/uikitzip/uikit-3.5.3.zip">下载</a></li>
 								<li><a target="_blank" href="http://www.vpsno.com/">VPS排行</a></li>
 								<li><a target="_blank" href="http://www.banwagon.net/">搬瓦工</a></li>
 							</ul>
