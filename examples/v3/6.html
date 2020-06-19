@@ -1,234 +1,250 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>示例模板</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://cdn.getuikit.net/uikit3.3.2/css/uikit.min.css" />
-		<script src="http://cdn.getuikit.net/uikit3.3.2/js/uikit.min.js"></script>
-		<script src="http://cdn.getuikit.net/uikit3.3.2/js/uikit-icons.min.js"></script>
-		<style type="text/css">
-			.tm-image-card {transition: all .3s cubic-bezier(.2, .5, .3, 1);}
-			.tm-image-card:hover {transform: translateY(-5px);}
-			.uk-navbar-sticky {box-shadow: 0 0 10px rgba(0, 0, 0, 0.09) !important;}
-		</style>
-	</head>
-	<body>
-		<!-- MOBI Nav -->
-		<div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent;">
-			<nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
-				<div class="uk-navbar-left">
-					<a class="uk-navbar-item uk-logo" href="#">LOGO</a>
-				</div>
-			    <div class="uk-navbar-right">
-			        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#m-nav" uk-toggle></a>
-			    </div>
-			</nav>
-		</div>
-		
-		<!-- PC Nav -->
-		<div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent;">
-			<nav class="uk-navbar-container uk-visible@m" uk-navbar>
-				<div class="uk-navbar-left">
-					<a class="uk-navbar-item uk-logo" href="#">LOGO</a>
-					<ul class="uk-navbar-nav">
-						<li class="uk-active"><a href="#">首页</a></li>
-						<li>
-							<a href="javascript:;">文档</a>
-							<div class="uk-navbar-dropdown">
-								<ul class="uk-nav uk-navbar-dropdown-nav">
-									<li class="uk-active"><a href="/doc/v3/getting-started/introduction.html">入门</a></li>
-									<li><a href="#">组件</a></li>
-									<li><a href="#">示例</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="/showcase/">案例</a></li>
-						<li><a href="/showcase/">更新日志</a></li>
-					</ul>
-				</div>
 
-				<div class="uk-navbar-right">
-					<div>
-						<a class="uk-navbar-toggle" href="#" uk-search-icon></a>
-						<div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
-							<div class="uk-grid-small uk-flex-middle" uk-grid>
-								<div class="uk-width-expand">
-									<form class="uk-search uk-search-navbar uk-width-1-1">
-										<input class="uk-search-input" type="search" placeholder="Search..." autofocus>
-									</form>
-								</div>
-								<div class="uk-width-auto">
-									<a class="uk-navbar-dropdown-close" href="#" uk-close></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="uk-navbar-item uk-visible@l">
-						<button class="uk-button uk-button-text">登录</button>
-						<a class="uk-button uk-button-primary uk-margin-small-left uk-border-pill" href="">注册</a>
-					</div>
-				</div>
-			</nav>
-		</div>
-		<div class="uk-section">
-			<div class="uk-container uk-container-small">
-				<h3 class="uk-heading-small uk-text-center">
-					<font style="vertical-align: inherit;">
-						<font style="vertical-align: inherit;">常规页面布局示例</font>
-					</font>
-				</h3>
-				<p class="uk-text-lead uk-text-center">本示例由UIkit中文网制作<br class="uk-visible@m">这个部分提供了带有宽度修饰的容器以及按钮的使用示例。</p>
-				<p class="uk-text-center">
-					<a href="" class="uk-button uk-button-primary">强调按钮</a>
-					<a class="uk-button uk-button-default">默认按钮</a>
-				</p>
-			</div>
-		</div>
-		<div class="uk-section uk-section-muted">
-			<div class="uk-container">
-				<h3 class="uk-heading-small uk-text-center">卡片列表</h3>
-				<p class="uk-text-lead uk-text-center uk-margin-large-bottom">本示例由UIkit中文网制作</p>
-				<div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
-					<div>
-						<div class="uk-card uk-card-default tm-image-card">
-							<div class="uk-card-media-top">
-								<img src="/doc/v3/tests/images/photo.jpg" alt="">
-							</div>
-							<div class="uk-card-body">
-								<h3 class="uk-card-title">卡片组件</h3>
-								<p>这个部分是<a href="/doc/v3/components/card.html">卡片</a>组件结合<a href="/doc/v3/components/grid.html">网格</a>使用的示例。</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card uk-card-default tm-image-card">
-							<div class="uk-card-media-top">
-								<img src="/doc/v3/tests/images/light.jpg" alt="">
-							</div>
-							<div class="uk-card-body">
-								<div class="uk-card-badge uk-label uk-label-danger">HOT</div>
-								<h3 class="uk-card-title">卡片组件</h3>
-								<p>这个卡片额外使用了<a href="/doc/v3/components/badge.html">徽章</a>和<a href="/doc/v3/components/label.html">标签</a>。您可以设置徽章的样式。</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card uk-card-default tm-image-card">
-							<div class="uk-card-media-top">
-								<img src="/doc/v3/tests/images/dark.jpg" alt="">
-							</div>
-							<div class="uk-card-body">
-								<h3 class="uk-card-title">卡片组件</h3>
-								<p>这个部分是卡片组件结合网格使用的示例。</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card uk-card-default tm-image-card">
-							<div class="uk-card-media-top">
-								<img src="/skin/ukv3/images/photo2.jpg" alt="">
-							</div>
-							<div class="uk-card-body">
-								<h3 class="uk-card-title">卡片组件</h3>
-								<p>这个部分是卡片组件结合网格使用的示例。</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card uk-card-default tm-image-card">
-							<div class="uk-card-media-top">
-								<img src="/doc/v3/tests/images/dark.jpg" alt="">
-							</div>
-							<div class="uk-card-body">
-								<h3 class="uk-card-title">卡片组件</h3>
-								<p>这个部分是卡片组件结合网格使用的示例。</p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card uk-card-default tm-image-card">
-							<div class="uk-card-media-top">
-								<img src="/doc/v3/tests/images/dark.jpg" alt="">
-							</div>
-							<div class="uk-card-body">
-								<h3 class="uk-card-title">卡片组件</h3>
-								<p>这个部分是卡片组件结合网格使用的示例。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="uk-section uk-section-primary uk-padding-remove-bottom">
-			<div class="uk-container uk-text-center">
-				<h2 class="uk-h1">UIkit中文网</h2>
-				<p class="uk-text-large tm-text-large uk-margin-medium-bottom">一个轻量级的模块化前端框架，用于快速开发强大的Web界面。</p>
-				<div uk-grid="" class="uk-grid-medium uk-flex-middle uk-flex-center uk-grid">
-					<div class="uk-first-column"><a uk-tooltip="Version 3.3.2" href="/uikitzip/uikit-3.3.2.zip"
-						 class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s">立即下载</a></div>
-					<div><a href="/doc/v3/getting-started/introduction.html" class="uk-button uk-button-text">入门指南</a></div>
-				</div>
-				<hr class="uk-margin-remove-bottom uk-margin-medium-top">
-				<div class="uk-margin-top uk-margin-bottom">
-					<div uk-grid="" class="uk-child-width-auto@m uk-flex-middle uk-grid">
-						<div class="uk-first-column">
-							<div class="uk-text-left@m uk-text-center">
-								<a href="/" class="uk-logo">
-									<canvas width="28" height="34" uk-svg="" src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right"
-									 hidden="true"></canvas><svg width="28" height="34" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg"
-									 class="uk-margin-small-right uk-svg" data-svg="../images/uikit-logo.svg">
+<head>
+    <title>示例模板</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.getuikit.net/uikit3.3.2/css/uikit.min.css" />
+    <script src="http://cdn.getuikit.net/uikit3.3.2/js/uikit.min.js"></script>
+    <script src="http://cdn.getuikit.net/uikit3.3.2/js/uikit-icons.min.js"></script>
+    <style type="text/css">
+        .tm-image-card {
+            transition: all .3s cubic-bezier(.2, .5, .3, 1);
+        }
+        
+        .tm-image-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .uk-navbar-sticky {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.09) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- MOBI Nav -->
+    <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent;">
+        <nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#">LOGO</a>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#m-nav" uk-toggle></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- PC Nav -->
+    <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent;">
+        <nav class="uk-navbar-container uk-visible@m" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#">LOGO</a>
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">首页</a></li>
+                    <li>
+                        <a href="javascript:;">文档</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="/doc/v3/getting-started/introduction.html">入门</a></li>
+                                <li><a href="#">组件</a></li>
+                                <li><a href="#">示例</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/showcase/">案例</a></li>
+                    <li><a href="/showcase/">更新日志</a></li>
+                </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+                <div>
+                    <a class="uk-navbar-toggle" href="#" uk-search-icon></a>
+                    <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-expand">
+                                <form class="uk-search uk-search-navbar uk-width-1-1">
+                                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                                </form>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-navbar-item uk-visible@l">
+                    <button class="uk-button uk-button-text">登录</button>
+                    <a class="uk-button uk-button-primary uk-margin-small-left uk-border-pill" href="">注册</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="uk-section">
+        <div class="uk-container uk-container-small">
+            <h3 class="uk-heading-small uk-text-center">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">常规页面布局示例</font>
+                </font>
+            </h3>
+            <p class="uk-text-lead uk-text-center">本示例由UIkit中文网制作<br class="uk-visible@m">这个部分提供了带有宽度修饰的容器以及按钮的使用示例。</p>
+            <p class="uk-text-center">
+                <a href="" class="uk-button uk-button-primary">强调按钮</a>
+                <a class="uk-button uk-button-default">默认按钮</a>
+            </p>
+        </div>
+    </div>
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <h3 class="uk-heading-small uk-text-center">卡片列表</h3>
+            <p class="uk-text-lead uk-text-center uk-margin-large-bottom">本示例由UIkit中文网制作</p>
+            <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default tm-image-card">
+                        <div class="uk-card-media-top">
+                            <img src="/doc/v3/tests/images/photo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">卡片组件</h3>
+                            <p>这个部分是<a href="/doc/v3/components/card.html">卡片</a>组件结合<a href="/doc/v3/components/grid.html">网格</a>使用的示例。</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default tm-image-card">
+                        <div class="uk-card-media-top">
+                            <img src="/doc/v3/tests/images/light.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-card-badge uk-label uk-label-danger">HOT</div>
+                            <h3 class="uk-card-title">卡片组件</h3>
+                            <p>这个卡片额外使用了<a href="/doc/v3/components/badge.html">徽章</a>和<a href="/doc/v3/components/label.html">标签</a>。您可以设置徽章的样式。</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default tm-image-card">
+                        <div class="uk-card-media-top">
+                            <img src="/doc/v3/tests/images/dark.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">卡片组件</h3>
+                            <p>这个部分是卡片组件结合网格使用的示例。</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default tm-image-card">
+                        <div class="uk-card-media-top">
+                            <img src="/skin/ukv3/images/photo2.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">卡片组件</h3>
+                            <p>这个部分是卡片组件结合网格使用的示例。</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default tm-image-card">
+                        <div class="uk-card-media-top">
+                            <img src="/doc/v3/tests/images/dark.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">卡片组件</h3>
+                            <p>这个部分是卡片组件结合网格使用的示例。</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default tm-image-card">
+                        <div class="uk-card-media-top">
+                            <img src="/doc/v3/tests/images/dark.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">卡片组件</h3>
+                            <p>这个部分是卡片组件结合网格使用的示例。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section uk-section-primary uk-padding-remove-bottom">
+        <div class="uk-container uk-text-center">
+            <h2 class="uk-h1">UIkit中文网</h2>
+            <p class="uk-text-large tm-text-large uk-margin-medium-bottom">一个轻量级的模块化前端框架，用于快速开发强大的Web界面。</p>
+            <div uk-grid="" class="uk-grid-medium uk-flex-middle uk-flex-center uk-grid">
+                <div class="uk-first-column"><a uk-tooltip="Version 3.3.2" href="/download.html" class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s">立即下载</a></div>
+                <div><a href="/doc/v3/getting-started/introduction.html" class="uk-button uk-button-text">入门指南</a></div>
+            </div>
+            <hr class="uk-margin-remove-bottom uk-margin-medium-top">
+            <div class="uk-margin-top uk-margin-bottom">
+                <div uk-grid="" class="uk-child-width-auto@m uk-flex-middle uk-grid">
+                    <div class="uk-first-column">
+                        <div class="uk-text-left@m uk-text-center">
+                            <a href="/" class="uk-logo">
+                                <canvas width="28" height="34" uk-svg="" src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"></canvas><svg width="28" height="34" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg" class="uk-margin-small-right uk-svg"
+                                    data-svg="../images/uikit-logo.svg">
 										<polygon fill="#fff" points="19.1,4.1 13.75,1 8.17,4.45 13.6,7.44 "></polygon>
 										<path fill="#fff" d="M21.67,5.43l-5.53,3.34l6.26,3.63v9.52l-8.44,4.76L5.6,21.93v-7.38L0,11.7v13.51l13.75,8.08L28,25.21V9.07 L21.67,5.43z"></path>
 									</svg>UIkit
-								</a>
-							</div>
-						</div>
-						<div class="uk-margin-auto">
-							<ul uk-margin="" class="uk-subnav uk-flex-center">
-								<li><a target="_blank" href="">产品介绍</a></li>
-								<li><a target="_blank" href="/showcase/">案例展示</a></li>
-								<li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li>
-								<li><a uk-tooltip="点击加入" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=3e3f1acbea5ce50221fdcf0b73883a645489935f04f68023da55fa2d8bf0edc7">QQ交流群：299654266</a></li>
-							</ul>
-						</div>
-						<div>
-							<div class="uk-text-right@m uk-text-center">
-								<div uk-grid="" class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
-									<div class="uk-first-column"><a target="_blank" href="https://github.com/uikit/uikit" uk-icon="icon: github"
-										 class="uk-icon-link uk-icon"></a></div>
-									<div><a target="_blank" href="https://discordapp.com/invite/NEt4Pv7" uk-icon="icon: commenting" class="uk-icon-link uk-icon"></a></div>
-									<div><a target="_blank" href="https://twitter.com/getuikit" uk-icon="icon: twitter" class="uk-icon-link uk-icon"></a></div>
-									<div><a target="" href="https://www.facebook.com/getuikit" uk-icon="icon: facebook" class="uk-icon-link uk-icon"></a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- m-nav -->
-		<div id="m-nav" uk-offcanvas="overlay: true">
-			<div class="uk-offcanvas-bar">
-			            <button class="uk-offcanvas-close" type="button" uk-close></button>
-						<ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-						        <li class="uk-active"><a href="/"><span class="uk-margin-small-right" uk-icon="icon: home"></span> 首页</a></li>
-						        <li class="uk-parent">
-						            <a href="#"><span class="uk-margin-small-right" uk-icon="icon: file-text"></span> 文档</a>
-						            <ul class="uk-nav-sub">
-						                <li><a href="/doc/v3/getting-started/introduction.html">入门</a></li>
-						                <li><a href="#">组件</a></li>
-										<li><a href="#">示例</a></li>
-						            </ul>
-						        </li>
-						        <li><a href="/showcase/"><span class="uk-margin-small-right" uk-icon="icon: laptop"></span> 案例</a></li>
-						        <li><a target="_blank" href="https://getuikit.com/changelog"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> 更新日志</a></li>
-						        <li class="uk-nav-divider"></li>
-						        <li><a href="#">登录</a></li>
-								<li><a href="#">注册</a></li>
-						    </ul>
-			        </div>
-		</div>
-	</body>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uk-margin-auto">
+                        <ul uk-margin="" class="uk-subnav uk-flex-center">
+                            <li><a target="_blank" href="">产品介绍</a></li>
+                            <li><a target="_blank" href="/showcase/">案例展示</a></li>
+                            <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li>
+                            <li><a uk-tooltip="点击加入" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=3e3f1acbea5ce50221fdcf0b73883a645489935f04f68023da55fa2d8bf0edc7">QQ交流群：299654266</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="uk-text-right@m uk-text-center">
+                            <div uk-grid="" class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                                <div class="uk-first-column">
+                                    <a target="_blank" href="https://github.com/uikit/uikit" uk-icon="icon: github" class="uk-icon-link uk-icon"></a>
+                                </div>
+                                <div>
+                                    <a target="_blank" href="https://discordapp.com/invite/NEt4Pv7" uk-icon="icon: commenting" class="uk-icon-link uk-icon"></a>
+                                </div>
+                                <div>
+                                    <a target="_blank" href="https://twitter.com/getuikit" uk-icon="icon: twitter" class="uk-icon-link uk-icon"></a>
+                                </div>
+                                <div>
+                                    <a target="" href="https://www.facebook.com/getuikit" uk-icon="icon: facebook" class="uk-icon-link uk-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- m-nav -->
+    <div id="m-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <li class="uk-active"><a href="/"><span class="uk-margin-small-right" uk-icon="icon: home"></span> 首页</a></li>
+                <li class="uk-parent">
+                    <a href="#"><span class="uk-margin-small-right" uk-icon="icon: file-text"></span> 文档</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/doc/v3/getting-started/introduction.html">入门</a></li>
+                        <li><a href="#">组件</a></li>
+                        <li><a href="#">示例</a></li>
+                    </ul>
+                </li>
+                <li><a href="/showcase/"><span class="uk-margin-small-right" uk-icon="icon: laptop"></span> 案例</a></li>
+                <li><a target="_blank" href="https://getuikit.com/changelog"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> 更新日志</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
 </html>

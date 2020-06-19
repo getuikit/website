@@ -1,52 +1,177 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 
-	<head>
-		<title>网格（Grid） - UIkit3中文文档</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- <link rel="stylesheet" href="/skin/ukv3/css/uikit.min.css" /> -->
-		<link rel="stylesheet" type="text/css" href="/skin/ukv3/css/theme.css?3.4.6"/>
-		<script src="/skin/ukv3/js/clipboard.min.js" defer=""></script>
-		<script src="/skin/ukv3/js/uikit.min.js"></script>
-		<script src="/skin/ukv3/js/uikit-icons.min.js"></script>
-		<script src="/skin/ukv3/js/highlight.min.js"></script>
-	</head>
+<head>
+    <title>网格（Grid） - UIkit3中文文档</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="/skin/ukv3/css/uikit.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/skin/ukv3/css/theme.css?3.4.6" />
+    <script src="/skin/ukv3/js/clipboard.min.js" defer=""></script>
+    <script src="/skin/ukv3/js/uikit.min.js"></script>
+    <script src="/skin/ukv3/js/uikit-icons.min.js"></script>
+    <script src="/skin/ukv3/js/highlight.min.js"></script>
+</head>
 
-	<body>
-	        <div><div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed"><div class="uk-container uk-container-expand"><nav class="uk-navbar"><div class="uk-navbar-left"><a href="../" class="uk-navbar-item uk-logo"><img uk-svg="" src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"> UIkit
-                    </a></div> <div class="uk-navbar-right"><ul class="uk-navbar-nav uk-visible@m"><li class="uk-active"><a href="/doc/v3/getting-started/introduction.html">UIkit3文档</a></li> <li><a href="/docs/documentation_get-started.html">UIkit2文档</a></li> <li><a href="/showcase/">案例展示</a></li> <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li></ul> <div class="uk-navbar-item uk-visible@m"><a title="版本3.4.6" href="/uikitzip/uikit-3.4.6.zip" class="uk-button uk-button-default tm-button-default uk-icon">下载 <canvas uk-icon="icon: download" width="20" height="20" class="uk-icon" hidden="true"></canvas></a></div> <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></a></div></nav></div></div><div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div> <div class="tm-sidebar-left uk-visible@m"><h3>UIkit3.x文档</h3> <ul class="uk-nav uk-nav-default tm-nav"><li class="uk-nav-header">入门</li> <li class=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li><li class=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li><li class=""><a href="/doc/v3/getting-started/less.html">Less</a></li><li class=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li><li class=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li><li class=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li><li class=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li><li class=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li><li class=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li><li class=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li></ul><ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">组件</li> <li class=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li><li class=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li><li class=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li><li class=""><a href="/doc/v3/components/animation.html">动画（Animation）</a></li><li class=""><a href="/doc/v3/components/article.html">文章（Article）</a></li><li class=""><a href="/doc/v3/components/background.html">背景（Background）</a></li><li class=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li><li class=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li><li class=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li><li class=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li><li class=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li><li class=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li><li class=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li><li class=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li><li class=""><a href="/doc/v3/components/container.html">容器（Container）</a></li><li class=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li><li class=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li><li class=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li><li class=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li><li class=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li><li class=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li><li class=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li><li class=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li><li class=""><a href="/doc/v3/components/flex.html">Flex布局</a></li><li class=""><a href="/doc/v3/components/form.html">表单（Form）</a></li><li class="router-link-exact-active uk-active"><a href="/doc/v3/components/grid.html">网格（Grid）</a></li><li class=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li><li class=""><a href="/doc/v3/components/height.html">高度（Height）</a></li><li class=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li><li class=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li><li class=""><a href="/doc/v3/components/image.html">图片（Image）</a></li><li class=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li><li class=""><a href="/doc/v3/components/label.html">标签（Label）</a></li><li class=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li><li class=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li><li class=""><a href="/doc/v3/components/link.html">链接（Link）</a></li><li class=""><a href="/doc/v3/components/list.html">列表（list）</a></li><li class=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li><li class=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li><li class=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li><li class=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li><li class=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li><li class=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li><li class=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li><li class=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li><li class=""><a href="/doc/v3/components/padding.html">Padding</a></li><li class=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li><li class=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li><li class=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li><li class=""><a href="/doc/v3/components/position.html">定位（Position）</a></li><li class=""><a href="/doc/v3/components/print.html">打印（Print）</a></li><li class=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li><li class=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li><li class=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li><li class=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li><li class=""><a href="/doc/v3/components/section.html">区段（Section）</a></li><li class=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li><li class=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li><li class=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li><li class=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li><li class=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li><li class=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li><li class=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li><li class=""><a href="/doc/v3/components/svg.html">SVG</a></li><li class=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li><li class=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li><li class=""><a href="/doc/v3/components/table.html">表格（Table）</a></li><li class=""><a href="/doc/v3/components/text.html">文本（Text）</a></li><li class=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li><li class=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li><li class=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li><li class=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li><li class=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li><li class=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li><li class=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li><li class=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li><li class=""><a href="/doc/v3/components/video.html">视频（Video）</a></li><li class=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li><li class=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li></ul></div> <div class="tm-main uk-section uk-section-default"><div class="uk-container uk-container-small uk-position-relative"><div>
-<div>
-<h1 class="uk-h1 tm-heading-fragment" id="grid"><a href="#grid">网格（Grid）</a></h1>
-<p class="uk-text-lead">创建响应式的可嵌套的流体网格布局。</p>
-<p>UIkit 的网格系统允许你将块元素排列在网格列中，并且可以与<a href="width.html">Width组件</a>结合使用，来设置每个内容块占用的空间大小，还可以与<a href="flex.html">Flex组件</a>结合来对齐和排序网格项。</p>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="usage"><a href="#usage">用法</a></h2>
-<p>要创建网格容器，请将<code>uk-grid</code>属性添加到<code>&lt;div&gt;</code>元素中。 在容器内添加子<code>&lt;div&gt;</code>元素来创建网格单元。默认情况下所有的网格单元都是堆叠排列。要并排放置它们，需要使用<a href="width.html">Width组件</a>。使用<code>.uk-child-width-expand</code>会为网格列分配相等的宽度，无论有多少个网格列。</p>
-<p><span class="uk-label">Note</span> 不需要为网格容器添加<code>.uk-grid</code> class， 因为它将通过JavaScript自动添加。但是，如果UIkit的JavaScript设置了<a target="_blank" href="https://developer.mozilla.org/docs/Web/HTML/Element/script#attr-defer">延迟加载</a>, 则应该添加该类以防止在加载时被堆叠。</p>
-<div class="uk-margin-medium">
-<pre>
+<body>
+    <div>
+        <div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar">
+                    <div class="uk-navbar-left">
+                        <a href="../" class="uk-navbar-item uk-logo"><img uk-svg="" src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"> UIkit
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li class="uk-active"><a href="/doc/v3/getting-started/introduction.html">UIkit3文档</a></li>
+                            <li><a href="/docs/documentation_get-started.html">UIkit2文档</a></li>
+                            <li><a href="/showcase/">案例展示</a></li>
+                            <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li>
+                        </ul>
+                        <div class="uk-navbar-item uk-visible@m"><a title="版本3.4.6" href="/download.html" class="uk-button uk-button-default tm-button-default uk-icon">下载 <canvas uk-icon="icon: download" width="20" height="20" class="uk-icon" hidden="true"></canvas></a></div> <a uk-navbar-toggle-icon=""
+                            href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></a></div>
+                </nav>
+            </div>
+        </div>
+        <div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div>
+        <div class="tm-sidebar-left uk-visible@m">
+            <h3>UIkit3.x文档</h3>
+            <ul class="uk-nav uk-nav-default tm-nav">
+                <li class="uk-nav-header">入门</li>
+                <li class=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li>
+                <li class=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li>
+                <li class=""><a href="/doc/v3/getting-started/less.html">Less</a></li>
+                <li class=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li>
+                <li class=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li>
+                <li class=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li>
+                <li class=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li>
+                <li class=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li>
+                <li class=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li>
+                <li class=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li>
+            </ul>
+            <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                <li class="uk-nav-header">组件</li>
+                <li class=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li>
+                <li class=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li>
+                <li class=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li>
+                <li class=""><a href="/doc/v3/components/animation.html">动画（Animation）</a></li>
+                <li class=""><a href="/doc/v3/components/article.html">文章（Article）</a></li>
+                <li class=""><a href="/doc/v3/components/background.html">背景（Background）</a></li>
+                <li class=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li>
+                <li class=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li>
+                <li class=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li>
+                <li class=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li>
+                <li class=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li>
+                <li class=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li>
+                <li class=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li>
+                <li class=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li>
+                <li class=""><a href="/doc/v3/components/container.html">容器（Container）</a></li>
+                <li class=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li>
+                <li class=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li>
+                <li class=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li>
+                <li class=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li>
+                <li class=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li>
+                <li class=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li>
+                <li class=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li>
+                <li class=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li>
+                <li class=""><a href="/doc/v3/components/flex.html">Flex布局</a></li>
+                <li class=""><a href="/doc/v3/components/form.html">表单（Form）</a></li>
+                <li class="router-link-exact-active uk-active"><a href="/doc/v3/components/grid.html">网格（Grid）</a></li>
+                <li class=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li>
+                <li class=""><a href="/doc/v3/components/height.html">高度（Height）</a></li>
+                <li class=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li>
+                <li class=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li>
+                <li class=""><a href="/doc/v3/components/image.html">图片（Image）</a></li>
+                <li class=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li>
+                <li class=""><a href="/doc/v3/components/label.html">标签（Label）</a></li>
+                <li class=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li>
+                <li class=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li>
+                <li class=""><a href="/doc/v3/components/link.html">链接（Link）</a></li>
+                <li class=""><a href="/doc/v3/components/list.html">列表（list）</a></li>
+                <li class=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li>
+                <li class=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li>
+                <li class=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li>
+                <li class=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li>
+                <li class=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li>
+                <li class=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li>
+                <li class=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li>
+                <li class=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li>
+                <li class=""><a href="/doc/v3/components/padding.html">Padding</a></li>
+                <li class=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li>
+                <li class=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li>
+                <li class=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li>
+                <li class=""><a href="/doc/v3/components/position.html">定位（Position）</a></li>
+                <li class=""><a href="/doc/v3/components/print.html">打印（Print）</a></li>
+                <li class=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li>
+                <li class=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li>
+                <li class=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li>
+                <li class=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li>
+                <li class=""><a href="/doc/v3/components/section.html">区段（Section）</a></li>
+                <li class=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li>
+                <li class=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li>
+                <li class=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li>
+                <li class=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li>
+                <li class=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li>
+                <li class=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li>
+                <li class=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li>
+                <li class=""><a href="/doc/v3/components/svg.html">SVG</a></li>
+                <li class=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li>
+                <li class=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li>
+                <li class=""><a href="/doc/v3/components/table.html">表格（Table）</a></li>
+                <li class=""><a href="/doc/v3/components/text.html">文本（Text）</a></li>
+                <li class=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li>
+                <li class=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li>
+                <li class=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li>
+                <li class=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li>
+                <li class=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li>
+                <li class=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li>
+                <li class=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li>
+                <li class=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li>
+                <li class=""><a href="/doc/v3/components/video.html">视频（Video）</a></li>
+                <li class=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li>
+                <li class=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li>
+            </ul>
+        </div>
+        <div class="tm-main uk-section uk-section-default">
+            <div class="uk-container uk-container-small uk-position-relative">
+                <div>
+                    <div>
+                        <h1 class="uk-h1 tm-heading-fragment" id="grid"><a href="#grid">网格（Grid）</a></h1>
+                        <p class="uk-text-lead">创建响应式的可嵌套的流体网格布局。</p>
+                        <p>UIkit 的网格系统允许你将块元素排列在网格列中，并且可以与<a href="width.html">Width组件</a>结合使用，来设置每个内容块占用的空间大小，还可以与<a href="flex.html">Flex组件</a>结合来对齐和排序网格项。</p>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="usage"><a href="#usage">用法</a></h2>
+                        <p>要创建网格容器，请将<code>uk-grid</code>属性添加到<code>&lt;div&gt;</code>元素中。 在容器内添加子<code>&lt;div&gt;</code>元素来创建网格单元。默认情况下所有的网格单元都是堆叠排列。要并排放置它们，需要使用<a href="width.html">Width组件</a>。使用<code>.uk-child-width-expand</code>会为网格列分配相等的宽度，无论有多少个网格列。</p>
+                        <p><span class="uk-label">Note</span> 不需要为网格容器添加<code>.uk-grid</code> class， 因为它将通过JavaScript自动添加。但是，如果UIkit的JavaScript设置了<a target="_blank" href="https://developer.mozilla.org/docs/Web/HTML/Element/script#attr-defer">延迟加载</a>, 则应该添加该类以防止在加载时被堆叠。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<p><span class="uk-label">Note</span> <a href="card.html">Card 组件</a> 中的卡通常在网格中使用。下面的示例就是这样。</p>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-expand@s uk-text-center uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div></div></li>
-	<li>
-	<pre>
+                        <p><span class="uk-label">Note</span> <a href="card.html">Card 组件</a> 中的卡通常在网格中使用。下面的示例就是这样。</p>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-expand@s uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3f"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-expand@s uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -58,82 +183,106 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3f" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3f" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="gap-modifiers"><a href="#gap-modifiers">排水沟</a></h2>
-<p>网格组件默认具有一个一定大小的排水沟，排水沟的大小会在较小的视口宽度上从某个断点开始自动减小。要应用其他尺寸的排水沟，请添加以下class之一。</p>
-<div class="uk-overflow-auto">
-<table class="uk-table uk-table-divider">
-	<thead>
-		<tr>
-			<th align="left">Class</th>
-			<th align="left">Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td align="left"><code>.uk-grid-small</code></td>
-			<td align="left">添加较小的排水沟。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-grid-medium</code></td>
-			<td align="left">中等大小的排水沟，和默认排水沟大小相同，但不带断点</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-grid-large</code></td>
-			<td align="left">带断点的较大的排水沟</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-grid-collapse</code></td>
-			<td align="left">消除网格之间的所有排水沟。</td>
-		</tr>
-	</tbody>
-</table></div>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3f" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3f" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="gap-modifiers"><a href="#gap-modifiers">排水沟</a></h2>
+                        <p>网格组件默认具有一个一定大小的排水沟，排水沟的大小会在较小的视口宽度上从某个断点开始自动减小。要应用其他尺寸的排水沟，请添加以下class之一。</p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Class</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>.uk-grid-small</code></td>
+                                        <td align="left">添加较小的排水沟。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-grid-medium</code></td>
+                                        <td align="left">中等大小的排水沟，和默认排水沟大小相同，但不带断点</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-grid-large</code></td>
+                                        <td align="left">带断点的较大的排水沟</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-grid-collapse</code></td>
+                                        <td align="left">消除网格之间的所有排水沟。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-small&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div></div>
-	<div class="uk-grid-medium uk-child-width-expand@s uk-text-center uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div></div>
-	<div class="uk-grid-large uk-child-width-expand@s uk-text-center uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div></div>
-	<div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-background-muted uk-padding">Item</div></div>
-	<div>
-	<div class="uk-background-primary uk-padding uk-light">Item</div></div>
-	<div>
-	<div class="uk-background-secondary uk-padding uk-light">Item</div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-medium uk-child-width-expand@s uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-large uk-child-width-expand@s uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-background-muted uk-padding">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-background-primary uk-padding uk-light">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-background-secondary uk-padding uk-light">Item</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3g"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-small uk-child-width-expand@s uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -181,67 +330,82 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-background-secondary uk-padding uk-light&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3g" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3g" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h3 class="uk-h4 tm-heading-fragment" id="column-and-row"><a href="#column-and-row">列和行</a></h3>
-<p>如果需要只对列或行应用不同的排水沟，请添加以下class之一。</p>
-<div class="uk-overflow-auto">
-<table class="uk-table uk-table-divider">
-	<thead>
-		<tr>
-			<th align="left">Class</th>
-			<th align="left">Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td align="left"><code>.uk-grid-column-small</code><br /><code>.uk-grid-row-small</code></td>
-			<td align="left">可对列或行应用较小的排水沟。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-grid-column-medium</code><br /><code>.uk-grid-row-medium</code></td>
-			<td align="left">对列或行施加中等的排水沟。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-grid-column-large</code><br /><code>.uk-grid-row-large</code></td>
-			<td align="left">对列或行应用较大的排水沟。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-grid-column-collapse</code><br /><code>.uk-grid-row-collapse</code></td>
-			<td align="left">完全消除列或行中的间隙。</td>
-		</tr>
-	</tbody>
-</table></div>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3g" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3g" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h3 class="uk-h4 tm-heading-fragment" id="column-and-row"><a href="#column-and-row">列和行</a></h3>
+                        <p>如果需要只对列或行应用不同的排水沟，请添加以下class之一。</p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Class</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>.uk-grid-column-small</code><br /><code>.uk-grid-row-small</code></td>
+                                        <td align="left">可对列或行应用较小的排水沟。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-grid-column-medium</code><br /><code>.uk-grid-row-medium</code></td>
+                                        <td align="left">对列或行施加中等的排水沟。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-grid-column-large</code><br /><code>.uk-grid-row-large</code></td>
+                                        <td align="left">对列或行应用较大的排水沟。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-grid-column-collapse</code><br /><code>.uk-grid-row-collapse</code></td>
+                                        <td align="left">完全消除列或行中的间隙。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-column-small uk-grid-row-large&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3h"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -262,17 +426,23 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3h" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3h" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="nested-grid"><a href="#nested-grid">网格嵌套</a></h2>
-<p>您可以使用嵌套网格轻松扩展网格布局。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3h" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3h" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="nested-grid"><a href="#nested-grid">网格嵌套</a></h2>
+                        <p>您可以使用嵌套网格轻松扩展网格布局。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
@@ -287,24 +457,31 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-1-2 uk-text-center uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-child-width-1-2 uk-text-center uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-primary uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-primary uk-card-body">Item</div></div></div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-1-2 uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-child-width-1-2 uk-text-center uk-grid" uk-grid="">
+                                                <div class="uk-first-column">
+                                                    <div class="uk-card uk-card-primary uk-card-body">Item</div>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-card uk-card-primary uk-card-body">Item</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3i"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-2 uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -320,64 +497,83 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3i" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3i" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="divider-modifier"><a href="#divider-modifier">分隔线</a></h2>
-<p>将<code>.uk-grid-divider</code>类可将网格单元用线条分隔开。。该class可以与网格排水沟样式结合使用。在网格堆叠时，分隔线将变为水平分隔线。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3i" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3i" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="divider-modifier"><a href="#divider-modifier">分隔线</a></h2>
+                        <p>将<code>.uk-grid-divider</code>类可将网格单元用线条分隔开。。该class可以与网格排水沟样式结合使用。在网格堆叠时，分隔线将变为水平分隔线。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-divider&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-grid-divider uk-child-width-expand@s uk-grid" uk-grid="">
-	<div class="uk-first-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-	<div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-	<div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-grid-divider uk-child-width-expand@s uk-grid" uk-grid="">
+                                        <div class="uk-first-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                        <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                        <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3j"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-divider uk-child-width-expand@s&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3j" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3j" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="match-height"><a href="#match-height">匹配高度</a></h2>
-<p>得益于 flexbox，网格单元的高度可以自动匹配。要匹配网格单元子元素的高度，请添加<code>.uk-grid-match</code>。例如匹配<a href="card.html">Card 组件</a>中卡片的高度。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3j" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3j" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="match-height"><a href="#match-height">匹配高度</a></h2>
+                        <p>得益于 flexbox，网格单元的高度可以自动匹配。要匹配网格单元子元素的高度，请添加<code>.uk-grid-match</code>。例如匹配<a href="card.html">Card 组件</a>中卡片的高度。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>....<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-grid-match uk-child-width-expand@s uk-text-center uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item<br />...</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item<br />...<br />...</div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-grid-match uk-child-width-expand@s uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item<br />...</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item<br />...<br />...</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3k"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-child-width-expand@s uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -389,38 +585,50 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>...<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3k" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3k" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h3 class="uk-h4 tm-heading-fragment" id="match-only-one-cell"><a href="#match-only-one-cell">只匹配一个单元格</a></h3>
-<p>你也可以只匹配一个单元格的直接子元素的高度，请将<code>.uk-grid-item-match</code>类添加到要匹配其子级的网格项中。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3k" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3k" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h3 class="uk-h4 tm-heading-fragment" id="match-only-one-cell"><a href="#match-only-one-cell">只匹配一个单元格</a></h3>
+                        <p>你也可以只匹配一个单元格的直接子元素的高度，请将<code>.uk-grid-item-match</code>类添加到要匹配其子级的网格项中。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-item-match&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-expand@s uk-grid" uk-grid="">
-	<div class="uk-grid-item-match uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">
-	<h3>Heading</h3>
-	<p>Lorem ipsum dolor sit amet.</p></div></div>
-	<div>
-	<h3>Heading</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-expand@s uk-grid" uk-grid="">
+                                        <div class="uk-grid-item-match uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">
+                                                <h3>Heading</h3>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3>Heading</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3l"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-expand@s&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-item-match&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>
@@ -437,17 +645,23 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3l" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3l" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h3 class="uk-h4 tm-heading-fragment" id="targets"><a href="#targets">目标</a></h3>
-<p>要更具体地选择需要匹配哪些元素的高度请将<code>target: SELECTOR</code>选项添加到<a href="height.html#match-height">Height组件</a>中的 <code>uk-height-match</code>属性中。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3l" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3l" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h3 class="uk-h4 tm-heading-fragment" id="targets"><a href="#targets">目标</a></h3>
+                        <p>要更具体地选择需要匹配哪些元素的高度请将<code>target: SELECTOR</code>选项添加到<a href="height.html#match-height">Height组件</a>中的 <code>uk-height-match</code>属性中。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-grid</span> <span class="hljs-attr">uk-height-match</span>=<span class="hljs-string">&quot;target: &gt; div &gt; .uk-card&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -456,22 +670,27 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-expand@s uk-text-center uk-grid" uk-grid="" uk-height-match="target: &gt; div &gt; .uk-card">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body" style="min-height: 146px;">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body" style="min-height: 146px;">Item<br />...</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item<br />...<br />...</div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-expand@s uk-text-center uk-grid" uk-grid="" uk-height-match="target: &gt; div &gt; .uk-card">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body" style="min-height: 146px;">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body" style="min-height: 146px;">Item<br />...</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item<br />...<br />...</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3m"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-expand@s uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span> <span class="hljs-attr">uk-height-match</span>=<span class="hljs-string">&quot;target: &gt; div &gt; .uk-card&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -483,38 +702,49 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>...<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3m" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3m" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="grid-and-width"><a href="#grid-and-width">网格和宽度</a></h2>
-<p>网格通常都和<a href="width.html">Width 组件</a>结合起来使用，这样可以非常灵活的设置各个列的宽度。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3m" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3m" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="grid-and-width"><a href="#grid-and-width">网格和宽度</a></h2>
+                        <p>网格通常都和<a href="width.html">Width 组件</a>结合起来使用，这样可以非常灵活的设置各个列的宽度。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-auto@m&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-3@m&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-expand@m&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-text-center uk-grid" uk-grid="">
-	<div class="uk-width-auto@m uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Auto</div></div>
-	<div class="uk-width-1-3@m">
-	<div class="uk-card uk-card-default uk-card-body">1-3</div></div>
-	<div class="uk-width-expand@m">
-	<div class="uk-card uk-card-default uk-card-body">Expand</div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-width-auto@m uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Auto</div>
+                                        </div>
+                                        <div class="uk-width-1-3@m">
+                                            <div class="uk-card uk-card-default uk-card-body">1-3</div>
+                                        </div>
+                                        <div class="uk-width-expand@m">
+                                            <div class="uk-card uk-card-default uk-card-body">Expand</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3n"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-auto@m&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Auto<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -526,34 +756,45 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Expand<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3n" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3n" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h3 class="uk-h4 tm-heading-fragment" id="child-width"><a href="#child-width">子元素的宽度</a></h3>
-<p>如果网格列的宽度都是平均分配（等宽）的，那么只需要在网格容器上添加一个<code>.uk-child-width-*</code>即可，而无需在每个网格单元上都添加宽度的class。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3n" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3n" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h3 class="uk-h4 tm-heading-fragment" id="child-width"><a href="#child-width">子元素的宽度</a></h3>
+                        <p>如果网格列的宽度都是平均分配（等宽）的，那么只需要在网格容器上添加一个<code>.uk-child-width-*</code>即可，而无需在每个网格单元上都添加宽度的class。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-2@s uk-child-width-1-3@m&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3o"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -565,44 +806,58 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3o" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3o" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<p>更多详情请查看 <a href="width.html">Width 组件</a>.</p>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="grid-and-flex"><a href="#grid-and-flex">网格和flex</a></h2>
-<p>您可以轻易的将网格与<a href="flex.html">Flex 组件</a>结合起来使用，来调整网格元素的对齐、排序、方向和换行。例如你可以在较宽的视口下翻转网格单元的显示顺序。这些都与排水沟和分隔线修改器一起使用。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3o" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3o" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>更多详情请查看 <a href="width.html">Width 组件</a>.</p>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="grid-and-flex"><a href="#grid-and-flex">网格和flex</a></h2>
+                        <p>您可以轻易的将网格与<a href="flex.html">Flex 组件</a>结合起来使用，来调整网格元素的对齐、排序、方向和换行。例如你可以在较宽的视口下翻转网格单元的显示顺序。这些都与排水沟和分隔线修改器一起使用。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-flex-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-flex-first&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item 1</div></div>
-	<div class="uk-flex-last uk-grid-margin">
-	<div class="uk-card uk-card-secondary uk-card-body">Item 2</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item 3</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item 4</div></div>
-	<div class="uk-flex-first uk-first-column">
-	<div class="uk-card uk-card-primary uk-card-body">Item 5</div></div>
-	<div class="uk-grid-margin uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item 6</div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+                                        </div>
+                                        <div class="uk-flex-last uk-grid-margin">
+                                            <div class="uk-card uk-card-secondary uk-card-body">Item 2</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item 3</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item 4</div>
+                                        </div>
+                                        <div class="uk-flex-first uk-first-column">
+                                            <div class="uk-card uk-card-primary uk-card-body">Item 5</div>
+                                        </div>
+                                        <div class="uk-grid-margin uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item 6</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3p"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item 1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -623,46 +878,63 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item 6<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3p" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3p" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="masonry"><a href="#masonry">瀑布流</a></h2>
-<p>如果各个网格单元的高度都不同，那么可以添加<code>masonry: true</code>到属性来创建没有间隙的布局。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3p" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3p" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="masonry"><a href="#masonry">瀑布流</a></h2>
+                        <p>如果各个网格单元的高度都不同，那么可以添加<code>masonry: true</code>到属性来创建没有间隙的布局。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-grid</span>=<span class="hljs-string">&quot;masonry: true&quot;</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-flex-top uk-flex-wrap-top" style="height: 540px;" uk-grid="masonry: true">
-	<div class="uk-first-column" style="transform: translateY(0px);">
-	<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 100px">Item</div></div>
-	<div style="transform: translateY(0px);">
-	<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 130px">Item</div></div>
-	<div style="transform: translateY(0px);">
-	<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 150px">Item</div></div>
-	<div class="uk-grid-margin uk-first-column" style="transform: translateY(-50px);">
-	<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 160px">Item</div></div>
-	<div class="uk-grid-margin" style="transform: translateY(-20px);">
-	<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 120px">Item</div></div>
-	<div class="uk-grid-margin" style="transform: translateY(0px);">
-	<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div></div>
-	<div class="uk-grid-margin uk-first-column" style="transform: translateY(-50px);">
-	<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item</div></div>
-	<div class="uk-grid-margin" style="transform: translateY(-60px);">
-	<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 180px">Item</div></div>
-	<div class="uk-grid-margin" style="transform: translateY(-20px);">
-	<div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-flex-top uk-flex-wrap-top" style="height: 540px;" uk-grid="masonry: true">
+                                        <div class="uk-first-column" style="transform: translateY(0px);">
+                                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 100px">Item</div>
+                                        </div>
+                                        <div style="transform: translateY(0px);">
+                                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 130px">Item</div>
+                                        </div>
+                                        <div style="transform: translateY(0px);">
+                                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 150px">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin uk-first-column" style="transform: translateY(-50px);">
+                                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 160px">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin" style="transform: translateY(-20px);">
+                                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 120px">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin" style="transform: translateY(0px);">
+                                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin uk-first-column" style="transform: translateY(-50px);">
+                                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin" style="transform: translateY(-60px);">
+                                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 180px">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin" style="transform: translateY(-20px);">
+                                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3q"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-2@s uk-child-width-1-3@m&quot;</span> <span class="hljs-attr">uk-grid</span>=<span class="hljs-string">&quot;masonry: true&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100px&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -692,45 +964,56 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 140px&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3q" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3q" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<p><span class="uk-label">Note</span>您可以在<a href="../tests/grid-masonry.html">瀑布流网格</a>的测试页面查看更多示例。</p>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="filter-and-order"><a href="#filter-and-order">过滤和排序</a></h2>
-<p>网格单元也可以按类别、日期或其他元数据进行过滤和排序。看一下<a href="filter">Filter组件</a>.</p>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="parallax"><a href="#parallax">视差</a></h2>
-<p>要在滚动时以不同的速度移动网格的单个列，只需向属性添<code>parallax: NUMBER</code>。该数字设置以像素为单位的视差平移。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3q" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3q" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p><span class="uk-label">Note</span>您可以在<a href="../tests/grid-masonry.html">瀑布流网格</a>的测试页面查看更多示例。</p>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="filter-and-order"><a href="#filter-and-order">过滤和排序</a></h2>
+                        <p>网格单元也可以按类别、日期或其他元数据进行过滤和排序。看一下<a href="filter">Filter组件</a>.</p>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="parallax"><a href="#parallax">视差</a></h2>
+                        <p>要在滚动时以不同的速度移动网格的单个列，只需向属性添<code>parallax: NUMBER</code>。该数字设置以像素为单位的视差平移。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-grid</span>=<span class="hljs-string">&quot;parallax: 150&quot;</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<p>该效果可以应用于两种类型的标记。以下示例使用三个已定义的列，每个列包含三个项目。</p>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-expand@s uk-text-center uk-grid" style="padding-bottom: 150px;" uk-grid="parallax: 150">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-	<div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-	<div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-	<div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-	<div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-	<div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-	<div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div></div></div></li>
-	<li>
-	<pre>
+                        <p>该效果可以应用于两种类型的标记。以下示例使用三个已定义的列，每个列包含三个项目。</p>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-expand@s uk-text-center uk-grid" style="padding-bottom: 150px;" uk-grid="parallax: 150">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                                            <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                                            <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                                            <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                                            <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                                            <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                                            <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3r"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-expand@s uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>=<span class="hljs-string">&quot;parallax: 150&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body uk-grid-margin&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -748,47 +1031,67 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body uk-grid-margin&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3r" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3r" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<p>如果网格列换行到下一行，也会应用视差效果，如下例所示。</p>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center uk-grid" style="padding-bottom: 150px;" uk-grid="parallax: 150">
-	<div class="uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div>
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin uk-first-column">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div>
-	<div class="uk-grid-margin">
-	<div class="uk-card uk-card-default uk-card-body">Item</div></div></div></li>
-	<li>
-	<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3r" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3r" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>如果网格列换行到下一行，也会应用视差效果，如下例所示。</p>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center uk-grid" style="padding-bottom: 150px;" uk-grid="parallax: 150">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k46nns3s"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>=<span class="hljs-string">&quot;parallax: 150&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -827,72 +1130,216 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k46nns3s" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k46nns3s" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<p><span class="uk-label">Note</span> 您可以在<a href="../tests/grid-parallax.html">视差网格</a> 测试页面查看更多示例。</p>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="component-options"><a href="#component-options">组件选项</a></h2>
-<p>以下的任意一个选项都可以应用于组件属性。多个选项用分号分隔。<a href="../getting-started/javascript.html#component-configuration">了解更多</a></p>
-<div class="uk-overflow-auto">
-<table class="uk-table uk-table-divider">
-	<thead>
-		<tr>
-			<th align="left">Option</th>
-			<th align="left">Value</th>
-			<th align="left">Default</th>
-			<th align="left">Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td align="left"><code>margin</code></td>
-			<td align="left">String</td>
-			<td align="left">uk-grid-margin</td>
-			<td align="left">这个class被添加到分配到下一行的项目中，并为上一行创建margin。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>first-column</code></td>
-			<td align="left">String</td>
-			<td align="left">uk-first-column</td>
-			<td align="left">为每行的第一个元素添加这个class。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>masonry</code></td>
-			<td align="left">Boolean</td>
-			<td align="left">false</td>
-			<td align="left">启用此网格的瀑布流布局。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>parallax</code></td>
-			<td align="left">Number</td>
-			<td align="left">0</td>
-			<td align="left">视差转换的值，该值必须是一个正整数。Falsy禁用视差效果（默认）。</td>
-		</tr>
-	</tbody>
-</table></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="javascript"><a href="#javascript">JavaScript</a></h2>
-<p>了解更多有关<a href="../getting-started/javascript.html#programmatic-use">JavaScript 组件</a>的内容。</p>
-<h3 class="uk-h4 tm-heading-fragment" id="initialization"><a href="#initialization">Initialization</a></h3>
-<div class="uk-margin-medium">
-<pre>
-<code class="lang-js hljs javascript">UIkit.grid(element, options);</code></pre></div></div></div> <div class="tm-sidebar-right uk-visible@l"><div uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-fixed" style="position: fixed; top: 160px; width: 200px;"><ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"><li class="uk-active"><a href="#usage">用法</a></li><li class=""><a href="#gap-modifiers">排水沟</a></li><li class=""><a href="#nested-grid">网格嵌套</a></li><li class=""><a href="#divider-modifier">分隔线</a></li><li class=""><a href="#match-height">匹配高度</a></li><li class=""><a href="#grid-and-width">网格和宽度</a></li><li class=""><a href="#grid-and-flex">网格和flex</a></li><li class=""><a href="#masonry">瀑布流</a></li><li class=""><a href="#filter-and-order">过滤和排序</a></li><li class=""><a href="#parallax">视差</a></li><li class=""><a href="#component-options">组件选项</a></li><li><a href="#javascript">JavaScript</a></li> <li class="uk-nav-divider"></li> <li><a href="../tests/grid.html" target="_blank"><span uk-icon="icon: push" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Open test</span></a></li> <li><a href="https://github.com/uikit/uikit/issues" target="_blank"><span uk-icon="icon: warning" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Report issue</span></a></li> <li><a href="https://discordapp.com/invite/NEt4Pv7" target="_blank"><span uk-icon="icon: commenting" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Get help</span></a></li> <li><a href="https://github.com/uikit/uikit-site/tree/develop/docs/pages/grid.md" target="_blank"><span uk-icon="icon: pencil" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Edit this page</span></a></li></ul></div><div class="uk-sticky-placeholder" style="height: 252px; margin: 0px;"></div></div></div></div> <div id="offcanvas" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas"><div class="uk-offcanvas-bar"><div class="uk-panel"><ul class="uk-nav uk-nav-default tm-nav"><li class="uk-nav-header">总目录</li> <li><a href="../index">首页</a></li> <li><a href="/showcase/">案例</a></li> <li><a href="../changelog">更新日志</a></li> <li><a href="/uikitzip/uikit-3.2.7.zip">下载</a></li></ul> <ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">入门</li> <li exact=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li><li exact=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li><li exact=""><a href="/doc/v3/getting-started/less.html">Less</a></li><li exact=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li><li exact=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li><li exact=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li><li exact=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li><li exact=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li><li exact=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li><li exact=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li></ul><ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">组件1</li> <li exact=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li><li exact=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li><li exact=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li><li exact=""><a href="/doc/v3/components/animation.html">动画（Animation）</a></li><li exact=""><a href="/doc/v3/components/article.html">文章（Article）</a></li><li exact=""><a href="/doc/v3/components/background.html">背景（Background）</a></li><li exact=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li><li exact=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li><li exact=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li><li exact=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li><li exact=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li><li exact=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li><li exact=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li><li exact=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li><li exact=""><a href="/doc/v3/components/container.html">容器（Container）</a></li><li exact=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li><li exact=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li><li exact=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li><li exact=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li><li exact=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li><li exact=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li><li exact=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li><li exact=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li><li exact=""><a href="/doc/v3/components/flex.html">Flex布局</a></li><li exact=""><a href="/doc/v3/components/form.html">表单（Form）</a></li><li exact=""><a href="/doc/v3/components/grid.html">网格（Grid）</a></li><li exact=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li><li exact=""><a href="/doc/v3/components/height.html">高度（Height）</a></li><li exact=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li><li exact=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li><li exact=""><a href="/doc/v3/components/image.html">图片（Image）</a></li><li exact=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li><li exact=""><a href="/doc/v3/components/label.html">标签（Label）</a></li><li exact=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li><li exact=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li><li exact=""><a href="/doc/v3/components/link.html">链接（Link）</a></li><li exact=""><a href="/doc/v3/components/list.html">列表（list）</a></li><li exact=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li><li exact=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li><li exact=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li><li exact=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li><li exact=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li><li exact=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li><li exact=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li><li exact=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li><li exact=""><a href="/doc/v3/components/padding.html">Padding</a></li><li exact=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li><li exact=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li><li exact=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li><li exact=""><a href="/doc/v3/components/position.html">定位（Position）</a></li><li exact=""><a href="/doc/v3/components/print.html">打印（Print）</a></li><li exact=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li><li exact=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li><li exact=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li><li exact=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li><li exact=""><a href="/doc/v3/components/section.html">区段（Section）</a></li><li exact=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li><li exact=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li><li exact=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li><li exact=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li><li exact=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li><li exact=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li><li exact=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li><li exact=""><a href="/doc/v3/components/svg.html">SVG</a></li><li exact=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li><li exact=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li><li exact=""><a href="/doc/v3/components/table.html">表格（Table）</a></li><li exact=""><a href="/doc/v3/components/text.html">文本（Text）</a></li><li exact=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li><li exact=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li><li exact=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li><li exact=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li><li exact=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li><li exact=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li><li exact=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li><li exact=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li><li exact=""><a href="/doc/v3/components/video.html">视频（Video）</a></li><li exact=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li><li exact=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li></ul></div></div></div></div>
-	    
-	
-	
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?9431dd8aad5a32e36edbfe4c279d0f02";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>	
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k46nns3s" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k46nns3s" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p><span class="uk-label">Note</span> 您可以在<a href="../tests/grid-parallax.html">视差网格</a> 测试页面查看更多示例。</p>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="component-options"><a href="#component-options">组件选项</a></h2>
+                        <p>以下的任意一个选项都可以应用于组件属性。多个选项用分号分隔。<a href="../getting-started/javascript.html#component-configuration">了解更多</a></p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Option</th>
+                                        <th align="left">Value</th>
+                                        <th align="left">Default</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>margin</code></td>
+                                        <td align="left">String</td>
+                                        <td align="left">uk-grid-margin</td>
+                                        <td align="left">这个class被添加到分配到下一行的项目中，并为上一行创建margin。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>first-column</code></td>
+                                        <td align="left">String</td>
+                                        <td align="left">uk-first-column</td>
+                                        <td align="left">为每行的第一个元素添加这个class。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>masonry</code></td>
+                                        <td align="left">Boolean</td>
+                                        <td align="left">false</td>
+                                        <td align="left">启用此网格的瀑布流布局。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>parallax</code></td>
+                                        <td align="left">Number</td>
+                                        <td align="left">0</td>
+                                        <td align="left">视差转换的值，该值必须是一个正整数。Falsy禁用视差效果（默认）。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="javascript"><a href="#javascript">JavaScript</a></h2>
+                        <p>了解更多有关<a href="../getting-started/javascript.html#programmatic-use">JavaScript 组件</a>的内容。</p>
+                        <h3 class="uk-h4 tm-heading-fragment" id="initialization"><a href="#initialization">Initialization</a></h3>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-js hljs javascript">UIkit.grid(element, options);</code></pre></div>
+                    </div>
+                </div>
+                <div class="tm-sidebar-right uk-visible@l">
+                    <div uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-fixed" style="position: fixed; top: 160px; width: 200px;">
+                        <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
+                            <li class="uk-active"><a href="#usage">用法</a></li>
+                            <li class=""><a href="#gap-modifiers">排水沟</a></li>
+                            <li class=""><a href="#nested-grid">网格嵌套</a></li>
+                            <li class=""><a href="#divider-modifier">分隔线</a></li>
+                            <li class=""><a href="#match-height">匹配高度</a></li>
+                            <li class=""><a href="#grid-and-width">网格和宽度</a></li>
+                            <li class=""><a href="#grid-and-flex">网格和flex</a></li>
+                            <li class=""><a href="#masonry">瀑布流</a></li>
+                            <li class=""><a href="#filter-and-order">过滤和排序</a></li>
+                            <li class=""><a href="#parallax">视差</a></li>
+                            <li class=""><a href="#component-options">组件选项</a></li>
+                            <li><a href="#javascript">JavaScript</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="../tests/grid.html" target="_blank"><span uk-icon="icon: push" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Open test</span></a></li>
+                            <li><a href="https://github.com/uikit/uikit/issues" target="_blank"><span uk-icon="icon: warning" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Report issue</span></a></li>
+                            <li><a href="https://discordapp.com/invite/NEt4Pv7" target="_blank"><span uk-icon="icon: commenting" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Get help</span></a></li>
+                            <li><a href="https://github.com/uikit/uikit-site/tree/develop/docs/pages/grid.md" target="_blank"><span uk-icon="icon: pencil" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Edit this page</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-sticky-placeholder" style="height: 252px; margin: 0px;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="offcanvas" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <div class="uk-panel">
+                    <ul class="uk-nav uk-nav-default tm-nav">
+                        <li class="uk-nav-header">总目录</li>
+                        <li><a href="../index">首页</a></li>
+                        <li><a href="/showcase/">案例</a></li>
+                        <li><a href="../changelog">更新日志</a></li>
+                        <li><a href="/download.html">下载</a></li>
+                    </ul>
+                    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                        <li class="uk-nav-header">入门</li>
+                        <li exact=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/less.html">Less</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li>
+                    </ul>
+                    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                        <li class="uk-nav-header">组件1</li>
+                        <li exact=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li>
+                        <li exact=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li>
+                        <li exact=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li>
+                        <li exact=""><a href="/doc/v3/components/animation.html">动画（Animation）</a></li>
+                        <li exact=""><a href="/doc/v3/components/article.html">文章（Article）</a></li>
+                        <li exact=""><a href="/doc/v3/components/background.html">背景（Background）</a></li>
+                        <li exact=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li>
+                        <li exact=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li>
+                        <li exact=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li>
+                        <li exact=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li>
+                        <li exact=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li>
+                        <li exact=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li>
+                        <li exact=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li>
+                        <li exact=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li>
+                        <li exact=""><a href="/doc/v3/components/container.html">容器（Container）</a></li>
+                        <li exact=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li>
+                        <li exact=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li>
+                        <li exact=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li>
+                        <li exact=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li>
+                        <li exact=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li>
+                        <li exact=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li>
+                        <li exact=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li>
+                        <li exact=""><a href="/doc/v3/components/flex.html">Flex布局</a></li>
+                        <li exact=""><a href="/doc/v3/components/form.html">表单（Form）</a></li>
+                        <li exact=""><a href="/doc/v3/components/grid.html">网格（Grid）</a></li>
+                        <li exact=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li>
+                        <li exact=""><a href="/doc/v3/components/height.html">高度（Height）</a></li>
+                        <li exact=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li>
+                        <li exact=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/image.html">图片（Image）</a></li>
+                        <li exact=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li>
+                        <li exact=""><a href="/doc/v3/components/label.html">标签（Label）</a></li>
+                        <li exact=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li>
+                        <li exact=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li>
+                        <li exact=""><a href="/doc/v3/components/link.html">链接（Link）</a></li>
+                        <li exact=""><a href="/doc/v3/components/list.html">列表（list）</a></li>
+                        <li exact=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li>
+                        <li exact=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li>
+                        <li exact=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li>
+                        <li exact=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li>
+                        <li exact=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li>
+                        <li exact=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li>
+                        <li exact=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li>
+                        <li exact=""><a href="/doc/v3/components/padding.html">Padding</a></li>
+                        <li exact=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li>
+                        <li exact=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li>
+                        <li exact=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li>
+                        <li exact=""><a href="/doc/v3/components/position.html">定位（Position）</a></li>
+                        <li exact=""><a href="/doc/v3/components/print.html">打印（Print）</a></li>
+                        <li exact=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li>
+                        <li exact=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li>
+                        <li exact=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li>
+                        <li exact=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li>
+                        <li exact=""><a href="/doc/v3/components/section.html">区段（Section）</a></li>
+                        <li exact=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li>
+                        <li exact=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li>
+                        <li exact=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li>
+                        <li exact=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li>
+                        <li exact=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li>
+                        <li exact=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/svg.html">SVG</a></li>
+                        <li exact=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li>
+                        <li exact=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li>
+                        <li exact=""><a href="/doc/v3/components/table.html">表格（Table）</a></li>
+                        <li exact=""><a href="/doc/v3/components/text.html">文本（Text）</a></li>
+                        <li exact=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li>
+                        <li exact=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li>
+                        <li exact=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li>
+                        <li exact=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li>
+                        <li exact=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li>
+                        <li exact=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li>
+                        <li exact=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li>
+                        <li exact=""><a href="/doc/v3/components/video.html">视频（Video）</a></li>
+                        <li exact=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li>
+                        <li exact=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?9431dd8aad5a32e36edbfe4c279d0f02";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 
 </body>
 

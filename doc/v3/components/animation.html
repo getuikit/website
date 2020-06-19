@@ -1,133 +1,288 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 
-	<head>
-		<title>动画（Animation） - UIkit3中文文档</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- <link rel="stylesheet" href="/skin/ukv3/css/uikit.min.css" /> -->
-		<link rel="stylesheet" type="text/css" href="/skin/ukv3/css/theme.css?3.4.6"/>
-		<script src="/skin/ukv3/js/clipboard.min.js" defer=""></script>
-		<script src="/skin/ukv3/js/uikit.min.js"></script>
-		<script src="/skin/ukv3/js/uikit-icons.min.js"></script>
-		<script src="/skin/ukv3/js/highlight.min.js"></script>
-	</head>
+<head>
+    <title>动画（Animation） - UIkit3中文文档</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="/skin/ukv3/css/uikit.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/skin/ukv3/css/theme.css?3.4.6" />
+    <script src="/skin/ukv3/js/clipboard.min.js" defer=""></script>
+    <script src="/skin/ukv3/js/uikit.min.js"></script>
+    <script src="/skin/ukv3/js/uikit-icons.min.js"></script>
+    <script src="/skin/ukv3/js/highlight.min.js"></script>
+</head>
 
-	<body>
-	        <div><div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed"><div class="uk-container uk-container-expand"><nav class="uk-navbar"><div class="uk-navbar-left"><a href="../" class="uk-navbar-item uk-logo"><img uk-svg="" src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"> UIkit
-                    </a></div> <div class="uk-navbar-right"><ul class="uk-navbar-nav uk-visible@m"><li class="uk-active"><a href="/doc/v3/getting-started/introduction.html">UIkit3文档</a></li> <li><a href="/docs/documentation_get-started.html">UIkit2文档</a></li> <li><a href="/showcase/">案例展示</a></li> <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li></ul> <div class="uk-navbar-item uk-visible@m"><a title="版本3.4.6" href="/uikitzip/uikit-3.4.6.zip" class="uk-button uk-button-default tm-button-default uk-icon">下载 <canvas uk-icon="icon: download" width="20" height="20" class="uk-icon" hidden="true"></canvas></a></div> <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></a></div></nav></div></div><div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div> <div class="tm-sidebar-left uk-visible@m"><h3>UIkit3.x文档</h3> <ul class="uk-nav uk-nav-default tm-nav"><li class="uk-nav-header">入门</li> <li class=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li><li class=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li><li class=""><a href="/doc/v3/getting-started/less.html">Less</a></li><li class=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li><li class=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li><li class=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li><li class=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li><li class=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li><li class=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li><li class=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li></ul><ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">组件</li> <li class=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li><li class=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li><li class=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li><li class="router-link-exact-active uk-active"><a href="/doc/v3/components/animation.html">动画（Animation）</a></li><li class=""><a href="/doc/v3/components/article.html">文章（Article）</a></li><li class=""><a href="/doc/v3/components/background.html">背景（Background）</a></li><li class=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li><li class=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li><li class=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li><li class=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li><li class=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li><li class=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li><li class=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li><li class=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li><li class=""><a href="/doc/v3/components/container.html">容器（Container）</a></li><li class=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li><li class=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li><li class=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li><li class=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li><li class=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li><li class=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li><li class=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li><li class=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li><li class=""><a href="/doc/v3/components/flex.html">Flex布局</a></li><li class=""><a href="/doc/v3/components/form.html">表单（Form）</a></li><li class=""><a href="/doc/v3/components/grid.html">网格（Grid）</a></li><li class=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li><li class=""><a href="/doc/v3/components/height.html">高度（Height）</a></li><li class=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li><li class=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li><li class=""><a href="/doc/v3/components/image.html">图片（Image）</a></li><li class=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li><li class=""><a href="/doc/v3/components/label.html">标签（Label）</a></li><li class=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li><li class=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li><li class=""><a href="/doc/v3/components/link.html">链接（Link）</a></li><li class=""><a href="/doc/v3/components/list.html">列表（list）</a></li><li class=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li><li class=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li><li class=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li><li class=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li><li class=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li><li class=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li><li class=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li><li class=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li><li class=""><a href="/doc/v3/components/padding.html">Padding</a></li><li class=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li><li class=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li><li class=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li><li class=""><a href="/doc/v3/components/position.html">定位（Position）</a></li><li class=""><a href="/doc/v3/components/print.html">打印（Print）</a></li><li class=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li><li class=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li><li class=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li><li class=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li><li class=""><a href="/doc/v3/components/section.html">区段（Section）</a></li><li class=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li><li class=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li><li class=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li><li class=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li><li class=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li><li class=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li><li class=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li><li class=""><a href="/doc/v3/components/svg.html">SVG</a></li><li class=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li><li class=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li><li class=""><a href="/doc/v3/components/table.html">表格（Table）</a></li><li class=""><a href="/doc/v3/components/text.html">文本（Text）</a></li><li class=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li><li class=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li><li class=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li><li class=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li><li class=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li><li class=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li><li class=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li><li class=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li><li class=""><a href="/doc/v3/components/video.html">视频（Video）</a></li><li class=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li><li class=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li></ul></div> <div class="tm-main uk-section uk-section-default"><div class="uk-container uk-container-small uk-position-relative"><div>
-<div>
-<h1 class="uk-h1 tm-heading-fragment" id="animation"><a href="#animation">动画</a></h1>
-<p class="uk-text-lead">一些可以流畅运行在你的页面中的简单动画。.</p>
-<h2 class="uk-h3 tm-heading-fragment" id="usage"><a href="#usage">用法</a></h2>
-<p>添加一个 <code>.uk-animation-*</code> 类之一添加到任何元素。 class被添加时就会显示动画，所以在页面加载之后就会立即生效。 要使动画在另一个时间点才显示，比如在元素进入视口时，你需要添加使用了 JavaScript 的class，例如 <a href="scrollspy.html">滚动监听组件</a> 这是 UIkit 的多数组件使用动画的方式。所有动画本身都是用 CSS 实现的，不需要使用 JavaScript来播放。</p>
-<div class="uk-overflow-auto">
-<table class="uk-table uk-table-divider">
-	<thead>
-		<tr>
-			<th align="left">Class</th>
-			<th align="left">Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td align="left"><code>.uk-animation-fade</code></td>
-			<td align="left">元素淡入</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-animation-scale-up</code><br /><code>.uk-animation-scale-down</code></td>
-			<td align="left">元素逐渐淡入并按比例放大或缩小。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-animation-slide-top</code><br /><code>.uk-animation-slide-bottom</code> <code>.uk-animation-slide-left</code><br /><code>.uk-animation-slide-right</code></td>
-			<td align="left">元素以其自身的高度或宽度从顶部，底部，左侧或右侧淡入并滑入。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-animation-slide-top-small</code><br /><code>.uk-animation-slide-bottom-small</code> <code>.uk-animation-slide-left-small</code><br /><code>.uk-animation-slide-right-small</code></td>
-			<td align="left">元素从顶部、底部、左侧或右侧淡入并滑入，并带有固定像素值的较小距离。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-animation-slide-top-medium</code><br /><code>.uk-animation-slide-bottom-medium</code> <code>.uk-animation-slide-left-medium</code><br /><code>.uk-animation-slide-right-medium</code></td>
-			<td align="left">元素从顶部、底部、左侧或右侧淡入并滑入，并带有固定像素值的中等距离。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-animation-kenburns</code></td>
-			<td align="left">元素会非常缓慢地向上缩放，并且不会消失。</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-animation-shake</code></td>
-			<td align="left">元素抖动</td>
-		</tr>
-		<tr>
-			<td align="left"><code>.uk-animation-stroke</code></td>
-			<td align="left">绘制SVG元素笔划。</td>
-		</tr>
-	</tbody>
-</table></div>
-<p>要在鼠标悬停或处于焦点时切换动画，请将 <code>.uk-animation-toggle</code> 类添加到父元素。还可以添加 <code>tabindex=&quot;0&quot;</code> 以使动画可通过键盘导航和触摸设备使动画聚焦。</p>
-<div class="uk-margin-medium">
-<pre>
+<body>
+    <div>
+        <div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar">
+                    <div class="uk-navbar-left">
+                        <a href="../" class="uk-navbar-item uk-logo"><img uk-svg="" src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true"> UIkit
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li class="uk-active"><a href="/doc/v3/getting-started/introduction.html">UIkit3文档</a></li>
+                            <li><a href="/docs/documentation_get-started.html">UIkit2文档</a></li>
+                            <li><a href="/showcase/">案例展示</a></li>
+                            <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li>
+                        </ul>
+                        <div class="uk-navbar-item uk-visible@m"><a title="版本3.4.6" href="/download.html" class="uk-button uk-button-default tm-button-default uk-icon">下载 <canvas uk-icon="icon: download" width="20" height="20" class="uk-icon" hidden="true"></canvas></a></div> <a uk-navbar-toggle-icon=""
+                            href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></a></div>
+                </nav>
+            </div>
+        </div>
+        <div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div>
+        <div class="tm-sidebar-left uk-visible@m">
+            <h3>UIkit3.x文档</h3>
+            <ul class="uk-nav uk-nav-default tm-nav">
+                <li class="uk-nav-header">入门</li>
+                <li class=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li>
+                <li class=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li>
+                <li class=""><a href="/doc/v3/getting-started/less.html">Less</a></li>
+                <li class=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li>
+                <li class=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li>
+                <li class=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li>
+                <li class=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li>
+                <li class=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li>
+                <li class=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li>
+                <li class=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li>
+            </ul>
+            <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                <li class="uk-nav-header">组件</li>
+                <li class=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li>
+                <li class=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li>
+                <li class=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li>
+                <li class="router-link-exact-active uk-active"><a href="/doc/v3/components/animation.html">动画（Animation）</a></li>
+                <li class=""><a href="/doc/v3/components/article.html">文章（Article）</a></li>
+                <li class=""><a href="/doc/v3/components/background.html">背景（Background）</a></li>
+                <li class=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li>
+                <li class=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li>
+                <li class=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li>
+                <li class=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li>
+                <li class=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li>
+                <li class=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li>
+                <li class=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li>
+                <li class=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li>
+                <li class=""><a href="/doc/v3/components/container.html">容器（Container）</a></li>
+                <li class=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li>
+                <li class=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li>
+                <li class=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li>
+                <li class=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li>
+                <li class=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li>
+                <li class=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li>
+                <li class=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li>
+                <li class=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li>
+                <li class=""><a href="/doc/v3/components/flex.html">Flex布局</a></li>
+                <li class=""><a href="/doc/v3/components/form.html">表单（Form）</a></li>
+                <li class=""><a href="/doc/v3/components/grid.html">网格（Grid）</a></li>
+                <li class=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li>
+                <li class=""><a href="/doc/v3/components/height.html">高度（Height）</a></li>
+                <li class=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li>
+                <li class=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li>
+                <li class=""><a href="/doc/v3/components/image.html">图片（Image）</a></li>
+                <li class=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li>
+                <li class=""><a href="/doc/v3/components/label.html">标签（Label）</a></li>
+                <li class=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li>
+                <li class=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li>
+                <li class=""><a href="/doc/v3/components/link.html">链接（Link）</a></li>
+                <li class=""><a href="/doc/v3/components/list.html">列表（list）</a></li>
+                <li class=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li>
+                <li class=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li>
+                <li class=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li>
+                <li class=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li>
+                <li class=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li>
+                <li class=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li>
+                <li class=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li>
+                <li class=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li>
+                <li class=""><a href="/doc/v3/components/padding.html">Padding</a></li>
+                <li class=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li>
+                <li class=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li>
+                <li class=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li>
+                <li class=""><a href="/doc/v3/components/position.html">定位（Position）</a></li>
+                <li class=""><a href="/doc/v3/components/print.html">打印（Print）</a></li>
+                <li class=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li>
+                <li class=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li>
+                <li class=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li>
+                <li class=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li>
+                <li class=""><a href="/doc/v3/components/section.html">区段（Section）</a></li>
+                <li class=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li>
+                <li class=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li>
+                <li class=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li>
+                <li class=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li>
+                <li class=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li>
+                <li class=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li>
+                <li class=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li>
+                <li class=""><a href="/doc/v3/components/svg.html">SVG</a></li>
+                <li class=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li>
+                <li class=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li>
+                <li class=""><a href="/doc/v3/components/table.html">表格（Table）</a></li>
+                <li class=""><a href="/doc/v3/components/text.html">文本（Text）</a></li>
+                <li class=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li>
+                <li class=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li>
+                <li class=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li>
+                <li class=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li>
+                <li class=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li>
+                <li class=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li>
+                <li class=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li>
+                <li class=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li>
+                <li class=""><a href="/doc/v3/components/video.html">视频（Video）</a></li>
+                <li class=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li>
+                <li class=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li>
+            </ul>
+        </div>
+        <div class="tm-main uk-section uk-section-default">
+            <div class="uk-container uk-container-small uk-position-relative">
+                <div>
+                    <div>
+                        <h1 class="uk-h1 tm-heading-fragment" id="animation"><a href="#animation">动画</a></h1>
+                        <p class="uk-text-lead">一些可以流畅运行在你的页面中的简单动画。.</p>
+                        <h2 class="uk-h3 tm-heading-fragment" id="usage"><a href="#usage">用法</a></h2>
+                        <p>添加一个 <code>.uk-animation-*</code> 类之一添加到任何元素。 class被添加时就会显示动画，所以在页面加载之后就会立即生效。 要使动画在另一个时间点才显示，比如在元素进入视口时，你需要添加使用了 JavaScript 的class，例如 <a href="scrollspy.html">滚动监听组件</a> 这是 UIkit 的多数组件使用动画的方式。所有动画本身都是用 CSS 实现的，不需要使用 JavaScript来播放。</p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Class</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>.uk-animation-fade</code></td>
+                                        <td align="left">元素淡入</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-animation-scale-up</code><br /><code>.uk-animation-scale-down</code></td>
+                                        <td align="left">元素逐渐淡入并按比例放大或缩小。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-animation-slide-top</code><br /><code>.uk-animation-slide-bottom</code> <code>.uk-animation-slide-left</code><br /><code>.uk-animation-slide-right</code></td>
+                                        <td align="left">元素以其自身的高度或宽度从顶部，底部，左侧或右侧淡入并滑入。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-animation-slide-top-small</code><br /><code>.uk-animation-slide-bottom-small</code> <code>.uk-animation-slide-left-small</code><br /><code>.uk-animation-slide-right-small</code></td>
+                                        <td align="left">元素从顶部、底部、左侧或右侧淡入并滑入，并带有固定像素值的较小距离。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-animation-slide-top-medium</code><br /><code>.uk-animation-slide-bottom-medium</code> <code>.uk-animation-slide-left-medium</code><br /><code>.uk-animation-slide-right-medium</code></td>
+                                        <td align="left">元素从顶部、底部、左侧或右侧淡入并滑入，并带有固定像素值的中等距离。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-animation-kenburns</code></td>
+                                        <td align="left">元素会非常缓慢地向上缩放，并且不会消失。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-animation-shake</code></td>
+                                        <td align="left">元素抖动</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-animation-stroke</code></td>
+                                        <td align="left">绘制SVG元素笔划。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>要在鼠标悬停或处于焦点时切换动画，请将 <code>.uk-animation-toggle</code> 类添加到父元素。还可以添加 <code>tabindex=&quot;0&quot;</code> 以使动画可通过键盘导航和触摸设备使动画聚焦。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-toggle&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-fade&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match uk-grid" uk-grid="">
-	<div class="uk-animation-toggle uk-first-column" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-fade">
-	<p class="uk-text-center">Fade</p></div></div>
-	<div class="uk-animation-toggle" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
-	<p class="uk-text-center">Scale Up</p></div></div>
-	<div class="uk-animation-toggle" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
-	<p class="uk-text-center">Scale Down</p></div></div>
-	<div class="uk-animation-toggle" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-shake">
-	<p class="uk-text-center">Shake</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-left">
-	<p class="uk-text-center">Left</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-top">
-	<p class="uk-text-center">Top</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom">
-	<p class="uk-text-center">Bottom</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-right">
-	<p class="uk-text-center">Right</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-small">
-	<p class="uk-text-center">Left Small</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-small">
-	<p class="uk-text-center">Top Small</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-small">
-	<p class="uk-text-center">Bottom Small</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-small">
-	<p class="uk-text-center">Right Small</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-medium">
-	<p class="uk-text-center">Left Medium</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-medium">
-	<p class="uk-text-center">Top Medium</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium">
-	<p class="uk-text-center">Bottom Medium</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-medium">
-	<p class="uk-text-center">Right Medium</p></div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match uk-grid" uk-grid="">
+                                        <div class="uk-animation-toggle uk-first-column" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-fade">
+                                                <p class="uk-text-center">Fade</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
+                                                <p class="uk-text-center">Scale Up</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
+                                                <p class="uk-text-center">Scale Down</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-shake">
+                                                <p class="uk-text-center">Shake</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left">
+                                                <p class="uk-text-center">Left</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top">
+                                                <p class="uk-text-center">Top</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom">
+                                                <p class="uk-text-center">Bottom</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right">
+                                                <p class="uk-text-center">Right</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-small">
+                                                <p class="uk-text-center">Left Small</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-small">
+                                                <p class="uk-text-center">Top Small</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-small">
+                                                <p class="uk-text-center">Bottom Small</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-small">
+                                                <p class="uk-text-center">Right Small</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-medium">
+                                                <p class="uk-text-center">Left Medium</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-medium">
+                                                <p class="uk-text-center">Top Medium</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium">
+                                                <p class="uk-text-center">Bottom Medium</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-medium">
+                                                <p class="uk-text-center">Right Medium</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k3q1cq89"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-toggle&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body uk-animation-fade&quot;</span>&gt;</span>
@@ -210,76 +365,116 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k3q1cq89" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq89" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="reverse-modifier"><a href="#reverse-modifier">反向动画</a></h2>
-<p>默认地，所有动画都是元素出现的效果。要把动画反向，请添加 <code>.uk-animation-reverse</code> 类.</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k3q1cq89" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq89" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="reverse-modifier"><a href="#reverse-modifier">反向动画</a></h2>
+                        <p>默认地，所有动画都是元素出现的效果。要把动画反向，请添加 <code>.uk-animation-reverse</code> 类.</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-fade uk-animation-reverse&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match uk-grid" uk-grid="">
-	<div class="uk-animation-toggle uk-first-column" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-fade uk-animation-reverse">
-	<p class="uk-text-center">Fade</p></div></div>
-	<div class="uk-animation-toggle" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-animation-reverse">
-	<p class="uk-text-center">Scale Up</p></div></div>
-	<div class="uk-animation-toggle" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-scale-down uk-animation-reverse">
-	<p class="uk-text-center">Scale Down</p></div></div>
-	<div class="uk-animation-toggle" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-shake uk-animation-reverse">
-	<p class="uk-text-center">Shake</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-left uk-animation-reverse">
-	<p class="uk-text-center">Left</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-top uk-animation-reverse">
-	<p class="uk-text-center">Top</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom uk-animation-reverse">
-	<p class="uk-text-center">Bottom</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-right uk-animation-reverse">
-	<p class="uk-text-center">Right</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-small uk-animation-reverse">
-	<p class="uk-text-center">Left Small</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-small uk-animation-reverse">
-	<p class="uk-text-center">Top Small</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-small uk-animation-reverse">
-	<p class="uk-text-center">Bottom Small</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-small uk-animation-reverse">
-	<p class="uk-text-center">Right Small</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-medium uk-animation-reverse">
-	<p class="uk-text-center">Left Medium</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-medium uk-animation-reverse">
-	<p class="uk-text-center">Top Medium</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium uk-animation-reverse">
-	<p class="uk-text-center">Bottom Medium</p></div></div>
-	<div class="uk-animation-toggle uk-grid-margin" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-medium uk-animation-reverse">
-	<p class="uk-text-center">Right Medium</p></div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match uk-grid" uk-grid="">
+                                        <div class="uk-animation-toggle uk-first-column" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-fade uk-animation-reverse">
+                                                <p class="uk-text-center">Fade</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-animation-reverse">
+                                                <p class="uk-text-center">Scale Up</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down uk-animation-reverse">
+                                                <p class="uk-text-center">Scale Down</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-shake uk-animation-reverse">
+                                                <p class="uk-text-center">Shake</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left uk-animation-reverse">
+                                                <p class="uk-text-center">Left</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top uk-animation-reverse">
+                                                <p class="uk-text-center">Top</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom uk-animation-reverse">
+                                                <p class="uk-text-center">Bottom</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right uk-animation-reverse">
+                                                <p class="uk-text-center">Right</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-small uk-animation-reverse">
+                                                <p class="uk-text-center">Left Small</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-small uk-animation-reverse">
+                                                <p class="uk-text-center">Top Small</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-small uk-animation-reverse">
+                                                <p class="uk-text-center">Bottom Small</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-small uk-animation-reverse">
+                                                <p class="uk-text-center">Right Small</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin uk-first-column" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-medium uk-animation-reverse">
+                                                <p class="uk-text-center">Left Medium</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-medium uk-animation-reverse">
+                                                <p class="uk-text-center">Top Medium</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium uk-animation-reverse">
+                                                <p class="uk-text-center">Bottom Medium</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle uk-grid-margin" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-medium uk-animation-reverse">
+                                                <p class="uk-text-center">Right Medium</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k3q1cq8a"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-toggle&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body uk-animation-fade uk-animation-reverse&quot;</span>&gt;</span>
@@ -362,31 +557,41 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k3q1cq8a" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq8a" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="fast-modifier"><a href="#fast-modifier">快速动画</a></h2>
-<p>要以更快的速度播放动画，请将 <code>.uk-animation-fast</code> 类添加到元素。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k3q1cq8a" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq8a" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="fast-modifier"><a href="#fast-modifier">快速动画</a></h2>
+                        <p>要以更快的速度播放动画，请将 <code>.uk-animation-fast</code> 类添加到元素。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-fade uk-animation-fast&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-width-1-3@s">
-	<div class="uk-animation-toggle" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-fade">
-	<p class="uk-text-center">Fade</p></div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-width-1-3@s">
+                                        <div class="uk-animation-toggle" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-fade">
+                                                <p class="uk-text-center">Fade</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k3q1cq8b"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-3@s&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-toggle&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-fade&quot;</span>&gt;</span>
@@ -394,37 +599,51 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k3q1cq8b" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq8b" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="origin-modifiers"><a href="#origin-modifiers">动画起点</a></h2>
-<p>默认情况下，缩放动画从中心开始。 若要修改此行为，请从<a href="utility.html#transform-origin">实用效果组件</a>中添加 <code>.uk-transform-origin-*</code> 类之一。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k3q1cq8b" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq8b" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="origin-modifiers"><a href="#origin-modifiers">动画起点</a></h2>
+                        <p>默认情况下，缩放动画从中心开始。 若要修改此行为，请从<a href="utility.html#transform-origin">实用效果组件</a>中添加 <code>.uk-transform-origin-*</code> 类之一。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-scale-up uk-transform-origin-bottom-right&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-1-3@s uk-grid" uk-grid="">
-	<div class="uk-animation-toggle uk-first-column" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-right">
-	<p class="uk-text-center">Bottom Right</p></div></div>
-	<div class="uk-animation-toggle" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-top-center">
-	<p class="uk-text-center">Top Center</p></div></div>
-	<div class="uk-animation-toggle" tabindex="0">
-	<div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-center">
-	<p class="uk-text-center">Bottom Center</p></div></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-1-3@s uk-grid" uk-grid="">
+                                        <div class="uk-animation-toggle uk-first-column" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-right">
+                                                <p class="uk-text-center">Bottom Right</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-top-center">
+                                                <p class="uk-text-center">Top Center</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-animation-toggle" tabindex="0">
+                                            <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-center">
+                                                <p class="uk-text-center">Bottom Center</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k3q1cq8c"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-3@s&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-toggle&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-right&quot;</span>&gt;</span>
@@ -442,33 +661,43 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k3q1cq8c" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq8c" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="ken-burns"><a href="#ken-burns">Ken Burns</a></h2>
-<p>要添加简单的Ken Burns效果，请将 <code>.uk-animation-kenburns</code> 类添加到图像。 您还可以使用 <a href="utility.html#transform-origin">实用效果组件</a>中的 <code>.uk-animation-reverse</code> 或 <code>.uk-transform-origin-*</code> 其中之一来修改效果。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k3q1cq8c" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq8c" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="ken-burns"><a href="#ken-burns">Ken Burns</a></h2>
+                        <p>要添加简单的Ken Burns效果，请将 <code>.uk-animation-kenburns</code> 类添加到图像。 您还可以使用 <a href="utility.html#transform-origin">实用效果组件</a>中的 <code>.uk-animation-reverse</code> 或 <code>.uk-transform-origin-*</code> 其中之一来修改效果。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-kenburns&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span></code></pre></div>
-<p>默认情况下，动画在页面加载后就开始播放。 在此示例中，我们使用<a href="scrollspy.html">滚动监听</a> 组件，这样图片在进入视口时才触发动画效果。</p>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-1-2@s uk-grid-small uk-grid" uk-grid="">
-	<div class="uk-first-column">
-	<div class="uk-overflow-hidden"><img alt="Example image" src="/skin/ukv3/images/dark.jpg" style="visibility: hidden;" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" /></div></div>
-	<div>
-	<div class="uk-overflow-hidden"><img alt="Example image" class="uk-animation-reverse uk-transform-origin-top-right" src="/skin/ukv3/images/dark.jpg" style="visibility: hidden;" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" /></div></div></div></li>
-	<li>
-	<pre>
+                        <p>默认情况下，动画在页面加载后就开始播放。 在此示例中，我们使用<a href="scrollspy.html">滚动监听</a> 组件，这样图片在进入视口时才触发动画效果。</p>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-1-2@s uk-grid-small uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-overflow-hidden"><img alt="Example image" src="/skin/ukv3/images/dark.jpg" style="visibility: hidden;" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" /></div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-overflow-hidden"><img alt="Example image" class="uk-animation-reverse uk-transform-origin-top-right" src="/skin/ukv3/images/dark.jpg" style="visibility: hidden;" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" /></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k3q1cq8d"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-2@s uk-grid-small&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-overflow-hidden&quot;</span>&gt;</span>
@@ -481,37 +710,47 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k3q1cq8d" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq8d" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div>
-<hr class="uk-margin-large" />
-<h2 class="uk-h3 tm-heading-fragment" id="svg-strokes"><a href="#svg-strokes">SVG 笔划</a></h2>
-<p>动画组件可用于为SVG笔画设置动画。 效果看起来像SVG在您的眼前绘制笔划。 SVG图像必须作为嵌入式SVG注入到标记中。 这可以手动完成，也可以使用 <a href="svg.html">SVG 组件</a>完成。</p>
-<p>以下示例显示了如何手动添加嵌入式SVG。由于您必须知道笔触的确切长度，因此UIkit要求您在自定义属性 <code>--uk-animation-stroke</code>中设置长度。 在本例中，笔划长度为<code>46</code>。</p>
-<div class="uk-margin-medium">
-<pre>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k3q1cq8d" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq8d" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="svg-strokes"><a href="#svg-strokes">SVG 笔划</a></h2>
+                        <p>动画组件可用于为SVG笔画设置动画。 效果看起来像SVG在您的眼前绘制笔划。 SVG图像必须作为嵌入式SVG注入到标记中。 这可以手动完成，也可以使用 <a href="svg.html">SVG 组件</a>完成。</p>
+                        <p>以下示例显示了如何手动添加嵌入式SVG。由于您必须知道笔触的确切长度，因此UIkit要求您在自定义属性 <code>--uk-animation-stroke</code>中设置长度。 在本例中，笔划长度为<code>46</code>。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-stroke&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;--uk-animation-stroke: 46;&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 20 20&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#000&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1&quot;</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></code></pre></div>
-<p>还有一种更为简单的方法是将<code>uk-svg=&quot;stroke-animation: true&quot;</code>添加到图像元素来使用 <a href="svg.html">SVG 组件</a>。 它将计算笔划长度并自动添加 <code>--uk-animation-stroke</code> 自定义属性。</p>
-<div class="uk-margin-medium">
-<pre>
+                        <p>还有一种更为简单的方法是将<code>uk-svg=&quot;stroke-animation: true&quot;</code>添加到图像元素来使用 <a href="svg.html">SVG 组件</a>。 它将计算笔划长度并自动添加 <code>--uk-animation-stroke</code> 自定义属性。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
 <code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">uk-svg</span>=<span class="hljs-string">&quot;stroke-animation: true&quot;</span>&gt;</span></code></pre></div>
-<div class="uk-position-relative uk-margin-medium">
-<ul class="uk-tab" uk-tab="swiping: false">
-	<li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
-	<li><a aria-expanded="false" href="#">Markup</a></li>
-</ul>
-<ul class="uk-switcher uk-margin">
-	<li class="uk-active">
-	<div class="uk-child-width-1-2@m uk-text-center uk-grid" uk-grid="">
-	<div class="uk-animation-toggle uk-first-column" tabindex="0"><img alt="" class="uk-animation-stroke" height="400" hidden="true" src="images/strokes.svg" uk-svg="stroke-animation: true" width="400" /><svg class="uk-animation-stroke uk-svg" data-svg="images/strokes.svg" height="400" style="--uk-animation-stroke:394;" viewbox="0 0 350 340" width="400" xmlns="http://www.w3.org/2000/svg"> <polygon fill="none" points="142.6 273.5 92.4 273.5 64 322 171 322 142.6 273.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon> <rect fill="none" height="10" stroke="#000" stroke-width="2" width="31" x="102" y="263"></rect> <rect fill="none" height="15" stroke="#000" stroke-width="2" width="102" x="41" y="248"></rect> <polyline fill="none" points="186.8 200.4 277.9 25.7 296.8 12.3" stroke="#000" stroke-width="2"></polyline> <polyline fill="none" points="89.1 190.6 257 1.5 296.8 12.3 336.9 89" stroke="#000" stroke-width="2"></polyline> <circle cx="338.4" cy="94.8" fill="none" r="5.3" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle> <line fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="338.4" x2="338.4" y1="207.4" y2="100.1"></line> <path d="M332.5,228.4a8,8,0,0,0-.5,2.1,6.77,6.77,0,1,0,8.2-6.1,2.36,2.36,0,0,1-1.8-2.3h0v-5.2" fill="none" stroke="#0045d4" stroke-linecap="round" stroke-width="2"></path> <circle cx="338.5" cy="212.7" fill="none" r="4.2" stroke="#0045d4" stroke-width="2"></circle> <rect fill="none" height="57" stroke="#000" stroke-width="2" width="140" x="3" y="191"></rect> <polygon fill="none" points="193 201 193 242 179 263 143 263 143 197 193 201" stroke="#000" stroke-width="2"></polygon> <polygon fill="none" points="185 243 175 258 160 258 160 243 185 243" stroke="#0045d4" stroke-width="2"></polygon> <rect fill="none" height="28" stroke="#0045d4" stroke-width="2" width="26" x="160" y="209"></rect> <polyline fill="none" points="220.2 135.2 139.8 135.2 170.8 199.1" stroke="#000" stroke-width="2"></polyline> <rect fill="none" height="17" stroke="#000" stroke-linejoin="round" stroke-width="2" width="120" x="57" y="322"></rect> <line fill="none" stroke="#000" stroke-width="2" x1="257" x2="334" y1="1.5" y2="90.7"></line> </svg></div>
-	<div class="uk-animation-toggle" tabindex="0"><img alt="" class="uk-animation-stroke uk-animation-reverse" height="400" hidden="true" src="images/strokes.svg" uk-svg="stroke-animation: true" width="400" /><svg class="uk-animation-stroke uk-animation-reverse uk-svg" data-svg="images/strokes.svg" height="400" style="--uk-animation-stroke:394;" viewbox="0 0 350 340" width="400" xmlns="http://www.w3.org/2000/svg"> <polygon fill="none" points="142.6 273.5 92.4 273.5 64 322 171 322 142.6 273.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon> <rect fill="none" height="10" stroke="#000" stroke-width="2" width="31" x="102" y="263"></rect> <rect fill="none" height="15" stroke="#000" stroke-width="2" width="102" x="41" y="248"></rect> <polyline fill="none" points="186.8 200.4 277.9 25.7 296.8 12.3" stroke="#000" stroke-width="2"></polyline> <polyline fill="none" points="89.1 190.6 257 1.5 296.8 12.3 336.9 89" stroke="#000" stroke-width="2"></polyline> <circle cx="338.4" cy="94.8" fill="none" r="5.3" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle> <line fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="338.4" x2="338.4" y1="207.4" y2="100.1"></line> <path d="M332.5,228.4a8,8,0,0,0-.5,2.1,6.77,6.77,0,1,0,8.2-6.1,2.36,2.36,0,0,1-1.8-2.3h0v-5.2" fill="none" stroke="#0045d4" stroke-linecap="round" stroke-width="2"></path> <circle cx="338.5" cy="212.7" fill="none" r="4.2" stroke="#0045d4" stroke-width="2"></circle> <rect fill="none" height="57" stroke="#000" stroke-width="2" width="140" x="3" y="191"></rect> <polygon fill="none" points="193 201 193 242 179 263 143 263 143 197 193 201" stroke="#000" stroke-width="2"></polygon> <polygon fill="none" points="185 243 175 258 160 258 160 243 185 243" stroke="#0045d4" stroke-width="2"></polygon> <rect fill="none" height="28" stroke="#0045d4" stroke-width="2" width="26" x="160" y="209"></rect> <polyline fill="none" points="220.2 135.2 139.8 135.2 170.8 199.1" stroke="#000" stroke-width="2"></polyline> <rect fill="none" height="17" stroke="#000" stroke-linejoin="round" stroke-width="2" width="120" x="57" y="322"></rect> <line fill="none" stroke="#000" stroke-width="2" x1="257" x2="334" y1="1.5" y2="90.7"></line> </svg></div></div></li>
-	<li>
-	<pre>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-1-2@m uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-animation-toggle uk-first-column" tabindex="0"><img alt="" class="uk-animation-stroke" height="400" hidden="true" src="images/strokes.svg" uk-svg="stroke-animation: true" width="400" /><svg class="uk-animation-stroke uk-svg" data-svg="images/strokes.svg" height="400"
+                                                style="--uk-animation-stroke:394;" viewbox="0 0 350 340" width="400" xmlns="http://www.w3.org/2000/svg"> <polygon fill="none" points="142.6 273.5 92.4 273.5 64 322 171 322 142.6 273.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon> <rect fill="none" height="10" stroke="#000" stroke-width="2" width="31" x="102" y="263"></rect> <rect fill="none" height="15" stroke="#000" stroke-width="2" width="102" x="41" y="248"></rect> <polyline fill="none" points="186.8 200.4 277.9 25.7 296.8 12.3" stroke="#000" stroke-width="2"></polyline> <polyline fill="none" points="89.1 190.6 257 1.5 296.8 12.3 336.9 89" stroke="#000" stroke-width="2"></polyline> <circle cx="338.4" cy="94.8" fill="none" r="5.3" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle> <line fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="338.4" x2="338.4" y1="207.4" y2="100.1"></line> <path d="M332.5,228.4a8,8,0,0,0-.5,2.1,6.77,6.77,0,1,0,8.2-6.1,2.36,2.36,0,0,1-1.8-2.3h0v-5.2" fill="none" stroke="#0045d4" stroke-linecap="round" stroke-width="2"></path> <circle cx="338.5" cy="212.7" fill="none" r="4.2" stroke="#0045d4" stroke-width="2"></circle> <rect fill="none" height="57" stroke="#000" stroke-width="2" width="140" x="3" y="191"></rect> <polygon fill="none" points="193 201 193 242 179 263 143 263 143 197 193 201" stroke="#000" stroke-width="2"></polygon> <polygon fill="none" points="185 243 175 258 160 258 160 243 185 243" stroke="#0045d4" stroke-width="2"></polygon> <rect fill="none" height="28" stroke="#0045d4" stroke-width="2" width="26" x="160" y="209"></rect> <polyline fill="none" points="220.2 135.2 139.8 135.2 170.8 199.1" stroke="#000" stroke-width="2"></polyline> <rect fill="none" height="17" stroke="#000" stroke-linejoin="round" stroke-width="2" width="120" x="57" y="322"></rect> <line fill="none" stroke="#000" stroke-width="2" x1="257" x2="334" y1="1.5" y2="90.7"></line> </svg></div>
+                                        <div class="uk-animation-toggle" tabindex="0"><img alt="" class="uk-animation-stroke uk-animation-reverse" height="400" hidden="true" src="images/strokes.svg" uk-svg="stroke-animation: true" width="400" /><svg class="uk-animation-stroke uk-animation-reverse uk-svg"
+                                                data-svg="images/strokes.svg" height="400" style="--uk-animation-stroke:394;" viewbox="0 0 350 340" width="400" xmlns="http://www.w3.org/2000/svg"> <polygon fill="none" points="142.6 273.5 92.4 273.5 64 322 171 322 142.6 273.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon> <rect fill="none" height="10" stroke="#000" stroke-width="2" width="31" x="102" y="263"></rect> <rect fill="none" height="15" stroke="#000" stroke-width="2" width="102" x="41" y="248"></rect> <polyline fill="none" points="186.8 200.4 277.9 25.7 296.8 12.3" stroke="#000" stroke-width="2"></polyline> <polyline fill="none" points="89.1 190.6 257 1.5 296.8 12.3 336.9 89" stroke="#000" stroke-width="2"></polyline> <circle cx="338.4" cy="94.8" fill="none" r="5.3" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle> <line fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="338.4" x2="338.4" y1="207.4" y2="100.1"></line> <path d="M332.5,228.4a8,8,0,0,0-.5,2.1,6.77,6.77,0,1,0,8.2-6.1,2.36,2.36,0,0,1-1.8-2.3h0v-5.2" fill="none" stroke="#0045d4" stroke-linecap="round" stroke-width="2"></path> <circle cx="338.5" cy="212.7" fill="none" r="4.2" stroke="#0045d4" stroke-width="2"></circle> <rect fill="none" height="57" stroke="#000" stroke-width="2" width="140" x="3" y="191"></rect> <polygon fill="none" points="193 201 193 242 179 263 143 263 143 197 193 201" stroke="#000" stroke-width="2"></polygon> <polygon fill="none" points="185 243 175 258 160 258 160 243 185 243" stroke="#0045d4" stroke-width="2"></polygon> <rect fill="none" height="28" stroke="#0045d4" stroke-width="2" width="26" x="160" y="209"></rect> <polyline fill="none" points="220.2 135.2 139.8 135.2 170.8 199.1" stroke="#000" stroke-width="2"></polyline> <rect fill="none" height="17" stroke="#000" stroke-linejoin="round" stroke-width="2" width="120" x="57" y="322"></rect> <line fill="none" stroke="#000" stroke-width="2" x1="257" x2="334" y1="1.5" y2="90.7"></line> </svg></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
 <code class="lang-html hljs xml" id="code-k3q1cq8e"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-2@m uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-toggle&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-stroke&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;400&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;400&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/strokes.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">uk-svg</span>=<span class="hljs-string">&quot;stroke-animation: true&quot;</span>&gt;</span>
@@ -520,24 +759,161 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-animation-stroke uk-animation-reverse&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;400&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;400&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/strokes.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">uk-svg</span>=<span class="hljs-string">&quot;stroke-animation: true&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
-</ul>
-<div class="uk-position-top-right uk-margin-small-top">
-<ul class="uk-iconnav">
-	<li><a aria-expanded="false" class="js-copy" rel="#code-k3q1cq8e" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a></li>
-	<li><a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq8e" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a></li>
-</ul></div></div></div></div> <div class="tm-sidebar-right uk-visible@l"><div uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-fixed" style="position: fixed; top: 160px; width: 200px;"><ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon"><li class="uk-active"><a href="#usage">用法</a></li><li class=""><a href="#reverse-modifier">反向动画</a></li><li><a href="#fast-modifier">快速动画</a></li><li><a href="#origin-modifiers">动画起点</a></li><li><a href="#ken-burns">Ken Burns</a></li><li><a href="#svg-strokes">SVG 笔划</a></li> <li class="uk-nav-divider"></li> <li><a href="../tests/animation.html" target="_blank"><span uk-icon="icon: push" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Open test</span></a></li> <li><a href="https://github.com/uikit/uikit/issues" target="_blank"><span uk-icon="icon: warning" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Report issue</span></a></li> <li><a href="https://discordapp.com/invite/NEt4Pv7" target="_blank"><span uk-icon="icon: commenting" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Get help</span></a></li> <li><a href="https://github.com/uikit/uikit-site/tree/develop/docs/pages/animation.md" target="_blank"><span uk-icon="icon: pencil" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Edit this page</span></a></li></ul></div><div class="uk-sticky-placeholder" style="height: 252px; margin: 0px;"></div></div></div></div> <div id="offcanvas" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas"><div class="uk-offcanvas-bar"><div class="uk-panel"><ul class="uk-nav uk-nav-default tm-nav"><li class="uk-nav-header">总目录</li> <li><a href="../index">首页</a></li> <li><a href="/showcase/">案例</a></li> <li><a href="../changelog">更新日志</a></li> <li><a href="/uikitzip/uikit-3.2.7.zip">下载</a></li></ul> <ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">入门</li> <li exact=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li><li exact=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li><li exact=""><a href="/doc/v3/getting-started/less.html">Less</a></li><li exact=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li><li exact=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li><li exact=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li><li exact=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li><li exact=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li><li exact=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li><li exact=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li></ul><ul class="uk-nav uk-nav-default tm-nav uk-margin-top"><li class="uk-nav-header">组件1</li> <li exact=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li><li exact=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li><li exact=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li><li exact=""><a href="/doc/v3/components/animation.html">动画（Animation）</a></li><li exact=""><a href="/doc/v3/components/article.html">文章（Article）</a></li><li exact=""><a href="/doc/v3/components/background.html">背景（Background）</a></li><li exact=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li><li exact=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li><li exact=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li><li exact=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li><li exact=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li><li exact=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li><li exact=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li><li exact=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li><li exact=""><a href="/doc/v3/components/container.html">容器（Container）</a></li><li exact=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li><li exact=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li><li exact=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li><li exact=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li><li exact=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li><li exact=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li><li exact=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li><li exact=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li><li exact=""><a href="/doc/v3/components/flex.html">Flex布局</a></li><li exact=""><a href="/doc/v3/components/form.html">表单（Form）</a></li><li exact=""><a href="/doc/v3/components/grid.html">网格（Grid）</a></li><li exact=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li><li exact=""><a href="/doc/v3/components/height.html">高度（Height）</a></li><li exact=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li><li exact=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li><li exact=""><a href="/doc/v3/components/image.html">图片（Image）</a></li><li exact=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li><li exact=""><a href="/doc/v3/components/label.html">标签（Label）</a></li><li exact=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li><li exact=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li><li exact=""><a href="/doc/v3/components/link.html">链接（Link）</a></li><li exact=""><a href="/doc/v3/components/list.html">列表（list）</a></li><li exact=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li><li exact=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li><li exact=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li><li exact=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li><li exact=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li><li exact=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li><li exact=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li><li exact=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li><li exact=""><a href="/doc/v3/components/padding.html">Padding</a></li><li exact=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li><li exact=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li><li exact=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li><li exact=""><a href="/doc/v3/components/position.html">定位（Position）</a></li><li exact=""><a href="/doc/v3/components/print.html">打印（Print）</a></li><li exact=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li><li exact=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li><li exact=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li><li exact=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li><li exact=""><a href="/doc/v3/components/section.html">区段（Section）</a></li><li exact=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li><li exact=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li><li exact=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li><li exact=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li><li exact=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li><li exact=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li><li exact=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li><li exact=""><a href="/doc/v3/components/svg.html">SVG</a></li><li exact=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li><li exact=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li><li exact=""><a href="/doc/v3/components/table.html">表格（Table）</a></li><li exact=""><a href="/doc/v3/components/text.html">文本（Text）</a></li><li exact=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li><li exact=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li><li exact=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li><li exact=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li><li exact=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li><li exact=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li><li exact=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li><li exact=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li><li exact=""><a href="/doc/v3/components/video.html">视频（Video）</a></li><li exact=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li><li exact=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li></ul></div></div></div></div>
-	    
-	
-	
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?9431dd8aad5a32e36edbfe4c279d0f02";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>	
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k3q1cq8e" title="" uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true" src="../images/icon-clipboard.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5"></line> <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line> <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000" stroke-width="1.03"></polyline> <polyline fill="none" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12" stroke="#000"></polyline> </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k3q1cq8e" title="" uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true" src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg" data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"> <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line> <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line> <path d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5" fill="none" stroke="#000"></path> <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle> <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle> <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle> </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-sidebar-right uk-visible@l">
+                    <div uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-fixed" style="position: fixed; top: 160px; width: 200px;">
+                        <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
+                            <li class="uk-active"><a href="#usage">用法</a></li>
+                            <li class=""><a href="#reverse-modifier">反向动画</a></li>
+                            <li><a href="#fast-modifier">快速动画</a></li>
+                            <li><a href="#origin-modifiers">动画起点</a></li>
+                            <li><a href="#ken-burns">Ken Burns</a></li>
+                            <li><a href="#svg-strokes">SVG 笔划</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="../tests/animation.html" target="_blank"><span uk-icon="icon: push" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Open test</span></a></li>
+                            <li><a href="https://github.com/uikit/uikit/issues" target="_blank"><span uk-icon="icon: warning" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Report issue</span></a></li>
+                            <li><a href="https://discordapp.com/invite/NEt4Pv7" target="_blank"><span uk-icon="icon: commenting" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Get help</span></a></li>
+                            <li><a href="https://github.com/uikit/uikit-site/tree/develop/docs/pages/animation.md" target="_blank"><span uk-icon="icon: pencil" class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Edit this page</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-sticky-placeholder" style="height: 252px; margin: 0px;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="offcanvas" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <div class="uk-panel">
+                    <ul class="uk-nav uk-nav-default tm-nav">
+                        <li class="uk-nav-header">总目录</li>
+                        <li><a href="../index">首页</a></li>
+                        <li><a href="/showcase/">案例</a></li>
+                        <li><a href="../changelog">更新日志</a></li>
+                        <li><a href="/download.html">下载</a></li>
+                    </ul>
+                    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                        <li class="uk-nav-header">入门</li>
+                        <li exact=""><a href="/doc/v3/getting-started/introduction.html">介绍（introduction）</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/installation.html">安装（installation）</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/less.html">Less</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/sass.html">Sass</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/javascript.html">JavaScript</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/webpack.html">Webpack</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/custom-icons.html">自定义图标</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/rtl.html">RTL支持</a></li>
+                        <li exact=""><a href="/doc/v3/getting-started/migration.html">migration（迁移）</a></li>
+                    </ul>
+                    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                        <li class="uk-nav-header">组件1</li>
+                        <li exact=""><a href="/doc/v3/components/accordion.html">手风琴（Accordion）</a></li>
+                        <li exact=""><a href="/doc/v3/components/alert.html">警告（Alert）</a></li>
+                        <li exact=""><a href="/doc/v3/components/align.html">对齐（Align）</a></li>
+                        <li exact=""><a href="/doc/v3/components/animation.html">动画（Animation）</a></li>
+                        <li exact=""><a href="/doc/v3/components/article.html">文章（Article）</a></li>
+                        <li exact=""><a href="/doc/v3/components/background.html">背景（Background）</a></li>
+                        <li exact=""><a href="/doc/v3/components/badge.html">徽章（Badge）</a></li>
+                        <li exact=""><a href="/doc/v3/components/base.html">基础样式（Base）</a></li>
+                        <li exact=""><a href="/doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li>
+                        <li exact=""><a href="/doc/v3/components/button.html">按钮（Button）</a></li>
+                        <li exact=""><a href="/doc/v3/components/card.html">卡片（Card）</a></li>
+                        <li exact=""><a href="/doc/v3/components/close.html">关闭（Close）</a></li>
+                        <li exact=""><a href="/doc/v3/components/column.html">文本列（Column）</a></li>
+                        <li exact=""><a href="/doc/v3/components/comment.html">评论（Comment）</a></li>
+                        <li exact=""><a href="/doc/v3/components/container.html">容器（Container）</a></li>
+                        <li exact=""><a href="/doc/v3/components/countdown.html">倒计时（Countdown）</a></li>
+                        <li exact=""><a href="/doc/v3/components/cover.html">覆盖（Cover）</a></li>
+                        <li exact=""><a href="/doc/v3/components/description-list.html">定义列表（Description list）</a></li>
+                        <li exact=""><a href="/doc/v3/components/divider.html">分割线（Divider）</a></li>
+                        <li exact=""><a href="/doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/drop.html">下拉（Drop）</a></li>
+                        <li exact=""><a href="/doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li>
+                        <li exact=""><a href="/doc/v3/components/filter.html">过滤器（Filter）</a></li>
+                        <li exact=""><a href="/doc/v3/components/flex.html">Flex布局</a></li>
+                        <li exact=""><a href="/doc/v3/components/form.html">表单（Form）</a></li>
+                        <li exact=""><a href="/doc/v3/components/grid.html">网格（Grid）</a></li>
+                        <li exact=""><a href="/doc/v3/components/heading.html">标题（heading）</a></li>
+                        <li exact=""><a href="/doc/v3/components/height.html">高度（Height）</a></li>
+                        <li exact=""><a href="/doc/v3/components/icon.html">图标（Icon）</a></li>
+                        <li exact=""><a href="/doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/image.html">图片（Image）</a></li>
+                        <li exact=""><a href="/doc/v3/components/inverse.html">反相（Inverse）</a></li>
+                        <li exact=""><a href="/doc/v3/components/label.html">标签（Label）</a></li>
+                        <li exact=""><a href="/doc/v3/components/leader.html">引导线（Leader）</a></li>
+                        <li exact=""><a href="/doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li>
+                        <li exact=""><a href="/doc/v3/components/link.html">链接（Link）</a></li>
+                        <li exact=""><a href="/doc/v3/components/list.html">列表（list）</a></li>
+                        <li exact=""><a href="/doc/v3/components/margin.html">外边距（Margin）</a></li>
+                        <li exact=""><a href="/doc/v3/components/marker.html">标记（Marker）</a></li>
+                        <li exact=""><a href="/doc/v3/components/modal.html">模态对话框（Modal）</a></li>
+                        <li exact=""><a href="/doc/v3/components/nav.html">导航菜单（Nav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/navbar.html">导航栏（Navbar）</a></li>
+                        <li exact=""><a href="/doc/v3/components/notification.html">通知（Notification）</a></li>
+                        <li exact=""><a href="/doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li>
+                        <li exact=""><a href="/doc/v3/components/overlay.html">遮罩（Overlay）</a></li>
+                        <li exact=""><a href="/doc/v3/components/padding.html">Padding</a></li>
+                        <li exact=""><a href="/doc/v3/components/pagination.html">分页（Pagination）</a></li>
+                        <li exact=""><a href="/doc/v3/components/parallax.html">视差（Parallax）</a></li>
+                        <li exact=""><a href="/doc/v3/components/placeholder.html">占位符（Placeholder）</a></li>
+                        <li exact=""><a href="/doc/v3/components/position.html">定位（Position）</a></li>
+                        <li exact=""><a href="/doc/v3/components/print.html">打印（Print）</a></li>
+                        <li exact=""><a href="/doc/v3/components/progress.html">进度条（Progress）</a></li>
+                        <li exact=""><a href="/doc/v3/components/scroll.html">页面滚动（Scroll）</a></li>
+                        <li exact=""><a href="/doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li>
+                        <li exact=""><a href="/doc/v3/components/search.html">搜索框（Search）</a></li>
+                        <li exact=""><a href="/doc/v3/components/section.html">区段（Section）</a></li>
+                        <li exact=""><a href="/doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/slider.html">滑块（Slider）</a></li>
+                        <li exact=""><a href="/doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li>
+                        <li exact=""><a href="/doc/v3/components/Sortable.html">可排序（Sortable）</a></li>
+                        <li exact=""><a href="/doc/v3/components/spinner.html">旋转（Spinner）</a></li>
+                        <li exact=""><a href="/doc/v3/components/sticky.html">粘附（Sticky）</a></li>
+                        <li exact=""><a href="/doc/v3/components/subnav.html">子导航（Subnav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/svg.html">SVG</a></li>
+                        <li exact=""><a href="/doc/v3/components/switcher.html">切换器（Switcher）</a></li>
+                        <li exact=""><a href="/doc/v3/components/tab.html">选项卡（Tab）</a></li>
+                        <li exact=""><a href="/doc/v3/components/table.html">表格（Table）</a></li>
+                        <li exact=""><a href="/doc/v3/components/text.html">文本（Text）</a></li>
+                        <li exact=""><a href="/doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li>
+                        <li exact=""><a href="/doc/v3/components/tile.html">瓷砖（Tile）</a></li>
+                        <li exact=""><a href="/doc/v3/components/toggle.html">拨动器（Toggle）</a></li>
+                        <li exact=""><a href="/doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li>
+                        <li exact=""><a href="/doc/v3/components/totop.html">Totop（回到顶部）</a></li>
+                        <li exact=""><a href="/doc/v3/components/transition.html">过渡效果（Transition）</a></li>
+                        <li exact=""><a href="/doc/v3/components/upload.html">文件上传（Upload）</a></li>
+                        <li exact=""><a href="/doc/v3/components/utility.html">实用效果（Utility）</a></li>
+                        <li exact=""><a href="/doc/v3/components/video.html">视频（Video）</a></li>
+                        <li exact=""><a href="/doc/v3/components/visibility.html">可见性（Visibility）</a></li>
+                        <li exact=""><a href="/doc/v3/components/width.html">宽度（Width）</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?9431dd8aad5a32e36edbfe4c279d0f02";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 
 </body>
 
