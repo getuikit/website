@@ -12,9 +12,9 @@ jQuery(function($) {
         loaded      = false,
         coptions    = {
             "styles": [
-                {"name": "Default", "url": ["../themes/default/uikit-customizer.less"], "config": "../themes/default/customizer.json"},
-                {"name": "Gradient", "url": ["../themes/gradient/uikit-customizer.less"], "config": "../themes/gradient/customizer.json"},
-                {"name": "Almost Flat", "url": ["../themes/almost-flat/uikit-customizer.less"], "config": "../themes/almost-flat/customizer.json"}
+                {"name": "Default", "url": ["../../themes/default/uikit-customizer.less"], "config": "../../themes/default/customizer.json"},
+                {"name": "Gradient", "url": ["../../themes/gradient/uikit-customizer.less"], "config": "../../themes/gradient/customizer.json"},
+                {"name": "Almost Flat", "url": ["../../themes/almost-flat/uikit-customizer.less"], "config": "../../themes/almost-flat/customizer.json"}
             ]
         },
         memory = window.sessionStorage || {};
