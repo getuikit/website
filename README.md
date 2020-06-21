@@ -1,3 +1,3 @@
 # UIkit
 
-UIkit 中文文档翻译项目
+UIkit2中文文档翻译项目
