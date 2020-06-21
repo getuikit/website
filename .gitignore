@@ -1,12 +1,8 @@
 /.idea
-/custom
-/dist
 /node_modules
-/tools
 *~
 *.diff
 *.patch
 .DS_Store
 .project
 .settings
-themes.json
