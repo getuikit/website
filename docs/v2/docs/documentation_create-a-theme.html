@@ -13,10 +13,10 @@
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
     <link id="data-uikit-theme" rel="stylesheet" href="css/uikit.docs.min.css">
     <link rel="stylesheet" href="css/docs.css">
-    <link rel="stylesheet" href="http://cdn.staticfile.org/highlight.js/10.1.1/styles/default.min.css">
-    <script src="http://cdn.staticfile.org/jquery/2.1.4/jquery.min.js"></script>
-    <script src="http://cdn.staticfile.org/uikit/2.17.0/js/uikit.min.js"></script>
-    <script src="http://cdn.staticfile.org/highlight.js/10.1.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.1.1/styles/default.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/uikit/2.17.0/js/uikit.min.js"></script>
+    <script src="https://cdn.staticfile.org/highlight.js/10.1.1/highlight.min.js"></script>
     <script src="js/docs.js"></script>
 </head>
 
@@ -86,7 +86,8 @@
                         <h3>1. 创建主题目录</h3>
 
                         <p>下载或克隆UIKit，安装 Node 和 Gulp 。最后，在这里创建你的主题文件夹 <code>/custom/THEME-NAME</code>。如果
-                            <code>/custom</code> 不存在，那就创建它！</p>
+                            <code>/custom</code> 不存在，那就创建它！
+                        </p>
 
                         <p><span class="uk-badge">注意</span> <code>/custom</code> 文件夹设置为 git
                             ignore，这样可以防止你的自定义文件被推入到UIKit库中。如果你在使用克隆版 UIkit's git 仓库， 它将是一次很好的将 <code>/custom</code>
@@ -96,11 +97,13 @@
 
                         <p>在 <code>/custom/THEME-NAME</code> 文件夹中创建 <code>uikit.less</code> 文件，并添加
                             <code>@import "../../src/uikit.less";</code>
-                            规则来访问核心框架中的所有Less文件并采用它的基础样式。好了，你可以从零开始添加你自己的主题了。</p>
+                            规则来访问核心框架中的所有Less文件并采用它的基础样式。好了，你可以从零开始添加你自己的主题了。
+                        </p>
 
                         <p><span class="uk-badge">注意</span>
                             为了能立即开始你的工作，我们提供了默认、渐变和扁平三个主题。所有默认文件都已经引入了，你同样可以找到所有主题文件以及与它们相关的钩子。所以你需要做的是复制文件夹到
-                            <code>/custom</code> 目录中，并重命名。</p>
+                            <code>/custom</code> 目录中，并重命名。
+                        </p>
 
                         <h3>3. 定制和测试</h3>
 
@@ -109,7 +112,8 @@
                         <h3>4. 构建你的主题</h3>
 
                         <p>你可以在定制工具中生成你的主题的 CSS。如果你想使用 gulp 指令来做这事，运行 <code>gulp dist -t THEME-NAME</code>就行了。生成的文件被放置在
-                            <code>dist/</code> 文件夹中。</p>
+                            <code>dist/</code> 文件夹中。
+                        </p>
 
                         <hr class="uk-article-divider">
 

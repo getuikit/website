@@ -7,12 +7,12 @@
     <title>自定义 - Warp Framework 7 中文文档</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link id="data-uikit-theme" rel="stylesheet"
-        href="http://cdn.staticfile.org/uikit/2.17.0/css/uikit.almost-flat.min.css">
+        href="https://cdn.staticfile.org/uikit/2.17.0/css/uikit.almost-flat.min.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/highlight.css">
 
-    <script src="http://cdn.staticfile.org/jquery/2.1.0/jquery.min.js"></script>
-    <script src="http://cdn.staticfile.org/uikit/2.17.0/js/uikit.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/uikit/2.17.0/js/uikit.min.js"></script>
 </head>
 
 <body class="tm-background">
@@ -124,7 +124,8 @@
                         <h2>布局的覆写</h2>
 
                         <p>定制一般的主题布局，你需要覆写 <code>/layouts/theme.php</code>。为此，需要创建
-                            <code>/styles/STYLE-NAME/layouts</code> 目录，将文件复制到此处，然后开始添加你的PHP代码。</p>
+                            <code>/styles/STYLE-NAME/layouts</code> 目录，将文件复制到此处，然后开始添加你的PHP代码。
+                        </p>
 
                         <p>通过这样的方式也能覆写系统文件。例如，只需要将Joomla的文章布局
                             <code>/warp/systems/joomla/layouts/com_content/article/default.php</code>复制到你的样式文件夹
@@ -134,12 +135,14 @@
                         <h2>添加你的CSS</h2>
 
                         <p>有几种途径可以为Warp主题添加自定义CSS。你可以使用定制工具改变主题绝大部分设置，而不需要写CSS代码。如果在样式文件夹中存在<code>style.less</code>文件，请记住，你设置的样式只会在定制工具中显示。当你使用定制工具时，各种改动都会被保存在<code>style.less</code>文件中。它与主题的LESS文件一起被编译为
-                            <code>/css/theme.css</code> 文件，并覆写你的所有自定义设置。</p>
+                            <code>/css/theme.css</code> 文件，并覆写你的所有自定义设置。
+                        </p>
 
                         <h3>添加自定义CSS</h3>
 
                         <p>可以通过定制工具添加自定义CSS，也可以通过在<code>/css</code>文件夹中为相关样式创建
-                            <code>custom.css</code>文件进行添加。用这种方法添加的CSS不会在保存定制工具中的样式时被覆写。</p>
+                            <code>custom.css</code>文件进行添加。用这种方法添加的CSS不会在保存定制工具中的样式时被覆写。
+                        </p>
 
                         <h3>不使用LESS和定制工具添加CSS</h3>
 

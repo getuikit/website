@@ -9,10 +9,10 @@
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
     <link id="data-uikit-theme" rel="stylesheet" href="css/uikit.docs.min.css">
     <link rel="stylesheet" href="css/docs.css">
-    <link rel="stylesheet" href="http://cdn.staticfile.org/highlight.js/10.1.1/styles/default.min.css">
-    <script src="http://cdn.staticfile.org/jquery/2.1.4/jquery.min.js"></script>
-    <script src="http://cdn.staticfile.org/uikit/2.17.0/js/uikit.min.js"></script>
-    <script src="http://cdn.staticfile.org/highlight.js/10.1.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.1.1/styles/default.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/uikit/2.17.0/js/uikit.min.js"></script>
+    <script src="https://cdn.staticfile.org/highlight.js/10.1.1/highlight.min.js"></script>
     <script src="../vendor/holder.js"></script>
     <script src="js/docs.js"></script>
     <script src="../src/js/components/slideset.js"></script>
@@ -104,7 +104,8 @@
                         <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
                         <p>使用这个组件需要为容器元素添加 <code>data-uk-slideset</code> 属性。添加 <code>default</code> 选项到
-                            <code>data-uk-slideset</code> 属性，调整一个滑块集中条目的个数。</p>
+                            <code>data-uk-slideset</code> 属性，调整一个滑块集中条目的个数。
+                        </p>
 
                         <p><span class="uk-badge uk-badge-danger">注意</span> 此组件需要额外添加 <code>slideset.js</code>
                             文件，在<code>js/components</code>文件夹中。</p>
@@ -168,7 +169,8 @@
 
                         <p>要切换相邻的滑块，使用 <code>data-uk-slideset-item</code> 属性，并设置该属性的值为 <code>next</code> 和
                             <code>previous</code>。这些带有 <code>data-uk-slideset-item</code> 属性的元素必须放在带有
-                            <code>data-uk-slideset</code> 属性的容器中。</p>
+                            <code>data-uk-slideset</code> 属性的容器中。
+                        </p>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
 
@@ -241,7 +243,8 @@
                         <h2 id="responsive"><a href="#responsive" class="uk-link-reset">响应式条目/Responsive items</a></h2>
 
                         <p>滑块集支持基于条目可见性的媒体查询。只需添加一个断点选项到 <code>data-uk-slideset</code> 属性中，比如 <code>small</code>,
-                            <code>medium</code>, <code>large</code> 。并设置在该断点宽度以上的视口中你想要显示的条目数，如下面例子所示：</p>
+                            <code>medium</code>, <code>large</code> 。并设置在该断点宽度以上的视口中你想要显示的条目数，如下面例子所示：
+                        </p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -378,10 +381,12 @@
                         <h2 id="filter"><a href="#filter" class="uk-link-reset">过滤/Filter</a></h2>
 
                         <p>你还可以使用过滤来实现只显示滑块集中特定的条目。为此，需要为每个过滤控件添加 <code>data-uk-filter</code> 属性来规定它们过滤的分类。然后还要为每个滑块条目添加
-                            <code>data-uk-filter</code> 属性来规定它们各自属于哪个分类。</p>
+                            <code>data-uk-filter</code> 属性来规定它们各自属于哪个分类。
+                        </p>
 
                         <p><span class="uk-badge">注意</span> 过滤控件可以放在滑块集中，或者，为过滤控件添加 <code>controls</code> 选项到
-                            <code>data-uk-slideset</code> 属性中，并将滑块集的 id 设置在该选项中。如下面的例子：</p>
+                            <code>data-uk-slideset</code> 属性中，并将滑块集的 id 设置在该选项中。如下面的例子：
+                        </p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
