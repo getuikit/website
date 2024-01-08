@@ -1,0 +1,10 @@
+.download-text {
+    background-color: #D0F2C3;
+    border-radius: 3px;
+    padding: 13px 13px;
+    font-size: 14px;
+    margin: 15px 0;
+    word-wrap: break-word;
+    word-break: normal;
+    text-align: left;
+}
