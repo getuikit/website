@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>区段（Section） - UIkit3中文文档</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="/skin/ukv3/css/uikit.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/skin/ukv3/css/theme.css?3.4.6" />
+    <script src="/skin/ukv3/js/clipboard.min.js" defer=""></script>
+    <script src="/skin/ukv3/js/uikit.min.js"></script>
+    <script src="/skin/ukv3/js/uikit-icons.min.js"></script>
+    <script src="/skin/ukv3/js/highlight.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div uk-sticky="media: 960"
+            class="uk-navbar-container tm-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar">
+                    <div class="uk-navbar-left">
+                        <a href="../" class="uk-navbar-item uk-logo"><img uk-svg=""
+                                src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true">
+                            UIkit
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li class="uk-active"><a
+                                    href="../../../doc/v3/getting-started/introduction.html">UIkit3文档</a></li>
+                            <li><a href="http://v2.getuikit.work/">UIkit2文档</a></li>
+                            <li><a href="http://v2.getuikit.work/showcase/">案例展示</a></li>
+                            <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li>
+                        </ul>
+                        <div class="uk-navbar-item uk-visible@m"><a title="版本3.4.6"
+                                href="http://getuikit.work/download.html"
+                                class="uk-button uk-button-default tm-button-default uk-icon">下载 <canvas
+                                    uk-icon="icon: download" width="20" height="20" class="uk-icon"
+                                    hidden="true"></canvas></a></div>
+                        <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle=""
+                            class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"><svg width="20"
+                                height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                data-svg="navbar-toggle-icon">
+                                <rect y="9" width="20" height="2"></rect>
+                                <rect y="3" width="20" height="2"></rect>
+                                <rect y="15" width="20" height="2"></rect>
+                            </svg></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div>
+        <div class="tm-sidebar-left uk-visible@m">
+            <h3>UIkit3.x文档</h3>
+            <ul class="uk-nav uk-nav-default tm-nav">
+                <li class="uk-nav-header">入门</li>
+                <li class=""><a href="../../../doc/v3/getting-started/introduction.html">介绍（introduction）</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/installation.html">安装（installation）</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/less.html">Less</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/sass.html">Sass</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/javascript.html">JavaScript</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/webpack.html">Webpack</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/custom-icons.html">自定义图标</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/rtl.html">RTL支持</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/migration.html">migration（迁移）</a></li>
+            </ul>
+            <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                <li class="uk-nav-header">组件</li>
+                <li class=""><a href="../../../doc/v3/components/accordion.html">手风琴（Accordion）</a></li>
+                <li class=""><a href="../../../doc/v3/components/alert.html">警告（Alert）</a></li>
+                <li class=""><a href="../../../doc/v3/components/align.html">对齐（Align）</a></li>
+                <li class=""><a href="../../../doc/v3/components/animation.html">动画（Animation）</a></li>
+                <li class=""><a href="../../../doc/v3/components/article.html">文章（Article）</a></li>
+                <li class=""><a href="../../../doc/v3/components/background.html">背景（Background）</a></li>
+                <li class=""><a href="../../../doc/v3/components/badge.html">徽章（Badge）</a></li>
+                <li class=""><a href="../../../doc/v3/components/base.html">基础样式（Base）</a></li>
+                <li class=""><a href="../../../doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li>
+                <li class=""><a href="../../../doc/v3/components/button.html">按钮（Button）</a></li>
+                <li class=""><a href="../../../doc/v3/components/card.html">卡片（Card）</a></li>
+                <li class=""><a href="../../../doc/v3/components/close.html">关闭（Close）</a></li>
+                <li class=""><a href="../../../doc/v3/components/column.html">文本列（Column）</a></li>
+                <li class=""><a href="../../../doc/v3/components/comment.html">评论（Comment）</a></li>
+                <li class=""><a href="../../../doc/v3/components/container.html">容器（Container）</a></li>
+                <li class=""><a href="../../../doc/v3/components/countdown.html">倒计时（Countdown）</a></li>
+                <li class=""><a href="../../../doc/v3/components/cover.html">覆盖（Cover）</a></li>
+                <li class=""><a href="../../../doc/v3/components/description-list.html">定义列表（Description list）</a></li>
+                <li class=""><a href="../../../doc/v3/components/divider.html">分割线（Divider）</a></li>
+                <li class=""><a href="../../../doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/drop.html">下拉（Drop）</a></li>
+                <li class=""><a href="../../../doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li>
+                <li class=""><a href="../../../doc/v3/components/filter.html">过滤器（Filter）</a></li>
+                <li class=""><a href="../../../doc/v3/components/flex.html">Flex布局</a></li>
+                <li class=""><a href="../../../doc/v3/components/form.html">表单（Form）</a></li>
+                <li class=""><a href="../../../doc/v3/components/grid.html">网格（Grid）</a></li>
+                <li class=""><a href="../../../doc/v3/components/heading.html">标题（heading）</a></li>
+                <li class=""><a href="../../../doc/v3/components/height.html">高度（Height）</a></li>
+                <li class=""><a href="../../../doc/v3/components/icon.html">图标（Icon）</a></li>
+                <li class=""><a href="../../../doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/image.html">图片（Image）</a></li>
+                <li class=""><a href="../../../doc/v3/components/inverse.html">反相（Inverse）</a></li>
+                <li class=""><a href="../../../doc/v3/components/label.html">标签（Label）</a></li>
+                <li class=""><a href="../../../doc/v3/components/leader.html">引导线（Leader）</a></li>
+                <li class=""><a href="../../../doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li>
+                <li class=""><a href="../../../doc/v3/components/link.html">链接（Link）</a></li>
+                <li class=""><a href="../../../doc/v3/components/list.html">列表（list）</a></li>
+                <li class=""><a href="../../../doc/v3/components/margin.html">外边距（Margin）</a></li>
+                <li class=""><a href="../../../doc/v3/components/marker.html">标记（Marker）</a></li>
+                <li class=""><a href="../../../doc/v3/components/modal.html">模态对话框（Modal）</a></li>
+                <li class=""><a href="../../../doc/v3/components/nav.html">导航菜单（Nav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/navbar.html">导航栏（Navbar）</a></li>
+                <li class=""><a href="../../../doc/v3/components/notification.html">通知（Notification）</a></li>
+                <li class=""><a href="../../../doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li>
+                <li class=""><a href="../../../doc/v3/components/overlay.html">遮罩（Overlay）</a></li>
+                <li class=""><a href="../../../doc/v3/components/padding.html">Padding</a></li>
+                <li class=""><a href="../../../doc/v3/components/pagination.html">分页（Pagination）</a></li>
+                <li class=""><a href="../../../doc/v3/components/parallax.html">视差（Parallax）</a></li>
+                <li class=""><a href="../../../doc/v3/components/placeholder.html">占位符（Placeholder）</a></li>
+                <li class=""><a href="../../../doc/v3/components/position.html">定位（Position）</a></li>
+                <li class=""><a href="../../../doc/v3/components/print.html">打印（Print）</a></li>
+                <li class=""><a href="../../../doc/v3/components/progress.html">进度条（Progress）</a></li>
+                <li class=""><a href="../../../doc/v3/components/scroll.html">页面滚动（Scroll）</a></li>
+                <li class=""><a href="../../../doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li>
+                <li class=""><a href="../../../doc/v3/components/search.html">搜索框（Search）</a></li>
+                <li class="router-link-exact-active uk-active"><a
+                        href="../../../doc/v3/components/section.html">区段（Section）</a></li>
+                <li class=""><a href="../../../doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/slider.html">滑块（Slider）</a></li>
+                <li class=""><a href="../../../doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li>
+                <li class=""><a href="../../../doc/v3/components/Sortable.html">可排序（Sortable）</a></li>
+                <li class=""><a href="../../../doc/v3/components/spinner.html">旋转（Spinner）</a></li>
+                <li class=""><a href="../../../doc/v3/components/sticky.html">粘附（Sticky）</a></li>
+                <li class=""><a href="../../../doc/v3/components/subnav.html">子导航（Subnav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/svg.html">SVG</a></li>
+                <li class=""><a href="../../../doc/v3/components/switcher.html">切换器（Switcher）</a></li>
+                <li class=""><a href="../../../doc/v3/components/tab.html">选项卡（Tab）</a></li>
+                <li class=""><a href="../../../doc/v3/components/table.html">表格（Table）</a></li>
+                <li class=""><a href="../../../doc/v3/components/text.html">文本（Text）</a></li>
+                <li class=""><a href="../../../doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/tile.html">瓷砖（Tile）</a></li>
+                <li class=""><a href="../../../doc/v3/components/toggle.html">拨动器（Toggle）</a></li>
+                <li class=""><a href="../../../doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li>
+                <li class=""><a href="../../../doc/v3/components/totop.html">Totop（回到顶部）</a></li>
+                <li class=""><a href="../../../doc/v3/components/transition.html">过渡效果（Transition）</a></li>
+                <li class=""><a href="../../../doc/v3/components/upload.html">文件上传（Upload）</a></li>
+                <li class=""><a href="../../../doc/v3/components/utility.html">实用效果（Utility）</a></li>
+                <li class=""><a href="../../../doc/v3/components/video.html">视频（Video）</a></li>
+                <li class=""><a href="../../../doc/v3/components/visibility.html">可见性（Visibility）</a></li>
+                <li class=""><a href="../../../doc/v3/components/width.html">宽度（Width）</a></li>
+            </ul>
+        </div>
+        <div class="tm-main uk-section uk-section-default">
+            <div class="uk-container uk-container-small uk-position-relative">
+                <div>
+                    <div>
+                        <h1 class="uk-h1 tm-heading-fragment" id="section"><a href="#section">区段</a></h1>
+                        <p class="uk-text-lead">创建具有各种背景颜色和样式的水平布局的section区段。</p>
+                        <h2 class="uk-h3 tm-heading-fragment" id="usage"><a href="#usage">用法</a></h2>
+                        <p>区段用于将页面内容分拆到各种样式的块中。要应用此组件，只需将<code>.uk-section</code>添加到容器元素。可以使用<a
+                                href="container.html">Container 组件</a>
+                            添加容器来调整区段内内容的宽度并添加水平方向的padding。注意，嵌套容器的padding会被重置。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-container&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                        </div>
+                        <p>默认情况下，区段是空白的。所以必须为它添加一个样式修饰。在下方示例中我们使用<code>.uk-section-muted</code>
+                            class。通常section是页面的最外层元素，因此下面示例的并不能完整展示区段组件的实际用法。</p>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-section uk-section-muted">
+                                        <div class="uk-container">
+                                            <h3>Section</h3>
+                                            <div class="uk-grid-match uk-child-width-1-3@m uk-grid" uk-grid="">
+                                                <div class="uk-first-column">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4psjgf2"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-section-muted&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-container&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Section<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-child-width-1-3@m&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4psjgf2" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4psjgf2" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="style-modifiers"><a href="#style-modifiers">样式修饰</a>
+                        </h2>
+                        <p>使用以下class为区段应用各种背景颜色和padding。</p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Class</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>.uk-section-default</code></td>
+                                        <td align="left">添加默认背景色。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-section-muted</code></td>
+                                        <td align="left">添加柔和的背景色。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-section-primary</code></td>
+                                        <td align="left">添加醒目的背景色。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-section-secondary</code></td>
+                                        <td align="left">添加辅助背景色。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-section-primary&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                        </div>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-section uk-section-default">
+                                        <div class="uk-container">
+                                            <h3>Section Default</h3>
+                                            <div class="uk-grid-match uk-child-width-1-3@m uk-grid" uk-grid="">
+                                                <div class="uk-first-column">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-section uk-section-muted">
+                                        <div class="uk-container">
+                                            <h3>Section Muted</h3>
+                                            <div class="uk-grid-match uk-child-width-1-3@m uk-grid" uk-grid="">
+                                                <div class="uk-first-column">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-section uk-section-primary uk-light">
+                                        <div class="uk-container">
+                                            <h3>Section Primary</h3>
+                                            <div class="uk-grid-match uk-child-width-1-3@m uk-grid" uk-grid="">
+                                                <div class="uk-first-column">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-section uk-section-secondary uk-light">
+                                        <div class="uk-container">
+                                            <h3>Section Secondary</h3>
+                                            <div class="uk-grid-match uk-child-width-1-3@m uk-grid" uk-grid="">
+                                                <div class="uk-first-column">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-section-default">
+                                        <div class="uk-section uk-light uk-background-cover"
+                                            style="background-image: url(/skin/ukv3/images/dark.jpg)">
+                                            <div class="uk-container">
+                                                <h3>Section with Images</h3>
+                                                <div class="uk-grid-match uk-child-width-1-3@m uk-grid" uk-grid="">
+                                                    <div class="uk-first-column">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor.</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor.</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4psjgf3"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-section-default&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-container&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Section Default<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-child-width-1-3@m&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-section-muted&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-container&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Section Muted<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-child-width-1-3@m&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-section-primary uk-light&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-container&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Section Primary<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-child-width-1-3@m&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-section-secondary uk-light&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-container&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Section Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-child-width-1-3@m&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section-default&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-light uk-background-cover&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(/skin/ukv3/images/dark.jpg)&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-container&quot;</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Section with Images<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-child-width-1-3@m&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4psjgf3" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4psjgf3" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h3 class="uk-h4 tm-heading-fragment" id="preserve-color"><a href="#preserve-color">维持原有颜色</a>
+                        </h3>
+                        <p><code>.uk-section-primary</code> 和 <code>.uk-section-secondary</code> 这两个 class 自动地扩展了<a
+                                href="inverse.html">Inverse 组件</a> 的反相样式。如果要防止这种情况发生（例如在区段中使用了 <a
+                                href="cards.html">卡片</a>），请添加<code>.uk-preserve-color</code> class。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-section-primary uk-preserve-color&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                        </div>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-section uk-section-primary uk-preserve-color">
+                                        <div class="uk-container">
+                                            <div class="uk-panel uk-light uk-margin-medium">
+                                                <h3>Section Primary with cards</h3>
+                                            </div>
+                                            <div class="uk-grid-match uk-child-width-expand@m uk-grid" uk-grid="">
+                                                <div class="uk-first-column">
+                                                    <div class="uk-card uk-card-default uk-card-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-card uk-card-default uk-card-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4psjgf4"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-section-primary uk-preserve-color&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-container&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-panel uk-light uk-margin-medium&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Section Primary with cards<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-child-width-expand@m&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4psjgf4" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4psjgf4" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="size-modifier"><a href="#size-modifier">尺寸修改</a></h2>
+                        <p>您可以为每个区段添加不同大小的padding或将padding全部移除。</p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Class</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>.uk-section-xsmall</code></td>
+                                        <td align="left">将区段的 padding 缩到最小</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-section-small</code></td>
+                                        <td align="left">将区段的 padding 缩小一些</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-section-large</code></td>
+                                        <td align="left">将区段的 padding 增大</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-section-xlarge</code></td>
+                                        <td align="left">将区段的 padding 增大更多</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-padding-remove-vertical</code></td>
+                                        <td align="left">来源于<a href="padding.html">Padding 组件</a> ，可以移除区段的padding。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-section uk-section-large uk-section-muted">
+                                        <div class="uk-container">
+                                            <h3>Section Large</h3>
+                                            <div class="uk-grid-match uk-child-width-1-3@m uk-grid" uk-grid="">
+                                                <div class="uk-first-column">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4psjgf5"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-section-large uk-section-muted&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-container&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Section Large<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-child-width-1-3@m&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4psjgf5" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4psjgf5" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="overlap-modifier"><a href="#overlap-modifier">重叠</a>
+                        </h2>
+                        <p>某些UIkit主题使用了更丰富的样式，包括纹理背景和边框等。在这种情况下，您可以添加<code>.uk-section-overlap</code>
+                            class在区段上应用边框图片，，并且在下一个区段上应用负偏移量。注意这只能在该区段后面还有其他区段时才能实现此特性。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-section uk-section-overlap&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-sidebar-right uk-visible@l">
+                    <div uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-fixed"
+                        style="position: fixed; top: 160px; width: 200px;">
+                        <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100"
+                            class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
+                            <li class="uk-active"><a href="#usage">用法</a></li>
+                            <li class=""><a href="#style-modifiers">样式修饰</a></li>
+                            <li class=""><a href="#size-modifier">尺寸修改</a></li>
+                            <li class=""><a href="#overlap-modifier">重叠</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="../tests/section.html" target="_blank"><span uk-icon="icon: push"
+                                        class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Open
+                                        test</span></a></li>
+                            <li><a href="https://github.com/uikit/uikit/issues" target="_blank"><span
+                                        uk-icon="icon: warning" class="uk-margin-small-right uk-icon"></span> <span
+                                        class="uk-text-middle">Report issue</span></a></li>
+                            <li><a href="https://discordapp.com/invite/NEt4Pv7" target="_blank"><span
+                                        uk-icon="icon: commenting" class="uk-margin-small-right uk-icon"></span> <span
+                                        class="uk-text-middle">Get help</span></a></li>
+                            <li><a href="https://github.com/uikit/uikit-site/tree/develop/docs/pages/section.md"
+                                    target="_blank"><span uk-icon="icon: pencil"
+                                        class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Edit
+                                        this page</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-sticky-placeholder" style="height: 252px; margin: 0px;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="offcanvas" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <div class="uk-panel">
+                    <ul class="uk-nav uk-nav-default tm-nav">
+                        <li class="uk-nav-header">总目录</li>
+                        <li><a href="http://getuikit.work/">首页</a></li>
+                        <li><a href="http://v2.getuikit.work/showcase/">案例</a></li>
+                        <li><a href="https://getuikit.com/changelog">更新日志</a></li>
+                        <li><a href="http://getuikit.work/download.html">下载</a></li>
+                    </ul>
+                    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                        <li class="uk-nav-header">入门</li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/introduction.html">介绍（introduction）</a>
+                        </li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/installation.html">安装（installation）</a>
+                        </li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/less.html">Less</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/sass.html">Sass</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/javascript.html">JavaScript</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/webpack.html">Webpack</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/custom-icons.html">自定义图标</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/rtl.html">RTL支持</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/migration.html">migration（迁移）</a></li>
+                    </ul>
+                    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                        <li class="uk-nav-header">组件1</li>
+                        <li exact=""><a href="../../../doc/v3/components/accordion.html">手风琴（Accordion）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/alert.html">警告（Alert）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/align.html">对齐（Align）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/animation.html">动画（Animation）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/article.html">文章（Article）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/background.html">背景（Background）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/badge.html">徽章（Badge）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/base.html">基础样式（Base）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/button.html">按钮（Button）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/card.html">卡片（Card）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/close.html">关闭（Close）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/column.html">文本列（Column）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/comment.html">评论（Comment）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/container.html">容器（Container）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/countdown.html">倒计时（Countdown）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/cover.html">覆盖（Cover）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/description-list.html">定义列表（Description
+                                list）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/divider.html">分割线（Divider）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/drop.html">下拉（Drop）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/filter.html">过滤器（Filter）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/flex.html">Flex布局</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/form.html">表单（Form）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/grid.html">网格（Grid）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/heading.html">标题（heading）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/height.html">高度（Height）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/icon.html">图标（Icon）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/image.html">图片（Image）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/inverse.html">反相（Inverse）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/label.html">标签（Label）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/leader.html">引导线（Leader）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/link.html">链接（Link）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/list.html">列表（list）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/margin.html">外边距（Margin）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/marker.html">标记（Marker）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/modal.html">模态对话框（Modal）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/nav.html">导航菜单（Nav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/navbar.html">导航栏（Navbar）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/notification.html">通知（Notification）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/overlay.html">遮罩（Overlay）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/padding.html">Padding</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/pagination.html">分页（Pagination）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/parallax.html">视差（Parallax）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/placeholder.html">占位符（Placeholder）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/position.html">定位（Position）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/print.html">打印（Print）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/progress.html">进度条（Progress）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/scroll.html">页面滚动（Scroll）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/search.html">搜索框（Search）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/section.html">区段（Section）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/slider.html">滑块（Slider）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/Sortable.html">可排序（Sortable）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/spinner.html">旋转（Spinner）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/sticky.html">粘附（Sticky）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/subnav.html">子导航（Subnav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/svg.html">SVG</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/switcher.html">切换器（Switcher）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/tab.html">选项卡（Tab）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/table.html">表格（Table）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/text.html">文本（Text）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/tile.html">瓷砖（Tile）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/toggle.html">拨动器（Toggle）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/totop.html">Totop（回到顶部）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/transition.html">过渡效果（Transition）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/upload.html">文件上传（Upload）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/utility.html">实用效果（Utility）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/video.html">视频（Video）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/visibility.html">可见性（Visibility）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/width.html">宽度（Width）</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?9431dd8aad5a32e36edbfe4c279d0f02";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</body>
+
+</html>

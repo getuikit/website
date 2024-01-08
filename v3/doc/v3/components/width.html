@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>宽度（Width） - UIkit3中文文档</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="/skin/ukv3/css/uikit.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/skin/ukv3/css/theme.css?3.5.3" />
+    <script src="/skin/ukv3/js/clipboard.min.js" defer=""></script>
+    <script src="/skin/ukv3/js/uikit.min.js"></script>
+    <script src="/skin/ukv3/js/uikit-icons.min.js"></script>
+    <script src="/skin/ukv3/js/highlight.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div uk-sticky="media: 960"
+            class="uk-navbar-container tm-navbar-container uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar">
+                    <div class="uk-navbar-left">
+                        <a href="../" class="uk-navbar-item uk-logo"><img uk-svg=""
+                                src="/skin/ukv3/images/uikit-logo.svg" class="uk-margin-small-right" hidden="true">
+                            UIkit
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li class="uk-active"><a
+                                    href="../../../doc/v3/getting-started/introduction.html">UIkit3文档</a></li>
+                            <li><a href="http://v2.getuikit.work/">UIkit2文档</a></li>
+                            <li><a href="http://v2.getuikit.work/showcase/">案例展示</a></li>
+                            <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li>
+                        </ul>
+                        <div class="uk-navbar-item uk-visible@m"><a title="版本3.5.3"
+                                href="http://getuikit.work/download.html"
+                                class="uk-button uk-button-default tm-button-default uk-icon">下载 <canvas
+                                    uk-icon="icon: download" width="20" height="20" class="uk-icon"
+                                    hidden="true"></canvas></a></div>
+                        <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle=""
+                            class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"><svg width="20"
+                                height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                data-svg="navbar-toggle-icon">
+                                <rect y="9" width="20" height="2"></rect>
+                                <rect y="3" width="20" height="2"></rect>
+                                <rect y="15" width="20" height="2"></rect>
+                            </svg></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div>
+        <div class="tm-sidebar-left uk-visible@m">
+            <h3>UIkit3.x文档</h3>
+            <ul class="uk-nav uk-nav-default tm-nav">
+                <li class="uk-nav-header">入门</li>
+                <li class=""><a href="../../../doc/v3/getting-started/introduction.html">介绍（introduction）</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/installation.html">安装（installation）</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/less.html">Less</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/sass.html">Sass</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/javascript.html">JavaScript</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/webpack.html">Webpack</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/custom-icons.html">自定义图标</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/rtl.html">RTL支持</a></li>
+                <li class=""><a href="../../../doc/v3/getting-started/migration.html">migration（迁移）</a></li>
+            </ul>
+            <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                <li class="uk-nav-header">组件</li>
+                <li class=""><a href="../../../doc/v3/components/accordion.html">手风琴（Accordion）</a></li>
+                <li class=""><a href="../../../doc/v3/components/alert.html">警告（Alert）</a></li>
+                <li class=""><a href="../../../doc/v3/components/align.html">对齐（Align）</a></li>
+                <li class=""><a href="../../../doc/v3/components/animation.html">动画（Animation）</a></li>
+                <li class=""><a href="../../../doc/v3/components/article.html">文章（Article）</a></li>
+                <li class=""><a href="../../../doc/v3/components/background.html">背景（Background）</a></li>
+                <li class=""><a href="../../../doc/v3/components/badge.html">徽章（Badge）</a></li>
+                <li class=""><a href="../../../doc/v3/components/base.html">基础样式（Base）</a></li>
+                <li class=""><a href="../../../doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li>
+                <li class=""><a href="../../../doc/v3/components/button.html">按钮（Button）</a></li>
+                <li class=""><a href="../../../doc/v3/components/card.html">卡片（Card）</a></li>
+                <li class=""><a href="../../../doc/v3/components/close.html">关闭（Close）</a></li>
+                <li class=""><a href="../../../doc/v3/components/column.html">文本列（Column）</a></li>
+                <li class=""><a href="../../../doc/v3/components/comment.html">评论（Comment）</a></li>
+                <li class=""><a href="../../../doc/v3/components/container.html">容器（Container）</a></li>
+                <li class=""><a href="../../../doc/v3/components/countdown.html">倒计时（Countdown）</a></li>
+                <li class=""><a href="../../../doc/v3/components/cover.html">覆盖（Cover）</a></li>
+                <li class=""><a href="../../../doc/v3/components/description-list.html">定义列表（Description list）</a></li>
+                <li class=""><a href="../../../doc/v3/components/divider.html">分割线（Divider）</a></li>
+                <li class=""><a href="../../../doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/drop.html">下拉（Drop）</a></li>
+                <li class=""><a href="../../../doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li>
+                <li class=""><a href="../../../doc/v3/components/filter.html">过滤器（Filter）</a></li>
+                <li class=""><a href="../../../doc/v3/components/flex.html">Flex布局</a></li>
+                <li class=""><a href="../../../doc/v3/components/form.html">表单（Form）</a></li>
+                <li class=""><a href="../../../doc/v3/components/grid.html">网格（Grid）</a></li>
+                <li class=""><a href="../../../doc/v3/components/heading.html">标题（heading）</a></li>
+                <li class=""><a href="../../../doc/v3/components/height.html">高度（Height）</a></li>
+                <li class=""><a href="../../../doc/v3/components/icon.html">图标（Icon）</a></li>
+                <li class=""><a href="../../../doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/image.html">图片（Image）</a></li>
+                <li class=""><a href="../../../doc/v3/components/inverse.html">反相（Inverse）</a></li>
+                <li class=""><a href="../../../doc/v3/components/label.html">标签（Label）</a></li>
+                <li class=""><a href="../../../doc/v3/components/leader.html">引导线（Leader）</a></li>
+                <li class=""><a href="../../../doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li>
+                <li class=""><a href="../../../doc/v3/components/link.html">链接（Link）</a></li>
+                <li class=""><a href="../../../doc/v3/components/list.html">列表（list）</a></li>
+                <li class=""><a href="../../../doc/v3/components/margin.html">外边距（Margin）</a></li>
+                <li class=""><a href="../../../doc/v3/components/marker.html">标记（Marker）</a></li>
+                <li class=""><a href="../../../doc/v3/components/modal.html">模态对话框（Modal）</a></li>
+                <li class=""><a href="../../../doc/v3/components/nav.html">导航菜单（Nav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/navbar.html">导航栏（Navbar）</a></li>
+                <li class=""><a href="../../../doc/v3/components/notification.html">通知（Notification）</a></li>
+                <li class=""><a href="../../../doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li>
+                <li class=""><a href="../../../doc/v3/components/overlay.html">遮罩（Overlay）</a></li>
+                <li class=""><a href="../../../doc/v3/components/padding.html">Padding</a></li>
+                <li class=""><a href="../../../doc/v3/components/pagination.html">分页（Pagination）</a></li>
+                <li class=""><a href="../../../doc/v3/components/parallax.html">视差（Parallax）</a></li>
+                <li class=""><a href="../../../doc/v3/components/placeholder.html">占位符（Placeholder）</a></li>
+                <li class=""><a href="../../../doc/v3/components/position.html">定位（Position）</a></li>
+                <li class=""><a href="../../../doc/v3/components/print.html">打印（Print）</a></li>
+                <li class=""><a href="../../../doc/v3/components/progress.html">进度条（Progress）</a></li>
+                <li class=""><a href="../../../doc/v3/components/scroll.html">页面滚动（Scroll）</a></li>
+                <li class=""><a href="../../../doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li>
+                <li class=""><a href="../../../doc/v3/components/search.html">搜索框（Search）</a></li>
+                <li class=""><a href="../../../doc/v3/components/section.html">区段（Section）</a></li>
+                <li class=""><a href="../../../doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/slider.html">滑块（Slider）</a></li>
+                <li class=""><a href="../../../doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li>
+                <li class=""><a href="../../../doc/v3/components/Sortable.html">可排序（Sortable）</a></li>
+                <li class=""><a href="../../../doc/v3/components/spinner.html">旋转（Spinner）</a></li>
+                <li class=""><a href="../../../doc/v3/components/sticky.html">粘附（Sticky）</a></li>
+                <li class=""><a href="../../../doc/v3/components/subnav.html">子导航（Subnav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/svg.html">SVG</a></li>
+                <li class=""><a href="../../../doc/v3/components/switcher.html">切换器（Switcher）</a></li>
+                <li class=""><a href="../../../doc/v3/components/tab.html">选项卡（Tab）</a></li>
+                <li class=""><a href="../../../doc/v3/components/table.html">表格（Table）</a></li>
+                <li class=""><a href="../../../doc/v3/components/text.html">文本（Text）</a></li>
+                <li class=""><a href="../../../doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li>
+                <li class=""><a href="../../../doc/v3/components/tile.html">瓷砖（Tile）</a></li>
+                <li class=""><a href="../../../doc/v3/components/toggle.html">拨动器（Toggle）</a></li>
+                <li class=""><a href="../../../doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li>
+                <li class=""><a href="../../../doc/v3/components/totop.html">Totop（回到顶部）</a></li>
+                <li class=""><a href="../../../doc/v3/components/transition.html">过渡效果（Transition）</a></li>
+                <li class=""><a href="../../../doc/v3/components/upload.html">文件上传（Upload）</a></li>
+                <li class=""><a href="../../../doc/v3/components/utility.html">实用效果（Utility）</a></li>
+                <li class=""><a href="../../../doc/v3/components/video.html">视频（Video）</a></li>
+                <li class=""><a href="../../../doc/v3/components/visibility.html">可见性（Visibility）</a></li>
+                <li class="router-link-exact-active uk-active"><a
+                        href="../../../doc/v3/components/width.html">宽度（Width）</a></li>
+            </ul>
+        </div>
+        <div class="tm-main uk-section uk-section-default">
+            <div class="uk-container uk-container-small uk-position-relative">
+                <div>
+                    <div>
+                        <h1 class="uk-h1 tm-heading-fragment" id="width"><a href="#width">宽度</a></h1>
+                        <p class="uk-text-lead">定义元素在不同视口大小中的宽度。</p>
+                        <p>UIkit的Width组件通常与<a
+                                href="grid.html">网格</a>结合使用，以将内容拆分为响应列。您可以应用分数、自动宽度或扩展单元宽度填充满剩余空间等多种模式以及组合使用这些模式。</p>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="usage"><a href="#usage">用法</a></h2>
+                        <p>添加一个<code>.uk-width-*</code> class到元素来确定它的大小。通常，你需要用到<a href="grid.html">Grid
+                                组件</a>以及它的子元素来创建布局单元。</p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Class</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-1-1</code></td>
+                                        <td align="left">填充可用宽度的100％。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-1-2</code></td>
+                                        <td align="left">元素占用其父容器的一半。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-1-3</code> to <code>.uk-width-2-3</code></td>
+                                        <td align="left">元素占用其父容器的三分之一。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-1-4</code> to <code>.uk-width-3-4</code></td>
+                                        <td align="left">元素占其父容器的四分之一</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-1-5</code> to <code>.uk-width-4-5</code></td>
+                                        <td align="left">元素占其父容器的五分之一</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-1-6</code> to <code>.uk-width-5-6</code></td>
+                                        <td align="left">元素占其父容器的六分之一</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><span
+                                class="uk-label">Note</span>由于我们移除了每组单元class集中的冗余，所以例如列宽为3/6这种情形时，应使用.uk-width-1-2而不是.uk-width-3-6。
+                        </p>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                        </div>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-width-1-3 uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">1-3</div>
+                                        </div>
+                                        <div class="uk-width-1-3">
+                                            <div class="uk-card uk-card-default uk-card-body">1-3</div>
+                                        </div>
+                                        <div class="uk-width-1-3">
+                                            <div class="uk-card uk-card-default uk-card-body">1-3</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-width-1-2 uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">1-2</div>
+                                        </div>
+                                        <div class="uk-width-1-2">
+                                            <div class="uk-card uk-card-default uk-card-body">1-2</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-width-1-4 uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">1-4</div>
+                                        </div>
+                                        <div class="uk-width-3-4">
+                                            <div class="uk-card uk-card-default uk-card-body">3-4</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4y98oyd"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-3&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-3&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-3&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-2&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-2&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-4&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-3-4&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>3-4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4y98oyd" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4y98oyd" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="auto-and-expand"><a href="#auto-and-expand">自动宽度 &amp;
+                                扩展宽度</a></h2>
+                        <p>宽度组件提供了额外的修饰，使您可以更灵活地分配项目。</p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Class</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-auto</code></td>
+                                        <td align="left">扩展到其自身内容的宽度。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-expand</code></td>
+                                        <td align="left">扩展以填充网格容器的所有剩余空间。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-auto&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-expand&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                        </div>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-width-auto uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Auto</div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-card uk-card-default uk-card-body">Expand</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4y98oye"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-auto&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Auto<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-expand&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Expand<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4y98oye" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4y98oye" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="equal-child-widths"><a
+                                href="#equal-child-widths">等分网格</a></h2>
+                        <p>要创建一个宽度均分的网格，无需为网格中的每个条目都重复添加相同的class。只需将<code>.uk-child-width-*</code> class之一添加到网格本身即可。</p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Class</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>.uk-child-width-1-2</code></td>
+                                        <td align="left">所有元素占用其父容器的一半。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-child-width-1-3</code></td>
+                                        <td align="left">所有元素占用其父容器的三分之一。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-child-width-1-4</code></td>
+                                        <td align="left">所有元素占用其父容器的四分之一。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-child-width-1-5</code></td>
+                                        <td align="left">所有元素占用其父容器的五分之一。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-child-width-1-6</code></td>
+                                        <td align="left">所有元素占用其父容器的六分之一。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-child-width-auto</code></td>
+                                        <td align="left">根据内容的尺寸大小将网格划分为相等的单位。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-child-width-expand</code></td>
+                                        <td align="left">根据可用宽度空间将网格划分为相等的单位。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-4&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                        </div>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-1-4 uk-grid-small uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div class="uk-grid-margin uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4y98oyf"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-1-4 uk-grid-small uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4y98oyf" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4y98oyf" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>如果使用分数宽度class的条目不再适合容器的宽度时，那么会截断强制换行。但在使用<em>expand</em> class时，将在始终在同一行均分可用空间。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-expand&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                        </div>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-expand uk-grid-small uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4y98oyg"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-expand uk-grid-small uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Item<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4y98oyg" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4y98oyg" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="fixed-width"><a href="#fixed-width">固定宽度</a></h2>
+                        <p>除了上面的计算型的宽度class之外，还可以添加使用以下应用固定宽度的class。</p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Class</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-small</code></td>
+                                        <td align="left">应用固定宽度<em>150px</em>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-medium</code></td>
+                                        <td align="left">应用固定宽度<em>300px</em>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-large</code></td>
+                                        <td align="left">应用固定宽度<em>450px</em>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-xlarge</code></td>
+                                        <td align="left">应用固定宽度<em>600px</em>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-2xlarge</code></td>
+                                        <td align="left">应用固定宽度<em>750px</em>.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-medium&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                        </div>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-width-small uk-margin">
+                                        <div class="uk-card uk-card-small uk-card-default uk-card-body">Small</div>
+                                    </div>
+                                    <div class="uk-width-medium uk-margin">
+                                        <div class="uk-card uk-card-small uk-card-default uk-card-body">Medium</div>
+                                    </div>
+                                    <div class="uk-width-large uk-margin">
+                                        <div class="uk-card uk-card-small uk-card-default uk-card-body">Large</div>
+                                    </div>
+                                    <div class="uk-width-xlarge uk-margin">
+                                        <div class="uk-card uk-card-small uk-card-default uk-card-body">X-Large</div>
+                                    </div>
+                                    <div class="uk-width-2xlarge uk-margin">
+                                        <div class="uk-card uk-card-small uk-card-default uk-card-body">2X-Large</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4y98oyh"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-small uk-margin&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-small uk-card-default uk-card-body&quot;</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-medium uk-margin&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-small uk-card-default uk-card-body&quot;</span>&gt;</span>Medium<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-large uk-margin&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-small uk-card-default uk-card-body&quot;</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-xlarge uk-margin&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-small uk-card-default uk-card-body&quot;</span>&gt;</span>X-Large<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-2xlarge uk-margin&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-small uk-card-default uk-card-body&quot;</span>&gt;</span>2X-Large<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4y98oyh" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4y98oyh" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="mixing-widths"><a href="#mixing-widths">混合宽度</a></h2>
+                        <p>您还可以将<code>.uk-child-width-*</code> class与<code>.uk-width-*</code>
+                            class组合起来用于单个项。例如就可以创建这样一个网格：其中一个条目拥有特定宽度，其他条目则自动扩展以填充剩余的空间。</p>
+                        <div class="uk-margin-medium">
+                            <pre>
+<code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-expand&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                        </div>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-child-width-expand uk-grid-small uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">Expand</div>
+                                        </div>
+                                        <div class="uk-width-1-3">
+                                            <div class="uk-card uk-card-default uk-card-body">1-3</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Expand</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-body">Expand</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4y98oyi"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-child-width-expand uk-grid-small uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Expand<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-3&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Expand<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>Expand<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4y98oyi" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4y98oyi" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-large" />
+                        <h2 class="uk-h3 tm-heading-fragment" id="responsive-width"><a
+                                href="#responsive-width">响应式宽度</a></h2>
+                        <p>UIkit提供了许多响应式宽度class。基本上它们和普通的的宽度class一样，但是它们拥有的后缀表示从中生效的不同断点。这些类可以与<a
+                                href="visibility.html">Visibility 组件</a>组合使用。这样在不同的设备尺寸下可以很好的调整布局和内容。</p>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th align="left">Class</th>
+                                        <th align="left">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left"><code>.uk-width-*</code><br /><code>.uk-child-width-*</code>
+                                        </td>
+                                        <td align="left">影响所有的设备宽度，网格列将并排放置。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <code>.uk-width-*@s</code><br /><code>.uk-child-width-*@s</code></td>
+                                        <td align="left">影响<em>640px</em>及以上的设备宽度。网格列将在较小的视口中堆叠。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <code>.uk-width-*@m</code><br /><code>.uk-child-width-*@m</code></td>
+                                        <td align="left">影响<em>960px</em>及以上的设备宽度。网格列将在较小的视口中堆叠。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <code>.uk-width-*@l</code><br /><code>.uk-child-width-*@l</code></td>
+                                        <td align="left">影响<em>1200px</em>及以上的设备宽度。网格列将在较小的视口中堆叠。</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <code>.uk-width-*@xl</code><br /><code>.uk-child-width-*@xl</code></td>
+                                        <td align="left">影响<em>1600px</em>及以上的设备宽度。网格列将在较小的视口中堆叠。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-position-relative uk-margin-medium">
+                            <ul class="uk-tab" uk-tab="swiping: false">
+                                <li class="uk-active"><a aria-expanded="true" href="#">Preview</a></li>
+                                <li><a aria-expanded="false" href="#">Markup</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li class="uk-active">
+                                    <div class="uk-grid-match uk-grid-small uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-width-1-2@m uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">1-2@m</div>
+                                        </div>
+                                        <div class="uk-width-1-4@m">
+                                            <div class="uk-card uk-card-default uk-card-body">1-4@m</div>
+                                        </div>
+                                        <div class="uk-width-1-4@m">
+                                            <div class="uk-card uk-card-default uk-card-body">1-4@m</div>
+                                        </div>
+                                        <div class="uk-width-1-5@m uk-hidden@l">
+                                            <div class="uk-card uk-card-secondary uk-card-body">1-5@m<br />hidden@l
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-5@m uk-width-1-3@l uk-grid-margin uk-first-column">
+                                            <div class="uk-card uk-card-default uk-card-body">1-5@m<br />1-3@l</div>
+                                        </div>
+                                        <div class="uk-width-3-5@m uk-width-2-3@l uk-grid-margin">
+                                            <div class="uk-card uk-card-default uk-card-body">3-5@m<br />2-3@l</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-match uk-grid-small uk-text-center uk-grid" uk-grid="">
+                                        <div class="uk-width-auto@m uk-visible@l uk-first-column">
+                                            <div class="uk-card uk-card-primary uk-card-body">auto@m<br />visible@l
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-3@m">
+                                            <div class="uk-card uk-card-default uk-card-body">1-3@m</div>
+                                        </div>
+                                        <div class="uk-width-expand@m">
+                                            <div class="uk-card uk-card-default uk-card-body">expand@m</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <pre>
+<code class="lang-html hljs xml" id="code-k4y98oyj"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-grid-small uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-2@m&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-2@m<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-4@m&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-4@m<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-4@m&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-4@m<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-5@m uk-hidden@l&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-secondary uk-card-body&quot;</span>&gt;</span>1-5@m<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>hidden@l<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-5@m uk-width-1-3@l&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-5@m<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>1-3@l<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-3-5@m uk-width-2-3@l&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>3-5@m<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>2-3@l<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-grid-match uk-grid-small uk-text-center&quot;</span> <span class="hljs-attr">uk-grid</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-auto@m uk-visible@l&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-primary uk-card-body&quot;</span>&gt;</span>auto@m<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>visible@l<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-1-3@m&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>1-3@m<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-width-expand@m&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;uk-card uk-card-default uk-card-body&quot;</span>&gt;</span>expand@m<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </li>
+                            </ul>
+                            <div class="uk-position-top-right uk-margin-small-top">
+                                <ul class="uk-iconnav">
+                                    <li>
+                                        <a aria-expanded="false" class="js-copy" rel="#code-k4y98oyj" title=""
+                                            uk-tooltip="Copy to Clipboard"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-clipboard.svg" uk-svg="" /><svg
+                                                class="uk-icon uk-svg" data-svg="../images/icon-clipboard.svg"
+                                                height="16" viewbox="0 0 16 16" width="16"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5.5" x2="15" y1="9.5" y2="9.5">
+                                                </line>
+                                                <line fill="none" stroke="#000" x1="5" x2="9" y1="1.5" y2="1.5"></line>
+                                                <polyline fill="none" points="8.5,6.5 5.5,9.5 8.5,12.5" stroke="#000"
+                                                    stroke-width="1.03"></polyline>
+                                                <polyline fill="none"
+                                                    points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"
+                                                    stroke="#000"></polyline>
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a aria-expanded="false" class="js-codepen" rel="#code-k4y98oyj" title=""
+                                            uk-tooltip="Edit on Codepen"><img class="uk-icon" hidden="true"
+                                                src="../images/icon-flask.svg" uk-svg="" /><svg class="uk-icon uk-svg"
+                                                data-svg="../images/icon-flask.svg" height="16" viewbox="0 0 16 16"
+                                                width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" x1="5" x2="12" y1="7.5" y2="7.5"></line>
+                                                <line fill="none" stroke="#000" x1="4" x2="13" y1="1.5" y2="1.5"></line>
+                                                <path
+                                                    d="M5.078,1.5l1.433,1.868C6.952,3.93,6.948,4.839,6.646,5.48L2.147,12 c-0.418,0.962,0.028,2.5,1.353,2.5h10c1.328,0,1.777-1.538,1.359-2.5L10.4,5.479c-0.303-0.641-0.31-1.55,0.136-2.112L11.922,1.5"
+                                                    fill="none" stroke="#000"></path>
+                                                <circle cx="10.5" cy="9.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="11.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                                <circle cx="8.5" cy="11.5" fill="#000" r="0.5"></circle>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-sidebar-right uk-visible@l">
+                    <div uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-fixed"
+                        style="position: fixed; top: 160px; width: 200px;">
+                        <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100"
+                            class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
+                            <li class="uk-active"><a href="#usage">用法</a></li>
+                            <li><a href="#auto-and-expand">自动宽度&amp;扩展宽度</a></li>
+                            <li><a href="#equal-child-widths">等分网格</a></li>
+                            <li><a href="#fixed-width">固定宽度</a></li>
+                            <li><a href="#mixing-widths">混合宽度</a></li>
+                            <li><a href="#responsive-width">响应式宽度</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="../tests/width.html" target="_blank"><span uk-icon="icon: push"
+                                        class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Open
+                                        test</span></a></li>
+                            <li><a href="https://github.com/uikit/uikit/issues" target="_blank"><span
+                                        uk-icon="icon: warning" class="uk-margin-small-right uk-icon"></span> <span
+                                        class="uk-text-middle">Report issue</span></a></li>
+                            <li><a href="https://discordapp.com/invite/NEt4Pv7" target="_blank"><span
+                                        uk-icon="icon: commenting" class="uk-margin-small-right uk-icon"></span> <span
+                                        class="uk-text-middle">Get help</span></a></li>
+                            <li><a href="https://github.com/uikit/uikit-site/tree/develop/docs/pages/width.md"
+                                    target="_blank"><span uk-icon="icon: pencil"
+                                        class="uk-margin-small-right uk-icon"></span> <span class="uk-text-middle">Edit
+                                        this page</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-sticky-placeholder" style="height: 252px; margin: 0px;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="offcanvas" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <div class="uk-panel">
+                    <ul class="uk-nav uk-nav-default tm-nav">
+                        <li class="uk-nav-header">总目录</li>
+                        <li><a href="http://getuikit.work/">首页</a></li>
+                        <li><a href="http://v2.getuikit.work/showcase/">案例</a></li>
+                        <li><a href="https://getuikit.com/changelog">更新日志</a></li>
+                        <li><a href="http://getuikit.work/download.html">下载</a></li>
+                    </ul>
+                    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                        <li class="uk-nav-header">入门</li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/introduction.html">介绍（introduction）</a>
+                        </li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/installation.html">安装（installation）</a>
+                        </li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/less.html">Less</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/sass.html">Sass</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/javascript.html">JavaScript</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/webpack.html">Webpack</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/custom-icons.html">自定义图标</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/avoiding-conflicts.html">避免冲突</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/rtl.html">RTL支持</a></li>
+                        <li exact=""><a href="../../../doc/v3/getting-started/migration.html">migration（迁移）</a></li>
+                    </ul>
+                    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                        <li class="uk-nav-header">组件1</li>
+                        <li exact=""><a href="../../../doc/v3/components/accordion.html">手风琴（Accordion）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/alert.html">警告（Alert）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/align.html">对齐（Align）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/animation.html">动画（Animation）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/article.html">文章（Article）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/background.html">背景（Background）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/badge.html">徽章（Badge）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/base.html">基础样式（Base）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/breadcrumb.html">面包屑（Breadcrumb）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/button.html">按钮（Button）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/card.html">卡片（Card）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/close.html">关闭（Close）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/column.html">文本列（Column）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/comment.html">评论（Comment）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/container.html">容器（Container）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/countdown.html">倒计时（Countdown）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/cover.html">覆盖（Cover）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/description-list.html">定义列表（Description
+                                list）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/divider.html">分割线（Divider）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/dotnav.html">圆点导航（Dotnav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/drop.html">下拉（Drop）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/dropdown.html">下拉菜单（Dropdown）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/filter.html">过滤器（Filter）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/flex.html">Flex布局</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/form.html">表单（Form）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/grid.html">网格（Grid）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/heading.html">标题（heading）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/height.html">高度（Height）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/icon.html">图标（Icon）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/iconnav.html">图标导航（Iconnav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/image.html">图片（Image）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/inverse.html">反相（Inverse）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/label.html">标签（Label）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/leader.html">引导线（Leader）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/lightbox.html">灯箱（Lightbox）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/link.html">链接（Link）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/list.html">列表（list）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/margin.html">外边距（Margin）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/marker.html">标记（Marker）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/modal.html">模态对话框（Modal）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/nav.html">导航菜单（Nav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/navbar.html">导航栏（Navbar）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/notification.html">通知（Notification）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/offcanvas.html">抽屉（Off-canvas）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/overlay.html">遮罩（Overlay）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/padding.html">Padding</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/pagination.html">分页（Pagination）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/parallax.html">视差（Parallax）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/placeholder.html">占位符（Placeholder）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/position.html">定位（Position）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/print.html">打印（Print）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/progress.html">进度条（Progress）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/scroll.html">页面滚动（Scroll）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/scrollspy.html">滚动侦测（Scrollspy）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/search.html">搜索框（Search）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/section.html">区段（Section）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/slidenav.html">幻灯片导航（Slidenav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/slider.html">滑块（Slider）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/slideshow.html">幻灯片（Slideshow）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/Sortable.html">可排序（Sortable）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/spinner.html">旋转（Spinner）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/sticky.html">粘附（Sticky）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/subnav.html">子导航（Subnav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/svg.html">SVG</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/switcher.html">切换器（Switcher）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/tab.html">选项卡（Tab）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/table.html">表格（Table）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/text.html">文本（Text）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/thumbnav.html">缩略图导航（thumbnav）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/tile.html">瓷砖（Tile）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/toggle.html">拨动器（Toggle）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/tooltip.html">工具提示（Tooltip）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/totop.html">Totop（回到顶部）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/transition.html">过渡效果（Transition）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/upload.html">文件上传（Upload）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/utility.html">实用效果（Utility）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/video.html">视频（Video）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/visibility.html">可见性（Visibility）</a></li>
+                        <li exact=""><a href="../../../doc/v3/components/width.html">宽度（Width）</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?9431dd8aad5a32e36edbfe4c279d0f02";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</body>
+
+</html>
