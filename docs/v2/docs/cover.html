@@ -25,7 +25,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -38,7 +39,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -113,17 +115,20 @@
 
                         <p class="uk-article-lead">扩展图片或视频至覆盖整个容器。</p>
 
-                        <p>这个组件允许你使用图片、对象甚至iframe（images, objects or even iframes）来创建全屏效果。无论是什么元素，它都将垂直居中、水平居中并且不会失去原有的比例即实现覆盖它的容器。你还可以在图片或者视频上面放入附加内容，比如文字或图片等。</p>
+                        <p>这个组件允许你使用图片、对象甚至iframe（images, objects or even
+                            iframes）来创建全屏效果。无论是什么元素，它都将垂直居中、水平居中并且不会失去原有的比例即实现覆盖它的容器。你还可以在图片或者视频上面放入附加内容，比如文字或图片等。</p>
 
                         <hr class="uk-article-divider">
 
                         <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                        <p>这个覆盖组件具有不同的用法，取决于你究竟是使用的背景图片、对象或者iframe。最简单的方式就是为带有背景图片的 <code>&lt;div&gt;</code> 元素添加 <code>.uk-cover-background</code> 类。</p>
+                        <p>这个覆盖组件具有不同的用法，取决于你究竟是使用的背景图片、对象或者iframe。最简单的方式就是为带有背景图片的 <code>&lt;div&gt;</code> 元素添加
+                            <code>.uk-cover-background</code> 类。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
-                        <div class="uk-cover-background" style="height: 300px; background-image: url(images/placeholder_600x400.svg);"></div>
+                        <div class="uk-cover-background"
+                            style="height: 300px; background-image: url(images/placeholder_600x400.svg);"></div>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
 
@@ -133,15 +138,18 @@
 
                         <h2>视频</h2>
 
-                        <p>创建一个覆盖它的父容器的视频，添加 <code>.uk-cover-object</code> 类到视频。然后用一个容器元素包裹视频并为该容器添加 <code>.uk-cover</code> 类来裁剪内容。</p>
+                        <p>创建一个覆盖它的父容器的视频，添加 <code>.uk-cover-object</code> 类到视频。然后用一个容器元素包裹视频并为该容器添加
+                            <code>.uk-cover</code> 类来裁剪内容。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
                         <div class="uk-cover" style="height: 300px;">
                             <video class="uk-cover-object" width="600" height="400" autoplay loop muted controls>
-                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
-                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
-                                </video>
+                                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1"
+                                    type="video/mp4">
+                                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1"
+                                    type="video/ogg">
+                            </video>
                         </div>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
@@ -156,12 +164,15 @@
 
                         <h2>Iframe</h2>
 
-                        <p>要将覆盖组件应用到 iframe ，你只需要为 iframe 添加 <code>data-uk-cover</code> 属性。然后，再添加 <code>.uk-cover</code> 类到包含iframe的容器来裁剪内容。</p>
+                        <p>要将覆盖组件应用到 iframe ，你只需要为 iframe 添加 <code>data-uk-cover</code> 属性。然后，再添加 <code>.uk-cover</code>
+                            类到包含iframe的容器来裁剪内容。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
                         <div class="uk-cover" style="height: 300px;">
-                            <iframe data-uk-cover src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+                            <iframe data-uk-cover
+                                src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent"
+                                width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
                         </div>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
@@ -174,14 +185,17 @@
 
                         <h2>响应式</h2>
 
-                        <p>为覆盖图片添加响应式行为，你需要添加 <code>.uk-invisible</code> 类到 <code>&lt;img&gt;</code> 元素，并将它放在覆盖元素内部。这样的话，它就能适应图片的响应式行为了。</p>
+                        <p>为覆盖图片添加响应式行为，你需要添加 <code>.uk-invisible</code> 类到 <code>&lt;img&gt;</code>
+                            元素，并将它放在覆盖元素内部。这样的话，它就能适应图片的响应式行为了。</p>
 
-                        <p><span class="uk-badge">注意</span> 添加 <a href="utility.html">效果组件</a> 中的 <code>.uk-height-viewport</code> 类，会扩展父容器的高度填满整个视口。</p>
+                        <p><span class="uk-badge">注意</span> 添加 <a href="utility.html">效果组件</a> 中的
+                            <code>.uk-height-viewport</code> 类，会扩展父容器的高度填满整个视口。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
                         <div class="uk-cover-background" style="background-image: url(images/placeholder_600x400.svg);">
-                            <img class="uk-invisible" src="images/placeholder_600x400.svg" width="600" height="400" alt="Placeholder">
+                            <img class="uk-invisible" src="images/placeholder_600x400.svg" width="600" height="400"
+                                alt="Placeholder">
                         </div>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
@@ -194,16 +208,21 @@
 
                         <h3>视频</h3>
 
-                        <p>为视频添加响应式行为，你同样需要为覆盖容器添加 <code>.uk-position-relative</code> 类，并将 <code>.uk-position-absolute</code> 类添加到覆盖对象上。对于irame也是这样操作。</p>
+                        <p>为视频添加响应式行为，你同样需要为覆盖容器添加 <code>.uk-position-relative</code> 类，并将
+                            <code>.uk-position-absolute</code> 类添加到覆盖对象上。对于irame也是这样操作。</p>
 
                         <h4 class="tm-article-subtitle">Example</h4>
 
                         <div class="uk-cover uk-position-relative">
-                            <img class="uk-invisible" src="images/placeholder_600x400.svg" width="600" height="400" alt="">
-                            <video class="uk-cover-object uk-position-absolute" width="600" height="400" autoplay loop muted controls>
-                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test2" type="video/mp4">
-                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test2" type="video/ogg">
-                                </video>
+                            <img class="uk-invisible" src="images/placeholder_600x400.svg" width="600" height="400"
+                                alt="">
+                            <video class="uk-cover-object uk-position-absolute" width="600" height="400" autoplay loop
+                                muted controls>
+                                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test2"
+                                    type="video/mp4">
+                                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test2"
+                                    type="video/ogg">
+                            </video>
                         </div>
 
                         <h4 class="tm-article-subtitle">Markup</h4>
@@ -219,14 +238,20 @@
 
                         <h2>内容的定位/Position content</h2>
 
-                        <p>你还能在覆盖元素上面绝对定位内容。要实现这个效果，只需添加 <a href="utility.html">效果组件</a> 中的 <code>.uk-position-cover</code> 类到图片或视频后面的容器元素。如果想要实现垂直居中并且水平居中，那就使用 <a href="flex.html">Flex 组件</a> 吧。</p>
+                        <p>你还能在覆盖元素上面绝对定位内容。要实现这个效果，只需添加 <a href="utility.html">效果组件</a> 中的
+                            <code>.uk-position-cover</code> 类到图片或视频后面的容器元素。如果想要实现垂直居中并且水平居中，那就使用 <a
+                                href="flex.html">Flex 组件</a> 吧。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
-                        <div class="uk-cover-background uk-position-relative" style="height: 300px; background-image: url(images/placeholder_600x400.svg);">
-                            <img class="uk-invisible" src="images/placeholder_600x400.svg" width="600" height="400" alt="">
+                        <div class="uk-cover-background uk-position-relative"
+                            style="height: 300px; background-image: url(images/placeholder_600x400.svg);">
+                            <img class="uk-invisible" src="images/placeholder_600x400.svg" width="600" height="400"
+                                alt="">
                             <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-                                <div style="background: rgba(42, 142, 183, 0.8); font-size: 50px; line-height: 75px; color: #fff;">Bazinga!</div>
+                                <div
+                                    style="background: rgba(42, 142, 183, 0.8); font-size: 50px; line-height: 75px; color: #fff;">
+                                    Bazinga!</div>
                             </div>
                         </div>
 
@@ -256,8 +281,10 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

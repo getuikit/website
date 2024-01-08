@@ -29,7 +29,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -42,7 +43,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -99,12 +101,17 @@
 
                         <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                        <p>要使用这个组件，需要添加 <code>data-uk-parallax</code> 属性到容器元素。并为每个你想要使之动态变化的 CSS 属性添加对应的选项值。<span class="uk-badge uk-badge-danger">注意</span> 此组件需要额外添加 <code>parallax.js</code> 文件，在<code>js/components</code>文件夹中。</p>
+                        <p>要使用这个组件，需要添加 <code>data-uk-parallax</code> 属性到容器元素。并为每个你想要使之动态变化的 CSS 属性添加对应的选项值。<span
+                                class="uk-badge uk-badge-danger">注意</span> 此组件需要额外添加 <code>parallax.js</code>
+                            文件，在<code>js/components</code>文件夹中。</p>
 
-                        <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg: '-200'}" style="height: 350px; background-image: url('images/placeholder_800x400_2.jpg');">
+                        <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle"
+                            data-uk-parallax="{bg: '-200'}"
+                            style="height: 350px; background-image: url('images/placeholder_800x400_2.jpg');">
                             <div class="uk-width-medium-1-2">
                                 <h1 class="uk-text-contrast">Heading</h1>
-                                <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
 
@@ -199,16 +206,20 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="nested-animation"><a href="#nested-animation" class="uk-link-reset">嵌套的动画/Nested animation</a></h2>
+                        <h2 id="nested-animation"><a href="#nested-animation" class="uk-link-reset">嵌套的动画/Nested
+                                animation</a></h2>
 
                         <p>为前提的元素使用不同的动画是很简单的事情。只需在视差容器中再创建一个容器，并在新的 <code>data-uk-parallax</code> 属性中添加你的选项即可。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
-                        <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg: -200}" style="height: 350px; background-image: url('images/placeholder_800x400_1.jpg');">
+                        <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle"
+                            data-uk-parallax="{bg: -200}"
+                            style="height: 350px; background-image: url('images/placeholder_800x400_1.jpg');">
                             <div class="uk-width-medium-1-2" data-uk-parallax="{opacity: '0,1', scale: '0,1'}">
                                 <h1 class="uk-text-contrast">Heading</h1>
-                                <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
 
@@ -220,14 +231,19 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="target-option"><a href="#target-option" class="uk-link-reset">目标选项/Target Option</a></h2>
+                        <h2 id="target-option"><a href="#target-option" class="uk-link-reset">目标选项/Target Option</a>
+                        </h2>
 
-                        <p>通常，视差动画从元素进入视口开始，到离开视口结束。开始和终止动画基于另一个元素在视口中的可见性，使用 <code>target</code> 选项进行设置。在使用嵌套动画时会很有帮助。</p>
+                        <p>通常，视差动画从元素进入视口开始，到离开视口结束。开始和终止动画基于另一个元素在视口中的可见性，使用 <code>target</code> 选项进行设置。在使用嵌套动画时会很有帮助。
+                        </p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
-                        <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg: -200}" style="height: 350px; background-image: url('images/placeholder_800x400_2.jpg');">
-                            <div class="uk-width-medium-1-2" data-uk-parallax="{opacity: '0,1', scale: '0,1', target: '#target-option'}">
+                        <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle"
+                            data-uk-parallax="{bg: -200}"
+                            style="height: 350px; background-image: url('images/placeholder_800x400_2.jpg');">
+                            <div class="uk-width-medium-1-2"
+                                data-uk-parallax="{opacity: '0,1', scale: '0,1', target: '#target-option'}">
                                 <h1 class="uk-text-contrast">Heading</h1>
                                 <p class="uk-text-large">这段文字的动画在上面的 &quot;目标选项/Target Option&quot; 存在于视口中时，一直持续发生。</p>
                             </div>
@@ -248,28 +264,44 @@
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
-                        <div id="test-velocity" class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" style="height: 350px; background-image: url('images/placeholder_800x400_3.jpg'); background-size: cover;">
+                        <div id="test-velocity"
+                            class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle"
+                            style="height: 350px; background-image: url('images/placeholder_800x400_3.jpg'); background-size: cover;">
                             <div class="uk-grid uk-flex-center uk-flex-middle">
                                 <div>
-                                    <div class="uk-panel uk-panel-box" data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '0.04', viewport: '0.9'}">0.04</div>
+                                    <div class="uk-panel uk-panel-box"
+                                        data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '0.04', viewport: '0.9'}">
+                                        0.04</div>
                                 </div>
                                 <div>
-                                    <div class="uk-panel uk-panel-box" data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '0.2', viewport: '0.9'}">0.2</div>
+                                    <div class="uk-panel uk-panel-box"
+                                        data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '0.2', viewport: '0.9'}">
+                                        0.2</div>
                                 </div>
                                 <div>
-                                    <div class="uk-panel uk-panel-box" data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '0.6', viewport: '0.9'}">0.6</div>
+                                    <div class="uk-panel uk-panel-box"
+                                        data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '0.6', viewport: '0.9'}">
+                                        0.6</div>
                                 </div>
                                 <div>
-                                    <div class="uk-panel uk-panel-box" data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '1', viewport: '0.9'}">1</div>
+                                    <div class="uk-panel uk-panel-box"
+                                        data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '1', viewport: '0.9'}">
+                                        1</div>
                                 </div>
                                 <div>
-                                    <div class="uk-panel uk-panel-box" data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '2', viewport: '0.9'}">2</div>
+                                    <div class="uk-panel uk-panel-box"
+                                        data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '2', viewport: '0.9'}">
+                                        2</div>
                                 </div>
                                 <div>
-                                    <div class="uk-panel uk-panel-box" data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '3', viewport: '0.9'}">3</div>
+                                    <div class="uk-panel uk-panel-box"
+                                        data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '3', viewport: '0.9'}">
+                                        3</div>
                                 </div>
                                 <div>
-                                    <div class="uk-panel uk-panel-box" data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '4', viewport: '0.9'}">4</div>
+                                    <div class="uk-panel uk-panel-box"
+                                        data-uk-parallax="{target:'#test-velocity', y: '150', velocity: '4', viewport: '0.9'}">
+                                        4</div>
                                 </div>
                             </div>
                         </div>
@@ -284,12 +316,16 @@
 
                         <h2 id="viewport"><a href="#viewport" class="uk-link-reset">视口/Viewport</a></h2>
 
-                        <p>使用 <code>viewport</code> 选项，动画持续时间将被调整。其值为 <code>1</code> 或 <code>false</code> 时，视差动画从元素进入视口开始，到离开视口结束。将其设置为 <code>0.5</code>，如下面的例子，动画只在元素出现的前半个视口中发生。</p>
+                        <p>使用 <code>viewport</code> 选项，动画持续时间将被调整。其值为 <code>1</code> 或 <code>false</code>
+                            时，视差动画从元素进入视口开始，到离开视口结束。将其设置为 <code>0.5</code>，如下面的例子，动画只在元素出现的前半个视口中发生。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
-                        <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg: -200}" style="height: 350px; background-image: url('images/placeholder_800x400_1.jpg');">
-                            <div class="uk-width-medium-1-2" data-uk-parallax="{opacity: '0,1', scale: '0,1', viewport: '0.5'}">
+                        <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle"
+                            data-uk-parallax="{bg: -200}"
+                            style="height: 350px; background-image: url('images/placeholder_800x400_1.jpg');">
+                            <div class="uk-width-medium-1-2"
+                                data-uk-parallax="{opacity: '0,1', scale: '0,1', viewport: '0.5'}">
                                 <h1 class="uk-text-contrast">Heading</h1>
                                 <p class="uk-text-large">这段文字的动画会在其抵达时候中部前持续发生。</p>
                             </div>
@@ -301,7 +337,8 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript 选项</a></h2>
+                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript
+                                选项</a></h2>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table uk-table-striped uk-text-nowrap">
@@ -365,8 +402,10 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

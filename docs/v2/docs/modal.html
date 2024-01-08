@@ -25,7 +25,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -38,7 +39,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -127,7 +129,8 @@
                                 <tbody>
                                     <tr>
                                         <td><code>.uk-modal</code></td>
-                                        <td>添加这个类到一个 <code>&lt;div&gt;</code> 元素中创建对话框的容器和一个覆盖在页面上的空白遮罩层。为了能拨动这个元素，必须为它添加id。</td>
+                                        <td>添加这个类到一个 <code>&lt;div&gt;</code>
+                                            元素中创建对话框的容器和一个覆盖在页面上的空白遮罩层。为了能拨动这个元素，必须为它添加id。</td>
                                     </tr>
                                     <tr>
                                         <td><code>.uk-modal-dialog</code></td>
@@ -135,13 +138,17 @@
                                     </tr>
                                     <tr>
                                         <td><code>.uk-modal-close</code></td>
-                                        <td>添加这个类到 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> 元素，用来创建对话框中的关闭按钮。推荐为按钮添加 <a href="close.html">关闭按钮组件</a> 中的 <code>.uk-close</code> 类，以赋予适当的样式，你也可以使用文字或者图片。</td>
+                                        <td>添加这个类到 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code>
+                                            元素，用来创建对话框中的关闭按钮。推荐为按钮添加 <a href="close.html">关闭按钮组件</a> 中的
+                                            <code>.uk-close</code> 类，以赋予适当的样式，你也可以使用文字或者图片。</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <p>你可以使用任意元素来触发模态对话框。一个 <code>&lt;a&gt;</code> 元素需要链接到模态对话框的id 。为了使必要的JavaScript生效，需要添加 <code>data-uk-modal</code> 属性。如果你使用的是其他元素，比如按钮，只需要添加 <code>data-uk-modal="{target:'#ID'}"</code> 元素指向模态对话框的。</p>
+                        <p>你可以使用任意元素来触发模态对话框。一个 <code>&lt;a&gt;</code> 元素需要链接到模态对话框的id 。为了使必要的JavaScript生效，需要添加
+                            <code>data-uk-modal</code> 属性。如果你使用的是其他元素，比如按钮，只需要添加
+                            <code>data-uk-modal="{target:'#ID'}"</code> 元素指向模态对话框的。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -151,8 +158,12 @@
                             <div class="uk-modal-dialog">
                                 <a href="" class="uk-modal-close uk-close"></a>
                                 <h1>Headline</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est
                                     laborum.
                                 </p>
                             </div>
@@ -178,13 +189,16 @@
 
                         <h3>JavaScript 选项</h3>
 
-                        <p>默认地，点击遮罩层会自动关闭模态对话框。如果要阻止它，只需要添加 <code>data-uk-modal="{target:'#ID',bgclose:false}"</code> 属性。</p>
+                        <p>默认地，点击遮罩层会自动关闭模态对话框。如果要阻止它，只需要添加 <code>data-uk-modal="{target:'#ID',bgclose:false}"</code>
+                            属性。</p>
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="modal-header-footer"><a href="#modal-header-footer" class="uk-link-reset">模态对话框的标题和脚注/Modal header and footer</a></h2>
+                        <h2 id="modal-header-footer"><a href="#modal-header-footer"
+                                class="uk-link-reset">模态对话框的标题和脚注/Modal header and footer</a></h2>
 
-                        <p>你可以为模态对话框创建标题和脚注，使它们与正文内容分离开。只需要添加 <code>.uk-modal-header</code> 或者 <code>.uk-modal-footer</code> 类到模态对话内部的 <code>&lt;div&gt;</code> 元素即可。</p>
+                        <p>你可以为模态对话框创建标题和脚注，使它们与正文内容分离开。只需要添加 <code>.uk-modal-header</code> 或者
+                            <code>.uk-modal-footer</code> 类到模态对话内部的 <code>&lt;div&gt;</code> 元素即可。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -195,10 +209,18 @@
                                 <div class="uk-modal-header">
                                     <h2>Headline</h2>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                    laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit
                                     anim id est laborum.</p>
                                 <div class="uk-modal-footer uk-text-right">
                                     <button type="button" class="uk-button">Cancel</button>
@@ -219,9 +241,11 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="modal-with-caption"><a href="#modal-with-caption" class="uk-link-reset">模态对话框的说明文字/Modal caption</a></h2>
+                        <h2 id="modal-with-caption"><a href="#modal-with-caption" class="uk-link-reset">模态对话框的说明文字/Modal
+                                caption</a></h2>
 
-                        <p>你还可以为模态对话框创建一个显示在它外部的说明文字。只需要天 <code>.uk-modal-caption</code> 类到模态对话框内部的 <code>&lt;div&gt;</code> 元素即可。</p>
+                        <p>你还可以为模态对话框创建一个显示在它外部的说明文字。只需要天 <code>.uk-modal-caption</code> 类到模态对话框内部的
+                            <code>&lt;div&gt;</code> 元素即可。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -230,8 +254,12 @@
                             <div class="uk-modal-dialog">
                                 <a href="" class="uk-modal-close uk-close"></a>
                                 <h1>Headline</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est
                                     laborum.
                                 </p>
                                 <div class="uk-modal-caption">Caption</div>
@@ -248,9 +276,11 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="lightbox-modifier"><a href="#lightbox-modifier" class="uk-link-reset">灯箱修饰/Lightbox modifier</a></h2>
+                        <h2 id="lightbox-modifier"><a href="#lightbox-modifier" class="uk-link-reset">灯箱修饰/Lightbox
+                                modifier</a></h2>
 
-                        <p>创建看起来像灯箱的模态对话框，只需要添加 <code>.uk-modal-dialog-lightbox</code> 类。如果你想要把图片显示在灯箱一样的模态对话框中时，这会很有用。关闭按钮会自动调整到对话框的相应位置。</p>
+                        <p>创建看起来像灯箱的模态对话框，只需要添加 <code>.uk-modal-dialog-lightbox</code>
+                            类。如果你想要把图片显示在灯箱一样的模态对话框中时，这会很有用。关闭按钮会自动调整到对话框的相应位置。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -275,14 +305,17 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-                        <p><span class="uk-badge">注意</span> 在灯箱模态对话框中创建关闭按钮时，我们依然推荐添加 <a href="close.html">关闭组件</a> 中的 <code>.uk-close-alt</code> 类来赋予你的关闭按钮一个适当的样式。</p>
+                        <p><span class="uk-badge">注意</span> 在灯箱模态对话框中创建关闭按钮时，我们依然推荐添加 <a href="close.html">关闭组件</a> 中的
+                            <code>.uk-close-alt</code> 类来赋予你的关闭按钮一个适当的样式。</p>
 
                         <hr class="uk-article-divider">
 
 
                         <h2><a href="#modal-blank" class="uk-link-reset">空白模态框</a></h2>
 
-                        <p>重置所有样式，比如padding和margin,添加 <code>.uk-modal-dialog-blank</code> 类名即可。如果你想创建全屏模态框时，可以使用它。此时，你还需要用到<a href="utility.html">效果组件</a>中的 <code>.uk-height-viewport</code> 类名，使得模态框填充整个视口高度。</p>
+                        <p>重置所有样式，比如padding和margin,添加 <code>.uk-modal-dialog-blank</code>
+                            类名即可。如果你想创建全屏模态框时，可以使用它。此时，你还需要用到<a href="utility.html">效果组件</a>中的
+                            <code>.uk-height-viewport</code> 类名，使得模态框填充整个视口高度。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -291,12 +324,17 @@
                             <div class="uk-modal-dialog uk-modal-dialog-blank">
                                 <button class="uk-modal-close uk-close" type="button"></button>
                                 <div class="uk-grid uk-flex-middle" data-uk-grid-margin>
-                                    <div class="uk-width-medium-1-2 uk-height-viewport uk-cover-background" style="background-image: url('images/placeholder_120x255.svg');"></div>
+                                    <div class="uk-width-medium-1-2 uk-height-viewport uk-cover-background"
+                                        style="background-image: url('images/placeholder_120x255.svg');"></div>
                                     <div class="uk-width-medium-1-2">
                                         <h1>Headline</h1>
                                         <div class="uk-width-medium-1-3">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                                                 mollit anim id est laborum.</p>
                                         </div>
                                     </div>
@@ -314,9 +352,11 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="modal-with-spinner"><a href="#modal-with-spinner" class="uk-link-reset">模态对话框中的旋转/Modal spinner</a></h2>
+                        <h2 id="modal-with-spinner"><a href="#modal-with-spinner" class="uk-link-reset">模态对话框中的旋转/Modal
+                                spinner</a></h2>
 
-                        <p>要在模态对话框中放入一个旋转的图标，添加 <code>.uk-modal-spinner</code> 类到模态对话框中的 <code>&lt;div&gt;</code> 元素即可。</p>
+                        <p>要在模态对话框中放入一个旋转的图标，添加 <code>.uk-modal-spinner</code> 类到模态对话框中的 <code>&lt;div&gt;</code> 元素即可。
+                        </p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -352,7 +392,8 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="large-dialog-modifier"><a href="#large-dialog-modifier" class="uk-link-reset">大对话框修饰</a></h2>
+                        <h2 id="large-dialog-modifier"><a href="#large-dialog-modifier" class="uk-link-reset">大对话框修饰</a>
+                        </h2>
 
                         <p>为模态对话框添加与网页相同的宽度，只需要添加 <code>.uk-modal-dialog-large</code> 类。</p>
 
@@ -363,8 +404,12 @@
                             <div class="uk-modal-dialog uk-modal-dialog-large">
                                 <button type="button" class="uk-modal-close uk-close"></button>
                                 <h1>Headline</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est
                                     laborum.
                                 </p>
                             </div>
@@ -376,9 +421,11 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="overflow-container-in-modal"><a href="#overflow-container-in-modal" class="uk-link-reset">模态对话框中溢出容器</a></h2>
+                        <h2 id="overflow-container-in-modal"><a href="#overflow-container-in-modal"
+                                class="uk-link-reset">模态对话框中溢出容器</a></h2>
 
-                        <p>你还可以把模态对话框的内容显示在可滚动的容器中。只需添加 <code>.uk-overflow-container</code> 类到模态对话框中的 <code>&lt;div&gt;</code> 元素即可。模态对话框会自动扩展填充到页面的高度。</p>
+                        <p>你还可以把模态对话框的内容显示在可滚动的容器中。只需添加 <code>.uk-overflow-container</code> 类到模态对话框中的
+                            <code>&lt;div&gt;</code> 元素即可。模态对话框会自动扩展填充到页面的高度。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -388,64 +435,136 @@
                                 <button type="button" class="uk-modal-close uk-close"></button>
                                 <h1>Headline</h1>
                                 <h2>Some text above the scrollable box</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est
                                     laborum.
                                 </p>
                                 <div class="uk-overflow-container">
                                     <h2>Overflow container</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id
                                         est laborum.</p>
                                 </div>
                                 <h2>Some text below the overflow container</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est
                                     laborum.
                                 </p>
                             </div>
@@ -471,19 +590,23 @@
 
                         <pre><code>UIkit.modal.alert("Attention!");</code></pre>
 
-                        <button type="button" class="uk-button" onclick="UIkit.modal.confirm('Are you sure?', function(){ UIkit.modal.alert('Confirmed!'); });">Confirm</button>
+                        <button type="button" class="uk-button"
+                            onclick="UIkit.modal.confirm('Are you sure?', function(){ UIkit.modal.alert('Confirmed!'); });">Confirm</button>
 
                         <pre><code>UIkit.modal.confirm("Are you sure?", function(){
     // 点击OK确认后开始执行
 });</code></pre>
 
-                        <button type="button" class="uk-button" onclick="UIkit.modal.prompt('Name:', '', function(val){ UIkit.modal.alert('Hello '+(val || 'Mr noname')+'!'); });">Prompt</button>
+                        <button type="button" class="uk-button"
+                            onclick="UIkit.modal.prompt('Name:', '', function(val){ UIkit.modal.alert('Hello '+(val || 'Mr noname')+'!'); });">Prompt</button>
 
                         <pre><code>UIkit.modal.prompt("Name:", value, function(newvalue){
     // 点击OK提交后执行
 });</code></pre>
 
-                        <button type="button" class="uk-button" onclick="(function(modal){ modal = UIkit.modal.blockUI('Wait 5 sec...'); setTimeout(function(){ modal.hide() }, 5000) })();">Block UI</button>屏蔽了UI界面
+                        <button type="button" class="uk-button"
+                            onclick="(function(modal){ modal = UIkit.modal.blockUI('Wait 5 sec...'); setTimeout(function(){ modal.hide() }, 5000) })();">Block
+                            UI</button>屏蔽了UI界面
 
                         <pre><code>var modal = UIkit.modal.blockUI("Any content..."); // 使用 modal.hide() 解除屏蔽</code></pre>
 
@@ -566,8 +689,10 @@ if ( modal.isActive() ) {
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

@@ -27,7 +27,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -41,7 +42,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -98,9 +100,12 @@
 
                         <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                        <p>要创建幻灯片，只需要添加 <code>.uk-slideshow</code> 类到一个 <code>&lt;ul&gt;</code> 元素中，并将你的图片放入列表条目内。为了加载必要的JavaScript，还需要添加 <code>data-uk-slideshow</code> 属性。</p>
+                        <p>要创建幻灯片，只需要添加 <code>.uk-slideshow</code> 类到一个 <code>&lt;ul&gt;</code>
+                            元素中，并将你的图片放入列表条目内。为了加载必要的JavaScript，还需要添加 <code>data-uk-slideshow</code> 属性。</p>
 
-                        <p><span class="uk-badge uk-badge-danger">注意</span> 使用此组件需要额外添加 <code>slideshow.css</code> 文件，在<code>css/components</code>文件夹中。此组件需要额外添加 <code>slideshow.js</code> 文件，在<code>js/components</code>文件夹中。</p>
+                        <p><span class="uk-badge uk-badge-danger">注意</span> 使用此组件需要额外添加 <code>slideshow.css</code>
+                            文件，在<code>css/components</code>文件夹中。此组件需要额外添加 <code>slideshow.js</code>
+                            文件，在<code>js/components</code>文件夹中。</p>
                         <h3 class="tm-article-subtitle">Example</h3>
 
                         <ul class="uk-slideshow" data-uk-slideshow="{autoplay:true}">
@@ -121,7 +126,9 @@
 
                         <h2 id="navigations"><a href="#navigations" class="uk-link-reset">导航/Navigations</a></h2>
 
-                        <p>在幻灯片中进行导航，使用 <code>data-uk-slideshow-item</code> 属性就行。为了能指向幻灯片，你必须为每个导航单元设置data属性指向每个幻灯片单元的序号。带有 <code>data-uk-slideshow-item</code> 属性的元素需要被放置在带有 <code>data-uk-slideshow</code> 的容器中。</p>
+                        <p>在幻灯片中进行导航，使用 <code>data-uk-slideshow-item</code>
+                            属性就行。为了能指向幻灯片，你必须为每个导航单元设置data属性指向每个幻灯片单元的序号。带有 <code>data-uk-slideshow-item</code>
+                            属性的元素需要被放置在带有 <code>data-uk-slideshow</code> 的容器中。</p>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
 
@@ -151,7 +158,8 @@
 
                         <h3 id="slide-dot-nav"><a href="#slide-dot-nav" class="uk-link-reset">滑动导航和圆点导航</a></h3>
 
-                        <p>幻灯片组件的灵活性使之可以用任何其他UIkit组件进行幻灯片的导航。比如<a href="slidenav.html">滑动导航</a>和<a href="dotnav.html">圆点导航</a>可以用来像下面这样作为幻灯片的导航。</p>
+                        <p>幻灯片组件的灵活性使之可以用任何其他UIkit组件进行幻灯片的导航。比如<a href="slidenav.html">滑动导航</a>和<a
+                                href="dotnav.html">圆点导航</a>可以用来像下面这样作为幻灯片的导航。</p>
 
                         <h4 class="tm-article-subtitle">Example</h4>
 
@@ -161,8 +169,10 @@
                                 <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
                                 <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
                             </ul>
-                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                             <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
                                 <li data-uk-slideshow-item="0"><a href="#">Item 1</a></li>
                                 <li data-uk-slideshow-item="1"><a href="#">Item 2</a></li>
@@ -189,7 +199,8 @@
 
                         <h2 id="animations"><a href="#animations" class="uk-link-reset">过渡形式</a></h2>
 
-                        <p>幻灯片组件允许添加不同的幻灯片切换效果。你需要做的就是将 <code>animation</code> 参数添加到data属性中，并声明你希望使用的动画。查看下面的表格了解咱都提供了哪些动画效果。</p>
+                        <p>幻灯片组件允许添加不同的幻灯片切换效果。你需要做的就是将 <code>animation</code>
+                            参数添加到data属性中，并声明你希望使用的动画。查看下面的表格了解咱都提供了哪些动画效果。</p>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table uk-text-nowrap">
@@ -253,11 +264,13 @@
                                     </tr>
                                     <tr>
                                         <td><code>boxes</code></td>
-                                        <td>The items are divided in squares that scale in diagonally from the top left corner.</td>
+                                        <td>The items are divided in squares that scale in diagonally from the top left
+                                            corner.</td>
                                     </tr>
                                     <tr>
                                         <td><code>boxes-reverse</code></td>
-                                        <td>The items are divided in squares that scale in diagonally from the bottom right corner.</td>
+                                        <td>The items are divided in squares that scale in diagonally from the bottom
+                                            right corner.</td>
                                     </tr>
                                     <tr>
                                         <td><code>random-fx</code></td>
@@ -274,120 +287,170 @@
                                 <h3>Scroll</h3>
                                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scroll'}">
                                     <ul class="uk-slideshow">
-                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
+                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
+                                        </li>
                                     </ul>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                        data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                        data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                                 </div>
                             </li>
                             <li>
                                 <h3>Scale</h3>
                                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scale'}">
                                     <ul class="uk-slideshow">
-                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
+                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
+                                        </li>
                                     </ul>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                        data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                        data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                                 </div>
                             </li>
                             <li>
                                 <h3>Swipe</h3>
                                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'swipe'}">
                                     <ul class="uk-slideshow">
-                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
+                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
+                                        </li>
                                     </ul>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                        data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                        data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                                 </div>
                             </li>
                             <li>
                                 <h3>Slice Down</h3>
                                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'slice-down'}">
                                     <ul class="uk-slideshow">
-                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
+                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
+                                        </li>
                                     </ul>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                        data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                        data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                                 </div>
                             </li>
                             <li>
                                 <h3>Slice Up</h3>
                                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'slice-up'}">
                                     <ul class="uk-slideshow">
-                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
+                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
+                                        </li>
                                     </ul>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                        data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                        data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                                 </div>
                             </li>
                             <li>
                                 <h3>Slice Up Down</h3>
                                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'slice-up-down'}">
                                     <ul class="uk-slideshow">
-                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
+                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
+                                        </li>
                                     </ul>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                        data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                        data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                                 </div>
                             </li>
                             <li>
                                 <h3>Fold</h3>
                                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'fold'}">
                                     <ul class="uk-slideshow">
-                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
+                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
+                                        </li>
                                     </ul>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                        data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                        data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                                 </div>
                             </li>
                             <li>
                                 <h3>Puzzle</h3>
                                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'puzzle'}">
                                     <ul class="uk-slideshow">
-                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
+                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
+                                        </li>
                                     </ul>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                        data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                        data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                                 </div>
                             </li>
                             <li>
                                 <h3>Boxes</h3>
                                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'boxes'}">
                                     <ul class="uk-slideshow">
-                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
+                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
+                                        </li>
                                     </ul>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                        data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                        data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                                 </div>
                             </li>
                             <li>
                                 <h3>Boxes Reverse</h3>
                                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'boxes-reverse'}">
                                     <ul class="uk-slideshow">
-                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
-                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
+                                        <li><img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
+                                        </li>
+                                        <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
+                                        </li>
                                     </ul>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                        data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                        data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                                 </div>
                             </li>
                         </ul>
@@ -398,7 +461,8 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="ken-burns-effect"><a href="#ken-burns-effect" class="uk-link-reset">Ken Burns 效果</a></h2>
+                        <h2 id="ken-burns-effect"><a href="#ken-burns-effect" class="uk-link-reset">Ken Burns 效果</a>
+                        </h2>
 
                         <p>炫酷的 Ken Burns 效果也能用在幻灯片里。只需要添加 <code>{kenburns:true}</code> 选项到data属性中就行。这个效果还能用在视频上。</p>
 
@@ -410,13 +474,16 @@
                                 <li><img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt=""></li>
                                 <li><img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt=""></li>
                             </ul>
-                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                         </div>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
 
-                        <pre><code>&lt;ul class="uk-slideshow" data-uk-slideshow="{kenburns:true}"&gt;...&lt;/ul&gt;</code></pre> 自定义动画持续时间:
+                        <pre><code>&lt;ul class="uk-slideshow" data-uk-slideshow="{kenburns:true}"&gt;...&lt;/ul&gt;</code></pre>
+                        自定义动画持续时间:
 
                         <pre><code>&lt;ul class="uk-slideshow" data-uk-slideshow="{kenburns:'30s'}"&gt;...&lt;/ul&gt;</code></pre>
 
@@ -435,7 +502,10 @@
 
                         <h2 id="overlays"><a href="#overlays" class="uk-link-reset">遮罩</a></h2>
 
-                        <p>还可以用遮罩来提升幻灯片的效果，为幻灯片列表条目内的 <code>&lt;div&gt;</code> 元素添加 <code>.uk-uk-overlay-panel</code> 类就行。添加 <code>.uk-overlay-background</code> 和 <code>.uk-overlay-fade</code> 带来背景与过渡效果。要实现幻灯片显示时即触发遮罩，添加 <code>.uk-uk-overlay-active</code>                            到列表容器即可。更多选项查看 <a href="overlay.html">遮罩组件</a>.</p>
+                        <p>还可以用遮罩来提升幻灯片的效果，为幻灯片列表条目内的 <code>&lt;div&gt;</code> 元素添加 <code>.uk-uk-overlay-panel</code>
+                            类就行。添加 <code>.uk-overlay-background</code> 和 <code>.uk-overlay-fade</code>
+                            带来背景与过渡效果。要实现幻灯片显示时即触发遮罩，添加 <code>.uk-uk-overlay-active</code> 到列表容器即可。更多选项查看 <a
+                                href="overlay.html">遮罩组件</a>.</p>
 
 
                         <h3 class="tm-article-subtitle">Example</h3>
@@ -444,49 +514,62 @@
                             <ul class="uk-slideshow uk-overlay-active">
                                 <li>
                                     <img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
-                                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                                    <div
+                                        class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
                                         <div>
                                             <h3>Overlay</h3>
-                                            <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                            <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing
+                                                elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                                magna aliquyam.</p>
                                             <button class="uk-button uk-button-primary">Button</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
-                                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-top uk-overlay-slide-top">
+                                    <div
+                                        class="uk-overlay-panel uk-overlay-background uk-overlay-top uk-overlay-slide-top">
                                         <h3>Overlay Top</h3>
-                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
                                         <button class="uk-button uk-button-primary">Button</button>
                                     </div>
                                 </li>
                                 <li>
                                     <img src="images/placeholder_800x400_3.jpg" width="800" height="400" alt="">
-                                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                                    <div
+                                        class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
                                         <h3>Overlay Bottom</h3>
-                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
                                         <button class="uk-button uk-button-primary">Button</button>
                                     </div>
                                 </li>
                                 <li>
                                     <img src="images/placeholder_800x400_1.jpg" width="800" height="400" alt="">
-                                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-left uk-overlay-slide-left uk-width-1-4">
+                                    <div
+                                        class="uk-overlay-panel uk-overlay-background uk-overlay-left uk-overlay-slide-left uk-width-1-4">
                                         <h3>Overlay Left</h3>
-                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
                                         <button class="uk-button uk-button-primary">Button</button>
                                     </div>
                                 </li>
                                 <li>
                                     <img src="images/placeholder_800x400_2.jpg" width="800" height="400" alt="">
-                                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-right uk-overlay-slide-right uk-width-1-4">
+                                    <div
+                                        class="uk-overlay-panel uk-overlay-background uk-overlay-right uk-overlay-slide-right uk-width-1-4">
                                         <h3>Overlay Right</h3>
-                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
                                         <button class="uk-button uk-button-primary">Button</button>
                                     </div>
                                 </li>
                             </ul>
-                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
                         </div>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
@@ -510,16 +593,22 @@
                             <ul class="uk-slideshow">
                                 <li>
                                     <video width="600" height="400" autoplay loop muted controls>
-                                            <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
-                                            <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test2" type="video/ogg">
-                                        </video>
+                                        <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1"
+                                            type="video/mp4">
+                                        <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test2"
+                                            type="video/ogg">
+                                    </video>
                                 </li>
                                 <li>
-                                    <iframe src="http://player.vimeo.com/video/1084537?title=0&amp;byline=0&amp;autoplay=1&amp;loop=1&amp;setVolume=0" width="500" height="281" frameborder="0" allowfullscreen></iframe>
+                                    <iframe
+                                        src="http://player.vimeo.com/video/1084537?title=0&amp;byline=0&amp;autoplay=1&amp;loop=1&amp;setVolume=0"
+                                        width="500" height="281" frameborder="0" allowfullscreen></iframe>
                                 </li>
                             </ul>
-                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                data-uk-slideshow-item="previous"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                data-uk-slideshow-item="next"></a>
                         </div>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
@@ -554,11 +643,15 @@
                                     <div class="uk-panel uk-panel-box">
                                         <div class="uk-grid">
                                             <div class="uk-width-1-3">
-                                                <img src="images/placeholder_200x200.svg" width="200" height="200" alt="">
+                                                <img src="images/placeholder_200x200.svg" width="200" height="200"
+                                                    alt="">
                                             </div>
                                             <div class="uk-width-2-3">
                                                 <h3 class="uk-panel-title">Headline 1</h3>
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                                    erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                                    et
                                                     ea rebum.</p>
                                                 <button class="uk-button">Read more</button>
                                             </div>
@@ -570,24 +663,31 @@
                                         <div class="uk-grid">
                                             <div class="uk-width-2-3">
                                                 <h3 class="uk-panel-title">Headline 2</h3>
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                                    erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                                    et
                                                     ea rebum.</p>
                                                 <button class="uk-button">Read more</button>
                                             </div>
                                             <div class="uk-width-1-3">
-                                                <img src="images/placeholder_200x200.svg" width="200" height="200" alt="">
+                                                <img src="images/placeholder_200x200.svg" width="200" height="200"
+                                                    alt="">
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
+                                data-uk-slideshow-item="previous"></a>
+                            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
+                                data-uk-slideshow-item="next"></a>
                         </div>
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript 选项</a></h2>
+                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript
+                                选项</a></h2>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table uk-table-striped uk-text-nowrap">
@@ -652,7 +752,9 @@
                                     <tr>
                                         <td><code>kenburnsanimations</code></td>
                                         <td>
-                                            uk-animation-middle-left, uk-animation-top-right,<br> uk-animation-bottom-left, uk-animation-top-center,<br> uk-animation-bottom-right
+                                            uk-animation-middle-left, uk-animation-top-right,<br>
+                                            uk-animation-bottom-left, uk-animation-top-center,<br>
+                                            uk-animation-bottom-right
                                         </td>
                                         <td>动画方向</td>
                                     </tr>
@@ -682,13 +784,13 @@
                                         <td>event, next slide, current slide</td>
                                         <td>新的一页显示时触发（动画完成后）</td>
                                     </tr>
-                                    <tbody>
-                                        <tr>
-                                            <td><code>beforeshow.uk.slideshow</code></td>
-                                            <td>event, next slide, current slide</td>
-                                            <td>新的一页显示前触发（动画完成前）</td>
-                                        </tr>
-                                    </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td><code>beforeshow.uk.slideshow</code></td>
+                                        <td>event, next slide, current slide</td>
+                                        <td>新的一页显示前触发（动画完成前）</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
 
@@ -711,8 +813,10 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

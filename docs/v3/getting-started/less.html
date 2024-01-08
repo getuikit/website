@@ -29,8 +29,8 @@
                         <ul class="uk-navbar-nav uk-visible@m">
                             <li class="uk-active"><a
                                     href="../../../doc/v3/getting-started/introduction.html">UIkit3文档</a></li>
-                            <li><a href="http://v2.getuikit.work/">UIkit2文档</a></li>
-                            <li><a href="http://v2.getuikit.work/showcase/">案例展示</a></li>
+                            <li><a href="/docs/v2/">UIkit2文档</a></li>
+                            <li><a href="/docs/v2/showcase/">案例展示</a></li>
                             <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li>
                         </ul>
                         <div class="uk-navbar-item uk-visible@m"><a title="版本3.4.6"
@@ -216,7 +216,8 @@
                         <h3 class="uk-h4 tm-heading-fragment" id="use-variables"><a href="#use-variables">使用变量</a></h3>
                         <p>只需覆盖已经声明的变量的值，就能进行大量的自定义。您可以在框架的Less文件中找到每个组件的所有变量，并在你的主题中覆盖它们。</p>
                         <p>首先，在UIkit源码中找到想要更改的Less变量。例如，全局链接颜色在这个
-                            <code>/src/less/components/variables.less</code>文件中定义为:</p>
+                            <code>/src/less/components/variables.less</code>文件中定义为:
+                        </p>
                         <div class="uk-margin-medium">
                             <pre>
 <code class="lang-less hljs"><span class="hljs-comment">// 默认值</span>
@@ -255,7 +256,8 @@
                                 href="#miscellaneous-hooks">杂项挂钩</a></h3>
                         <p>如果没有可用的变量和钩子，你还可以自己创建选择器。为此，可以使用 <em>.hook-card-misc</em>
                             挂钩并将选择器写入其中。这会将新选择器排序到已编译CSS文件的正确位置。只需将以下行添加到您自己的Less文件中，例如
-                            <code>/custom/my-theme.less</code>:</p>
+                            <code>/custom/my-theme.less</code>:
+                        </p>
                         <div class="uk-margin-medium">
                             <pre>
 <code class="lang-less hljs"><span class="hljs-comment">// misc mixin</span>
@@ -269,7 +271,8 @@
                                 href="#disable-inverse-component">禁用反向组件</a></h3>
                         <p>反向组件包括额外的风格来实现灵活的反向行为。如果您的项目不需要这些样式，那么可以在编译Less时将其忽略。这可以使已经编译的CSS的文件体积更小。可以搜索包含
                             <code>color-mode</code> (例如 <code>@card-primary-color-mode</code>), 把他们设置为
-                            <code>none</code>.</p>
+                            <code>none</code>.
+                        </p>
                         <p>要完全禁用反样式，请设置：</p>
                         <div class="uk-margin-medium">
                             <pre>
@@ -304,7 +307,8 @@
                         <p>在上面的示例中，我们将所有自定义规则直接添加到
                             <code>/custom/my-theme.less</code>里面。当你修改了少量的变量，你感到满意，这是很不错。然而，为了更大范围地定制主题，我们只推荐使用此文件作为面向
                             LESS 编译器的入口。你应该在一个子目录中为每个组件的独立文件更好地对它们的规则进行排序。这与默认的 UIkit 主题
-                            <code>/src/less/uikit.theme.less</code>的架构方式是一样的。</p>
+                            <code>/src/less/uikit.theme.less</code>的架构方式是一样的。
+                        </p>
                         <p><span class="uk-label">Note</span> T该示例假定您在 UIkit 项目的 <code>/custom</code>
                             目录中构建主题。如果您设置了自己的构建过程，则可以调整这些路径。</p>
                         <div class="uk-margin-medium">
@@ -379,7 +383,7 @@
                     <ul class="uk-nav uk-nav-default tm-nav">
                         <li class="uk-nav-header">总目录</li>
                         <li><a href="http://getuikit.work/">首页</a></li>
-                        <li><a href="http://v2.getuikit.work/showcase/">案例</a></li>
+                        <li><a href="/docs/v2/showcase/">案例</a></li>
                         <li><a href="https://getuikit.com/changelog">更新日志</a></li>
                         <li><a href="http://getuikit.work/download.html">下载</a></li>
                     </ul>

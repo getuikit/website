@@ -17,8 +17,8 @@
     <script src="js/docs.js"></script>
     <script src="../src/js/components/slideset.js"></script>
     <script charset="utf-8">
-        jQuery(function($) {
-            var select = $('#slideset-animation').on('change', function() {
+        jQuery(function ($) {
+            var select = $('#slideset-animation').on('change', function () {
                 select.next('[data-uk-slideset]').data('slideset').options.animation = select.val();
             });
         });
@@ -31,7 +31,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -44,7 +45,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -101,26 +103,39 @@
 
                         <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                        <p>使用这个组件需要为容器元素添加 <code>data-uk-slideset</code> 属性。添加 <code>default</code> 选项到 <code>data-uk-slideset</code> 属性，调整一个滑块集中条目的个数。</p>
+                        <p>使用这个组件需要为容器元素添加 <code>data-uk-slideset</code> 属性。添加 <code>default</code> 选项到
+                            <code>data-uk-slideset</code> 属性，调整一个滑块集中条目的个数。</p>
 
-                        <p><span class="uk-badge uk-badge-danger">注意</span> 此组件需要额外添加 <code>slideset.js</code> 文件，在<code>js/components</code>文件夹中。</p>
+                        <p><span class="uk-badge uk-badge-danger">注意</span> 此组件需要额外添加 <code>slideset.js</code>
+                            文件，在<code>js/components</code>文件夹中。</p>
                         <h3 class="tm-article-subtitle">Example</h3>
 
                         <div class="uk-margin" data-uk-slideset="{default: 4}">
                             <div class="uk-slidenav-position uk-margin">
                                 <ul class="uk-slideset uk-grid uk-flex-center">
-                                    <li><img src="holder.js/600x400/sky/auto/text:1/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:2/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:3/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:4/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:5/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:6/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:7/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:8/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:9/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:10/size:100" width="600" height="400" alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:1/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:2/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:3/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:4/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:5/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:6/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:7/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:8/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:9/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:10/size:100" width="600" height="400"
+                                            alt=""></li>
                                 </ul>
-                                <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-previous"
+                                    data-uk-slideset-item="previous"></a>
                                 <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
                             </div>
                         </div>
@@ -151,7 +166,9 @@
     &lt;ul class=&quot;uk-slideset-nav&quot;&gt;...&lt;/ul&gt;
 &lt;/div&gt;</code></pre>
 
-                        <p>要切换相邻的滑块，使用 <code>data-uk-slideset-item</code> 属性，并设置该属性的值为 <code>next</code> 和 <code>previous</code>。这些带有 <code>data-uk-slideset-item</code> 属性的元素必须放在带有 <code>data-uk-slideset</code> 属性的容器中。</p>
+                        <p>要切换相邻的滑块，使用 <code>data-uk-slideset-item</code> 属性，并设置该属性的值为 <code>next</code> 和
+                            <code>previous</code>。这些带有 <code>data-uk-slideset-item</code> 属性的元素必须放在带有
+                            <code>data-uk-slideset</code> 属性的容器中。</p>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
 
@@ -166,27 +183,40 @@
 
                         <hr class="uk-article-divider">
 
-                        <h3 id="slide-dot-nav"><a href="#slide-dot-nav" class="uk-link-reset">滑动导航和圆点导航/Slidenav and Dotnav</a></h3>
+                        <h3 id="slide-dot-nav"><a href="#slide-dot-nav" class="uk-link-reset">滑动导航和圆点导航/Slidenav and
+                                Dotnav</a></h3>
 
-                        <p>你可以使用 UIkit 的其他任意组件来做滑块集的导航。比如 <a href="slidenav.html">Slidenav</a> 和 <a href="dotnav.html">Dotnav</a> 可以做出像下面例子这样的导航。</p>
+                        <p>你可以使用 UIkit 的其他任意组件来做滑块集的导航。比如 <a href="slidenav.html">Slidenav</a> 和 <a
+                                href="dotnav.html">Dotnav</a> 可以做出像下面例子这样的导航。</p>
 
                         <h4 class="tm-article-subtitle">Example</h4>
 
                         <div class="uk-margin" data-uk-slideset="{default: 4}">
                             <div class="uk-slidenav-position uk-margin">
                                 <ul class="uk-slideset uk-grid uk-flex-center">
-                                    <li><img src="holder.js/600x400/sky/auto/text:1/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:2/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:3/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:4/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:5/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:6/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:7/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:8/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:9/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:10/size:100" width="600" height="400" alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:1/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:2/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:3/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:4/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:5/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:6/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:7/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:8/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:9/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:10/size:100" width="600" height="400"
+                                            alt=""></li>
                                 </ul>
-                                <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-previous"
+                                    data-uk-slideset-item="previous"></a>
                                 <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
                             </div>
                             <ul class="uk-slideset-nav uk-dotnav uk-flex-center"></ul>
@@ -210,25 +240,37 @@
 
                         <h2 id="responsive"><a href="#responsive" class="uk-link-reset">响应式条目/Responsive items</a></h2>
 
-                        <p>滑块集支持基于条目可见性的媒体查询。只需添加一个断点选项到 <code>data-uk-slideset</code> 属性中，比如 <code>small</code>, <code>medium</code>, <code>large</code> 。并设置在该断点宽度以上的视口中你想要显示的条目数，如下面例子所示：</p>
+                        <p>滑块集支持基于条目可见性的媒体查询。只需添加一个断点选项到 <code>data-uk-slideset</code> 属性中，比如 <code>small</code>,
+                            <code>medium</code>, <code>large</code> 。并设置在该断点宽度以上的视口中你想要显示的条目数，如下面例子所示：</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
                         <div class="uk-margin" data-uk-slideset="{small: 2, medium: 4, large: 6}">
                             <div class="uk-slidenav-position uk-margin">
                                 <ul class="uk-slideset uk-grid uk-flex-center">
-                                    <li><img src="holder.js/600x400/sky/auto/text:1/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:2/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:3/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:4/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:5/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:6/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:7/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:8/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:9/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:10/size:100" width="600" height="400" alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:1/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:2/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:3/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:4/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:5/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:6/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:7/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:8/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:9/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:10/size:100" width="600" height="400"
+                                            alt=""></li>
                                 </ul>
-                                <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-previous"
+                                    data-uk-slideset-item="previous"></a>
                                 <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
                             </div>
                             <ul class="uk-slideset-nav uk-dotnav uk-flex-center"></ul>
@@ -244,7 +286,8 @@
 
                         <h2 id="animations"><a href="#animations" class="uk-link-reset">动画/Animations</a></h2>
 
-                        <p>这里有那么多的动画可以用在滑块集里，用来显示下一批滑块。只要为 <code>data-uk-slideset</code> 添加 <code>animation</code> 选项并设置你想要的动画。动画的持续时间可以通过设置 <code>duration</code> 选项来修改。</p>
+                        <p>这里有那么多的动画可以用在滑块集里，用来显示下一批滑块。只要为 <code>data-uk-slideset</code> 添加 <code>animation</code>
+                            选项并设置你想要的动画。动画的持续时间可以通过设置 <code>duration</code> 选项来修改。</p>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table uk-text-nowrap">
@@ -286,29 +329,40 @@
                         <h3 class="tm-article-subtitle">Example - 在下拉框里选你想要预览的</h3>
 
                         <select id="slideset-animation">
-                                <option value="fade">fade</option>
-                                <option value="scale">scale</option>
-                                <option value="slide-horizontal">slide-horizontal</option>
-                                <option value="slide-vertical">slide-vertical</option>
-                                <option value="slide-top">slide-top</option>
-                                <option value="slide-bottom">slide-bottom</option>
-                            </select>
+                            <option value="fade">fade</option>
+                            <option value="scale">scale</option>
+                            <option value="slide-horizontal">slide-horizontal</option>
+                            <option value="slide-vertical">slide-vertical</option>
+                            <option value="slide-top">slide-top</option>
+                            <option value="slide-bottom">slide-bottom</option>
+                        </select>
 
                         <div class="uk-margin" data-uk-slideset="{small: 2, medium: 4}">
                             <div class="uk-slidenav-position uk-margin">
                                 <ul class="uk-slideset uk-grid uk-flex-center">
-                                    <li><img src="holder.js/600x400/sky/auto/text:1/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:2/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:3/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:4/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:5/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:6/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:7/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:8/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:9/size:100" width="600" height="400" alt=""></li>
-                                    <li><img src="holder.js/600x400/sky/auto/text:10/size:100" width="600" height="400" alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:1/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:2/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:3/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:4/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:5/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:6/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:7/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:8/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:9/size:100" width="600" height="400"
+                                            alt=""></li>
+                                    <li><img src="holder.js/600x400/sky/auto/text:10/size:100" width="600" height="400"
+                                            alt=""></li>
                                 </ul>
-                                <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-previous"
+                                    data-uk-slideset-item="previous"></a>
                                 <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
                             </div>
                             <ul class="uk-slideset-nav uk-dotnav uk-flex-center"></ul>
@@ -323,9 +377,11 @@
 
                         <h2 id="filter"><a href="#filter" class="uk-link-reset">过滤/Filter</a></h2>
 
-                        <p>你还可以使用过滤来实现只显示滑块集中特定的条目。为此，需要为每个过滤控件添加 <code>data-uk-filter</code> 属性来规定它们过滤的分类。然后还要为每个滑块条目添加 <code>data-uk-filter</code> 属性来规定它们各自属于哪个分类。</p>
+                        <p>你还可以使用过滤来实现只显示滑块集中特定的条目。为此，需要为每个过滤控件添加 <code>data-uk-filter</code> 属性来规定它们过滤的分类。然后还要为每个滑块条目添加
+                            <code>data-uk-filter</code> 属性来规定它们各自属于哪个分类。</p>
 
-                        <p><span class="uk-badge">注意</span> 过滤控件可以放在滑块集中，或者，为过滤控件添加 <code>controls</code> 选项到 <code>data-uk-slideset</code> 属性中，并将滑块集的 id 设置在该选项中。如下面的例子：</p>
+                        <p><span class="uk-badge">注意</span> 过滤控件可以放在滑块集中，或者，为过滤控件添加 <code>controls</code> 选项到
+                            <code>data-uk-slideset</code> 属性中，并将滑块集的 id 设置在该选项中。如下面的例子：</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -337,29 +393,70 @@
                             </ul>
                             <div class="uk-slidenav-position uk-margin">
                                 <ul class="uk-slideset uk-grid uk-flex-center">
-                                    <li data-uk-filter="filter-a"><img src="holder.js/600x400/sky/auto/text:Filter A \n Item 1" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-a"><img src="holder.js/600x400/sky/auto/text:Filter A \n Item 2" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-a"><img src="holder.js/600x400/sky/auto/text:Filter A \n Item 3" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-a"><img src="holder.js/600x400/sky/auto/text:Filter A \n Item 4" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-a"><img src="holder.js/600x400/sky/auto/text:Filter A \n Item 5" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-a"><img src="holder.js/600x400/sky/auto/text:Filter A \n Item 6" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-a"><img src="holder.js/600x400/sky/auto/text:Filter A \n Item 7" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-a"><img src="holder.js/600x400/sky/auto/text:Filter A \n Item 8" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-a"><img src="holder.js/600x400/sky/auto/text:Filter A \n Item 9" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-a"><img src="holder.js/600x400/sky/auto/text:Filter A \n Item 10" width="600" height="400" alt=""></li>
+                                    <li data-uk-filter="filter-a"><img
+                                            src="holder.js/600x400/sky/auto/text:Filter A \n Item 1" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-a"><img
+                                            src="holder.js/600x400/sky/auto/text:Filter A \n Item 2" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-a"><img
+                                            src="holder.js/600x400/sky/auto/text:Filter A \n Item 3" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-a"><img
+                                            src="holder.js/600x400/sky/auto/text:Filter A \n Item 4" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-a"><img
+                                            src="holder.js/600x400/sky/auto/text:Filter A \n Item 5" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-a"><img
+                                            src="holder.js/600x400/sky/auto/text:Filter A \n Item 6" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-a"><img
+                                            src="holder.js/600x400/sky/auto/text:Filter A \n Item 7" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-a"><img
+                                            src="holder.js/600x400/sky/auto/text:Filter A \n Item 8" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-a"><img
+                                            src="holder.js/600x400/sky/auto/text:Filter A \n Item 9" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-a"><img
+                                            src="holder.js/600x400/sky/auto/text:Filter A \n Item 10" width="600"
+                                            height="400" alt=""></li>
 
-                                    <li data-uk-filter="filter-b"><img src="holder.js/600x400/vine/auto/text:Filter B \n Item 1" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-b"><img src="holder.js/600x400/vine/auto/text:Filter B \n Item 2" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-b"><img src="holder.js/600x400/vine/auto/text:Filter B \n Item 3" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-b"><img src="holder.js/600x400/vine/auto/text:Filter B \n Item 4" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-b"><img src="holder.js/600x400/vine/auto/text:Filter B \n Item 5" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-b"><img src="holder.js/600x400/vine/auto/text:Filter B \n Item 6" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-b"><img src="holder.js/600x400/vine/auto/text:Filter B \n Item 7" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-b"><img src="holder.js/600x400/vine/auto/text:Filter B \n Item 8" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-b"><img src="holder.js/600x400/vine/auto/text:Filter B \n Item 9" width="600" height="400" alt=""></li>
-                                    <li data-uk-filter="filter-b"><img src="holder.js/600x400/vine/auto/text:Filter B \n Item 10" width="600" height="400" alt=""></li>
+                                    <li data-uk-filter="filter-b"><img
+                                            src="holder.js/600x400/vine/auto/text:Filter B \n Item 1" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-b"><img
+                                            src="holder.js/600x400/vine/auto/text:Filter B \n Item 2" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-b"><img
+                                            src="holder.js/600x400/vine/auto/text:Filter B \n Item 3" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-b"><img
+                                            src="holder.js/600x400/vine/auto/text:Filter B \n Item 4" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-b"><img
+                                            src="holder.js/600x400/vine/auto/text:Filter B \n Item 5" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-b"><img
+                                            src="holder.js/600x400/vine/auto/text:Filter B \n Item 6" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-b"><img
+                                            src="holder.js/600x400/vine/auto/text:Filter B \n Item 7" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-b"><img
+                                            src="holder.js/600x400/vine/auto/text:Filter B \n Item 8" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-b"><img
+                                            src="holder.js/600x400/vine/auto/text:Filter B \n Item 9" width="600"
+                                            height="400" alt=""></li>
+                                    <li data-uk-filter="filter-b"><img
+                                            src="holder.js/600x400/vine/auto/text:Filter B \n Item 10" width="600"
+                                            height="400" alt=""></li>
                                 </ul>
-                                <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+                                <a href="#" class="uk-slidenav uk-slidenav-previous"
+                                    data-uk-slideset-item="previous"></a>
                                 <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
                             </div>
                             <ul class="uk-slideset-nav uk-dotnav uk-flex-center"></ul>
@@ -397,7 +494,8 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript 选项</a></h2>
+                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript
+                                选项</a></h2>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table uk-table-striped uk-text-nowrap">
@@ -532,8 +630,10 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

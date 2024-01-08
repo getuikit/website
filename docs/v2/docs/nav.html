@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>导航菜单 - UIkit2中文文档</title>
-    <meta name="description" content="UIkit的导航菜单组件可以定义不同的风格样式，它可以进行无限制的嵌套，你还可以轻松的定制出一个手风琴菜单，另外在侧边栏、面板或网页内容的任意其他地方都可以轻松的放置一个导航菜单。">
+    <meta name="description"
+        content="UIkit的导航菜单组件可以定义不同的风格样式，它可以进行无限制的嵌套，你还可以轻松的定制出一个手风琴菜单，另外在侧边栏、面板或网页内容的任意其他地方都可以轻松的放置一个导航菜单。">
     <meta name="author" content="UIkit中文网">
 
     <meta name="keywords" content="UIKit导航菜单组件,导航菜单,嵌套式导航菜单,手风琴导航,导航菜单副标题,侧边栏导航,搜索结果菜单,Nav">
@@ -25,7 +26,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -38,7 +40,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -115,7 +118,8 @@
 
                         <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                        <p>使用这个组件，添加 <code>.uk-nav</code> 类到一个 <code>&lt;ul&gt;</code> 元素中。使用 <code>&lt;a&gt;</code> 元素作为列表中的菜单项。要对一个菜单项应用选中状态的效果，添加 <code>.uk-active</code> 类即可。</p>
+                        <p>使用这个组件，添加 <code>.uk-nav</code> 类到一个 <code>&lt;ul&gt;</code> 元素中。使用 <code>&lt;a&gt;</code>
+                            元素作为列表中的菜单项。要对一个菜单项应用选中状态的效果，添加 <code>.uk-active</code> 类即可。</p>
 
                         <h3 class="tm-article-subtitle">示例</h3>
 
@@ -128,7 +132,8 @@
 
                         </div>
 
-                        <p><span class="uk-badge uk-badge-info">注意</span> 默认情况下，导航菜单没有任何样式。这就是为什么要添加一些具有样式的修饰类，这是很重要的，在例子中我们使用了 <code>.uk-nav-side</code> 类。</p>
+                        <p><span class="uk-badge uk-badge-info">注意</span>
+                            默认情况下，导航菜单没有任何样式。这就是为什么要添加一些具有样式的修饰类，这是很重要的，在例子中我们使用了 <code>.uk-nav-side</code> 类。</p>
 
                         <h3 class="tm-article-subtitle">Code</h3>
 
@@ -206,7 +211,9 @@
 
                         <h3>手风琴</h3>
 
-                        <p>默认情况下，子菜单项总是可见的。若要应用手风琴效果，只需给主 <code>&lt;ul&gt;</code> 元素添加 <code>data-uk-nav</code> 属性。当点击一个父菜单项时，会关闭已经展开的菜单项，每次只允许展开一个嵌套的菜单。若要避免这种情况，只需附加 <code>{multiple:true}</code> 到 data 属性。</p>
+                        <p>默认情况下，子菜单项总是可见的。若要应用手风琴效果，只需给主 <code>&lt;ul&gt;</code> 元素添加 <code>data-uk-nav</code>
+                            属性。当点击一个父菜单项时，会关闭已经展开的菜单项，每次只允许展开一个嵌套的菜单。若要避免这种情况，只需附加 <code>{multiple:true}</code> 到 data
+                            属性。</p>
 
                         <h3 class="tm-article-subtitle">示例</h3>
 
@@ -246,7 +253,8 @@
 
                                 <p><code>data-uk-nav="{multiple:true}"</code></p>
 
-                                <ul class="uk-nav uk-nav-side uk-nav-parent-icon uk-width-medium-2-3" data-uk-nav="{multiple:true}">
+                                <ul class="uk-nav uk-nav-side uk-nav-parent-icon uk-width-medium-2-3"
+                                    data-uk-nav="{multiple:true}">
                                     <li class="uk-active"><a href="">Active</a></li>
                                     <li><a href="">Item</a></li>
 
@@ -330,7 +338,8 @@
                             </table>
                         </div>
 
-                        <p><span class="uk-badge">注意</span> 你还可以给菜单项添加副标题。只需在菜单项的 <code>&lt;a&gt;</code> 元素里面创建一个 <code>&lt;div&gt;</code> 元素。</p>
+                        <p><span class="uk-badge">注意</span> 你还可以给菜单项添加副标题。只需在菜单项的 <code>&lt;a&gt;</code> 元素里面创建一个
+                            <code>&lt;div&gt;</code> 元素。</p>
 
                         <h4 class="tm-article-subtitle">示例</h4>
 
@@ -419,7 +428,8 @@
 
                         <h3>下拉导航菜单</h3>
 
-                        <p>添加 <code>.uk-nav-dropdown</code> 类，将导航菜单放置到一个 <a href="dropdown.html" title="Dropdown">下拉菜单组件</a> 中的默认下拉菜单中。</p>
+                        <p>添加 <code>.uk-nav-dropdown</code> 类，将导航菜单放置到一个 <a href="dropdown.html"
+                                title="Dropdown">下拉菜单组件</a> 中的默认下拉菜单中。</p>
 
                         <h4 class="tm-article-subtitle">示例</h4>
 
@@ -453,7 +463,8 @@
 
                         <h3>导航栏中的导航菜单</h3>
 
-                        <p>添加 <code>.uk-nav-navbar</code> 类，将导航菜单放置到一个 <a href="navbar.html" title="Navbar">导航栏组件</a> 中的导航栏下拉菜单中。</p>
+                        <p>添加 <code>.uk-nav-navbar</code> 类，将导航菜单放置到一个 <a href="navbar.html" title="Navbar">导航栏组件</a>
+                            中的导航栏下拉菜单中。</p>
 
                         <h4 class="tm-article-subtitle">示例</h4>
 
@@ -491,7 +502,8 @@
 
                         <h3>抽屉组件中的导航菜单</h3>
 
-                        <p>添加 <code>.uk-nav-offcanvas</code> 类，将导航菜单放置到 <a href="offcanvas.html" title="Off-canvas component">抽屉组件</a> 里的侧边栏弹出式画布中。</p>
+                        <p>添加 <code>.uk-nav-offcanvas</code> 类，将导航菜单放置到 <a href="offcanvas.html"
+                                title="Off-canvas component">抽屉组件</a> 里的侧边栏弹出式画布中。</p>
 
                         <h4 class="tm-article-subtitle">示例</h4>
 
@@ -565,8 +577,10 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

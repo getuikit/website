@@ -25,7 +25,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li class="uk-active"><a href="documentation_get-started.html">开始使用</a></li>
@@ -38,7 +39,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -77,16 +79,23 @@
 
                         <h2 id="github"><a href="#github" class="uk-link-reset">GitHub</a></h2>
 
-                        <p>UIkit被托管在 <a href="https://github.com/uikit/uikit" target="_blank" rel="nofollow">GitHub</a> 上，基于 <a href="http://opensource.org/licenses/MIT" target="_blank" rel="nofollow">MIT 许可协议</a>。 欢迎使用它应用于个人或商业项目。想要获取 UIKit 所有的源文件，只需克隆
-                            <a href="https://github.com/uikit/uikit" target="_blank" rel="nofollow">GitHub</a> 上的资源库，或者直接下载最新的版本。</p>
+                        <p>UIkit被托管在 <a href="https://github.com/uikit/uikit" target="_blank" rel="nofollow">GitHub</a>
+                            上，基于 <a href="http://opensource.org/licenses/MIT" target="_blank" rel="nofollow">MIT
+                                许可协议</a>。 欢迎使用它应用于个人或商业项目。想要获取 UIKit 所有的源文件，只需克隆
+                            <a href="https://github.com/uikit/uikit" target="_blank" rel="nofollow">GitHub</a>
+                            上的资源库，或者直接下载最新的版本。
+                        </p>
 
-                        <p><a class="uk-button uk-button-large uk-button-primary" href="https://github.com/uikit/uikit/archive/master.zip">下载源代码</a></p>
+                        <p><a class="uk-button uk-button-large uk-button-primary"
+                                href="https://github.com/uikit/uikit/archive/master.zip">下载源代码</a></p>
 
                         <hr class="uk-article-divider">
 
                         <h2 id="file-structure"><a href="#file-structure" class="uk-link-reset">文件结构</a></h2>
 
-                        <p>UIkit 基于<a href="http://www.lesscss.net/" target="_blank" rel="nofollow">LESS</a>创建，LESS是一款CSS预处理器，将 CSS 赋予了动态语言的特性，如变量，继承，运算，函数等。它将写入LESS中的代码编译成为CSS。它将写在Less里的代码编译成CSS。UIkit主要的文件结构如下： </p>
+                        <p>UIkit 基于<a href="http://www.lesscss.net/" target="_blank"
+                                rel="nofollow">LESS</a>创建，LESS是一款CSS预处理器，将 CSS
+                            赋予了动态语言的特性，如变量，继承，运算，函数等。它将写入LESS中的代码编译成为CSS。它将写在Less里的代码编译成CSS。UIkit主要的文件结构如下： </p>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table uk-table-striped uk-text-nowrap">
@@ -121,13 +130,18 @@
                             </table>
                         </div>
 
-                        <p>所有编译版和压缩版CSS文件、JS文件，以及Less和Sass文件都能在独立的 <a href="https://github.com/uikit/bower-uikit" rel="nofollow">Bower UIkit repository</a> 项目中找到。查看 <a href="documentation_less-sass.html">Less 和 Sass 文件</a> 获取更多信息。</p>
+                        <p>所有编译版和压缩版CSS文件、JS文件，以及Less和Sass文件都能在独立的 <a href="https://github.com/uikit/bower-uikit"
+                                rel="nofollow">Bower UIkit repository</a> 项目中找到。查看 <a
+                                href="documentation_less-sass.html">Less 和 Sass 文件</a> 获取更多信息。</p>
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="automate-preprocessing"><a href="#automate-preprocessing" class="uk-link-reset">自动地预处理</a></h2>
+                        <h2 id="automate-preprocessing"><a href="#automate-preprocessing"
+                                class="uk-link-reset">自动地预处理</a></h2>
 
-                        <p>为了自动化处理Less文件编译成为CSS的过程，我们使用 <a href="http://gulpjs.com/" rel="nofollow">Gulp</a>，一款基于 <a href="http://nodejs.org/" rel="nofollow">Node.js</a> 的前端构建工具，它监控你的工作目录。无论何时，只要你保存了有修改行为的源文件，Gulp都会自动地将所有文件编译成独立的CSS文件。</p>
+                        <p>为了自动化处理Less文件编译成为CSS的过程，我们使用 <a href="http://gulpjs.com/" rel="nofollow">Gulp</a>，一款基于 <a
+                                href="http://nodejs.org/" rel="nofollow">Node.js</a>
+                            的前端构建工具，它监控你的工作目录。无论何时，只要你保存了有修改行为的源文件，Gulp都会自动地将所有文件编译成独立的CSS文件。</p>
 
                         <p>首先，你需要安装Node，并设置 <code>gulp</code> 作为一个全局的安装。最后，切换到UIkit目录，安装Node依赖模块（Node dependencies）。</p>
 
@@ -155,9 +169,12 @@ npm install</code></pre>
                         <p>UIkit为每个组件提供测试文件。其中每个页面都包含了组件的测试示例，并为你提供了一个关于盒模型所支持的所有可能性的总览。</p>
 
 
-                        <p>UIkit 使用 <a href="http://www.browsersync.io/" rel="nofollow">BrowserSync</a> 加速你的工作流程。运行 <code>gulp sync</code> ，你就能在制作自己的主题或者修改现有主题时，即时地查看改动，这不只是在浏览器中，还支持跨设备。你能在测试中切换所有的组件和主题，甚至切换到RTL模式（从右到左）</p>
+                        <p>UIkit 使用 <a href="http://www.browsersync.io/" rel="nofollow">BrowserSync</a> 加速你的工作流程。运行
+                            <code>gulp sync</code>
+                            ，你就能在制作自己的主题或者修改现有主题时，即时地查看改动，这不只是在浏览器中，还支持跨设备。你能在测试中切换所有的组件和主题，甚至切换到RTL模式（从右到左）</p>
 
-                        <p><a class="uk-button uk-button-large uk-button-primary" href="../tests/overview.html">前往测试</a></p>
+                        <p><a class="uk-button uk-button-large uk-button-primary" href="../tests/overview.html">前往测试</a>
+                        </p>
 
                     </article>
 
@@ -180,8 +197,11 @@ npm install</code></pre>
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com" rel="nofollow">YOOtheme</a> with love and caffeine.<br class="uk-hidden-small">Licensed under <a href="http://opensource.org/licenses/MIT" rel="nofollow">MIT license</a>.<br>由<a href="/">UIkit中文网</a>翻译</p>
-                <a href="index.html"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com" rel="nofollow">YOOtheme</a> with love and caffeine.<br
+                        class="uk-hidden-small">Licensed under <a href="http://opensource.org/licenses/MIT"
+                        rel="nofollow">MIT license</a>.<br>由<a href="/">UIkit中文网</a>翻译</p>
+                <a href="index.html"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

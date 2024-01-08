@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JavaScript 示例 - UIkit2中文文档</title>
-    <meta name="description" content="使用 UIKit 中的任意组件，你只需要向 HTML 元素添加 data-uk-* 属性而无需编写一行 JavaScript。这是在 UIkit 中使用任意组件时应当首先考虑的最佳做法，另外你还可以通过异步加载的方式来使用 UIKit 及附加组件。">
+    <meta name="description"
+        content="使用 UIKit 中的任意组件，你只需要向 HTML 元素添加 data-uk-* 属性而无需编写一行 JavaScript。这是在 UIkit 中使用任意组件时应当首先考虑的最佳做法，另外你还可以通过异步加载的方式来使用 UIKit 及附加组件。">
     <meta name="author" content="UIkit中文网">
 
     <meta name="keywords" content="data-uk-* 属性,UIkit属性,UIkit组件使用,js组件,异步加载UIKit,附加组件">
@@ -25,7 +26,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li class="uk-active"><a href="documentation_get-started.html">开始使用</a></li>
@@ -38,7 +40,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -75,7 +78,8 @@
 
                         <p class="uk-article-lead">使用 data 属性，将JavaScript应用于 UIkit 的组件。</p>
 
-                        <p>你只需要在HTML元素中添加 <code>data-uk-*</code> 属性就能使用所有的UIKIT组件，而无需无需编写一行 JavaScript。这是在 UIkit 中使用任意组件时应当首先考虑的最佳做法。</p>
+                        <p>你只需要在HTML元素中添加 <code>data-uk-*</code> 属性就能使用所有的UIKIT组件，而无需无需编写一行 JavaScript。这是在 UIkit
+                            中使用任意组件时应当首先考虑的最佳做法。</p>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
 
@@ -148,9 +152,11 @@ require("uikit!notify,sortable", function(UI){
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="dom-observe"><a href="#dom-observe" class="uk-link-reset">监视DOM，通过诸如AJAX的方式自动初始化新添加的组件。</a></h2>
+                        <h2 id="dom-observe"><a href="#dom-observe"
+                                class="uk-link-reset">监视DOM，通过诸如AJAX的方式自动初始化新添加的组件。</a></h2>
 
-                        <p>如果你希望通过JavaScript动态地将HTML标签注入到DOM中，只需要添加 <code>data-uk-observe</code> 属性到一个父元素中，就能自动地初始化UIkit的JavaScript组件。</p>
+                        <p>如果你希望通过JavaScript动态地将HTML标签注入到DOM中，只需要添加 <code>data-uk-observe</code>
+                            属性到一个父元素中，就能自动地初始化UIkit的JavaScript组件。</p>
 
                         <h3 class="tm-article-subtitle">用法</h3>
 
@@ -166,11 +172,17 @@ require("uikit!notify,sortable", function(UI){
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="data-check-display"><a href="#data-check-display" class="uk-link-reset">基于可见性变化，检测显示事件/Check Display event on visibility change.</a></h2>
+                        <h2 id="data-check-display"><a href="#data-check-display"
+                                class="uk-link-reset">基于可见性变化，检测显示事件/Check Display event on visibility change.</a></h2>
 
-                        <p>有时，一些组件，比如 <a href="grid.html">网格</a> 或 <a href="tab.html">选项卡</a> 被隐藏在标签中。这或许是与 <a href="switcher.html">切换器</a>, <a href="modal.html">模态对话框</a> 或者 <a href="dropdown.html">下拉菜单</a> 组合使用是发生的。一旦它们变得可见，他们需要被重新计算修改高度或者其他外形尺寸。</p>
+                        <p>有时，一些组件，比如 <a href="grid.html">网格</a> 或 <a href="tab.html">选项卡</a> 被隐藏在标签中。这或许是与 <a
+                                href="switcher.html">切换器</a>, <a href="modal.html">模态对话框</a> 或者 <a
+                                href="dropdown.html">下拉菜单</a> 组合使用是发生的。一旦它们变得可见，他们需要被重新计算修改高度或者其他外形尺寸。</p>
 
-                        <p>为此，添加 <code>data-uk-check-display</code> 属性到需要重新处理的元素中。现在，它们监听由容器组件触发的 <code>display.uk.check</code> 事件，比如切换器。带有 <code>data-uk-margin</code>, <code>data-uk-grid-margin</code> 和 <code>data-uk-grid-match</code> 属性的元素不需要添加这个属性，因为它此时是默认触发的。</p>
+                        <p>为此，添加 <code>data-uk-check-display</code> 属性到需要重新处理的元素中。现在，它们监听由容器组件触发的
+                            <code>display.uk.check</code> 事件，比如切换器。带有 <code>data-uk-margin</code>,
+                            <code>data-uk-grid-margin</code> 和 <code>data-uk-grid-match</code>
+                            属性的元素不需要添加这个属性，因为它此时是默认触发的。</p>
 
                         <h3 class="tm-article-subtitle">Usage</h3>
 
@@ -204,8 +216,10 @@ require("uikit!notify,sortable", function(UI){
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>切换器 - UIkit2中文文档</title>
-    <meta name="description" content="利用UIkit切换器组件(Switcher)可以通过不同的内容窗格进行动态变换。切换器由数个触发单元和与他们相关联的内容项组成，通常切换器和其他组件搭配使用，这里将展示其中一部分。">
+    <meta name="description"
+        content="利用UIkit切换器组件(Switcher)可以通过不同的内容窗格进行动态变换。切换器由数个触发单元和与他们相关联的内容项组成，通常切换器和其他组件搭配使用，这里将展示其中一部分。">
     <meta name="author" content="UIkit中文网">
 
     <meta name="keywords" content="UIKit切换器组件,动态变换,触发单元,导航切换,选项卡切换,按钮切换,Switcher">
@@ -25,7 +26,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -38,7 +40,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -115,7 +118,9 @@
 
                         <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                        <p>切换器组件由若干拨动器和与它们相关联的内容项目组成。添加 <code>data-uk-switcher="{connect:'#ID'}"</code> 到包含拨动器的元素，将此属性内的ID指向具有相同ID的包含内容项目的元素。添加 <code>.uk-switcher</code> 类到同一个元素中。通常，切换器和其他组件搭配使用，这里将展示其中一部分。</p>
+                        <p>切换器组件由若干拨动器和与它们相关联的内容项目组成。添加 <code>data-uk-switcher="{connect:'#ID'}"</code>
+                            到包含拨动器的元素，将此属性内的ID指向具有相同ID的包含内容项目的元素。添加 <code>.uk-switcher</code>
+                            类到同一个元素中。通常，切换器和其他组件搭配使用，这里将展示其中一部分。</p>
 
                         <h3 class="tm-article-subtitle">示例</h3>
 
@@ -145,16 +150,19 @@
 
                         <hr class="uk-article-divider">
 
-                        <h3 id="switcher-content-switch"><a href="#switcher-content-switch" class="uk-link-reset">在内容中切换条目/Switch items from within content</a></h3>
+                        <h3 id="switcher-content-switch"><a href="#switcher-content-switch"
+                                class="uk-link-reset">在内容中切换条目/Switch items from within content</a></h3>
 
-                        <p>在某些情况下，你想要从显示的内容中操作切换到另一个内容节点。添加 <code>data-uk-switcher-item</code> 属性使之成为可能。为了指向目标条目，你必须将 data 属性设置为相应的标号。</p>
+                        <p>在某些情况下，你想要从显示的内容中操作切换到另一个内容节点。添加 <code>data-uk-switcher-item</code> 属性使之成为可能。为了指向目标条目，你必须将
+                            data 属性设置为相应的标号。</p>
 
                         <h4 class="tm-article-subtitle">Example</h4>
 
                         <div class="uk-grid" data-uk-grid-margin>
                             <div class="uk-width-medium-1-4">
 
-                                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switch-from-content'}">
+                                <ul class="uk-subnav uk-subnav-pill"
+                                    data-uk-switcher="{connect:'#switch-from-content'}">
                                     <li class="uk-active"><a href="">Item</a></li>
                                     <li><a href="">Item</a></li>
                                     <li><a href="">Item</a></li>
@@ -164,7 +172,8 @@
                             <div class="uk-width-medium-3-4">
 
                                 <ul id="switch-from-content" class="uk-switcher">
-                                    <li class="uk-active">Hello! <a href="#" data-uk-switcher-item="next">切换到下一内容节点</a></li>
+                                    <li class="uk-active">Hello! <a href="#" data-uk-switcher-item="next">切换到下一内容节点</a>
+                                    </li>
                                     <li>Hello again! <a href="#" data-uk-switcher-item="2">切换到第三个内容节点3</a></li>
                                     <li>Bazinga! <a href="#" data-uk-switcher-item="previous">切换到前一内容节点</a></li>
                                 </ul>
@@ -203,7 +212,8 @@
                         <div class="uk-grid" data-uk-grid-margin>
                             <div class="uk-width-medium-1-4">
 
-                                <ul class="uk-nav uk-nav-side" data-uk-switcher="{connect:'#switch-multiple-1, #switch-multiple-2'}">
+                                <ul class="uk-nav uk-nav-side"
+                                    data-uk-switcher="{connect:'#switch-multiple-1, #switch-multiple-2'}">
                                     <li class="uk-active"><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
@@ -255,7 +265,8 @@
 
                         <h2 id="switcher-animations"><a href="#switcher-animations" class="uk-link-reset">动画</a></h2>
 
-                        <p>切换器组件允许你为它添加各式的切换动画。你所需要做的就是添加 <code>animation</code> 参数到data属性中，然后设置你希望使用的动画。查阅下面的列表，了解我们提供的动画吧。</p>
+                        <p>切换器组件允许你为它添加各式的切换动画。你所需要做的就是添加 <code>animation</code>
+                            参数到data属性中，然后设置你希望使用的动画。查阅下面的列表，了解我们提供的动画吧。</p>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table uk-text-nowrap">
@@ -309,7 +320,8 @@
 
                                 <h5 class="uk-h4">Fade</h5>
 
-                                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content-a-fade', animation: 'fade'}">
+                                <ul class="uk-subnav uk-subnav-pill"
+                                    data-uk-switcher="{connect:'#switcher-content-a-fade', animation: 'fade'}">
                                     <li class="uk-active"><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
@@ -326,7 +338,8 @@
 
                                 <h5 class="uk-h4">Scale</h5>
 
-                                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content-a-scale', animation: 'scale'}">
+                                <ul class="uk-subnav uk-subnav-pill"
+                                    data-uk-switcher="{connect:'#switcher-content-a-scale', animation: 'scale'}">
                                     <li class="uk-active"><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
@@ -343,7 +356,8 @@
 
                                 <h5 class="uk-h4">Slide top</h5>
 
-                                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content-a-slide-top', animation: 'slide-top'}">
+                                <ul class="uk-subnav uk-subnav-pill"
+                                    data-uk-switcher="{connect:'#switcher-content-a-slide-top', animation: 'slide-top'}">
                                     <li class="uk-active"><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
@@ -360,7 +374,8 @@
 
                                 <h5 class="uk-h4">Slide bottom</h5>
 
-                                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content-a-slide-bottom', animation: 'slide-bottom'}">
+                                <ul class="uk-subnav uk-subnav-pill"
+                                    data-uk-switcher="{connect:'#switcher-content-a-slide-bottom', animation: 'slide-bottom'}">
                                     <li class="uk-active"><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
@@ -377,7 +392,8 @@
 
                                 <h5 class="uk-h4">Slide left</h5>
 
-                                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content-a-slide-left', animation: 'slide-left'}">
+                                <ul class="uk-subnav uk-subnav-pill"
+                                    data-uk-switcher="{connect:'#switcher-content-a-slide-left', animation: 'slide-left'}">
                                     <li class="uk-active"><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
@@ -394,7 +410,8 @@
 
                                 <h5 class="uk-h4">Slide right</h5>
 
-                                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content-a-slide-right', animation: 'slide-right'}">
+                                <ul class="uk-subnav uk-subnav-pill"
+                                    data-uk-switcher="{connect:'#switcher-content-a-slide-right', animation: 'slide-right'}">
                                     <li class="uk-active"><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
@@ -411,7 +428,8 @@
 
                                 <h5 class="uk-h4">Slide horizontal</h5>
 
-                                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content-a-slide-horizontal', animation: 'slide-horizontal'}">
+                                <ul class="uk-subnav uk-subnav-pill"
+                                    data-uk-switcher="{connect:'#switcher-content-a-slide-horizontal', animation: 'slide-horizontal'}">
                                     <li class="uk-active"><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
@@ -428,7 +446,8 @@
 
                                 <h5 class="uk-h4">Slide vertical</h5>
 
-                                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content-a-slide-vertical', animation: 'slide-vertical'}">
+                                <ul class="uk-subnav uk-subnav-pill"
+                                    data-uk-switcher="{connect:'#switcher-content-a-slide-vertical', animation: 'slide-vertical'}">
                                     <li class="uk-active"><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
                                     <li><a href="#">Item</a></li>
@@ -457,13 +476,16 @@
 
                         <hr class="uk-article-divider">
 
-                        <h3 id="switcher-custom-animations"><a href="#switcher-custom-animations" class="uk-link-reset">自定义动画</a></h3>
+                        <h3 id="switcher-custom-animations"><a href="#switcher-custom-animations"
+                                class="uk-link-reset">自定义动画</a></h3>
 
-                        <p>你同样可以使用 <a href="animation.html">动画组件</a> 中的 <code>uk-animation-*</code> 类来应用多个动画。通过这种方式你甚至可以创建你的自定义类来为切换器应用不同的动画效果。</p>
+                        <p>你同样可以使用 <a href="animation.html">动画组件</a> 中的 <code>uk-animation-*</code>
+                            类来应用多个动画。通过这种方式你甚至可以创建你的自定义类来为切换器应用不同的动画效果。</p>
 
                         <h4 class="tm-article-subtitle">示例</h4>
 
-                        <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#tab-content-a-anim-custom', animation: 'uk-animation-fade, uk-animation-slide-left'}">
+                        <ul class="uk-subnav uk-subnav-pill"
+                            data-uk-switcher="{connect:'#tab-content-a-anim-custom', animation: 'uk-animation-fade, uk-animation-slide-left'}">
                             <li class="uk-active"><a href="#">Tab</a></li>
                             <li><a href="#">Tab</a></li>
                             <li><a href="#">Tab</a></li>
@@ -489,7 +511,8 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="switcher-with-subnav"><a href="#switcher-with-subnav" class="uk-link-reset">切换器与二级导航</a></h2>
+                        <h2 id="switcher-with-subnav"><a href="#switcher-with-subnav" class="uk-link-reset">切换器与二级导航</a>
+                        </h2>
 
                         <p>轻松地将切换器应用于 <a href="subnav.html">二级导航组件</a> 中.</p>
 
@@ -523,7 +546,8 @@
 
                         <h2 id="switcher-with-tabs"><a href="#switcher-with-tabs" class="uk-link-reset">切换器与选项卡</a></h2>
 
-                        <p>作为一个特例，添加 <code>data-uk-tab="{connect:'#ID'}"</code> 属性，使用“tab”参数替代“switcher”，使得切换器和 <a href="tab.html" title="Tab component">选项卡组件</a> 相互结合。</p>
+                        <p>作为一个特例，添加 <code>data-uk-tab="{connect:'#ID'}"</code> 属性，使用“tab”参数替代“switcher”，使得切换器和 <a
+                                href="tab.html" title="Tab component">选项卡组件</a> 相互结合。</p>
 
                         <h3 class="tm-article-subtitle">示例</h3>
 
@@ -572,7 +596,8 @@
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-                        <p><span class="uk-badge">注意</span> 当使用选项卡组件的 <code>.uk-tab-bottom</code> 类的时候，导航和内容需要按相反的顺序放置，这样内容才会显示在选项卡的上方。</p>
+                        <p><span class="uk-badge">注意</span> 当使用选项卡组件的 <code>.uk-tab-bottom</code>
+                            类的时候，导航和内容需要按相反的顺序放置，这样内容才会显示在选项卡的上方。</p>
 
                         <hr class="uk-article-divider">
 
@@ -661,9 +686,12 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="switcher-with-buttons"><a href="#switcher-with-buttons" class="uk-link-reset">切换器与按钮</a></h2>
+                        <h2 id="switcher-with-buttons"><a href="#switcher-with-buttons" class="uk-link-reset">切换器与按钮</a>
+                        </h2>
 
-                        <p>切换器同样可以应用于 <a href="button.html" title="Button component">按钮或按钮组</a> 中。只需要添加切换器data属性到包含了一组按钮的 <code>&lt;div&gt;</code> 元素中或者添加到带有 <code>.button-group</code> 类的元素。</p>
+                        <p>切换器同样可以应用于 <a href="button.html" title="Button component">按钮或按钮组</a>
+                            中。只需要添加切换器data属性到包含了一组按钮的 <code>&lt;div&gt;</code> 元素中或者添加到带有 <code>.button-group</code>
+                            类的元素。</p>
 
                         <h3 class="tm-article-subtitle">示例</h3>
 
@@ -720,9 +748,12 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="switcher-with-navs"><a href="#switcher-with-navs" class="uk-link-reset">切换器与导航菜单</a></h2>
+                        <h2 id="switcher-with-navs"><a href="#switcher-with-navs" class="uk-link-reset">切换器与导航菜单</a>
+                        </h2>
 
-                        <p>若需将切换器应用于 <a href="nav.html" title="Nav component">导航菜单组件</a>，添加data属性到导航菜单的 <code>&lt;ul&gt;</code> 元素中。使用 <a href="grid.html" title="Grid component">网格组件</a> 将导航菜单和内容项放置在同一个网格布局中。</p>
+                        <p>若需将切换器应用于 <a href="nav.html" title="Nav component">导航菜单组件</a>，添加data属性到导航菜单的
+                            <code>&lt;ul&gt;</code> 元素中。使用 <a href="grid.html" title="Grid component">网格组件</a>
+                            将导航菜单和内容项放置在同一个网格布局中。</p>
 
                         <h3 class="tm-article-subtitle">示例</h3>
 
@@ -768,7 +799,8 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript 选项</a></h2>
+                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript
+                                选项</a></h2>
 
                         <p>这是一个关于如何通过属性设置选项的例子：</p>
 
@@ -867,8 +899,10 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

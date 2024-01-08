@@ -29,8 +29,8 @@
                         <ul class="uk-navbar-nav uk-visible@m">
                             <li class="uk-active"><a
                                     href="../../../doc/v3/getting-started/introduction.html">UIkit3文档</a></li>
-                            <li><a href="http://v2.getuikit.work/">UIkit2文档</a></li>
-                            <li><a href="http://v2.getuikit.work/showcase/">案例展示</a></li>
+                            <li><a href="/docs/v2/">UIkit2文档</a></li>
+                            <li><a href="/docs/v2/showcase/">案例展示</a></li>
                             <li><a target="_blank" href="https://getuikit.com/changelog">更新日志</a></li>
                         </ul>
                         <div class="uk-navbar-item uk-visible@m"><a title="版本3.4.6"
@@ -182,7 +182,8 @@
 @<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;uikit/src/scss/uikit-theme.scss&quot;</span>;</code></pre>
                         </div>
                         <p><span class="uk-label">Note</span> 该示例使用包含的默认主题的样式。或者，您可以导入 <code>variables.scss</code>,
-                            <code>mixins.scss</code> 和 <code>uikit.scss</code> 这样的话就只包括核心样式了。</p>
+                            <code>mixins.scss</code> 和 <code>uikit.scss</code> 这样的话就只包括核心样式了。
+                        </p>
                         <hr class="uk-margin-large" />
                         <h2 class="uk-h3 tm-heading-fragment" id="create-a-uikit-theme"><a
                                 href="#create-a-uikit-theme">创建一个UIkit主题</a></h2>
@@ -232,7 +233,8 @@
                         <p>反向挂钩允许您自定义与 <code>.uk-light</code> 或 <code>.uk-dark</code> 修饰符结合使用时组件的样式 (请查看 <a
                                 href="inverse">反向组件</a>
                             获取详细信息）。与Less版本相比，Sass版本中的这些钩子处理方式略有不同。在Sass版本中，每个组件都有其自己的反向挂钩。浏览文件时，您可以看到所有可用的文件
-                            <code>src/scss/mixins.scss</code>.</p>
+                            <code>src/scss/mixins.scss</code>.
+                        </p>
                         <p>例如，您可以在默认按钮用作反向版本时使其带有自定义背景。</p>
                         <div class="uk-margin-medium">
                             <pre>
@@ -258,7 +260,8 @@
                                 href="#disable-inverse-component">禁用反向组件</a></h3>
                         <p>逆组件包括实现灵活逆行为的其他样式。如果您的项目没有使用这些样式，则可以在编译Sass时将其忽略。这样可以使已编译CSS的文件更小。请搜索包含
                             <code>color-mode</code> (例如 <code>$inverse-global-color-mode</code>)的Sass变量，并将其修改为
-                            <code>none</code>。</p>
+                            <code>none</code>。
+                        </p>
                         <p>要完全禁用反样式，请修改为：</p>
                         <div class="uk-margin-medium">
                             <pre>
@@ -293,7 +296,8 @@
                                 href="#how-to-structure-your-theme">如何组织主题</a></h2>
                         <p>在上面的示例中，我们将所有自定义规则直接添加到
                             <code>site.scss</code>中。当您只想修改少量变量但对其他的大部分变量感到满意时，这样做是没问题的。但是，如果需要较大规模的自定义，我们建议仅将此文件用作Sass编译器的入口点。您最好将所有规则归类到子文件夹中每个组件的单个文件中。这与默认主题
-                            <code>/src/scss/theme</code>中的结构相同。</p>
+                            <code>/src/scss/theme</code>中的结构相同。
+                        </p>
                         <div class="uk-margin-medium">
                             <pre>
 <code class="lang-html hljs xml"><span class="hljs-comment">&lt;!-- uikit sources, might be in a subfolder when using npm --&gt;</span>
@@ -397,7 +401,7 @@ site.scss
                     <ul class="uk-nav uk-nav-default tm-nav">
                         <li class="uk-nav-header">总目录</li>
                         <li><a href="http://getuikit.work/">首页</a></li>
-                        <li><a href="http://v2.getuikit.work/showcase/">案例</a></li>
+                        <li><a href="/docs/v2/showcase/">案例</a></li>
                         <li><a href="https://getuikit.com/changelog">更新日志</a></li>
                         <li><a href="http://getuikit.work/download.html">下载</a></li>
                     </ul>

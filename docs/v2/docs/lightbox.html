@@ -27,7 +27,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -41,7 +42,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -100,11 +102,13 @@
 
                         <p>要使用这个组件，添加 <code>data-uk-lightbox</code> 属性到一个链接到图片的锚文本中。如果title属性存在，它将会被显示为灯箱的标题。</p>
 
-                        <p><span class="uk-badge uk-badge-danger">注意</span> 此组件需要额外添加 <code>lightbox.js</code> 文件，在<code>js/components</code>文件夹中。</p>
+                        <p><span class="uk-badge uk-badge-danger">注意</span> 此组件需要额外添加 <code>lightbox.js</code>
+                            文件，在<code>js/components</code>文件夹中。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
-                        <a class="uk-button" href="images/placeholder_800x400_1.jpg" data-uk-lightbox title="Title">Open lightbox</a>
+                        <a class="uk-button" href="images/placeholder_800x400_1.jpg" data-uk-lightbox title="Title">Open
+                            lightbox</a>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
 
@@ -114,35 +118,41 @@
 
                         <h2 id="groups"><a href="#groups" class="uk-link-reset">组/Groups</a></h2>
 
-                        <p>你可以链接多个图片到同一个灯箱中，并在灯箱内切换显示，就是一个画廊了。只需添加 <code>{group:'my-group'}</code> 选项到每个单元的data属性，并且每个单元使用同一个grou名称，以显示在同一个灯箱中。你需要确保你已经引入了 <a href="slidenav.html">滑动导航组件</a> 的CSS，这样你才能在灯箱里切换显示各个单元。</p>
+                        <p>你可以链接多个图片到同一个灯箱中，并在灯箱内切换显示，就是一个画廊了。只需添加 <code>{group:'my-group'}</code>
+                            选项到每个单元的data属性，并且每个单元使用同一个grou名称，以显示在同一个灯箱中。你需要确保你已经引入了 <a href="slidenav.html">滑动导航组件</a>
+                            的CSS，这样你才能在灯箱里切换显示各个单元。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
                         <div class="uk-grid uk-grid-width-medium-1-4" data-uk-grid-margin>
                             <div>
 
-                                <a href="images/placeholder_800x600_1.jpg" data-uk-lightbox="{group:'group1'}" title="Title">
+                                <a href="images/placeholder_800x600_1.jpg" data-uk-lightbox="{group:'group1'}"
+                                    title="Title">
                                     <img src="images/placeholder_800x600_1.jpg" width="800" height="600" alt="">
                                 </a>
 
                             </div>
                             <div>
 
-                                <a href="images/placeholder_800x600_2.jpg" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}" title="Title">
+                                <a href="images/placeholder_800x600_2.jpg" data-lightbox-type="image"
+                                    data-uk-lightbox="{group:'group1'}" title="Title">
                                     <img src="images/placeholder_800x600_2.jpg" width="800" height="600" alt="">
                                 </a>
 
                             </div>
                             <div>
 
-                                <a href="images/placeholder_800x600_3.jpg" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}" title="Title">
+                                <a href="images/placeholder_800x600_3.jpg" data-lightbox-type="image"
+                                    data-uk-lightbox="{group:'group1'}" title="Title">
                                     <img src="images/placeholder_800x600_3.jpg" width="800" height="600" alt="">
                                 </a>
 
                             </div>
                             <div>
 
-                                <a href="images/placeholder_800x600_4.jpg" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}" title="Title">
+                                <a href="images/placeholder_800x600_4.jpg" data-lightbox-type="image"
+                                    data-uk-lightbox="{group:'group1'}" title="Title">
                                     <img src="images/placeholder_800x600_4.jpg" width="800" height="600" alt="">
                                 </a>
 
@@ -157,17 +167,22 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="different-content-sources"><a href="#different-content-sources" class="uk-link-reset">不同的内容源</a></h2>
+                        <h2 id="different-content-sources"><a href="#different-content-sources"
+                                class="uk-link-reset">不同的内容源</a></h2>
 
                         <p>灯箱并不限于图片展示。其他的媒体，比如视频，也可以显示在灯箱中，它会通过判断路径自动生成能正常的输出效果。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
                         <p>
-                            <a class="uk-button" href="images/placeholder_800x600_1.jpg" data-uk-lightbox="{group:'group2'}" title="Title">Image</a>
-                            <a class="uk-button" href="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" data-uk-lightbox="{group:'group2'}">MP4</a>
-                            <a class="uk-button" href="http://vimeo.com/1084537" data-uk-lightbox="{group:'group2'}">Vimeo</a>
-                            <a class="uk-button" href="https://www.youtube.com/watch?v=YE7VzlLtp-4" data-uk-lightbox="{group:'group2'}">YouTube</a>
+                            <a class="uk-button" href="images/placeholder_800x600_1.jpg"
+                                data-uk-lightbox="{group:'group2'}" title="Title">Image</a>
+                            <a class="uk-button" href="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4"
+                                data-uk-lightbox="{group:'group2'}">MP4</a>
+                            <a class="uk-button" href="http://vimeo.com/1084537"
+                                data-uk-lightbox="{group:'group2'}">Vimeo</a>
+                            <a class="uk-button" href="https://www.youtube.com/watch?v=YE7VzlLtp-4"
+                                data-uk-lightbox="{group:'group2'}">YouTube</a>
                         </p>
 
                         <hr class="uk-article-divider">
@@ -178,7 +193,8 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript 选项</a></h2>
+                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript
+                                选项</a></h2>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table uk-table-striped uk-text-nowrap">
@@ -268,8 +284,10 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

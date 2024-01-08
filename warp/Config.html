@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Config.xml - Warp Framework 7 中文文档</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link id="data-uikit-theme" rel="stylesheet" href="http://cdn.staticfile.org/uikit/2.17.0/css/uikit.almost-flat.min.css">
+    <link id="data-uikit-theme" rel="stylesheet"
+        href="http://cdn.staticfile.org/uikit/2.17.0/css/uikit.almost-flat.min.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/highlight.css">
 
@@ -19,19 +20,22 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove"
+                    src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="Setup-a-Joomla-Template.html">开始使用</a></li>
                 <li class="uk-active"><a href="File-structure.html">主题开发</a></li>
                 <li><a href="Installation-issues.html">排除故障</a></li>
-                <li><a href="http://v2.getuikit.work/showcase/">案例展示</a></li>
-                <li><a href="http://getuikit.work" rel="nofollow" target="_blank"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                <li><a href="/docs/v2/showcase/">案例展示</a></li>
+                <li><a href="http://getuikit.work" rel="nofollow" target="_blank"><i class="uk-icon-send-o"></i>
+                        UIkit中文网</a></li>
             </ul>
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-margin uk-margin-remove"
+                    src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -166,7 +170,8 @@
 
                         <h4>特殊的 XML 类型（type）</h4>
 
-                        <p>还有一些可用于Warp 7的特殊类型：<code>layouts</code>, <code>verify</code>, <code>styles</code>, <code>compile</code> 和 <code>info</code>。</p>
+                        <p>还有一些可用于Warp 7的特殊类型：<code>layouts</code>, <code>verify</code>, <code>styles</code>,
+                            <code>compile</code> 和 <code>info</code>。</p>
 
                         <h3>代码示例</h3>
 
@@ -195,19 +200,24 @@
 
                         <h3>添加新选项</h3>
 
-                        <p>创建新的选项，添加一个 <code>&lt;field&gt;</code> 元素到设置中即可，即：在想要添加选项的<code>&lt;fields&gt;</code>元素中添加。还可以复制现成的选项，并修改成你需要的。</p>
+                        <p>创建新的选项，添加一个 <code>&lt;field&gt;</code>
+                            元素到设置中即可，即：在想要添加选项的<code>&lt;fields&gt;</code>元素中添加。还可以复制现成的选项，并修改成你需要的。</p>
 
                         <h2>config.json</h2>
 
-                        <p><code>config.xml</code>用于定义哪些主题设置是可用的。如果保存了主题设置，它们会保存在压缩的<code>config.json</code>文件中。伴随每次改动，此文件均会被覆写。</p>
+                        <p><code>config.xml</code>用于定义哪些主题设置是可用的。如果保存了主题设置，它们会保存在压缩的<code>config.json</code>文件中。伴随每次改动，此文件均会被覆写。
+                        </p>
 
-                        <p>Warp 主题提供了一个单独的<code>config.default.json</code>文件，默认的主题设置baoc 保存于此。这便给了你回复默认设置的机会，并且可以备份<code>config.json</code>文件，使设置的更新有迹可循。</p>
+                        <p>Warp 主题提供了一个单独的<code>config.default.json</code>文件，默认的主题设置baoc
+                            保存于此。这便给了你回复默认设置的机会，并且可以备份<code>config.json</code>文件，使设置的更新有迹可循。</p>
 
-                        <p><span class="badge">注意</span> 为了更好的进行概览，使用<a href="http://jsonformatter.curiousconcept.com/" rel="nofollow">JSON 格式化工具</a> - 它可以让压缩的文件恢复为可读的格式。</p>
+                        <p><span class="badge">注意</span> 为了更好的进行概览，使用<a href="http://jsonformatter.curiousconcept.com/"
+                                rel="nofollow">JSON 格式化工具</a> - 它可以让压缩的文件恢复为可读的格式。</p>
 
                         <h2>配置对象/Config object</h2>
 
-                        <p>来自于<code>config.xml</code>的变量被存储在配置对象中。访问变量的值，使用get方法即可。了解更多，见<a href="Theme-layout.html">主题布局</a>文档。</p>
+                        <p>来自于<code>config.xml</code>的变量被存储在配置对象中。访问变量的值，使用get方法即可。了解更多，见<a
+                                href="Theme-layout.html">主题布局</a>文档。</p>
 
 
 
@@ -233,7 +243,8 @@
 
             <div class="uk-panel">
                 <p>由<a href="/">UIkit中文网</a>翻译</p>
-                <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90"
+                        height="30" title="UIkit" alt="UIkit"></a>
             </div>
 
         </div>
@@ -246,44 +257,44 @@
             <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
                 <li><a href="#">Warp 中文文档</a>
 
-                    <li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> 开始使用</a>
-                        <ul class="uk-nav-sub">
-                            <li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
-                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
-                            <li><a href="How-to-update.html">如何更新</a></li>
-                            <li><a href="Theme-Settings.html">主题设置</a></li>
-                            <li><a href="Customizer.html">定制工具</a></li>
-                            <li><a href="Layout-Settings.html">布局设置</a></li>
-                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
-                            <li><a href="Menu-Settings.html">菜单设置</a></li>
-                            <li><a href="Theme-Information.html">主题信息</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> 开发者</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="File-structure.html">文件结构</a></li>
-                            <li><a href="Theme-layout.html">主题布局</a></li>
-                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
-                            <li><a href="Customization.html">自定义</a></li>
-                            <li><a href="Config.html">Config.xml</a></li>
-                            <li><a href="Languages.html">语言</a></li>
-                            <li><a href="Error-Pages.html">错误页面</a></li>
-                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent"><a href="#"><i class="uk-icon-bars"></i> 排除故障</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="Installation-issues.html">安装问题</a></li>
-                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
-                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
-                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
-                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
-                            <li><a href="FAQ.html">常见问题FAQ</a></li>
-                        </ul>
-                    </li>
+                <li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> 开始使用</a>
+                    <ul class="uk-nav-sub">
+                        <li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                        <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                        <li><a href="How-to-update.html">如何更新</a></li>
+                        <li><a href="Theme-Settings.html">主题设置</a></li>
+                        <li><a href="Customizer.html">定制工具</a></li>
+                        <li><a href="Layout-Settings.html">布局设置</a></li>
+                        <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                        <li><a href="Menu-Settings.html">菜单设置</a></li>
+                        <li><a href="Theme-Information.html">主题信息</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> 开发者</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="File-structure.html">文件结构</a></li>
+                        <li><a href="Theme-layout.html">主题布局</a></li>
+                        <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                        <li><a href="Customization.html">自定义</a></li>
+                        <li><a href="Config.html">Config.xml</a></li>
+                        <li><a href="Languages.html">语言</a></li>
+                        <li><a href="Error-Pages.html">错误页面</a></li>
+                        <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent"><a href="#"><i class="uk-icon-bars"></i> 排除故障</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="Installation-issues.html">安装问题</a></li>
+                        <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                        <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                        <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                        <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                        <li><a href="FAQ.html">常见问题FAQ</a></li>
+                    </ul>
+                </li>
 
-                    <li><a href="http://v2.getuikit.work/showcase/">案例展示</a></li>
-                    <li><a href="http://getuikit.work" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                <li><a href="/docs/v2/showcase/">案例展示</a></li>
+                <li><a href="http://getuikit.work" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
             </ul>
 
         </div>

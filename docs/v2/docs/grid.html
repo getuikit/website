@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>网格组件 - UIkit2中文文档</title>
-    <meta name="description" content="UIKit中的网格系统遵循移动优先的方式并可容纳多达10个网格列，它使用网格内预定义的类对每个单元格的列宽进行了定义，本文档针对UIKit网格系统进行了详细的介绍。">
+    <meta name="description"
+        content="UIKit中的网格系统遵循移动优先的方式并可容纳多达10个网格列，它使用网格内预定义的类对每个单元格的列宽进行了定义，本文档针对UIKit网格系统进行了详细的介绍。">
     <meta name="author" content="UIkit中文网">
 
     <meta name="keywords" content="UIKit网格系统,栅格系统,响应式宽度,嵌套网格,Grid,flex">
@@ -25,7 +26,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -38,7 +40,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -113,13 +116,15 @@
 
                         <p class="uk-article-lead">创建一个完全响应式并可以嵌套的流动网格布局。</p>
 
-                        <p>UIKit中的网格系统遵循移动优先的方式并且最多可容纳10个网格列。它使用网格内预定义的类对每个单元格的列宽进行了定义。另外，还可以把网格与 <a href="flex.html">Flex 组件</a> 中的类组合使用，虽然它只能在现代浏览器中正常运行。</p>
+                        <p>UIKit中的网格系统遵循移动优先的方式并且最多可容纳10个网格列。它使用网格内预定义的类对每个单元格的列宽进行了定义。另外，还可以把网格与 <a
+                                href="flex.html">Flex 组件</a> 中的类组合使用，虽然它只能在现代浏览器中正常运行。</p>
 
                         <hr class="uk-article-divider">
 
                         <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                        <p>向一个父元素添加 <code>.uk-grid</code> 类来创建网格容器。对子元素添加一个 <code>.uk-width-*</code> 类来限定单元格的宽度。网格支持1、2、3、4、5、6和10个单元划分。下面的列表为你提供了可以应用到单元的 <code>uk-width-*</code> 类的概述。</p>
+                        <p>向一个父元素添加 <code>.uk-grid</code> 类来创建网格容器。对子元素添加一个 <code>.uk-width-*</code>
+                            类来限定单元格的宽度。网格支持1、2、3、4、5、6和10个单元划分。下面的列表为你提供了可以应用到单元的 <code>uk-width-*</code> 类的概述。</p>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table uk-text-nowrap">
@@ -162,7 +167,8 @@
                             </table>
                         </div>
 
-                        <p>我们特意为每组单元建立了一种冗余，所以在实际应用时，<code>.uk-width-5-10</code> 类与 <code>.uk-width-1-2</code> 类的实际效果都是一样的。</p>
+                        <p>我们特意为每组单元建立了一种冗余，所以在实际应用时，<code>.uk-width-5-10</code> 类与 <code>.uk-width-1-2</code>
+                            类的实际效果都是一样的。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -217,7 +223,8 @@
 
                         <h2 id="responsive-width"><a href="#responsive-width" class="uk-link-reset">响应式宽度</a></h2>
 
-                        <p>UIKit中提供了一些非常有用的响应式宽度的类。基本上它们的使用方法就像通常宽度的类一样，但是它们带有前缀，这样它们只在特定的断点来产生效果。这些类可以结合 <a href="utility.html">效果组件</a> 中的可见性类来使用。这对于调整不同尺寸设备的布局和内容是非常重要的。</p>
+                        <p>UIKit中提供了一些非常有用的响应式宽度的类。基本上它们的使用方法就像通常宽度的类一样，但是它们带有前缀，这样它们只在特定的断点来产生效果。这些类可以结合 <a
+                                href="utility.html">效果组件</a> 中的可见性类来使用。这对于调整不同尺寸设备的布局和内容是非常重要的。</p>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table uk-text-nowrap">
@@ -248,44 +255,54 @@
                             </table>
                         </div>
 
-                        <p><span class="uk-badge uk-badge-danger">重要</span> 若要设置网格堆叠列上下间的边距，只需添加 <code>data-uk-grid-margin</code> 属性。</p>
+                        <p><span class="uk-badge uk-badge-danger">重要</span> 若要设置网格堆叠列上下间的边距，只需添加
+                            <code>data-uk-grid-margin</code> 属性。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
                         <div class="tm-grid-truncate uk-text-center">
                             <div class="uk-grid" data-uk-grid-margin>
                                 <div class="uk-width-large-1-3 uk-width-medium-1-2">
-                                    <div class="uk-panel uk-panel-box uk-panel-box-primary"><code>.uk-width-medium-1-2</code> <code>.uk-width-large-1-3</code></div>
+                                    <div class="uk-panel uk-panel-box uk-panel-box-primary">
+                                        <code>.uk-width-medium-1-2</code> <code>.uk-width-large-1-3</code></div>
                                 </div>
                                 <div class="uk-width-large-1-3 uk-hidden-medium">
-                                    <div class="uk-panel uk-panel-box"><code>.uk-hidden-medium</code> <code>.uk-width-large-1-3</code></div>
+                                    <div class="uk-panel uk-panel-box"><code>.uk-hidden-medium</code>
+                                        <code>.uk-width-large-1-3</code></div>
                                 </div>
                                 <div class="uk-width-large-1-3 uk-width-medium-1-2">
-                                    <div class="uk-panel uk-panel-box uk-panel-box-primary"><code>.uk-width-medium-1-2</code> <code>.uk-width-large-1-3</code></div>
+                                    <div class="uk-panel uk-panel-box uk-panel-box-primary">
+                                        <code>.uk-width-medium-1-2</code> <code>.uk-width-large-1-3</code></div>
                                 </div>
                             </div>
 
                             <div class="uk-grid" data-uk-grid-margin>
                                 <div class="uk-width-medium-1-3 uk-width-1-2">
-                                    <div class="uk-panel uk-panel-box uk-panel-box-secondary"><code>.uk-width-1-2</code> <code>.uk-width-medium-1-3</code></div>
+                                    <div class="uk-panel uk-panel-box uk-panel-box-secondary"><code>.uk-width-1-2</code>
+                                        <code>.uk-width-medium-1-3</code></div>
                                 </div>
                                 <div class="uk-width-medium-1-3 uk-hidden-small">
-                                    <div class="uk-panel uk-panel-box"><code>.uk-hidden-small</code> <code>.uk-width-medium-1-3</code></div>
+                                    <div class="uk-panel uk-panel-box"><code>.uk-hidden-small</code>
+                                        <code>.uk-width-medium-1-3</code></div>
                                 </div>
                                 <div class="uk-width-medium-1-3 uk-width-1-2">
-                                    <div class="uk-panel uk-panel-box uk-panel-box-secondary"><code>.uk-width-1-2</code> <code>.uk-width-medium-1-3</code></div>
+                                    <div class="uk-panel uk-panel-box uk-panel-box-secondary"><code>.uk-width-1-2</code>
+                                        <code>.uk-width-medium-1-3</code></div>
                                 </div>
                             </div>
 
                             <div class="uk-grid" data-uk-grid-margin>
                                 <div class="uk-width-1-1 uk-visible-small">
-                                    <div class="uk-panel uk-panel-box uk-panel-box-secondary"><code>.uk-width-1-1 .uk-visible-small</code></div>
+                                    <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                                        <code>.uk-width-1-1 .uk-visible-small</code></div>
                                 </div>
                                 <div class="uk-width-medium-1-1 uk-visible-medium">
-                                    <div class="uk-panel uk-panel-box uk-panel-box-primary"><code>.uk-width-medium-1-1 .uk-visible-medium</code></div>
+                                    <div class="uk-panel uk-panel-box uk-panel-box-primary">
+                                        <code>.uk-width-medium-1-1 .uk-visible-medium</code></div>
                                 </div>
                                 <div class="uk-width-large-1-1 uk-visible-large">
-                                    <div class="uk-panel uk-panel-box uk-panel-box"><code>.uk-width-large-1-1 .uk-visible-large</code></div>
+                                    <div class="uk-panel uk-panel-box uk-panel-box">
+                                        <code>.uk-width-large-1-1 .uk-visible-large</code></div>
                                 </div>
                             </div>
                         </div>
@@ -387,10 +404,12 @@
                                 <div class="uk-width-1-2">
                                     <div class="uk-grid">
                                         <div class="uk-width-1-2">
-                                            <div class="uk-panel uk-panel-box uk-panel-box-primary"><code>.uk-width-1-2</code></div>
+                                            <div class="uk-panel uk-panel-box uk-panel-box-primary">
+                                                <code>.uk-width-1-2</code></div>
                                         </div>
                                         <div class="uk-width-1-2">
-                                            <div class="uk-panel uk-panel-box uk-panel-box-primary"><code>.uk-width-1-2</code></div>
+                                            <div class="uk-panel uk-panel-box uk-panel-box-primary">
+                                                <code>.uk-width-1-2</code></div>
                                         </div>
                                     </div>
                                 </div>
@@ -418,13 +437,16 @@
 
                         <h4 class="tm-article-subtitle">Example</h4>
 
-                        <div class="uk-panel uk-panel-box uk-panel-box-primary uk-width-1-2 uk-container-center uk-text-center"><code>.uk-container-center</code></div>
+                        <div
+                            class="uk-panel uk-panel-box uk-panel-box-primary uk-width-1-2 uk-container-center uk-text-center">
+                            <code>.uk-container-center</code></div>
 
                         <hr class="uk-article-divider">
 
                         <h2 id="grid-divider"><a href="#grid-divider" class="uk-link-reset">网格分隔线</a></h2>
 
-                        <p>添加 <code>.uk-grid-divider</code> 类用线条分隔网格列。要使用水平线分隔网格，只需在 <code>&lt;hr&gt;</code> 或 <code>&lt;div&gt;</code> 元素添加这个类。</p>
+                        <p>添加 <code>.uk-grid-divider</code> 类用线条分隔网格列。要使用水平线分隔网格，只需在 <code>&lt;hr&gt;</code> 或
+                            <code>&lt;div&gt;</code> 元素添加这个类。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -458,13 +480,15 @@
 &lt;hr class="uk-grid-divider"&gt;
 &lt;div class="uk-grid uk-grid-divider"&gt;...&lt;/div&gt;</code></pre>
 
-                        <p><span class="uk-badge">注意</span> 水平分隔线不能用在含有 <code>uk-push-*</code> 类或 <code>uk-pull-*</code> 类的网格中。</p>
+                        <p><span class="uk-badge">注意</span> 水平分隔线不能用在含有 <code>uk-push-*</code> 类或 <code>uk-pull-*</code>
+                            类的网格中。</p>
 
                         <hr class="uk-article-divider">
 
                         <h2 id="source-ordering"><a href="#source-ordering" class="uk-link-reset">源码排序</a></h2>
 
-                        <p>可以更改列的显示顺序，使其在源代码中保持一个特定的列顺序。添加 <code>.uk-push-*</code> 类，向右移动列。添加 <code>.uk-pull-*</code> 类，向左移动列。这可以使你进行类似翻转移动设备或改变窗口宽度时改变列的显示顺序。这些类还可以用于偏移列，在列之间建立额外的空隙。</p>
+                        <p>可以更改列的显示顺序，使其在源代码中保持一个特定的列顺序。添加 <code>.uk-push-*</code> 类，向右移动列。添加 <code>.uk-pull-*</code>
+                            类，向左移动列。这可以使你进行类似翻转移动设备或改变窗口宽度时改变列的显示顺序。这些类还可以用于偏移列，在列之间建立额外的空隙。</p>
 
                         <p>源码排序对SEO和响应式设计是非常有用的，因为在狭窄的视口中网格会根据标签的源代码顺序来显示。</p>
 
@@ -499,114 +523,125 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="match-column-heights"><a href="#match-column-heights" class="uk-link-reset">匹配列的高度</a></h2>
+                        <h2 id="match-column-heights"><a href="#match-column-heights" class="uk-link-reset">匹配列的高度</a>
+                        </h2>
 
-                        <p>要匹配网格列的高度，只需要在你的网格添加 <code>data-uk-grid-match</code> 属性。如果你的网格包含多个row，只有同一个row中的网格列会被匹配。只需要使用 <code>data-uk-grid-match="{row: false}"</code> 属性就能跨越row的隔阂来匹配网格列的高度。
-                            <p>
+                        <p>要匹配网格列的高度，只需要在你的网格添加 <code>data-uk-grid-match</code> 属性。如果你的网格包含多个row，只有同一个row中的网格列会被匹配。只需要使用
+                            <code>data-uk-grid-match="{row: false}"</code> 属性就能跨越row的隔阂来匹配网格列的高度。
+                        <p>
 
-                                <h3 class="tm-article-subtitle">Example</h3>
+                        <h3 class="tm-article-subtitle">Example</h3>
 
-                                <div class="uk-grid uk-grid-divider" data-uk-grid-match>
-                                    <div class="uk-width-medium-1-3">Lorem ipsum dolor sit amet.</div>
-                                    <div class="uk-width-medium-1-3">Lorem ipsum dolor sit amet.</div>
-                                    <div class="uk-width-medium-1-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
-                                </div>
+                        <div class="uk-grid uk-grid-divider" data-uk-grid-match>
+                            <div class="uk-width-medium-1-3">Lorem ipsum dolor sit amet.</div>
+                            <div class="uk-width-medium-1-3">Lorem ipsum dolor sit amet.</div>
+                            <div class="uk-width-medium-1-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam.</div>
+                        </div>
 
-                                <h3 class="tm-article-subtitle">Markup</h3>
+                        <h3 class="tm-article-subtitle">Markup</h3>
 
-                                <pre><code>&lt;div class="uk-grid" data-uk-grid-match&gt;...&lt;/div&gt;</code></pre>
+                        <pre><code>&lt;div class="uk-grid" data-uk-grid-match&gt;...&lt;/div&gt;</code></pre>
 
-                                <p><span class="uk-badge">注意</span> 如果网格列的宽度延伸到100%，它们的高度将不再匹配。这样做是有道理的，比如说，当它们在一个较窄的视口中堆叠时。</p>
+                        <p><span class="uk-badge">注意</span> 如果网格列的宽度延伸到100%，它们的高度将不再匹配。这样做是有道理的，比如说，当它们在一个较窄的视口中堆叠时。</p>
 
-                                <hr class="uk-article-divider">
+                        <hr class="uk-article-divider">
 
-                                <h3>匹配面板的高度</h3>
+                        <h3>匹配面板的高度</h3>
 
-                                <p>如果想要匹配一个网格中多个面板的高度，只需要添加 <code>.uk-grid-match</code> 类。在使用data属性时，必须添加 <code>{target:'.uk-panel'}</code> 选择器。</p>
+                        <p>如果想要匹配一个网格中多个面板的高度，只需要添加 <code>.uk-grid-match</code> 类。在使用data属性时，必须添加
+                            <code>{target:'.uk-panel'}</code> 选择器。</p>
 
-                                <h3 class="tm-article-subtitle">Example</h3>
+                        <h3 class="tm-article-subtitle">Example</h3>
 
-                                <div class="uk-grid uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
-                                    <div class="uk-width-medium-1-3">
-                                        <div class="uk-panel uk-panel-box">Lorem ipsum dolor sit amet.</div>
-                                    </div>
-                                    <div class="uk-width-medium-1-3">
-                                        <div class="uk-panel uk-panel-box">Lorem ipsum dolor sit amet.</div>
-                                    </div>
-                                    <div class="uk-width-medium-1-3">
-                                        <div class="uk-panel uk-panel-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
-                                    </div>
-                                </div>
+                        <div class="uk-grid uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}"
+                            data-uk-grid-margin>
+                            <div class="uk-width-medium-1-3">
+                                <div class="uk-panel uk-panel-box">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                            <div class="uk-width-medium-1-3">
+                                <div class="uk-panel uk-panel-box">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                            <div class="uk-width-medium-1-3">
+                                <div class="uk-panel uk-panel-box">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam.</div>
+                            </div>
+                        </div>
 
-                                <h3 class="tm-article-subtitle">Markup</h3>
+                        <h3 class="tm-article-subtitle">Markup</h3>
 
-                                <pre><code>&lt;div class="uk-grid uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}"&gt;
+                        <pre><code>&lt;div class="uk-grid uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}"&gt;
     &lt;div class="uk-width-medium-1-3"&gt;
         &lt;div class="uk-panel"&gt;...&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-                                <hr class="uk-article-divider">
+                        <hr class="uk-article-divider">
 
-                                <h2 id="wrap-multiple-rows"><a href="#wrap-multiple-rows" class="uk-link-reset">包装多个行（row）</a></h2>
+                        <h2 id="wrap-multiple-rows"><a href="#wrap-multiple-rows" class="uk-link-reset">包装多个行（row）</a>
+                        </h2>
 
-                                <p>你也可以创建一个网格，使其包含任意多个列，这些列会自动地换到下一行。只需添加 <code>data-uk-grid-margin</code> 属性，就能创建网格行（row）之间的margin。通常这样的布局使用了 <code>&lt;ul&gt;</code> 元素。</p>
+                        <p>你也可以创建一个网格，使其包含任意多个列，这些列会自动地换到下一行。只需添加 <code>data-uk-grid-margin</code>
+                            属性，就能创建网格行（row）之间的margin。通常这样的布局使用了 <code>&lt;ul&gt;</code> 元素。</p>
 
-                                <h4 class="tm-article-subtitle">Example</h4>
+                        <h4 class="tm-article-subtitle">Example</h4>
 
-                                <ul class="uk-grid uk-text-center" data-uk-grid-margin>
-                                    <li class="uk-width-medium-1-3">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width-medium-1-3">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width-medium-1-3">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width-medium-1-3">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width-medium-1-3">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width-medium-1-3">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                </ul>
+                        <ul class="uk-grid uk-text-center" data-uk-grid-margin>
+                            <li class="uk-width-medium-1-3">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width-medium-1-3">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width-medium-1-3">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width-medium-1-3">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width-medium-1-3">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width-medium-1-3">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                        </ul>
 
-                                <p><span class="uk-badge">注意</span> 你也可以对网格列的宽度进行自定义。只需添加 <code>.uk-width</code> 类，并使用内联样式定义宽度。下面的例子对宽度使用了固定的像素值，对于图片你也可以这样做。</p>
+                        <p><span class="uk-badge">注意</span> 你也可以对网格列的宽度进行自定义。只需添加 <code>.uk-width</code>
+                            类，并使用内联样式定义宽度。下面的例子对宽度使用了固定的像素值，对于图片你也可以这样做。</p>
 
-                                <ul class="uk-grid uk-text-center" data-uk-grid-margin>
-                                    <li class="uk-width" style="width: 100px;">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width" style="width: 120px;">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width" style="width: 140px;">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width" style="width: 160px;">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width" style="width: 180px;">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width" style="width: 200px;">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width" style="width: 220px;">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li class="uk-width" style="width: 240px;">
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                </ul>
+                        <ul class="uk-grid uk-text-center" data-uk-grid-margin>
+                            <li class="uk-width" style="width: 100px;">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width" style="width: 120px;">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width" style="width: 140px;">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width" style="width: 160px;">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width" style="width: 180px;">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width" style="width: 200px;">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width" style="width: 220px;">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li class="uk-width" style="width: 240px;">
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                        </ul>
 
-                                <h4 class="tm-article-subtitle">Markup</h4>
+                        <h4 class="tm-article-subtitle">Markup</h4>
 
-                                <pre><code>&lt;ul class="uk-grid" data-uk-grid-margin&gt;
+                        <pre><code>&lt;ul class="uk-grid" data-uk-grid-margin&gt;
 
     &lt;!-- 这些元素使用百分比宽度 --&gt;
     &lt;li class="uk-width-medium-1-5"&gt;...&lt;/li&gt;
@@ -618,138 +653,140 @@
 
 &lt;/ul&gt;</code></pre>
 
-                                <hr class="uk-article-divider">
+                        <hr class="uk-article-divider">
 
-                                <h2 id="even-grid-columns"><a href="#even-grid-columns" class="uk-link-reset">均匀的网格列</a></h2>
+                        <h2 id="even-grid-columns"><a href="#even-grid-columns" class="uk-link-reset">均匀的网格列</a></h2>
 
-                                <p>要创建一个子元素的宽度都是均匀分割的网格，你不必为网格中的每个列表元素里添加同样的类。只需要添加一个 <code>.uk-grid-width-*</code> 类到网格本身即可。</p>
+                        <p>要创建一个子元素的宽度都是均匀分割的网格，你不必为网格中的每个列表元素里添加同样的类。只需要添加一个 <code>.uk-grid-width-*</code> 类到网格本身即可。
+                        </p>
 
-                                <div class="uk-overflow-container">
-                                    <table class="uk-table uk-text-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th>Class</th>
-                                                <th>描述</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><code>.uk-grid-width-1-2</code></td>
-                                                <td>将网格均匀分为两份</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>.uk-grid-width-1-3</code></td>
-                                                <td>将网格均匀分为三份</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>.uk-grid-width-1-4</code></td>
-                                                <td>将网格均匀分为四份</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>.uk-grid-width-1-5</code></td>
-                                                <td>将网格均匀分为五份</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>.uk-grid-width-1-6</code></td>
-                                                <td>将网格均匀分为六份</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>.uk-grid-width-1-10</code></td>
-                                                <td>将网格均匀分为十份</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                        <div class="uk-overflow-container">
+                            <table class="uk-table uk-text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Class</th>
+                                        <th>描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.uk-grid-width-1-2</code></td>
+                                        <td>将网格均匀分为两份</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-grid-width-1-3</code></td>
+                                        <td>将网格均匀分为三份</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-grid-width-1-4</code></td>
+                                        <td>将网格均匀分为四份</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-grid-width-1-5</code></td>
+                                        <td>将网格均匀分为五份</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-grid-width-1-6</code></td>
+                                        <td>将网格均匀分为六份</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-grid-width-1-10</code></td>
+                                        <td>将网格均匀分为十份</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                                <h3 class="tm-article-subtitle">Example</h3>
+                        <h3 class="tm-article-subtitle">Example</h3>
 
-                                <ul class="uk-grid uk-grid-width-1-5 uk-text-center">
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                </ul>
+                        <ul class="uk-grid uk-grid-width-1-5 uk-text-center">
+                            <li>
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                        </ul>
 
-                                <h3 class="tm-article-subtitle">Markup</h3>
+                        <h3 class="tm-article-subtitle">Markup</h3>
 
-                                <pre><code>&lt;ul class="uk-grid uk-grid-width-1-5"&gt;
+                        <pre><code>&lt;ul class="uk-grid uk-grid-width-1-5"&gt;
     &lt;li&gt;...&lt;/li&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-                                <hr class="uk-article-divider">
+                        <hr class="uk-article-divider">
 
-                                <h3>响应式宽度</h3>
+                        <h3>响应式宽度</h3>
 
-                                <p>UIkit同样提供了网格的响应式宽度类。可以用它保持均匀尺寸的网格列，无论设备宽度如何。</p>
+                        <p>UIkit同样提供了网格的响应式宽度类。可以用它保持均匀尺寸的网格列，无论设备宽度如何。</p>
 
-                                <div class="uk-overflow-container">
-                                    <table class="uk-table uk-text-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th>Class</th>
-                                                <th>描述</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><code>.uk-grid-width-*</code></td>
-                                                <td>影响所有设备宽度</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>.uk-grid-width-small-*</code></td>
-                                                <td>影响 <em>480px</em> 以上的设备宽度。</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>.uk-grid-width-medium-*</code></td>
-                                                <td>影响 <em>768px</em> 以上的设备宽度。</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>.uk-grid-width-large-*</code></td>
-                                                <td>影响 <em>960px</em> 以上的设备宽度。</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>.uk-grid-width-xlarge-*</code></td>
-                                                <td>影响 <em>1220px</em> 以上的设备宽度。</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                        <div class="uk-overflow-container">
+                            <table class="uk-table uk-text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Class</th>
+                                        <th>描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.uk-grid-width-*</code></td>
+                                        <td>影响所有设备宽度</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-grid-width-small-*</code></td>
+                                        <td>影响 <em>480px</em> 以上的设备宽度。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-grid-width-medium-*</code></td>
+                                        <td>影响 <em>768px</em> 以上的设备宽度。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-grid-width-large-*</code></td>
+                                        <td>影响 <em>960px</em> 以上的设备宽度。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-grid-width-xlarge-*</code></td>
+                                        <td>影响 <em>1220px</em> 以上的设备宽度。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                                <h3 class="tm-article-subtitle">Example</h3>
+                        <h3 class="tm-article-subtitle">Example</h3>
 
-                                <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5 uk-text-center" data-uk-grid-margin>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">Box</div>
-                                    </li>
-                                </ul>
+                        <ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5 uk-text-center"
+                            data-uk-grid-margin>
+                            <li>
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-panel-box">Box</div>
+                            </li>
+                        </ul>
 
-                                <h3 class="tm-article-subtitle">Markup</h3>
+                        <h3 class="tm-article-subtitle">Markup</h3>
 
-                                <pre><code>&lt;ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5"&gt;
+                        <pre><code>&lt;ul class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5"&gt;
     &lt;li&gt;...&lt;/li&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
@@ -773,8 +810,10 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

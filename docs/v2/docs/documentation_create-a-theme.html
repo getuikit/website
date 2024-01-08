@@ -25,7 +25,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li class="uk-active"><a href="documentation_get-started.html">开始使用</a></li>
@@ -38,7 +39,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -77,19 +79,28 @@
 
                         <h2 id="how-to-start"><a href="#how-to-start" class="uk-link-reset">如何开始</a></h2>
 
-                        <p>默认地，UIkit带有一个非常基础的主题。如果要修改它的样式，你不需要编辑任何核心框架文件。相反，你可以通过创建一个自定义主题来扩展UIKit。这样便允许你轻松地更新UIkit的核心文件。我们甚至提供了一些灵巧的主题以帮助你入门。要创建自己的主题，请按照下面步骤操作：（这里有一篇文章可以参考下：<a href="https://segmentfault.com/a/1190000004283813" target="_blank" rel="nofollow">uikit框架开发前期配置及定制主题方法</a>                            ）</p>
+                        <p>默认地，UIkit带有一个非常基础的主题。如果要修改它的样式，你不需要编辑任何核心框架文件。相反，你可以通过创建一个自定义主题来扩展UIKit。这样便允许你轻松地更新UIkit的核心文件。我们甚至提供了一些灵巧的主题以帮助你入门。要创建自己的主题，请按照下面步骤操作：（这里有一篇文章可以参考下：<a
+                                href="https://segmentfault.com/a/1190000004283813" target="_blank"
+                                rel="nofollow">uikit框架开发前期配置及定制主题方法</a> ）</p>
 
                         <h3>1. 创建主题目录</h3>
 
-                        <p>下载或克隆UIKit，安装 Node 和 Gulp 。最后，在这里创建你的主题文件夹 <code>/custom/THEME-NAME</code>。如果 <code>/custom</code> 不存在，那就创建它！</p>
+                        <p>下载或克隆UIKit，安装 Node 和 Gulp 。最后，在这里创建你的主题文件夹 <code>/custom/THEME-NAME</code>。如果
+                            <code>/custom</code> 不存在，那就创建它！</p>
 
-                        <p><span class="uk-badge">注意</span> <code>/custom</code> 文件夹设置为 git ignore，这样可以防止你的自定义文件被推入到UIKit库中。如果你在使用克隆版 UIkit's git 仓库， 它将是一次很好的将 <code>/custom</code> 作为你自己的git仓库的实践。这样，你的主题文件的版本控制将不会受到UIkit文件的干扰。</p>
+                        <p><span class="uk-badge">注意</span> <code>/custom</code> 文件夹设置为 git
+                            ignore，这样可以防止你的自定义文件被推入到UIKit库中。如果你在使用克隆版 UIkit's git 仓库， 它将是一次很好的将 <code>/custom</code>
+                            作为你自己的git仓库的实践。这样，你的主题文件的版本控制将不会受到UIkit文件的干扰。</p>
 
                         <h3>2. 添加你的主题</h3>
 
-                        <p>在 <code>/custom/THEME-NAME</code> 文件夹中创建 <code>uikit.less</code> 文件，并添加 <code>@import "../../src/uikit.less";</code> 规则来访问核心框架中的所有Less文件并采用它的基础样式。好了，你可以从零开始添加你自己的主题了。</p>
+                        <p>在 <code>/custom/THEME-NAME</code> 文件夹中创建 <code>uikit.less</code> 文件，并添加
+                            <code>@import "../../src/uikit.less";</code>
+                            规则来访问核心框架中的所有Less文件并采用它的基础样式。好了，你可以从零开始添加你自己的主题了。</p>
 
-                        <p><span class="uk-badge">注意</span> 为了能立即开始你的工作，我们提供了默认、渐变和扁平三个主题。所有默认文件都已经引入了，你同样可以找到所有主题文件以及与它们相关的钩子。所以你需要做的是复制文件夹到 <code>/custom</code> 目录中，并重命名。</p>
+                        <p><span class="uk-badge">注意</span>
+                            为了能立即开始你的工作，我们提供了默认、渐变和扁平三个主题。所有默认文件都已经引入了，你同样可以找到所有主题文件以及与它们相关的钩子。所以你需要做的是复制文件夹到
+                            <code>/custom</code> 目录中，并重命名。</p>
 
                         <h3>3. 定制和测试</h3>
 
@@ -97,11 +108,13 @@
 
                         <h3>4. 构建你的主题</h3>
 
-                        <p>你可以在定制工具中生成你的主题的 CSS。如果你想使用 gulp 指令来做这事，运行 <code>gulp dist -t THEME-NAME</code>就行了。生成的文件被放置在 <code>dist/</code> 文件夹中。</p>
+                        <p>你可以在定制工具中生成你的主题的 CSS。如果你想使用 gulp 指令来做这事，运行 <code>gulp dist -t THEME-NAME</code>就行了。生成的文件被放置在
+                            <code>dist/</code> 文件夹中。</p>
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="best-theming-practices"><a href="#best-theming-practices" class="uk-link-reset">最佳主题实践</a></h2>
+                        <h2 id="best-theming-practices"><a href="#best-theming-practices"
+                                class="uk-link-reset">最佳主题实践</a></h2>
 
                         <p>设计你的主题有多种不同的方法，我们推荐以下的工作流程。</p>
 
@@ -129,7 +142,8 @@
                         </div>
 
                         <h3>2. 使用钩子</h3>
-                        <p>为了防止架空选择器，我们使用 <a href="http://lesscss.org">Less</a> 的混合（Mixins）方法与 UIkit 源码中预定义的选择器进行挂钩，并运用其附加属性。选择器不必在所有文件中重复填写，全局的修改变得更容易了。</p>
+                        <p>为了防止架空选择器，我们使用 <a href="http://lesscss.org">Less</a> 的混合（Mixins）方法与 UIkit
+                            源码中预定义的选择器进行挂钩，并运用其附加属性。选择器不必在所有文件中重复填写，全局的修改变得更容易了。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -162,7 +176,8 @@
 
 
                         <h3>3. 混杂的钩子/Miscellaneous hooks</h3>
-                        <p>如果没有变量也没有钩子可用，当然你也可以自行创建一个你自己的选择器。为此，请使用 <em>.hook-panel-misc</em> 钩子并将你的选择器写入其中。这样将会把你的新选择器整合到编译后的CSS文件的合适位置。</p>
+                        <p>如果没有变量也没有钩子可用，当然你也可以自行创建一个你自己的选择器。为此，请使用 <em>.hook-panel-misc</em>
+                            钩子并将你的选择器写入其中。这样将会把你的新选择器整合到编译后的CSS文件的合适位置。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -199,8 +214,11 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com" rel="nofollow">YOOtheme</a> with love and caffeine.<br class="uk-hidden-small">Licensed under <a href="http://opensource.org/licenses/MIT" rel="nofollow">MIT license</a>.<br>由<a href="/">UIkit中文网</a>翻译</p>
-                <a href="index.html"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com" rel="nofollow">YOOtheme</a> with love and caffeine.<br
+                        class="uk-hidden-small">Licensed under <a href="http://opensource.org/licenses/MIT"
+                        rel="nofollow">MIT license</a>.<br>由<a href="/">UIkit中文网</a>翻译</p>
+                <a href="index.html"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

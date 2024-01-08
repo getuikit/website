@@ -25,7 +25,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -38,7 +39,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -115,7 +117,9 @@
 
                         <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                        <p>这个组件使用方法很简单。创建一个定位遮罩层的语境，需要为包含图片的容器元素添加 <code>.uk-overlay</code> 类。为一个子元素添加 <code>.uk-overlay-panel</code> 类创建真实的遮罩面板。通常你需要使用 <code>&lt;figure</code> 和 <code>&lt;figcaption&gt;</code> 元素。</p>
+                        <p>这个组件使用方法很简单。创建一个定位遮罩层的语境，需要为包含图片的容器元素添加 <code>.uk-overlay</code> 类。为一个子元素添加
+                            <code>.uk-overlay-panel</code> 类创建真实的遮罩面板。通常你需要使用 <code>&lt;figure</code> 和
+                            <code>&lt;figcaption&gt;</code> 元素。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -138,7 +142,8 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="overlay-on-hover-active"><a href="#overlay-on-hover-active" class="uk-link-reset">通过hover拨动遮罩效果</a></h2>
+                        <h2 id="overlay-on-hover-active"><a href="#overlay-on-hover-active"
+                                class="uk-link-reset">通过hover拨动遮罩效果</a></h2>
 
                         <p>默认情况下，遮罩层是可见的。添加 <code>.uk-overlay-hover</code> 类到遮罩层的容器，实现遮罩层的隐藏和hover拨动效果。</p>
 
@@ -161,7 +166,8 @@
 
                         <h3>active状态拨动遮罩/Toggle on active</h3>
 
-                        <p>想要在遮罩层的父容器处于actvie状态时拨动遮罩层，添加 <code>.uk-overlay-active</code> 类即可。这会在诸如用在<a href="slideshow.html">幻灯片</a>等情况下带来很多方便。</p>
+                        <p>想要在遮罩层的父容器处于actvie状态时拨动遮罩层，添加 <code>.uk-overlay-active</code> 类即可。这会在诸如用在<a
+                                href="slideshow.html">幻灯片</a>等情况下带来很多方便。</p>
 
                         <hr class="uk-article-divider">
 
@@ -302,14 +308,16 @@
 
                         <h2 id="overlay-image"><a href="#overlay-image" class="uk-link-reset">图片遮罩</a></h2>
 
-                        <p>要使用图片作为遮罩层，需要为带有 <code>.uk-overlay-panel</code> 的 <code>&lt;img&gt;</code> 元素添加 <code>.uk-overlay-image</code> 类名。</p>
+                        <p>要使用图片作为遮罩层，需要为带有 <code>.uk-overlay-panel</code> 的 <code>&lt;img&gt;</code> 元素添加
+                            <code>.uk-overlay-image</code> 类名。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
                         <div class="uk-width-medium-1-2">
                             <figure class="uk-overlay uk-overlay-hover">
                                 <img src="images/placeholder_600x400.svg" width="600" height="400" alt="">
-                                <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="images/placeholder_600x400_2.svg" width="600" height="400" alt="">
+                                <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade"
+                                    src="images/placeholder_600x400_2.svg" width="600" height="400" alt="">
                             </figure>
                         </div>
 
@@ -322,9 +330,11 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="overlay-transitions"><a href="#overlay-transitions" class="uk-link-reset">遮罩的过渡效果</a></h2>
+                        <h2 id="overlay-transitions"><a href="#overlay-transitions" class="uk-link-reset">遮罩的过渡效果</a>
+                        </h2>
 
-                        <p>遮罩层面板和图片都可以轻易做成动画效果。只需添加以下类中的一个到遮罩层面板或者 <code>&lt;img&gt;</code> 元素。记住，这玩意只能与 <code>.uk-overlay-hover</code> 或 <code>.uk-overlay-active</code> 组合使用。</p>
+                        <p>遮罩层面板和图片都可以轻易做成动画效果。只需添加以下类中的一个到遮罩层面板或者 <code>&lt;img&gt;</code> 元素。记住，这玩意只能与
+                            <code>.uk-overlay-hover</code> 或 <code>.uk-overlay-active</code> 组合使用。</p>
 
                         <div class="uk-overflow-container">
                             <table class="uk-table">
@@ -371,7 +381,8 @@
                             </table>
                         </div>
 
-                        <p><span class="uk-badge">NOTE</span> 如果你想要图片具有动画效果，并希望遮罩面板总是可见的，只需要添加 <code>.uk-ignore</code> 类名到面板。这样，它就能无视 <code>.uk-overlay-hover</code> 的效果了。</p>
+                        <p><span class="uk-badge">NOTE</span> 如果你想要图片具有动画效果，并希望遮罩面板总是可见的，只需要添加 <code>.uk-ignore</code>
+                            类名到面板。这样，它就能无视 <code>.uk-overlay-hover</code> 的效果了。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -380,7 +391,8 @@
                             <li class="uk-width-medium-1-3">
                                 <figure class="uk-overlay uk-overlay-hover">
                                     <img src="images/placeholder_600x400.svg" width="600" height="400" alt="Image">
-                                    <figcaption class="uk-overlay-panel uk-overlay-background  uk-overlay-bottom uk-overlay-slide-bottom">
+                                    <figcaption
+                                        class="uk-overlay-panel uk-overlay-background  uk-overlay-bottom uk-overlay-slide-bottom">
                                         <p>Lorem ipsum dolor sit amet.</p>
                                     </figcaption>
                                 </figure>
@@ -388,8 +400,10 @@
 
                             <li class="uk-width-medium-1-3">
                                 <figure class="uk-overlay uk-overlay-hover">
-                                    <img class="uk-overlay-scale" src="images/placeholder_600x400.svg" width="600" height="400" alt="Image">
-                                    <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
+                                    <img class="uk-overlay-scale" src="images/placeholder_600x400.svg" width="600"
+                                        height="400" alt="Image">
+                                    <figcaption
+                                        class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
                                         <p>Lorem ipsum dolor sit amet.</p>
                                     </figcaption>
                                 </figure>
@@ -397,8 +411,10 @@
 
                             <li class="uk-width-medium-1-3">
                                 <figure class="uk-overlay uk-overlay-hover">
-                                    <img class="uk-overlay-spin" src="images/placeholder_600x400.svg" width="600" height="400" alt="Image">
-                                    <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                                    <img class="uk-overlay-spin" src="images/placeholder_600x400.svg" width="600"
+                                        height="400" alt="Image">
+                                    <figcaption
+                                        class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
                                         <p>Lorem ipsum dolor sit amet.</p>
                                     </figcaption>
                                 </figure>
@@ -439,10 +455,12 @@
                             <li class="uk-width-medium-1-2">
                                 <figure class="uk-overlay">
                                     <img src="images/placeholder_600x400.svg" width="600" height="400" alt="">
-                                    <figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                                    <figcaption
+                                        class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
                                         <div>
                                             <h3>Title</h3>
-                                            <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr.</p>
+                                            <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr.
+                                            </p>
                                             <button class="uk-button uk-button-primary">Button</button>
                                         </div>
                                     </figcaption>
@@ -455,7 +473,8 @@
                                     <figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-bottom">
                                         <div>
                                             <h3>Title</h3>
-                                            <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr.</p>
+                                            <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr.
+                                            </p>
                                             <button class="uk-button uk-button-primary">Button</button>
                                         </div>
                                     </figcaption>
@@ -486,9 +505,11 @@
 
                         <h2 id="overlay-anchor"><a href="#overlay-anchor" class="uk-link-reset">遮罩层的锚</a></h2>
 
-                        <p>将整个遮罩层作为链接，只需要将 <code>&lt;a&gt;</code> 元素放入到遮罩层容器，并添加来自<a href="utility.html">效果组件</a> 的 <code>.uk-position-cover</code> 类名。</p>
+                        <p>将整个遮罩层作为链接，只需要将 <code>&lt;a&gt;</code> 元素放入到遮罩层容器，并添加来自<a href="utility.html">效果组件</a> 的
+                            <code>.uk-position-cover</code> 类名。</p>
 
-                        <p><span class="uk-badge uk-badge-danger">重要</span> 应用这个效果时，需要确保已经移除了带有其他容器元素的 <code>&lt;figcaption&gt;</code> ，比如 <code>&lt;div&gt;</code> 。否则标签不能生效。</p>
+                        <p><span class="uk-badge uk-badge-danger">重要</span> 应用这个效果时，需要确保已经移除了带有其他容器元素的
+                            <code>&lt;figcaption&gt;</code> ，比如 <code>&lt;div&gt;</code> 。否则标签不能生效。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -532,8 +553,10 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

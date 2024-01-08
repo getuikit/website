@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>抽屉 - UIkit2中文文档</title>
-    <meta name="description" content="利用UIkit抽屉组件(Off-canvas)可以轻松的创建一个可以平滑地滑入滑出页面的侧边栏画布。该抽屉组件完美适配移动网页导航，效果类似许多流行的原生移动应用那样，用一个左上角的按钮触发带菜单栏的抽屉式侧边栏。">
+    <meta name="description"
+        content="利用UIkit抽屉组件(Off-canvas)可以轻松的创建一个可以平滑地滑入滑出页面的侧边栏画布。该抽屉组件完美适配移动网页导航，效果类似许多流行的原生移动应用那样，用一个左上角的按钮触发带菜单栏的抽屉式侧边栏。">
 
     <meta name="author" content="UIkit中文网">
 
@@ -26,7 +27,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -39,7 +41,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -141,7 +144,9 @@
                             </table>
                         </div>
 
-                        <p>你可以使用任何元素来切换抽屉式侧边栏。 <code>&lt;a&gt;</code>元素需要链接至抽屉容器的id。为了使必要的JavaScript生效，仅需添加<code>data-uk-offcanvas</code>属性即可。如果你使用了其他元素，比如按钮，仅需添加 <code>data-uk-offcanvas="{target:'#ID'}"</code> 属性指向抽屉容器的id。</p>
+                        <p>你可以使用任何元素来切换抽屉式侧边栏。
+                            <code>&lt;a&gt;</code>元素需要链接至抽屉容器的id。为了使必要的JavaScript生效，仅需添加<code>data-uk-offcanvas</code>属性即可。如果你使用了其他元素，比如按钮，仅需添加
+                            <code>data-uk-offcanvas="{target:'#ID'}"</code> 属性指向抽屉容器的id。</p>
 
                         <h3 class="tm-article-subtitle">示例</h3>
 
@@ -149,10 +154,14 @@
                         <a href="#offcanvas-1" data-uk-offcanvas>打开</a>
                         <div id="offcanvas-1" class="uk-offcanvas">
                             <div class="uk-offcanvas-bar">
-                                <div class="uk-panel">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                <div class="uk-panel">Lorem ipsum dolor sit amet, <a href="#">consectetur</a>
+                                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                                     ex ea commodo consequat.</div>
 
-                                <div class="uk-panel">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="uk-panel">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                             </div>
                         </div>
 
@@ -180,10 +189,14 @@
                         <button class="uk-button" data-uk-offcanvas="{target:'#offcanvas-2'}">右侧</button>
                         <div id="offcanvas-2" class="uk-offcanvas">
                             <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
-                                <div class="uk-panel">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                <div class="uk-panel">Lorem ipsum dolor sit amet, <a href="#">consectetur</a>
+                                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                                     ex ea commodo consequat.</div>
 
-                                <div class="uk-panel">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="uk-panel">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                             </div>
                         </div>
 
@@ -315,13 +328,17 @@
                             <div class="uk-offcanvas-bar">
                                 <div class="uk-panel">
                                     <h3 class="uk-panel-title">Panel title</h3>
-                                    Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut
                                     aliquip ex ea commodo consequat.
                                 </div>
 
                                 <div class="uk-panel">
                                     <h3 class="uk-panel-title">Panel title</h3>
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum.
                                 </div>
                             </div>
                         </div>
@@ -397,8 +414,10 @@ $.UIkit.offcanvas.hide([force = false])
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>

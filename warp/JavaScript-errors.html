@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JavaScript 错误 - Warp Framework 7 中文文档</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link id="data-uikit-theme" rel="stylesheet" href="http://cdn.staticfile.org/uikit/2.17.0/css/uikit.almost-flat.min.css">
+    <link id="data-uikit-theme" rel="stylesheet"
+        href="http://cdn.staticfile.org/uikit/2.17.0/css/uikit.almost-flat.min.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/highlight.css">
 
@@ -19,19 +20,22 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove"
+                    src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="Setup-a-Joomla-Template.html">开始使用</a></li>
                 <li><a href="File-structure.html">主题开发</a></li>
                 <li class="uk-active"><a href="Installation-issues.html">排除故障</a></li>
-                <li><a href="http://v2.getuikit.work/showcase/">案例展示</a></li>
-                <li><a href="http://getuikit.work" rel="nofollow" target="_blank"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                <li><a href="/docs/v2/showcase/">案例展示</a></li>
+                <li><a href="http://getuikit.work" rel="nofollow" target="_blank"><i class="uk-icon-send-o"></i>
+                        UIkit中文网</a></li>
             </ul>
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-margin uk-margin-remove"
+                    src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -86,7 +90,8 @@
                         <p class="article-lead">学习如何解决与预防JavaScritp错误。</p>
                         <hr class="uk-article-divider">
 
-                        <p>几乎每个Joomla扩展都使用了JavaScript，依赖于<a href="http://jquery.com/" rel="nofollow">jQuery</a>这样的库。在一个页面上使用不同的脚本可能引起它们之间的冲突。</p>
+                        <p>几乎每个Joomla扩展都使用了JavaScript，依赖于<a href="http://jquery.com/"
+                                rel="nofollow">jQuery</a>这样的库。在一个页面上使用不同的脚本可能引起它们之间的冲突。</p>
 
                         <h2>如何检查错误？</h2>
 
@@ -108,7 +113,9 @@
                                 </tr>
                                 <tr>
                                     <td><em>Firebug和其他浏览器上的WDT</em></td>
-                                    <td><a href="https://getfirebug.com/" rel="nofollow">Firebug for Firefox</a>允许你检查和非破坏性地编辑HTML代码，它还提供了强大的JavaScript调试工具。其他浏览器，比如Chrome、Safari或Opera都有类似的工具。</td>
+                                    <td><a href="https://getfirebug.com/" rel="nofollow">Firebug for
+                                            Firefox</a>允许你检查和非破坏性地编辑HTML代码，它还提供了强大的JavaScript调试工具。其他浏览器，比如Chrome、Safari或Opera都有类似的工具。
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -120,13 +127,18 @@
                         <ol>
                             <li>如果确定是扩展的问题，尝试<em>禁用</em>扩展，确保你的页面无错误地运行。</li>
                             <li>如果错误不再有，你便已了解是扩展引起的冲突。</li>
-                            <li>现在，你可以查找<em>扩展配置选项/extensions configuration option</em>，通过启动或禁止加载JavaScript库（如jQuery）来解决错误。</li>
+                            <li>现在，你可以查找<em>扩展配置选项/extensions configuration
+                                    option</em>，通过启动或禁止加载JavaScript库（如jQuery）来解决错误。</li>
                         </ol>
 
                         <h2>Prevent loading jQuery multiple times in Joomla 2.5?</h2>
 
-                        <p>There is an ongoing discussion in the Joomla community on how to prevent loading jQuery multiple times across extensions. We have already taken steps and measures by implementing a widely accepted solution. We register through
-                            JApplication whether jQuery is loaded or not. In case a 3rd party extension loads the jQuery library, you can use the following code snippet to prevent our ZOO extension, Widgetkit or Warp theme from loading it twice.</p>
+                        <p>There is an ongoing discussion in the Joomla community on how to prevent loading jQuery
+                            multiple times across extensions. We have already taken steps and measures by implementing a
+                            widely accepted solution. We register through
+                            JApplication whether jQuery is loaded or not. In case a 3rd party extension loads the jQuery
+                            library, you can use the following code snippet to prevent our ZOO extension, Widgetkit or
+                            Warp theme from loading it twice.</p>
 
                         <pre><code>// load jQuery, if not loaded before
 if (!JFactory::getApplication()->get('jquery')) {
@@ -135,7 +147,8 @@ if (!JFactory::getApplication()->get('jquery')) {
     ...
 }</code></pre>
 
-                        <p><span class="uk-badge">NOTE</span> You can also get in touch with the 3rd party extension developer and kindly ask them to implement this.</p>
+                        <p><span class="uk-badge">NOTE</span> You can also get in touch with the 3rd party extension
+                            developer and kindly ask them to implement this.</p>
 
 
 
@@ -161,7 +174,8 @@ if (!JFactory::getApplication()->get('jquery')) {
 
             <div class="uk-panel">
                 <p>由<a href="/">UIkit中文网</a>翻译</p>
-                <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <a href="index.html"><img class="uk-margin uk-margin-remove" src="images/logo.svg" width="90"
+                        height="30" title="UIkit" alt="UIkit"></a>
             </div>
 
         </div>
@@ -174,44 +188,44 @@ if (!JFactory::getApplication()->get('jquery')) {
             <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
                 <li><a href="#">Warp 中文文档</a>
 
-                    <li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> 开始使用</a>
-                        <ul class="uk-nav-sub">
-                            <li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
-                            <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
-                            <li><a href="How-to-update.html">如何更新</a></li>
-                            <li><a href="Theme-Settings.html">主题设置</a></li>
-                            <li><a href="Customizer.html">定制工具</a></li>
-                            <li><a href="Layout-Settings.html">布局设置</a></li>
-                            <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
-                            <li><a href="Menu-Settings.html">菜单设置</a></li>
-                            <li><a href="Theme-Information.html">主题信息</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> 开发者</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="File-structure.html">文件结构</a></li>
-                            <li><a href="Theme-layout.html">主题布局</a></li>
-                            <li><a href="Widgets-Modules.html">小工具/模块</a></li>
-                            <li><a href="Customization.html">自定义</a></li>
-                            <li><a href="Config.html">Config.xml</a></li>
-                            <li><a href="Languages.html">语言</a></li>
-                            <li><a href="Error-Pages.html">错误页面</a></li>
-                            <li><a href="LESS-Customization.html">LESS自定义</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent"><a href="#"><i class="uk-icon-bars"></i> 排除故障</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="Installation-issues.html">安装问题</a></li>
-                            <li><a href="File-permission-issues.html">文件权限问题</a></li>
-                            <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
-                            <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
-                            <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
-                            <li><a href="FAQ.html">常见问题FAQ</a></li>
-                        </ul>
-                    </li>
+                <li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> 开始使用</a>
+                    <ul class="uk-nav-sub">
+                        <li class="uk-active"><a href="Setup-a-Joomla-Template.html">设置Joomla模板</a></li>
+                        <li><a href="Setup-a-WordPress-Theme.html">设置Wordpress主题</a></li>
+                        <li><a href="How-to-update.html">如何更新</a></li>
+                        <li><a href="Theme-Settings.html">主题设置</a></li>
+                        <li><a href="Customizer.html">定制工具</a></li>
+                        <li><a href="Layout-Settings.html">布局设置</a></li>
+                        <li><a href="Widget-Module-Settings.html">小工具/模块设置</a></li>
+                        <li><a href="Menu-Settings.html">菜单设置</a></li>
+                        <li><a href="Theme-Information.html">主题信息</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> 开发者</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="File-structure.html">文件结构</a></li>
+                        <li><a href="Theme-layout.html">主题布局</a></li>
+                        <li><a href="Widgets-Modules.html">小工具/模块</a></li>
+                        <li><a href="Customization.html">自定义</a></li>
+                        <li><a href="Config.html">Config.xml</a></li>
+                        <li><a href="Languages.html">语言</a></li>
+                        <li><a href="Error-Pages.html">错误页面</a></li>
+                        <li><a href="LESS-Customization.html">LESS自定义</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent"><a href="#"><i class="uk-icon-bars"></i> 排除故障</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="Installation-issues.html">安装问题</a></li>
+                        <li><a href="File-permission-issues.html">文件权限问题</a></li>
+                        <li><a href="JavaScript-errors.html">JavaScript 错误</a></li>
+                        <li><a href="Disable-the-responsive-layout.html">禁用响应式布局</a></li>
+                        <li><a href="Feature-and-Compatibility-Overview.html">功能和兼容性概述</a></li>
+                        <li><a href="FAQ.html">常见问题FAQ</a></li>
+                    </ul>
+                </li>
 
-                    <li><a href="http://v2.getuikit.work/showcase/">案例展示</a></li>
-                    <li><a href="http://getuikit.work" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
+                <li><a href="/docs/v2/showcase/">案例展示</a></li>
+                <li><a href="http://getuikit.work" rel="nofollow"><i class="uk-icon-send-o"></i> UIkit中文网</a></li>
             </ul>
 
         </div>

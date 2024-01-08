@@ -26,7 +26,8 @@
     <nav class="tm-navbar uk-navbar uk-navbar-attached">
         <div class="uk-container uk-container-center">
 
-            <a class="uk-navbar-brand uk-hidden-small" href="http://v2.getuikit.work/"><img class="uk-margin uk-margin-remove" src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+            <a class="uk-navbar-brand uk-hidden-small" href="/docs/v2/"><img class="uk-margin uk-margin-remove"
+                    src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
 
             <ul class="uk-navbar-nav uk-hidden-small">
                 <li><a href="documentation_get-started.html">开始使用</a></li>
@@ -39,7 +40,8 @@
 
             <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
 
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logo_uikit.svg" width="90"
+                    height="30" title="UIkit" alt="UIkit"></div>
 
         </div>
     </nav>
@@ -96,7 +98,10 @@
 
                         <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
 
-                        <p>创建一个能在页面滚动时能保持在视口顶部的页面元素，添加 <code>data-uk-sticky</code> 属性到该元素即可。<span class="uk-badge uk-badge-danger">注意</span> 使用此组件需要额外添加 <code>sticky.css</code> 文件，在<code>css/components</code>文件夹中。此组件需要额外添加 <code>sticky.js</code> 文件，在<code>js/components</code>文件夹中。</p>
+                        <p>创建一个能在页面滚动时能保持在视口顶部的页面元素，添加 <code>data-uk-sticky</code> 属性到该元素即可。<span
+                                class="uk-badge uk-badge-danger">注意</span> 使用此组件需要额外添加 <code>sticky.css</code>
+                            文件，在<code>css/components</code>文件夹中。此组件需要额外添加 <code>sticky.js</code>
+                            文件，在<code>js/components</code>文件夹中。</p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
@@ -114,7 +119,8 @@
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
-                        <div class="uk-panel uk-panel-box" data-uk-sticky="{top:100,boundary:'#add-a-delay'}">在距离顶部边缘100px的位置</div>
+                        <div class="uk-panel uk-panel-box" data-uk-sticky="{top:100,boundary:'#add-a-delay'}">
+                            在距离顶部边缘100px的位置</div>
 
                         <h3 class="tm-article-subtitle" style="margin-top: 230px;">Markup</h3>
 
@@ -124,11 +130,15 @@
 
                         <h2 id="add-a-delay"><a href="#add-a-delay" class="uk-link-reset">添加延迟</a></h2>
 
-                        <p>为元素添加延迟，这样使它能在页面滚动特定距离后才变成粘连状态，你需要添加一个负偏移值到data属性，比如 <code>data-uk-sticky="{top:-200}"</code>。还可以添加<a href="animation.html">动画</a>让元素可以平滑地再次出现。</p>
+                        <p>为元素添加延迟，这样使它能在页面滚动特定距离后才变成粘连状态，你需要添加一个负偏移值到data属性，比如
+                            <code>data-uk-sticky="{top:-200}"</code>。还可以添加<a href="animation.html">动画</a>让元素可以平滑地再次出现。
+                        </p>
 
                         <h3 class="tm-article-subtitle">Example</h3>
 
-                        <div class="uk-panel uk-panel-box uk-panel-box-primary" data-uk-sticky="{top:-100, animation: 'uk-animation-slide-top', boundary:'#responsive-behavior'}">滚动100px后再粘连在顶部</div>
+                        <div class="uk-panel uk-panel-box uk-panel-box-primary"
+                            data-uk-sticky="{top:-100, animation: 'uk-animation-slide-top', boundary:'#responsive-behavior'}">
+                            滚动100px后再粘连在顶部</div>
 
                         <h3 class="tm-article-subtitle" style="margin-top: 230px;">Markup</h3>
 
@@ -138,7 +148,8 @@
 
                         <h2 id="responsive-behavior"><a href="#responsive-behavior" class="uk-link-reset">响应式行为</a></h2>
 
-                        <p>还可以通过在data属性中添加断点选项，来实现在不同设备上禁用粘连行为，比如 <code>data-uk-sticky="{media: 640}"</code> 。另外，还可以使用媒体查询来控制。</p>
+                        <p>还可以通过在data属性中添加断点选项，来实现在不同设备上禁用粘连行为，比如 <code>data-uk-sticky="{media: 640}"</code>
+                            。另外，还可以使用媒体查询来控制。</p>
 
                         <h3 class="tm-article-subtitle">Markup</h3>
 
@@ -161,13 +172,16 @@
                         <div class="uk-margin uk-grid uk-grid-match">
                             <div class="uk-width-1-2">
                                 <div class="uk-panel uk-panel-box uk-panel-box-secondary" style="height:300px;">
-                                    <div class="uk-panel uk-panel-box" data-uk-sticky="{boundary:true}">Sticky bound to parent container</div>
+                                    <div class="uk-panel uk-panel-box" data-uk-sticky="{boundary:true}">Sticky bound to
+                                        parent container</div>
                                 </div>
                             </div>
                             <div class="uk-width-1-2">
                                 <div class="uk-panel uk-panel-box uk-panel-box-secondary">
-                                    <div class="uk-panel uk-panel-box" data-uk-sticky="{boundary:'#boundary'}">Sticky as long as bondary element is in view</div>
-                                    <div id="boundary" class="uk-panel uk-panel-box" style="margin-top:50px;">Boundary element</div>
+                                    <div class="uk-panel uk-panel-box" data-uk-sticky="{boundary:'#boundary'}">Sticky as
+                                        long as bondary element is in view</div>
+                                    <div id="boundary" class="uk-panel uk-panel-box" style="margin-top:50px;">Boundary
+                                        element</div>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +198,8 @@
 
                         <hr class="uk-article-divider">
 
-                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript 选项</a></h2>
+                        <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript
+                                选项</a></h2>
 
                         <div id="javascript-options-container" class="uk-overflow-container">
                             <table class="uk-table uk-table-striped uk-text-nowrap">
@@ -312,8 +327,10 @@
             </ul>
 
             <div class="uk-panel">
-                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-                <a href="http://v2.getuikit.work/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></a>
+                <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a
+                        href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                <a href="/docs/v2/"><img src="images/logo_uikit.svg" width="90" height="30" title="UIkit"
+                        alt="UIkit"></a>
             </div>
 
         </div>
