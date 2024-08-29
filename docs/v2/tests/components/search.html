@@ -1,187 +1,189 @@
 <!DOCTYPE html>
 <html lang="en-gb" dir="ltr">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Search - UIkit tests</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search - UIkit tests</title>
 
-        <script src="../_test.js"></script>
-        <script src="../../src/js/components/autocomplete.js"></script>
-        <script src="../../src/js/components/search.js"></script>
-        <style type="text/css">
+    <script src="../_test.js"></script>
+    <script src="../../src/js/components/autocomplete.js"></script>
+    <script src="../../src/js/components/search.js"></script>
+    <style type="text/css">
+        body.uk-container {
+            padding-bottom: 150px;
+        }
 
-            body.uk-container { padding-bottom: 150px; }
+        .test-show {
+            display: block;
+            position: relative;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 100%;
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5471548196922790"
+        crossorigin="anonymous"></script>
+</head>
 
-            .test-show {
-                display: block;
-                position: relative;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-                width: 100%;
-            }
+<body>
 
-        </style>
-    </head>
+    <div class="uk-container uk-container-center">
 
-    <body>
+        <h1>Search</h1>
 
-        <div class="uk-container uk-container-center">
+        <form class="uk-search" data-uk-search="{source:'_searchautocomplete.json'}">
+            <input class="uk-search-field" type="search" placeholder="search...">
+        </form>
 
-            <h1>Search</h1>
+        <h2>Search in navbar</h2>
 
-            <form class="uk-search" data-uk-search="{source:'_searchautocomplete.json'}">
-                <input class="uk-search-field" type="search" placeholder="search...">
-            </form>
+        <div class="uk-margin">
 
-            <h2>Search in navbar</h2>
+            <nav class="uk-navbar">
 
-            <div class="uk-margin">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="">Active</a></li>
+                    <li><a href="">Item</a></li>
+                    <li class="uk-parent" data-uk-dropdown>
+                        <a href="">Parent</a>
 
-                <nav class="uk-navbar">
+                        <div class="uk-dropdown uk-dropdown-navbar">
+                            <ul class="uk-nav uk-nav-navbar">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Another item</a></li>
+                                <li class="uk-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Another item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Separated item</a></li>
+                            </ul>
+                        </div>
 
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="">Active</a></li>
-                        <li><a href="">Item</a></li>
-                        <li class="uk-parent" data-uk-dropdown>
-                            <a href="">Parent</a>
+                    </li>
+                </ul>
 
-                            <div class="uk-dropdown uk-dropdown-navbar">
-                                <ul class="uk-nav uk-nav-navbar">
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Another item</a></li>
-                                    <li class="uk-nav-header">Header</li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Another item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Separated item</a></li>
-                                </ul>
-                            </div>
+                <div class="uk-navbar-flip">
+                    <div class="uk-navbar-content">
+                        <form class="uk-search" data-uk-search="{flipDropdown:true, source:'_searchautocomplete.json'}">
+                            <input class="uk-search-field" type="search" placeholder="search...">
+                        </form>
+                    </div>
+                </div>
 
+            </nav>
+
+        </div>
+
+        <h2>Search in offcanvas</h2>
+
+        <p>
+            <button class="uk-button" data-uk-offcanvas="{target:'#offcanvas-1'}">Open</button>
+        </p>
+
+        <div id="offcanvas-1" class="uk-offcanvas">
+
+            <div class="uk-offcanvas-bar">
+
+                <form class="uk-search">
+                    <input class="uk-search-field" type="search" placeholder="search...">
+                </form>
+
+                <div class="uk-panel">
+                    <h3 class="uk-panel-title">Panel title</h3>
+                    Lorem ipsum dolor sit amet, <a href="#">consetetur</a> sadipscing elitr.
+                </div>
+
+                <form class="uk-search">
+                    <input class="uk-search-field" type="search" placeholder="search...">
+                </form>
+
+            </div>
+
+        </div>
+
+        <h2>Dropdown and nav</h2>
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+            <div class="uk-width-medium-1-4">
+
+                <div class="test-show uk-dropdown uk-dropdown-search">
+
+                    <ul class="uk-nav uk-nav-search">
+                        <li class="uk-active"><a href="#">Active</a></li>
+
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
+
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Item <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></a>
+                        </li>
+
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#"><i class="uk-icon-star"></i> Item</a></li>
+                        <li><a href="#"><i class="uk-icon-twitter"></i> Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#"><i class="uk-icon-rss"></i> Item</a></li>
                     </ul>
 
-                    <div class="uk-navbar-flip">
-                        <div class="uk-navbar-content">
-                            <form class="uk-search" data-uk-search="{flipDropdown:true, source:'_searchautocomplete.json'}">
-                                <input class="uk-search-field" type="search" placeholder="search...">
-                            </form>
-                        </div>
-                    </div>
-
-                </nav>
-
-            </div>
-
-            <h2>Search in offcanvas</h2>
-
-            <p>
-                <button class="uk-button" data-uk-offcanvas="{target:'#offcanvas-1'}">Open</button>
-            </p>
-
-            <div id="offcanvas-1" class="uk-offcanvas">
-
-                <div class="uk-offcanvas-bar">
-
-                    <form class="uk-search">
-                        <input class="uk-search-field" type="search" placeholder="search...">
-                    </form>
-
-                    <div class="uk-panel">
-                        <h3 class="uk-panel-title">Panel title</h3>
-                        Lorem ipsum dolor sit amet, <a href="#">consetetur</a> sadipscing elitr.
-                    </div>
-
-                    <form class="uk-search">
-                        <input class="uk-search-field" type="search" placeholder="search...">
-                    </form>
-
                 </div>
 
             </div>
+            <div class="uk-width-medium-1-4">
 
-            <h2>Dropdown and nav</h2>
+                <div class="test-show uk-dropdown uk-dropdown-search">
 
-            <div class="uk-grid" data-uk-grid-margin>
+                    <ul class="uk-nav uk-nav-search uk-nav-parent-icon" data-uk-nav>
+                        <li class="uk-active"><a href="#">Active</a></li>
 
-                <div class="uk-width-medium-1-4">
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <div class="test-show uk-dropdown uk-dropdown-search">
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
 
-                        <ul class="uk-nav uk-nav-search">
-                            <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></a>
+                        </li>
 
-                            <li class="uk-parent">
-                                <a href="#">Parent</a>
-                                <ul class="uk-nav-sub">
-                                    <li><a href="#">Sub item</a></li>
-                                    <li><a href="#">Sub item</a>
-                                        <ul>
-                                            <li><a href="#">Sub item</a></li>
-                                            <li><a href="#">Sub item</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="uk-parent">
-                                <a href="#">Parent</a>
-                                <ul class="uk-nav-sub">
-                                    <li><a href="#">Sub item</a></li>
-                                    <li><a href="#">Sub item</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#">Item <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></a></li>
-
-                            <li class="uk-nav-header">Header</li>
-                            <li><a href="#"><i class="uk-icon-star"></i> Item</a></li>
-                            <li><a href="#"><i class="uk-icon-twitter"></i> Item</a></li>
-                            <li class="uk-nav-divider"></li>
-                            <li><a href="#"><i class="uk-icon-rss"></i> Item</a></li>
-                        </ul>
-
-                    </div>
-
-                </div>
-                <div class="uk-width-medium-1-4">
-
-                    <div class="test-show uk-dropdown uk-dropdown-search">
-
-                        <ul class="uk-nav uk-nav-search uk-nav-parent-icon" data-uk-nav>
-                            <li class="uk-active"><a href="#">Active</a></li>
-
-                            <li class="uk-parent">
-                                <a href="#">Parent</a>
-                                <ul class="uk-nav-sub">
-                                    <li><a href="#">Sub item</a></li>
-                                    <li><a href="#">Sub item</a>
-                                        <ul>
-                                            <li><a href="#">Sub item</a></li>
-                                            <li><a href="#">Sub item</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="uk-parent">
-                                <a href="#">Parent</a>
-                                <ul class="uk-nav-sub">
-                                    <li><a href="#">Sub item</a></li>
-                                    <li><a href="#">Sub item</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#">Item <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></a></li>
-
-                            <li class="uk-nav-header">Header</li>
-                            <li><a href="#"><i class="uk-icon-star"></i> Item</a></li>
-                            <li><a href="#"><i class="uk-icon-twitter"></i> Item</a></li>
-                            <li class="uk-nav-divider"></li>
-                            <li><a href="#"><i class="uk-icon-rss"></i> Item</a></li>
-                        </ul>
-
-                    </div>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#"><i class="uk-icon-star"></i> Item</a></li>
+                        <li><a href="#"><i class="uk-icon-twitter"></i> Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#"><i class="uk-icon-rss"></i> Item</a></li>
+                    </ul>
 
                 </div>
 
@@ -189,5 +191,8 @@
 
         </div>
 
-    </body>
+    </div>
+
+</body>
+
 </html>

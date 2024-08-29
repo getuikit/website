@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-gb" dir="ltr">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Autocomplete - UIkit tests</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autocomplete - UIkit tests</title>
 
-        <script src="../_test.js"></script>
-        <script src="../../src/js/components/autocomplete.js"></script>
-    </head>
+    <script src="../_test.js"></script>
+    <script src="../../src/js/components/autocomplete.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5471548196922790"
+        crossorigin="anonymous"></script>
+</head>
 
-    <body>
+<body>
 
-        <div class="uk-container uk-container-center">
+    <div class="uk-container uk-container-center">
 
-            <h1>Autocomplete</h1>
+        <h1>Autocomplete</h1>
 
-            <p>Type: Hamburg, New York, Moscow or Amsterdam</p>
+        <p>Type: Hamburg, New York, Moscow or Amsterdam</p>
 
-            <h2>Sources</h2>
+        <h2>Sources</h2>
 
-            <h3>Array</h3>
+        <h3>Array</h3>
 
-            <div class="uk-autocomplete uk-form" data-uk-autocomplete="{source:[{value:'Hamburg'},{value:'New York'},{value:'Moscow'},{value:'Amsterdam'}]}">
-                <input type="text">
-            </div>
+        <div class="uk-autocomplete uk-form"
+            data-uk-autocomplete="{source:[{value:'Hamburg'},{value:'New York'},{value:'Moscow'},{value:'Amsterdam'}]}">
+            <input type="text">
+        </div>
 
-            <h3>Ajax</h3>
+        <h3>Ajax</h3>
 
-            <div class="uk-autocomplete uk-form" data-uk-autocomplete="{source:'_autocomplete.json'}">
-                <input type="text">
-            </div>
+        <div class="uk-autocomplete uk-form" data-uk-autocomplete="{source:'_autocomplete.json'}">
+            <input type="text">
+        </div>
 
-            <h2>Custom Templates</h2>
+        <h2>Custom Templates</h2>
 
-            <h3>Custom</h3>
+        <h3>Custom</h3>
 
-            <div class="uk-autocomplete uk-form" data-uk-autocomplete="{source:'_autocomplete.json'}">
-                <input type="text">
-                <script type="text/autocomplete">
+        <div class="uk-autocomplete uk-form" data-uk-autocomplete="{source:'_autocomplete.json'}">
+            <input type="text">
+            <script type="text/autocomplete">
                     <ul class="uk-nav uk-nav-autocomplete uk-autocomplete-results">
                         {{~items}}
                         <li data-value="{{ $item.value }}">
@@ -50,9 +53,10 @@
                         {{/items}}
                     </ul>
                 </script>
-            </div>
-
         </div>
 
-    </body>
+    </div>
+
+</body>
+
 </html>

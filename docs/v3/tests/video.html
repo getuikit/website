@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html lang="en-gb" dir="ltr">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Video - UIkit tests</title>
-        <script src="js/test.js"></script>
-		<link rel="stylesheet" href="../dist/css/uikit-core.css">
-        <script src="../dist/js/uikit.js"></script>
-        <script src="../dist/js/uikit-icons.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video - UIkit tests</title>
+    <script src="js/test.js"></script>
+    <link rel="stylesheet" href="../dist/css/uikit-core.css">
+    <script src="../dist/js/uikit.js"></script>
+    <script src="../dist/js/uikit-icons.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5471548196922790"
+        crossorigin="anonymous"></script>
+</head>
 
-    <body>
+<body>
 
-        <div class="uk-container">
+    <div class="uk-container">
 
-            <h1>Video</h1>
+        <h1>Video</h1>
 
-            <div class="uk-grid uk-child-width-1-2@s">
-                <div>
+        <div class="uk-grid uk-child-width-1-2@s">
+            <div>
 
-                    <h3>Autoplay</h3>
-                    
-                    <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +">Toggle Video</button>
-                    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline uk-video="automute: true"></video>
+                <h3>Autoplay</h3>
 
-                </div>
-                <div>
+                <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +">Toggle
+                    Video</button>
+                <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline
+                    uk-video="automute: true"></video>
 
-                    <h3>Autoplay Inview</h3>
-
-                    <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +">Toggle Video</button>
-                    <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true; autoplay: inview"></iframe>
-                </div>
             </div>
+            <div>
 
-            <h2>JavaScript Options</h2>
+                <h3>Autoplay Inview</h3>
 
-            <table class="uk-table uk-table-striped">
-                <thead>
-                    <tr>
-                        <th>Option</th>
-                        <th>Value</th>
-                        <th>Default</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>autoplay</code></td>
-                        <td>Boolean|String</td>
-                        <td><code>true</code></td>
-                        <td>The video automatically plays/pauses as it's visible/hidden on the page. A value of `inview` will delay loading the video and play/pause the video as it enters/leaves the viewport.</td>
-                    </tr>
-                    <tr>
-                        <td><code>automute</code></td>
-                        <td>Boolean</td>
-                        <td><code>false</code></td>
-                        <td>Automatically mute YouTube or Vimeo videos.</td>
-                    </tr>
-                </tbody>
-            </table>
-
+                <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +">Toggle
+                    Video</button>
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
+                    width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive
+                    uk-video="automute: true; autoplay: inview"></iframe>
+            </div>
         </div>
 
-    </body>
+        <h2>JavaScript Options</h2>
+
+        <table class="uk-table uk-table-striped">
+            <thead>
+                <tr>
+                    <th>Option</th>
+                    <th>Value</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>autoplay</code></td>
+                    <td>Boolean|String</td>
+                    <td><code>true</code></td>
+                    <td>The video automatically plays/pauses as it's visible/hidden on the page. A value of `inview`
+                        will delay loading the video and play/pause the video as it enters/leaves the viewport.</td>
+                </tr>
+                <tr>
+                    <td><code>automute</code></td>
+                    <td>Boolean</td>
+                    <td><code>false</code></td>
+                    <td>Automatically mute YouTube or Vimeo videos.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
 </html>
